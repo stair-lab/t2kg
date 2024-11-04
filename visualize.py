@@ -2,10 +2,6 @@ import json
 import networkx as nx
 import matplotlib.pyplot as plt
 from typing import List, Tuple
-import json
-from typing import List, Tuple
-import networkx as nx
-import matplotlib.pyplot as plt
 from pydantic import BaseModel
 from index import SyntheticData, GoldLabelDataset
 
@@ -49,13 +45,9 @@ def visualize_knowledge_graph(G: nx.DiGraph, title: str) -> None:
 def process_sample(sample: GoldLabelDataset) -> None:
     synthetic_data = sample.synthetic
     
-    # Chosen Knowledge Graph
-    chosen_G = create_knowledge_graph(synthetic_data.chosen_entities_all, synthetic_data.chosen_relations)
-    visualize_knowledge_graph(chosen_G, f"Chosen KG - {sample.user_query[:20]}...")
-    
-    # Rejected Knowledge Graph
-    rejected_G = create_knowledge_graph(synthetic_data.rejected_entities_all, synthetic_data.rejected_relations)
-    visualize_knowledge_graph(rejected_G, f"Rejected KG - {sample.user_query[:20]}...")
+    # Knowledge Graph
+    G = create_knowledge_graph(synthetic_data.entities_all, synthetic_data.relations)
+    visualize_knowledge_graph(G, f"KG - {sample.user_query[:20]}...")
 
 def main():
     dataset = load_gold_label_dataset('./extracted/gold_label_dataset.jsonl')
