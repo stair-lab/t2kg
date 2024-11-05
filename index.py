@@ -11,6 +11,26 @@ SOURCE_FILE = './source_data/test_small.jsonl'
 class KnowledgeGraphEntities(BaseModel):
     entities: List[str]
 
+
+def get_entity_extraction_prompt() -> str:
+    return "Extract entities from the given text."
+
+
+def extract_entities(text: str, system_prompt: str = get_entity_extraction_prompt()) -> List[str]:
+    completion = client.beta.chat.completions.parse(
+        model=MODEL,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": text},
+        ],
+        response_format=KnowledgeGraphEntities,
+    )
+    parsed = completion.choices[0].message.parsed
+    return parsed.entities if parsed else []
+
+
+
+
 class KnowledgeGraphRelation(BaseModel):
     subject: str
     predicate: str
@@ -151,19 +171,52 @@ def process_sample(user_query: str, assistant_response: str) -> GoldLabelDataset
     )
 
 if __name__ == "__main__":
-    file_path = SOURCE_FILE
-    data = process_jsonl(file_path)
-    gold_label_dataset = []
+    # file_path = 'source_data/test_small.jsonl'
+    
+    # List of files to process
+    files_to_process = [
+        # "test_small.jsonl"
+        'llama_policy.jsonl',
+        'llama_reference.jsonl',
+        'pythia28_policy.jsonl',
+        'pythia28_reference.jsonl'
+    ]
 
-    for sample in data:
-        user_query = sample['chosen'].split('\n\nHuman: ')[1].split('\n\nAssistant: ')[0]
-        assistant_response = sample['chosen'].split('\n\nAssistant: ')[1]
-        processed_sample = process_sample(user_query, assistant_response)
-        gold_label_dataset.append(processed_sample)
+    for file_name in files_to_process:
+        file_path = f'source_data/{file_name}'
+        print(f"Processing {file_path}...")
+        
+        data = process_jsonl(file_path)
+        gold_label_dataset = []
 
-    # Save the processed data
-    with open('./extracted/gold_label_dataset.jsonl', 'w') as f:
-        for item in gold_label_dataset:
-            f.write(json.dumps(item.model_dump()) + '\n')
+        for sample in data:
+            user_query = sample['original_query']
+            assistant_response = sample['assistant_response']
+            processed_sample = process_sample(user_query, assistant_response)
+            gold_label_dataset.append(processed_sample)
 
-    print(f"Processed {len(gold_label_dataset)} samples.")
+        # Save the processed data
+        output_file = f'./extracted_graphs/{file_name}'
+        with open(output_file, 'w') as f:
+            for item in gold_label_dataset:
+                f.write(json.dumps(item.model_dump()) + '\n')
+
+        print(f"Processed {len(gold_label_dataset)} samples from {file_name}.")
+        print(f"Saved results to {output_file}")
+        print()  # Add a blank line for readability between files
+    # file_path = SOURCE_FILE
+    # data = process_jsonl(file_path)
+    # gold_label_dataset = []
+
+    # for sample in data:
+    #     user_query = sample['chosen'].split('\n\nHuman: ')[1].split('\n\nAssistant: ')[0]
+    #     assistant_response = sample['chosen'].split('\n\nAssistant: ')[1]
+    #     processed_sample = process_sample(user_query, assistant_response)
+    #     gold_label_dataset.append(processed_sample)
+
+    # # Save the processed data
+    # with open('./extracted/gold_label_dataset.jsonl', 'w') as f:
+    #     for item in gold_label_dataset:
+    #         f.write(json.dumps(item.model_dump()) + '\n')
+
+    # print(f"Processed {len(gold_label_dataset)} samples.")

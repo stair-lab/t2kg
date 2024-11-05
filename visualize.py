@@ -3,13 +3,12 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from typing import List, Tuple
 from pydantic import BaseModel
-from index import SyntheticData, GoldLabelDataset
 
-def load_gold_label_dataset(file_path: str) -> List[GoldLabelDataset]:
+def load_json_data(file_path: str) -> dict:
     with open(file_path, 'r') as file:
-        return [GoldLabelDataset(**json.loads(line)) for line in file]
+        return json.load(file)
 
-def create_knowledge_graph(entities: List[str], relations: List[Tuple[str, str, str]]) -> nx.DiGraph:
+def create_knowledge_graph(entities: List[str], relations: List[List[str]]) -> nx.DiGraph:
     G = nx.DiGraph()
     G.add_nodes_from(entities)
     G.add_edges_from([(s, o, {'label': p}) for s, p, o in relations])
@@ -23,8 +22,8 @@ def visualize_knowledge_graph(G: nx.DiGraph, title: str) -> None:
     nx.draw_networkx_nodes(G, pos, node_color='lightblue', node_size=4000)
     nx.draw_networkx_labels(G, pos, font_size=10, font_weight='bold')
     
-    # Draw edges
-    nx.draw_networkx_edges(G, pos, edge_color='gray', arrows=True, arrowsize=20)
+    # Draw edges with arrows
+    nx.draw_networkx_edges(G, pos, edge_color='gray', arrows=True, arrowsize=30, connectionstyle="arc3,rad=0.1", width=1.5, arrowstyle='->', min_source_margin=40, min_target_margin=40)
     edge_labels = nx.get_edge_attributes(G, 'label')
     nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8)
     
@@ -39,23 +38,29 @@ def visualize_knowledge_graph(G: nx.DiGraph, title: str) -> None:
     plt.xlim(min(x_values) - x_margin, max(x_values) + x_margin)
     plt.ylim(min(y_values) - y_margin, max(y_values) + y_margin)
     
-    plt.savefig(f"./extracted/{title.replace(' ', '_')}.png", dpi=300, bbox_inches='tight')
+    plt.savefig(f"./extracted_graphs/{title.replace(' ', '_')}.png", dpi=300, bbox_inches='tight')
     plt.close()
 
-def process_sample(sample: GoldLabelDataset) -> None:
-    synthetic_data = sample.synthetic
-    
+def process_json_data(data: dict, filename: str) -> None:
     # Knowledge Graph
-    G = create_knowledge_graph(synthetic_data.entities_all, synthetic_data.relations)
-    visualize_knowledge_graph(G, f"KG - {sample.user_query[:20]}...")
+    G = create_knowledge_graph(data['entities'], data['relations'])
+    visualize_knowledge_graph(G, filename)
 
 def main():
-    dataset = load_gold_label_dataset('./extracted/gold_label_dataset.jsonl')
-    for sample in dataset:
+    json_files = [
+        'llama_policy.json',
+        'llama_reference.json',
+        'pythia28_policy.json',
+        'pythia28_reference.json'
+    ]
+    
+    for filename in json_files:
+        json_data = load_json_data(f'./extracted_graphs/{filename}')
         try:
-            process_sample(sample)
+            process_json_data(json_data, filename)
+            print(f"Successfully processed {filename}")
         except Exception as e:
-            print(f"Error processing sample: {e}")
+            print(f"Error processing {filename}: {e}")
 
 if __name__ == "__main__":
     main()
