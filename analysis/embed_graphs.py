@@ -48,7 +48,7 @@ def run_pykeen_embed_graph(kg, save_path):
         validation=validation,
         model='TransE',
         training_loop='slcwa',
-        epochs=300,
+        epochs=200,    # recommended in some o
         negative_sampler="basic",
         random_seed=42,
     )
@@ -61,7 +61,7 @@ def run_pykeen_embed_graph(kg, save_path):
     relation_embeddings = model.relation_representations[0]().cpu().detach()
 
     # Define prefix
-    prefix = "pythia28_reference"
+    prefix = prefix = os.path.splitext(os.path.basename(kg))[0]
 
     # Save embeddings with prefix
     torch.save(entity_embeddings, os.path.join(save_path, f'{prefix}_entity_embeddings.pt'))
@@ -78,8 +78,18 @@ def run_pykeen_embed_graph(kg, save_path):
 if __name__ == "__main__": 
     # Define paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    kg_path = os.path.join(script_dir, "../extracted_graphs/pythia28_reference.json")
+    kg_path = os.path.join(script_dir, "../extracted_graphs/test_small.json")
     embeddings_path = os.path.join(script_dir, "./data/embeddings/")
 
-    # Run function
-    run_pykeen_embed_graph(kg_path, embeddings_path)
+    models = ["llama", "pythia28"]
+    versions = ["policy", "reference"]
+
+    kg_base_path = os.path.join(script_dir, "../extracted_graphs/")
+    embeddings_save_base_path = embeddings_path = os.path.join(script_dir, "./data/embeddings/")
+
+    for m in models: 
+        for v in versions: 
+            kg_name = f"{m}_{v}.json"
+            kg_path = os.path.join(kg_base_path, kg_name)
+            # Run function
+            run_pykeen_embed_graph(kg_path, embeddings_save_base_path)
