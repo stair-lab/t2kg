@@ -16,6 +16,10 @@ term_pairs = []
 models = ["llama", "pythia28"]
 versions = ["policy", "reference"]
 
+# models = ["llama"]
+# versions = ["policy"]
+
+
 def load_entity_embedding(entity_pair, embeddings_filename, entity_to_id_filename):
 
     print(f"Loading embeddings and entiry from {embeddings_filename, entity_to_id_filename}")

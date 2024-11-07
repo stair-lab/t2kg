@@ -41,15 +41,31 @@ def run_pykeen_embed_graph(kg, save_path):
     validation = triples_factory
     testing = triples_factory
 
-    # Train the model (TransE in this case)
+    # # Train the model (TransE in this case)
+    # result = pipeline(
+    #     training=training,
+    #     testing=testing,
+    #     validation=validation,
+    #     model='TransE',
+    #     model_kwargs=dict(embedding_dim=32),
+    #     training_loop='slcwa',
+    #     epochs=500,    # recommended in some o
+    #     negative_sampler="basic",
+    #     random_seed=42,
+    # )
+
     result = pipeline(
         training=training,
         testing=testing,
         validation=validation,
-        model='TransE',
+        model='rgcn',
+        model_kwargs=dict(
+            embedding_dim=32,
+            num_layers=4,          # Number of GCN layers
+        ),
         training_loop='slcwa',
-        epochs=200,    # recommended in some o
-        negative_sampler="basic",
+        epochs=5,               # Increased epochs for better training
+        regularizer_kwargs=dict(weight=1e-5),
         random_seed=42,
     )
 
@@ -83,6 +99,9 @@ if __name__ == "__main__":
 
     models = ["llama", "pythia28"]
     versions = ["policy", "reference"]
+
+    # models = ["llama"]
+    # versions = ["policy"]
 
     kg_base_path = os.path.join(script_dir, "../extracted_graphs/prompt_and_response_1545d6c/")
     embeddings_save_base_path = embeddings_path = os.path.join(script_dir, "./data/embeddings/")
