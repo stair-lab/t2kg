@@ -78,13 +78,13 @@ def run_pykeen_embed_graph(kg, save_path):
 if __name__ == "__main__": 
     # Define paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    kg_path = os.path.join(script_dir, "../extracted_graphs/test_small.json")
+    kg_path = os.path.join(script_dir, "../extracted_graphs/prompt_and_response_1545d6c/test_small.json")
     embeddings_path = os.path.join(script_dir, "./data/embeddings/")
 
     models = ["llama", "pythia28"]
     versions = ["policy", "reference"]
 
-    kg_base_path = os.path.join(script_dir, "../extracted_graphs/")
+    kg_base_path = os.path.join(script_dir, "../extracted_graphs/prompt_and_response_1545d6c/")
     embeddings_save_base_path = embeddings_path = os.path.join(script_dir, "./data/embeddings/")
 
     for m in models: 

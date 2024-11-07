@@ -8,7 +8,7 @@ import torch.nn.functional as F
 script_dir = os.path.dirname(os.path.abspath(__file__))
 embeddings_base_path = os.path.join(script_dir, "./data/embeddings/")
 
-term_pairs = [("abuse", "black")]
+term_pairs = []
 
 models = ["llama", "pythia28"]
 versions = ["policy", "reference"]
