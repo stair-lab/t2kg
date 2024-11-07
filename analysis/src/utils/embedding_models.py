@@ -16,7 +16,6 @@ class RGCN(torch.nn.Module):
         return x
     
 
-
 from torch_geometric.nn import GCNConv
 
 # adapted from colab 2 of the homework 
