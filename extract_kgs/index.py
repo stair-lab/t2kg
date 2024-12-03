@@ -265,7 +265,8 @@ if __name__ == "__main__":
 
     # List of files to process
     files_to_process = [
-        "harmless_base_rejected_test_50.jsonl"
+        # "harmless_base_rejected_test_50.jsonl"
+        "advil.jsonl"
     ]
 
     # Extract query entities from first file

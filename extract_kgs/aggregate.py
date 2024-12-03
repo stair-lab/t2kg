@@ -39,7 +39,8 @@ def aggregate_dataset(input_file: str) -> AggregatedDataset:
 
 if __name__ == "__main__":
     input_files = [
-        'harmless_base_rejected_test_50.jsonl',
+        'advil.jsonl'
+        # 'harmless_base_rejected_test_50.jsonl',
         # 'harmless_base_rejected_test_50.jsonl',
         # 'llama_policy.jsonl',
         # 'llama_reference.jsonl',

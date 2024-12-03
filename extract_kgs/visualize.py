@@ -23,26 +23,25 @@ def create_knowledge_graph(entities: List[str], relations: List[List[str]]) -> n
     return G
 
 def visualize_knowledge_graph(G: nx.DiGraph, title: str) -> None:
-    plt.figure(figsize=(16, 12))  # Increased figure size for better visibility
-    pos = nx.spring_layout(G, k=1.5, iterations=100)  # Increased k and iterations for more spread
+    plt.figure(figsize=(48, 36))  # Greatly increased figure size for much better visibility
+    pos = nx.spring_layout(G, k=3, iterations=200)  # Significantly increased k and iterations for much more spread
     
     # Draw nodes
-    nx.draw_networkx_nodes(G, pos, node_color='lightblue', node_size=4000)
-    nx.draw_networkx_labels(G, pos, font_size=10, font_weight='bold')
+    nx.draw_networkx_nodes(G, pos, node_color='lightblue', node_size=12000)
+    nx.draw_networkx_labels(G, pos, font_size=16, font_weight='bold')
     
     # Draw edges with arrows
-    nx.draw_networkx_edges(G, pos, edge_color='gray', arrows=True, arrowsize=30, connectionstyle="arc3,rad=0.1", width=1.5, arrowstyle='->', min_source_margin=40, min_target_margin=40)
+    nx.draw_networkx_edges(G, pos, edge_color='gray', arrows=True, arrowsize=60, connectionstyle="arc3,rad=0.2", width=3, arrowstyle='->', min_source_margin=100, min_target_margin=100)
     edge_labels = nx.get_edge_attributes(G, 'label')
-    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8)
-    
-    plt.title(title, fontsize=14)
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=14)
+    plt.title(title, fontsize=18)
     plt.axis('off')
     plt.tight_layout()
     
     # Add some padding around the graph
     x_values, y_values = zip(*pos.values())
-    x_margin = (max(x_values) - min(x_values)) * 0.1
-    y_margin = (max(y_values) - min(y_values)) * 0.1
+    x_margin = (max(x_values) - min(x_values)) * 0.15
+    y_margin = (max(y_values) - min(y_values)) * 0.15
     plt.xlim(min(x_values) - x_margin, max(x_values) + x_margin)
     plt.ylim(min(y_values) - y_margin, max(y_values) + y_margin)
     
@@ -50,23 +49,30 @@ def visualize_knowledge_graph(G: nx.DiGraph, title: str) -> None:
     plt.close()
 
 def process_json_data(data: dict, filename: str) -> None:
+    # Check if 'entities' key exists in the data
+    if 'entities' not in data:
+        raise KeyError("The 'entities' key is missing from the JSON data")
+    
     # Knowledge Graph
     G = create_knowledge_graph(data['entities'], data['relations'])
     visualize_knowledge_graph(G, filename)
 
 def main():
     json_files = [
-        "harmless_base_chosen_test_50.jsonl",
-        "harmless_base_rejected_test_50.jsonl"
+        # "harmless_base_chosen_test_50.jsonl",
+        # "harmless_base_rejected_test_50.jsonl"
+        "advil.json"
     ]
     
     for filename in json_files:
-        json_data = load_json_data(f'./kgs/{filename}')
         try:
+            json_data = load_json_data(f'./kgs/{filename}')
             process_json_data(json_data, filename)
             print(f"Successfully processed {filename}")
-        except Exception as e:
+        except KeyError as e:
             print(f"Error processing {filename}: {e}")
+        except Exception as e:
+            print(f"Unexpected error processing {filename}: {e}")
 
 if __name__ == "__main__":
     main()
