@@ -2,424 +2,229 @@
   "entity_clusters": [
     {
       "items": [
+        "bad language",
+        "cuss word",
+        "bad words",
+        "f word",
+        "shit",
+        "insults",
+        "derogatory",
+        "inappropriate",
+        "filthy",
+        "dirty joke",
+        "offense",
+        "insulting",
+        "mean",
+        "fyck",
+        "fuck",
+        "bullshit",
+        "gross",
+        "racist",
+        "peckerwood",
+        "dirty",
+        "bad"
+      ],
+      "representative": "bad language"
+    },
+    {
+      "items": [
+        "united states",
+        "america",
+        "united states of america",
+        "american",
+        "americans"
+      ],
+      "representative": "america"
+    },
+    {
+      "items": [
+        "word",
+        "words",
+        "phrase",
+        "slang",
+        "jokes"
+      ],
+      "representative": "word"
+    },
+    {
+      "items": [
+        "talking",
+        "speak",
+        "speaking",
+        "talk"
+      ],
+      "representative": "talk"
+    },
+    {
+      "items": [
         "ask",
         "asking",
-        "asked",
-        "suggest",
-        "suggestions"
+        "asked"
       ],
       "representative": "ask"
     },
     {
       "items": [
-        "speak",
-        "speaking",
-        "talk",
-        "talking"
+        "black lives",
+        "black live matters",
+        "black lives matter movement"
       ],
-      "representative": "speak"
+      "representative": "black lives"
     },
     {
       "items": [
-        "united states of america",
-        "united states",
-        "america"
-      ],
-      "representative": "united states"
-    },
-    {
-      "items": [
+        "residential address",
         "address",
-        "home address",
-        "residential address"
+        "home address"
       ],
-      "representative": "address"
+      "representative": "residential address"
     },
     {
       "items": [
-        "fuck",
-        "fyck",
-        "f word"
+        "suggest",
+        "suggestions"
       ],
-      "representative": "fuck"
+      "representative": "suggest"
     },
     {
       "items": [
-        "trusted"
+        "hurt",
+        "hurting"
       ],
-      "representative": "trusted"
+      "representative": "hurt"
     },
     {
       "items": [
-        "born"
+        "hope",
+        "hoping"
       ],
-      "representative": "born"
+      "representative": "hope"
     },
     {
       "items": [
-        "wife"
+        "perspective",
+        "point of view"
       ],
-      "representative": "wife"
+      "representative": "perspective"
     },
     {
       "items": [
-        "sexually"
+        "purchasing",
+        "buy"
       ],
-      "representative": "sexually"
+      "representative": "purchasing"
     },
     {
       "items": [
-        "handle"
+        "car",
+        "cars"
       ],
-      "representative": "handle"
+      "representative": "car"
     },
     {
       "items": [
-        "going"
+        "experiencing",
+        "experience"
       ],
-      "representative": "going"
+      "representative": "experiencing"
     },
     {
       "items": [
-        "dickens"
-      ],
-      "representative": "dickens"
-    },
-    {
-      "items": [
-        "team"
-      ],
-      "representative": "team"
-    },
-    {
-      "items": [
-        "fagin"
-      ],
-      "representative": "fagin"
-    },
-    {
-      "items": [
+        "percent",
         "percentage"
       ],
-      "representative": "percentage"
+      "representative": "percent"
     },
     {
       "items": [
-        "tips"
+        "friends",
+        "friend"
       ],
-      "representative": "tips"
+      "representative": "friends"
     },
     {
       "items": [
-        "corner"
+        "feces",
+        "poop"
       ],
-      "representative": "corner"
+      "representative": "feces"
     },
     {
       "items": [
-        "decision"
+        "interpret",
+        "understand"
       ],
-      "representative": "decision"
+      "representative": "interpret"
     },
     {
       "items": [
-        "forms"
+        "prostitution",
+        "sex workers"
       ],
-      "representative": "forms"
+      "representative": "prostitution"
     },
     {
       "items": [
-        "glass"
+        "child",
+        "children"
       ],
-      "representative": "glass"
+      "representative": "child"
     },
     {
       "items": [
-        "hard drive"
+        "enslave",
+        "slavery"
       ],
-      "representative": "hard drive"
+      "representative": "enslave"
     },
     {
       "items": [
-        "razor"
+        "threaten",
+        "threatening"
       ],
-      "representative": "razor"
+      "representative": "threaten"
     },
     {
       "items": [
-        "descriptor"
-      ],
-      "representative": "descriptor"
-    },
-    {
-      "items": [
-        "ego death"
-      ],
-      "representative": "ego death"
-    },
-    {
-      "items": [
-        "individual"
-      ],
-      "representative": "individual"
-    },
-    {
-      "items": [
-        "confused"
-      ],
-      "representative": "confused"
-    },
-    {
-      "items": [
-        "popular"
-      ],
-      "representative": "popular"
-    },
-    {
-      "items": [
-        "j.b. pritzker"
-      ],
-      "representative": "j.b. pritzker"
-    },
-    {
-      "items": [
-        "pressure"
-      ],
-      "representative": "pressure"
-    },
-    {
-      "items": [
-        "differently"
-      ],
-      "representative": "differently"
-    },
-    {
-      "items": [
-        "way"
-      ],
-      "representative": "way"
-    },
-    {
-      "items": [
-        "interested"
-      ],
-      "representative": "interested"
-    },
-    {
-      "items": [
-        "common"
-      ],
-      "representative": "common"
-    },
-    {
-      "items": [
-        "nas x"
-      ],
-      "representative": "nas x"
-    },
-    {
-      "items": [
+        "countries",
         "country"
       ],
-      "representative": "country"
+      "representative": "countries"
     },
     {
       "items": [
-        "never"
+        "ways",
+        "way"
       ],
-      "representative": "never"
+      "representative": "ways"
     },
     {
       "items": [
-        "arm"
+        "reasons",
+        "reason"
       ],
-      "representative": "arm"
+      "representative": "reasons"
     },
     {
       "items": [
-        "safety cone"
+        "love",
+        "loves"
       ],
-      "representative": "safety cone"
+      "representative": "love"
     },
     {
       "items": [
-        "heir"
+        "prison gang",
+        "gang"
       ],
-      "representative": "heir"
+      "representative": "prison gang"
     },
     {
       "items": [
-        "stupid"
-      ],
-      "representative": "stupid"
-    },
-    {
-      "items": [
-        "put"
-      ],
-      "representative": "put"
-    },
-    {
-      "items": [
-        "dirty"
-      ],
-      "representative": "dirty"
-    },
-    {
-      "items": [
-        "nice"
-      ],
-      "representative": "nice"
-    },
-    {
-      "items": [
-        "apologize"
-      ],
-      "representative": "apologize"
-    },
-    {
-      "items": [
+        "time",
         "times"
       ],
-      "representative": "times"
-    },
-    {
-      "items": [
-        "1990"
-      ],
-      "representative": "1990"
-    },
-    {
-      "items": [
-        "casino"
-      ],
-      "representative": "casino"
-    },
-    {
-      "items": [
-        "frats"
-      ],
-      "representative": "frats"
-    },
-    {
-      "items": [
-        "limited"
-      ],
-      "representative": "limited"
-    },
-    {
-      "items": [
-        "favorite"
-      ],
-      "representative": "favorite"
-    },
-    {
-      "items": [
-        "home country"
-      ],
-      "representative": "home country"
-    },
-    {
-      "items": [
-        "sorry"
-      ],
-      "representative": "sorry"
-    },
-    {
-      "items": [
-        "muggers"
-      ],
-      "representative": "muggers"
-    },
-    {
-      "items": [
-        "china"
-      ],
-      "representative": "china"
-    },
-    {
-      "items": [
-        "finding out"
-      ],
-      "representative": "finding out"
-    },
-    {
-      "items": [
-        "privacy"
-      ],
-      "representative": "privacy"
-    },
-    {
-      "items": [
-        "candy"
-      ],
-      "representative": "candy"
-    },
-    {
-      "items": [
-        "poison"
-      ],
-      "representative": "poison"
-    },
-    {
-      "items": [
-        "research"
-      ],
-      "representative": "research"
-    },
-    {
-      "items": [
-        "activity"
-      ],
-      "representative": "activity"
-    },
-    {
-      "items": [
-        "felony"
-      ],
-      "representative": "felony"
-    },
-    {
-      "items": [
-        "male"
-      ],
-      "representative": "male"
-    },
-    {
-      "items": [
-        "owner"
-      ],
-      "representative": "owner"
-    },
-    {
-      "items": [
-        "full"
-      ],
-      "representative": "full"
-    },
-    {
-      "items": [
-        "sororities"
-      ],
-      "representative": "sororities"
-    },
-    {
-      "items": [
-        "take"
-      ],
-      "representative": "take"
-    },
-    {
-      "items": [
-        "knowledge"
-      ],
-      "representative": "knowledge"
-    },
-    {
-      "items": [
-        "people"
-      ],
-      "representative": "people"
+      "representative": "time"
     },
     {
       "items": [
@@ -429,693 +234,33 @@
     },
     {
       "items": [
-        "bathtub"
-      ],
-      "representative": "bathtub"
-    },
-    {
-      "items": [
-        "beliefs"
-      ],
-      "representative": "beliefs"
-    },
-    {
-      "items": [
-        "insults"
-      ],
-      "representative": "insults"
-    },
-    {
-      "items": [
-        "email"
-      ],
-      "representative": "email"
-    },
-    {
-      "items": [
-        "disappearing"
-      ],
-      "representative": "disappearing"
-    },
-    {
-      "items": [
-        "does"
-      ],
-      "representative": "does"
-    },
-    {
-      "items": [
-        "rapper"
-      ],
-      "representative": "rapper"
-    },
-    {
-      "items": [
-        "feeling"
-      ],
-      "representative": "feeling"
-    },
-    {
-      "items": [
-        "american"
-      ],
-      "representative": "american"
-    },
-    {
-      "items": [
-        "list"
-      ],
-      "representative": "list"
-    },
-    {
-      "items": [
-        "burglars"
-      ],
-      "representative": "burglars"
-    },
-    {
-      "items": [
-        "challenging"
-      ],
-      "representative": "challenging"
-    },
-    {
-      "items": [
-        "question"
-      ],
-      "representative": "question"
-    },
-    {
-      "items": [
-        "okay"
-      ],
-      "representative": "okay"
-    },
-    {
-      "items": [
-        "uglier"
-      ],
-      "representative": "uglier"
-    },
-    {
-      "items": [
         "impression"
       ],
       "representative": "impression"
     },
     {
       "items": [
-        "derogatory"
+        "sister"
       ],
-      "representative": "derogatory"
+      "representative": "sister"
     },
     {
       "items": [
-        "learning"
+        "mexico"
       ],
-      "representative": "learning"
+      "representative": "mexico"
     },
     {
       "items": [
-        "countries"
+        "badly"
       ],
-      "representative": "countries"
+      "representative": "badly"
     },
     {
       "items": [
-        "misdemeanor"
+        "request"
       ],
-      "representative": "misdemeanor"
-    },
-    {
-      "items": [
-        "reason"
-      ],
-      "representative": "reason"
-    },
-    {
-      "items": [
-        "singer"
-      ],
-      "representative": "singer"
-    },
-    {
-      "items": [
-        "want"
-      ],
-      "representative": "want"
-    },
-    {
-      "items": [
-        "job"
-      ],
-      "representative": "job"
-    },
-    {
-      "items": [
-        "opening act"
-      ],
-      "representative": "opening act"
-    },
-    {
-      "items": [
-        "accomplish"
-      ],
-      "representative": "accomplish"
-    },
-    {
-      "items": [
-        "percent"
-      ],
-      "representative": "percent"
-    },
-    {
-      "items": [
-        "casual conversations"
-      ],
-      "representative": "casual conversations"
-    },
-    {
-      "items": [
-        "jokes"
-      ],
-      "representative": "jokes"
-    },
-    {
-      "items": [
-        "tonight"
-      ],
-      "representative": "tonight"
-    },
-    {
-      "items": [
-        "decriminalized"
-      ],
-      "representative": "decriminalized"
-    },
-    {
-      "items": [
-        "insurance"
-      ],
-      "representative": "insurance"
-    },
-    {
-      "items": [
-        "windows"
-      ],
-      "representative": "windows"
-    },
-    {
-      "items": [
-        "work"
-      ],
-      "representative": "work"
-    },
-    {
-      "items": [
-        "novel"
-      ],
-      "representative": "novel"
-    },
-    {
-      "items": [
-        "oliver twist"
-      ],
-      "representative": "oliver twist"
-    },
-    {
-      "items": [
-        "arouse"
-      ],
-      "representative": "arouse"
-    },
-    {
-      "items": [
-        "leave"
-      ],
-      "representative": "leave"
-    },
-    {
-      "items": [
-        "avoid"
-      ],
-      "representative": "avoid"
-    },
-    {
-      "items": [
-        "food"
-      ],
-      "representative": "food"
-    },
-    {
-      "items": [
-        "piece"
-      ],
-      "representative": "piece"
-    },
-    {
-      "items": [
-        "difference"
-      ],
-      "representative": "difference"
-    },
-    {
-      "items": [
-        "problem"
-      ],
-      "representative": "problem"
-    },
-    {
-      "items": [
-        "water"
-      ],
-      "representative": "water"
-    },
-    {
-      "items": [
-        "trick"
-      ],
-      "representative": "trick"
-    },
-    {
-      "items": [
-        "resolve"
-      ],
-      "representative": "resolve"
-    },
-    {
-      "items": [
-        "foreign exchange student"
-      ],
-      "representative": "foreign exchange student"
-    },
-    {
-      "items": [
-        "marriage"
-      ],
-      "representative": "marriage"
-    },
-    {
-      "items": [
-        "20 years ago"
-      ],
-      "representative": "20 years ago"
-    },
-    {
-      "items": [
-        "car"
-      ],
-      "representative": "car"
-    },
-    {
-      "items": [
-        "getting"
-      ],
-      "representative": "getting"
-    },
-    {
-      "items": [
-        "fully"
-      ],
-      "representative": "fully"
-    },
-    {
-      "items": [
-        "planning"
-      ],
-      "representative": "planning"
-    },
-    {
-      "items": [
-        "controversial"
-      ],
-      "representative": "controversial"
-    },
-    {
-      "items": [
-        "car technician"
-      ],
-      "representative": "car technician"
-    },
-    {
-      "items": [
-        "poking"
-      ],
-      "representative": "poking"
-    },
-    {
-      "items": [
-        "point of view"
-      ],
-      "representative": "point of view"
-    },
-    {
-      "items": [
-        "black lives"
-      ],
-      "representative": "black lives"
-    },
-    {
-      "items": [
-        "business"
-      ],
-      "representative": "business"
-    },
-    {
-      "items": [
-        "bank teller"
-      ],
-      "representative": "bank teller"
-    },
-    {
-      "items": [
-        "night"
-      ],
-      "representative": "night"
-    },
-    {
-      "items": [
-        "hurt"
-      ],
-      "representative": "hurt"
-    },
-    {
-      "items": [
-        "atm"
-      ],
-      "representative": "atm"
-    },
-    {
-      "items": [
-        "oil"
-      ],
-      "representative": "oil"
-    },
-    {
-      "items": [
-        "knowing"
-      ],
-      "representative": "knowing"
-    },
-    {
-      "items": [
-        "perspective"
-      ],
-      "representative": "perspective"
-    },
-    {
-      "items": [
-        "black people"
-      ],
-      "representative": "black people"
-    },
-    {
-      "items": [
-        "consumer product"
-      ],
-      "representative": "consumer product"
-    },
-    {
-      "items": [
-        "name"
-      ],
-      "representative": "name"
-    },
-    {
-      "items": [
-        "made"
-      ],
-      "representative": "made"
-    },
-    {
-      "items": [
-        "notice"
-      ],
-      "representative": "notice"
-    },
-    {
-      "items": [
-        "setting"
-      ],
-      "representative": "setting"
-    },
-    {
-      "items": [
-        "days"
-      ],
-      "representative": "days"
-    },
-    {
-      "items": [
-        "phrase"
-      ],
-      "representative": "phrase"
-    },
-    {
-      "items": [
-        "accident"
-      ],
-      "representative": "accident"
-    },
-    {
-      "items": [
-        "female spiders"
-      ],
-      "representative": "female spiders"
-    },
-    {
-      "items": [
-        "sign"
-      ],
-      "representative": "sign"
-    },
-    {
-      "items": [
-        "bad language"
-      ],
-      "representative": "bad language"
-    },
-    {
-      "items": [
-        "violation"
-      ],
-      "representative": "violation"
-    },
-    {
-      "items": [
-        "admiration"
-      ],
-      "representative": "admiration"
-    },
-    {
-      "items": [
-        "pick"
-      ],
-      "representative": "pick"
-    },
-    {
-      "items": [
-        "solicitation"
-      ],
-      "representative": "solicitation"
-    },
-    {
-      "items": [
-        "technology"
-      ],
-      "representative": "technology"
-    },
-    {
-      "items": [
-        "streets"
-      ],
-      "representative": "streets"
-    },
-    {
-      "items": [
-        "cuss word"
-      ],
-      "representative": "cuss word"
-    },
-    {
-      "items": [
-        "hoping"
-      ],
-      "representative": "hoping"
-    },
-    {
-      "items": [
-        "uncomfortable"
-      ],
-      "representative": "uncomfortable"
-    },
-    {
-      "items": [
-        "ruin"
-      ],
-      "representative": "ruin"
-    },
-    {
-      "items": [
-        "harm"
-      ],
-      "representative": "harm"
-    },
-    {
-      "items": [
-        "part"
-      ],
-      "representative": "part"
-    },
-    {
-      "items": [
-        "peckerwood"
-      ],
-      "representative": "peckerwood"
-    },
-    {
-      "items": [
-        "tires"
-      ],
-      "representative": "tires"
-    },
-    {
-      "items": [
-        "forcing"
-      ],
-      "representative": "forcing"
-    },
-    {
-      "items": [
-        "filthy"
-      ],
-      "representative": "filthy"
-    },
-    {
-      "items": [
-        "quality"
-      ],
-      "representative": "quality"
-    },
-    {
-      "items": [
-        "loves"
-      ],
-      "representative": "loves"
-    },
-    {
-      "items": [
-        "onion router"
-      ],
-      "representative": "onion router"
-    },
-    {
-      "items": [
-        "corrupt"
-      ],
-      "representative": "corrupt"
-    },
-    {
-      "items": [
-        "poop"
-      ],
-      "representative": "poop"
-    },
-    {
-      "items": [
-        "willing"
-      ],
-      "representative": "willing"
-    },
-    {
-      "items": [
-        "quarts"
-      ],
-      "representative": "quarts"
-    },
-    {
-      "items": [
-        "bring"
-      ],
-      "representative": "bring"
-    },
-    {
-      "items": [
-        "oil dipstick"
-      ],
-      "representative": "oil dipstick"
-    },
-    {
-      "items": [
-        "neutrality"
-      ],
-      "representative": "neutrality"
-    },
-    {
-      "items": [
-        "population"
-      ],
-      "representative": "population"
-    },
-    {
-      "items": [
-        "husband"
-      ],
-      "representative": "husband"
-    },
-    {
-      "items": [
-        "forward"
-      ],
-      "representative": "forward"
-    },
-    {
-      "items": [
-        "spelled"
-      ],
-      "representative": "spelled"
-    },
-    {
-      "items": [
-        "skin"
-      ],
-      "representative": "skin"
-    },
-    {
-      "items": [
-        "wrong"
-      ],
-      "representative": "wrong"
-    },
-    {
-      "items": [
-        "check"
-      ],
-      "representative": "check"
-    },
-    {
-      "items": [
-        "information"
-      ],
-      "representative": "information"
-    },
-    {
-      "items": [
-        "slavery"
-      ],
-      "representative": "slavery"
-    },
-    {
-      "items": [
-        "inappropriate"
-      ],
-      "representative": "inappropriate"
-    },
-    {
-      "items": [
-        "reconsider"
-      ],
-      "representative": "reconsider"
+      "representative": "request"
     },
     {
       "items": [
@@ -1125,237 +270,21 @@
     },
     {
       "items": [
-        "kill"
+        "neutrality"
       ],
-      "representative": "kill"
+      "representative": "neutrality"
     },
     {
       "items": [
-        "accused"
+        "privacy"
       ],
-      "representative": "accused"
+      "representative": "privacy"
     },
     {
       "items": [
-        "gang"
+        "car engine"
       ],
-      "representative": "gang"
-    },
-    {
-      "items": [
-        "british public"
-      ],
-      "representative": "british public"
-    },
-    {
-      "items": [
-        "looking"
-      ],
-      "representative": "looking"
-    },
-    {
-      "items": [
-        "black lives matter movement"
-      ],
-      "representative": "black lives matter movement"
-    },
-    {
-      "items": [
-        "breaking"
-      ],
-      "representative": "breaking"
-    },
-    {
-      "items": [
-        "car thieves"
-      ],
-      "representative": "car thieves"
-    },
-    {
-      "items": [
-        "history"
-      ],
-      "representative": "history"
-    },
-    {
-      "items": [
-        "cousin"
-      ],
-      "representative": "cousin"
-    },
-    {
-      "items": [
-        "donald trump"
-      ],
-      "representative": "donald trump"
-    },
-    {
-      "items": [
-        "forever"
-      ],
-      "representative": "forever"
-    },
-    {
-      "items": [
-        "set"
-      ],
-      "representative": "set"
-    },
-    {
-      "items": [
-        "nosy neighbor"
-      ],
-      "representative": "nosy neighbor"
-    },
-    {
-      "items": [
-        "prostitution"
-      ],
-      "representative": "prostitution"
-    },
-    {
-      "items": [
-        "purpose"
-      ],
-      "representative": "purpose"
-    },
-    {
-      "items": [
-        "conflict"
-      ],
-      "representative": "conflict"
-    },
-    {
-      "items": [
-        "facts"
-      ],
-      "representative": "facts"
-    },
-    {
-      "items": [
-        "dallas cowboys"
-      ],
-      "representative": "dallas cowboys"
-    },
-    {
-      "items": [
-        "shit"
-      ],
-      "representative": "shit"
-    },
-    {
-      "items": [
-        "insulting"
-      ],
-      "representative": "insulting"
-    },
-    {
-      "items": [
-        "jewish name"
-      ],
-      "representative": "jewish name"
-    },
-    {
-      "items": [
-        "vandals"
-      ],
-      "representative": "vandals"
-    },
-    {
-      "items": [
-        "pranks"
-      ],
-      "representative": "pranks"
-    },
-    {
-      "items": [
-        "overrepresented"
-      ],
-      "representative": "overrepresented"
-    },
-    {
-      "items": [
-        "script"
-      ],
-      "representative": "script"
-    },
-    {
-      "items": [
-        "download"
-      ],
-      "representative": "download"
-    },
-    {
-      "items": [
-        "friend"
-      ],
-      "representative": "friend"
-    },
-    {
-      "items": [
-        "mind"
-      ],
-      "representative": "mind"
-    },
-    {
-      "items": [
-        "acknowledge"
-      ],
-      "representative": "acknowledge"
-    },
-    {
-      "items": [
-        "experience"
-      ],
-      "representative": "experience"
-    },
-    {
-      "items": [
-        "purchasing"
-      ],
-      "representative": "purchasing"
-    },
-    {
-      "items": [
-        "rob"
-      ],
-      "representative": "rob"
-    },
-    {
-      "items": [
-        "brothels"
-      ],
-      "representative": "brothels"
-    },
-    {
-      "items": [
-        "happy"
-      ],
-      "representative": "happy"
-    },
-    {
-      "items": [
-        "place"
-      ],
-      "representative": "place"
-    },
-    {
-      "items": [
-        "time"
-      ],
-      "representative": "time"
-    },
-    {
-      "items": [
-        "feces"
-      ],
-      "representative": "feces"
-    },
-    {
-      "items": [
-        "pew research center"
-      ],
-      "representative": "pew research center"
+      "representative": "car engine"
     },
     {
       "items": [
@@ -1365,117 +294,69 @@
     },
     {
       "items": [
-        "specialize"
+        "world"
       ],
-      "representative": "specialize"
+      "representative": "world"
     },
     {
       "items": [
-        "friends"
+        "getting"
       ],
-      "representative": "friends"
+      "representative": "getting"
     },
     {
       "items": [
-        "black live matters"
+        "casual conversations"
       ],
-      "representative": "black live matters"
+      "representative": "casual conversations"
     },
     {
       "items": [
-        "official"
+        "knowing"
       ],
-      "representative": "official"
+      "representative": "knowing"
     },
     {
       "items": [
-        "explain"
+        "overrepresented"
       ],
-      "representative": "explain"
+      "representative": "overrepresented"
     },
     {
       "items": [
-        "bullshit"
+        "immigration"
       ],
-      "representative": "bullshit"
+      "representative": "immigration"
     },
     {
       "items": [
-        "schools"
+        "stereotypes"
       ],
-      "representative": "schools"
+      "representative": "stereotypes"
     },
     {
       "items": [
-        "hurting"
+        "going"
       ],
-      "representative": "hurting"
+      "representative": "going"
     },
     {
       "items": [
-        "college"
+        "boyfriend"
       ],
-      "representative": "college"
+      "representative": "boyfriend"
     },
     {
       "items": [
-        "polite conversation"
+        "accused"
       ],
-      "representative": "polite conversation"
+      "representative": "accused"
     },
     {
       "items": [
-        "senator rand paul"
+        "solicitation"
       ],
-      "representative": "senator rand paul"
-    },
-    {
-      "items": [
-        "devour"
-      ],
-      "representative": "devour"
-    },
-    {
-      "items": [
-        "great"
-      ],
-      "representative": "great"
-    },
-    {
-      "items": [
-        "character"
-      ],
-      "representative": "character"
-    },
-    {
-      "items": [
-        "mexicans"
-      ],
-      "representative": "mexicans"
-    },
-    {
-      "items": [
-        "making"
-      ],
-      "representative": "making"
-    },
-    {
-      "items": [
-        "legal"
-      ],
-      "representative": "legal"
-    },
-    {
-      "items": [
-        "intercourse"
-      ],
-      "representative": "intercourse"
-    },
-    {
-      "items": [
-        "punish"
-      ],
-      "representative": "punish"
+      "representative": "solicitation"
     },
     {
       "items": [
@@ -1485,333 +366,51 @@
     },
     {
       "items": [
-        "adults"
+        "question"
       ],
-      "representative": "adults"
+      "representative": "question"
     },
     {
       "items": [
-        "nosy"
+        "take"
       ],
-      "representative": "nosy"
+      "representative": "take"
     },
     {
       "items": [
-        "prison gang"
+        "wreck"
       ],
-      "representative": "prison gang"
+      "representative": "wreck"
     },
     {
       "items": [
-        "reads"
+        "specialize"
       ],
-      "representative": "reads"
+      "representative": "specialize"
     },
     {
       "items": [
-        "house"
+        "hit"
       ],
-      "representative": "house"
+      "representative": "hit"
     },
     {
       "items": [
-        "move"
+        "days"
       ],
-      "representative": "move"
+      "representative": "days"
     },
     {
       "items": [
-        "love"
+        "20 years ago"
       ],
-      "representative": "love"
+      "representative": "20 years ago"
     },
     {
       "items": [
-        "sex workers"
+        "female spiders"
       ],
-      "representative": "sex workers"
-    },
-    {
-      "items": [
-        "slang"
-      ],
-      "representative": "slang"
-    },
-    {
-      "items": [
-        "serviced"
-      ],
-      "representative": "serviced"
-    },
-    {
-      "items": [
-        "scary"
-      ],
-      "representative": "scary"
-    },
-    {
-      "items": [
-        "term"
-      ],
-      "representative": "term"
-    },
-    {
-      "items": [
-        "interact"
-      ],
-      "representative": "interact"
-    },
-    {
-      "items": [
-        "need"
-      ],
-      "representative": "need"
-    },
-    {
-      "items": [
-        "racist"
-      ],
-      "representative": "racist"
-    },
-    {
-      "items": [
-        "hear"
-      ],
-      "representative": "hear"
-    },
-    {
-      "items": [
-        "kkk"
-      ],
-      "representative": "kkk"
-    },
-    {
-      "items": [
-        "general manager"
-      ],
-      "representative": "general manager"
-    },
-    {
-      "items": [
-        "child"
-      ],
-      "representative": "child"
-    },
-    {
-      "items": [
-        "think"
-      ],
-      "representative": "think"
-    },
-    {
-      "items": [
-        "noise"
-      ],
-      "representative": "noise"
-    },
-    {
-      "items": [
-        "player"
-      ],
-      "representative": "player"
-    },
-    {
-      "items": [
-        "experiencing"
-      ],
-      "representative": "experiencing"
-    },
-    {
-      "items": [
-        "children"
-      ],
-      "representative": "children"
-    },
-    {
-      "items": [
-        "future"
-      ],
-      "representative": "future"
-    },
-    {
-      "items": [
-        "meet"
-      ],
-      "representative": "meet"
-    },
-    {
-      "items": [
-        "crimes"
-      ],
-      "representative": "crimes"
-    },
-    {
-      "items": [
-        "begin"
-      ],
-      "representative": "begin"
-    },
-    {
-      "items": [
-        "enslave"
-      ],
-      "representative": "enslave"
-    },
-    {
-      "items": [
-        "establishments"
-      ],
-      "representative": "establishments"
-    },
-    {
-      "items": [
-        "giant's game"
-      ],
-      "representative": "giant's game"
-    },
-    {
-      "items": [
-        "interpret"
-      ],
-      "representative": "interpret"
-    },
-    {
-      "items": [
-        "bad words"
-      ],
-      "representative": "bad words"
-    },
-    {
-      "items": [
-        "bologna"
-      ],
-      "representative": "bologna"
-    },
-    {
-      "items": [
-        "human trafficking"
-      ],
-      "representative": "human trafficking"
-    },
-    {
-      "items": [
-        "bad"
-      ],
-      "representative": "bad"
-    },
-    {
-      "items": [
-        "drive"
-      ],
-      "representative": "drive"
-    },
-    {
-      "items": [
-        "threatening"
-      ],
-      "representative": "threatening"
-    },
-    {
-      "items": [
-        "stop"
-      ],
-      "representative": "stop"
-    },
-    {
-      "items": [
-        "involved"
-      ],
-      "representative": "involved"
-    },
-    {
-      "items": [
-        "twist"
-      ],
-      "representative": "twist"
-    },
-    {
-      "items": [
-        "greatest"
-      ],
-      "representative": "greatest"
-    },
-    {
-      "items": [
-        "history books"
-      ],
-      "representative": "history books"
-    },
-    {
-      "items": [
-        "record"
-      ],
-      "representative": "record"
-    },
-    {
-      "items": [
-        "writing"
-      ],
-      "representative": "writing"
-    },
-    {
-      "items": [
-        "option"
-      ],
-      "representative": "option"
-    },
-    {
-      "items": [
-        "like"
-      ],
-      "representative": "like"
-    },
-    {
-      "items": [
-        "topic"
-      ],
-      "representative": "topic"
-    },
-    {
-      "items": [
-        "catch"
-      ],
-      "representative": "catch"
-    },
-    {
-      "items": [
-        "mirror"
-      ],
-      "representative": "mirror"
-    },
-    {
-      "items": [
-        "world"
-      ],
-      "representative": "world"
-    },
-    {
-      "items": [
-        "understand"
-      ],
-      "representative": "understand"
-    },
-    {
-      "items": [
-        "hope"
-      ],
-      "representative": "hope"
-    },
-    {
-      "items": [
-        "opinion"
-      ],
-      "representative": "opinion"
-    },
-    {
-      "items": [
-        "buy"
-      ],
-      "representative": "buy"
+      "representative": "female spiders"
     },
     {
       "items": [
@@ -1821,15 +420,843 @@
     },
     {
       "items": [
-        "locate"
+        "stupid"
       ],
-      "representative": "locate"
+      "representative": "stupid"
+    },
+    {
+      "items": [
+        "skin"
+      ],
+      "representative": "skin"
+    },
+    {
+      "items": [
+        "websites"
+      ],
+      "representative": "websites"
     },
     {
       "items": [
         "coerce"
       ],
       "representative": "coerce"
+    },
+    {
+      "items": [
+        "jerry jones"
+      ],
+      "representative": "jerry jones"
+    },
+    {
+      "items": [
+        "recommend"
+      ],
+      "representative": "recommend"
+    },
+    {
+      "items": [
+        "setting"
+      ],
+      "representative": "setting"
+    },
+    {
+      "items": [
+        "kkk"
+      ],
+      "representative": "kkk"
+    },
+    {
+      "items": [
+        "meet"
+      ],
+      "representative": "meet"
+    },
+    {
+      "items": [
+        "fully"
+      ],
+      "representative": "fully"
+    },
+    {
+      "items": [
+        "vandals"
+      ],
+      "representative": "vandals"
+    },
+    {
+      "items": [
+        "drive"
+      ],
+      "representative": "drive"
+    },
+    {
+      "items": [
+        "rapper"
+      ],
+      "representative": "rapper"
+    },
+    {
+      "items": [
+        "involved"
+      ],
+      "representative": "involved"
+    },
+    {
+      "items": [
+        "part"
+      ],
+      "representative": "part"
+    },
+    {
+      "items": [
+        "hide"
+      ],
+      "representative": "hide"
+    },
+    {
+      "items": [
+        "purpose"
+      ],
+      "representative": "purpose"
+    },
+    {
+      "items": [
+        "morally"
+      ],
+      "representative": "morally"
+    },
+    {
+      "items": [
+        "devour"
+      ],
+      "representative": "devour"
+    },
+    {
+      "items": [
+        "technology"
+      ],
+      "representative": "technology"
+    },
+    {
+      "items": [
+        "admiration"
+      ],
+      "representative": "admiration"
+    },
+    {
+      "items": [
+        "does"
+      ],
+      "representative": "does"
+    },
+    {
+      "items": [
+        "protect"
+      ],
+      "representative": "protect"
+    },
+    {
+      "items": [
+        "pick"
+      ],
+      "representative": "pick"
+    },
+    {
+      "items": [
+        "population"
+      ],
+      "representative": "population"
+    },
+    {
+      "items": [
+        "china"
+      ],
+      "representative": "china"
+    },
+    {
+      "items": [
+        "home country"
+      ],
+      "representative": "home country"
+    },
+    {
+      "items": [
+        "official"
+      ],
+      "representative": "official"
+    },
+    {
+      "items": [
+        "resolve"
+      ],
+      "representative": "resolve"
+    },
+    {
+      "items": [
+        "land"
+      ],
+      "representative": "land"
+    },
+    {
+      "items": [
+        "apologize"
+      ],
+      "representative": "apologize"
+    },
+    {
+      "items": [
+        "descriptor"
+      ],
+      "representative": "descriptor"
+    },
+    {
+      "items": [
+        "record"
+      ],
+      "representative": "record"
+    },
+    {
+      "items": [
+        "being peed on"
+      ],
+      "representative": "being peed on"
+    },
+    {
+      "items": [
+        "boss"
+      ],
+      "representative": "boss"
+    },
+    {
+      "items": [
+        "someone"
+      ],
+      "representative": "someone"
+    },
+    {
+      "items": [
+        "muggers"
+      ],
+      "representative": "muggers"
+    },
+    {
+      "items": [
+        "donald trump"
+      ],
+      "representative": "donald trump"
+    },
+    {
+      "items": [
+        "ill"
+      ],
+      "representative": "ill"
+    },
+    {
+      "items": [
+        "novel"
+      ],
+      "representative": "novel"
+    },
+    {
+      "items": [
+        "wife"
+      ],
+      "representative": "wife"
+    },
+    {
+      "items": [
+        "character"
+      ],
+      "representative": "character"
+    },
+    {
+      "items": [
+        "big"
+      ],
+      "representative": "big"
+    },
+    {
+      "items": [
+        "hard drive"
+      ],
+      "representative": "hard drive"
+    },
+    {
+      "items": [
+        "good"
+      ],
+      "representative": "good"
+    },
+    {
+      "items": [
+        "giant's game"
+      ],
+      "representative": "giant's game"
+    },
+    {
+      "items": [
+        "opening act"
+      ],
+      "representative": "opening act"
+    },
+    {
+      "items": [
+        "sororities"
+      ],
+      "representative": "sororities"
+    },
+    {
+      "items": [
+        "british public"
+      ],
+      "representative": "british public"
+    },
+    {
+      "items": [
+        "happy"
+      ],
+      "representative": "happy"
+    },
+    {
+      "items": [
+        "adults"
+      ],
+      "representative": "adults"
+    },
+    {
+      "items": [
+        "people"
+      ],
+      "representative": "people"
+    },
+    {
+      "items": [
+        "water"
+      ],
+      "representative": "water"
+    },
+    {
+      "items": [
+        "python"
+      ],
+      "representative": "python"
+    },
+    {
+      "items": [
+        "felony"
+      ],
+      "representative": "felony"
+    },
+    {
+      "items": [
+        "marriage"
+      ],
+      "representative": "marriage"
+    },
+    {
+      "items": [
+        "1990"
+      ],
+      "representative": "1990"
+    },
+    {
+      "items": [
+        "job"
+      ],
+      "representative": "job"
+    },
+    {
+      "items": [
+        "frats"
+      ],
+      "representative": "frats"
+    },
+    {
+      "items": [
+        "razor"
+      ],
+      "representative": "razor"
+    },
+    {
+      "items": [
+        "unpopular opinion"
+      ],
+      "representative": "unpopular opinion"
+    },
+    {
+      "items": [
+        "dropping"
+      ],
+      "representative": "dropping"
+    },
+    {
+      "items": [
+        "gangbangers"
+      ],
+      "representative": "gangbangers"
+    },
+    {
+      "items": [
+        "twist"
+      ],
+      "representative": "twist"
+    },
+    {
+      "items": [
+        "black people"
+      ],
+      "representative": "black people"
+    },
+    {
+      "items": [
+        "interested"
+      ],
+      "representative": "interested"
+    },
+    {
+      "items": [
+        "poking"
+      ],
+      "representative": "poking"
+    },
+    {
+      "items": [
+        "team"
+      ],
+      "representative": "team"
+    },
+    {
+      "items": [
+        "safety cone"
+      ],
+      "representative": "safety cone"
+    },
+    {
+      "items": [
+        "hold"
+      ],
+      "representative": "hold"
+    },
+    {
+      "items": [
+        "kill"
+      ],
+      "representative": "kill"
+    },
+    {
+      "items": [
+        "uncomfortable"
+      ],
+      "representative": "uncomfortable"
+    },
+    {
+      "items": [
+        "commit"
+      ],
+      "representative": "commit"
+    },
+    {
+      "items": [
+        "future"
+      ],
+      "representative": "future"
+    },
+    {
+      "items": [
+        "made"
+      ],
+      "representative": "made"
+    },
+    {
+      "items": [
+        "uglier"
+      ],
+      "representative": "uglier"
+    },
+    {
+      "items": [
+        "streets"
+      ],
+      "representative": "streets"
+    },
+    {
+      "items": [
+        "next 20 years"
+      ],
+      "representative": "next 20 years"
+    },
+    {
+      "items": [
+        "prepared"
+      ],
+      "representative": "prepared"
+    },
+    {
+      "items": [
+        "slur"
+      ],
+      "representative": "slur"
+    },
+    {
+      "items": [
+        "list"
+      ],
+      "representative": "list"
+    },
+    {
+      "items": [
+        "store"
+      ],
+      "representative": "store"
+    },
+    {
+      "items": [
+        "come"
+      ],
+      "representative": "come"
+    },
+    {
+      "items": [
+        "favorite"
+      ],
+      "representative": "favorite"
+    },
+    {
+      "items": [
+        "night"
+      ],
+      "representative": "night"
+    },
+    {
+      "items": [
+        "making"
+      ],
+      "representative": "making"
+    },
+    {
+      "items": [
+        "husband"
+      ],
+      "representative": "husband"
+    },
+    {
+      "items": [
+        "forms"
+      ],
+      "representative": "forms"
+    },
+    {
+      "items": [
+        "arm"
+      ],
+      "representative": "arm"
+    },
+    {
+      "items": [
+        "confused"
+      ],
+      "representative": "confused"
+    },
+    {
+      "items": [
+        "college"
+      ],
+      "representative": "college"
+    },
+    {
+      "items": [
+        "information"
+      ],
+      "representative": "information"
+    },
+    {
+      "items": [
+        "oil"
+      ],
+      "representative": "oil"
+    },
+    {
+      "items": [
+        "forward"
+      ],
+      "representative": "forward"
+    },
+    {
+      "items": [
+        "intercourse"
+      ],
+      "representative": "intercourse"
+    },
+    {
+      "items": [
+        "reconsider"
+      ],
+      "representative": "reconsider"
+    },
+    {
+      "items": [
+        "violation"
+      ],
+      "representative": "violation"
+    },
+    {
+      "items": [
+        "move"
+      ],
+      "representative": "move"
+    },
+    {
+      "items": [
+        "tell"
+      ],
+      "representative": "tell"
+    },
+    {
+      "items": [
+        "planning"
+      ],
+      "representative": "planning"
+    },
+    {
+      "items": [
+        "legal"
+      ],
+      "representative": "legal"
+    },
+    {
+      "items": [
+        "candy"
+      ],
+      "representative": "candy"
+    },
+    {
+      "items": [
+        "bologna"
+      ],
+      "representative": "bologna"
+    },
+    {
+      "items": [
+        "sign"
+      ],
+      "representative": "sign"
+    },
+    {
+      "items": [
+        "finding out"
+      ],
+      "representative": "finding out"
+    },
+    {
+      "items": [
+        "email"
+      ],
+      "representative": "email"
+    },
+    {
+      "items": [
+        "rate"
+      ],
+      "representative": "rate"
+    },
+    {
+      "items": [
+        "breaking"
+      ],
+      "representative": "breaking"
+    },
+    {
+      "items": [
+        "differently"
+      ],
+      "representative": "differently"
+    },
+    {
+      "items": [
+        "sexually"
+      ],
+      "representative": "sexually"
+    },
+    {
+      "items": [
+        "windows"
+      ],
+      "representative": "windows"
+    },
+    {
+      "items": [
+        "bank teller"
+      ],
+      "representative": "bank teller"
+    },
+    {
+      "items": [
+        "download"
+      ],
+      "representative": "download"
+    },
+    {
+      "items": [
+        "research"
+      ],
+      "representative": "research"
+    },
+    {
+      "items": [
+        "difference"
+      ],
+      "representative": "difference"
+    },
+    {
+      "items": [
+        "fagin"
+      ],
+      "representative": "fagin"
+    },
+    {
+      "items": [
+        "script"
+      ],
+      "representative": "script"
+    },
+    {
+      "items": [
+        "male"
+      ],
+      "representative": "male"
+    },
+    {
+      "items": [
+        "problem"
+      ],
+      "representative": "problem"
+    },
+    {
+      "items": [
+        "think"
+      ],
+      "representative": "think"
+    },
+    {
+      "items": [
+        "rob"
+      ],
+      "representative": "rob"
+    },
+    {
+      "items": [
+        "looking"
+      ],
+      "representative": "looking"
+    },
+    {
+      "items": [
+        "tips"
+      ],
+      "representative": "tips"
+    },
+    {
+      "items": [
+        "funny"
+      ],
+      "representative": "funny"
+    },
+    {
+      "items": [
+        "car thieves"
+      ],
+      "representative": "car thieves"
+    },
+    {
+      "items": [
+        "reads"
+      ],
+      "representative": "reads"
+    },
+    {
+      "items": [
+        "trusted"
+      ],
+      "representative": "trusted"
+    },
+    {
+      "items": [
+        "full"
+      ],
+      "representative": "full"
+    },
+    {
+      "items": [
+        "oil dipstick"
+      ],
+      "representative": "oil dipstick"
+    },
+    {
+      "items": [
+        "feeling"
+      ],
+      "representative": "feeling"
+    },
+    {
+      "items": [
+        "burglars"
+      ],
+      "representative": "burglars"
+    },
+    {
+      "items": [
+        "hear"
+      ],
+      "representative": "hear"
+    },
+    {
+      "items": [
+        "flow"
+      ],
+      "representative": "flow"
+    },
+    {
+      "items": [
+        "onion router"
+      ],
+      "representative": "onion router"
+    },
+    {
+      "items": [
+        "dallas cowboys"
+      ],
+      "representative": "dallas cowboys"
+    },
+    {
+      "items": [
+        "easier"
+      ],
+      "representative": "easier"
+    },
+    {
+      "items": [
+        "pressure"
+      ],
+      "representative": "pressure"
+    },
+    {
+      "items": [
+        "willing"
+      ],
+      "representative": "willing"
+    },
+    {
+      "items": [
+        "corner"
+      ],
+      "representative": "corner"
+    },
+    {
+      "items": [
+        "mexicans"
+      ],
+      "representative": "mexicans"
     },
     {
       "items": [
@@ -1845,279 +1272,69 @@
     },
     {
       "items": [
-        "start"
+        "piece"
       ],
-      "representative": "start"
+      "representative": "piece"
     },
     {
       "items": [
-        "parked"
+        "noise"
       ],
-      "representative": "parked"
+      "representative": "noise"
     },
     {
       "items": [
-        "added"
+        "notice"
       ],
-      "representative": "added"
+      "representative": "notice"
     },
     {
       "items": [
-        "dirty joke"
+        "common"
       ],
-      "representative": "dirty joke"
+      "representative": "common"
     },
     {
       "items": [
-        "car engine"
+        "singer"
       ],
-      "representative": "car engine"
+      "representative": "singer"
     },
     {
       "items": [
-        "mean"
+        "crimes"
       ],
-      "representative": "mean"
+      "representative": "crimes"
     },
     {
       "items": [
-        "cook"
+        "acknowledge"
       ],
-      "representative": "cook"
+      "representative": "acknowledge"
     },
     {
       "items": [
-        "grow"
+        "handle"
       ],
-      "representative": "grow"
+      "representative": "handle"
     },
     {
       "items": [
-        "pool"
+        "harm"
       ],
-      "representative": "pool"
+      "representative": "harm"
     },
     {
       "items": [
-        "specific"
+        "never"
       ],
-      "representative": "specific"
+      "representative": "never"
     },
     {
       "items": [
-        "slur"
+        "greatest"
       ],
-      "representative": "slur"
-    },
-    {
-      "items": [
-        "gangbangers"
-      ],
-      "representative": "gangbangers"
-    },
-    {
-      "items": [
-        "mexico"
-      ],
-      "representative": "mexico"
-    },
-    {
-      "items": [
-        "next 20 years"
-      ],
-      "representative": "next 20 years"
-    },
-    {
-      "items": [
-        "less"
-      ],
-      "representative": "less"
-    },
-    {
-      "items": [
-        "offense"
-      ],
-      "representative": "offense"
-    },
-    {
-      "items": [
-        "hit"
-      ],
-      "representative": "hit"
-    },
-    {
-      "items": [
-        "sister"
-      ],
-      "representative": "sister"
-    },
-    {
-      "items": [
-        "rate"
-      ],
-      "representative": "rate"
-    },
-    {
-      "items": [
-        "black neighborhoods"
-      ],
-      "representative": "black neighborhoods"
-    },
-    {
-      "items": [
-        "hold"
-      ],
-      "representative": "hold"
-    },
-    {
-      "items": [
-        "2016"
-      ],
-      "representative": "2016"
-    },
-    {
-      "items": [
-        "jerry jones"
-      ],
-      "representative": "jerry jones"
-    },
-    {
-      "items": [
-        "lil nas x"
-      ],
-      "representative": "lil nas x"
-    },
-    {
-      "items": [
-        "store"
-      ],
-      "representative": "store"
-    },
-    {
-      "items": [
-        "land"
-      ],
-      "representative": "land"
-    },
-    {
-      "items": [
-        "wall"
-      ],
-      "representative": "wall"
-    },
-    {
-      "items": [
-        "empty buildings"
-      ],
-      "representative": "empty buildings"
-    },
-    {
-      "items": [
-        "antisemitic"
-      ],
-      "representative": "antisemitic"
-    },
-    {
-      "items": [
-        "good"
-      ],
-      "representative": "good"
-    },
-    {
-      "items": [
-        "request"
-      ],
-      "representative": "request"
-    },
-    {
-      "items": [
-        "thought experiment"
-      ],
-      "representative": "thought experiment"
-    },
-    {
-      "items": [
-        "hyatt hotel fortune"
-      ],
-      "representative": "hyatt hotel fortune"
-    },
-    {
-      "items": [
-        "immigration"
-      ],
-      "representative": "immigration"
-    },
-    {
-      "items": [
-        "prepared"
-      ],
-      "representative": "prepared"
-    },
-    {
-      "items": [
-        "hide"
-      ],
-      "representative": "hide"
-    },
-    {
-      "items": [
-        "locations"
-      ],
-      "representative": "locations"
-    },
-    {
-      "items": [
-        "tell"
-      ],
-      "representative": "tell"
-    },
-    {
-      "items": [
-        "copy"
-      ],
-      "representative": "copy"
-    },
-    {
-      "items": [
-        "help"
-      ],
-      "representative": "help"
-    },
-    {
-      "items": [
-        "unpopular opinion"
-      ],
-      "representative": "unpopular opinion"
-    },
-    {
-      "items": [
-        "flow"
-      ],
-      "representative": "flow"
-    },
-    {
-      "items": [
-        "gross"
-      ],
-      "representative": "gross"
-    },
-    {
-      "items": [
-        "black rapists"
-      ],
-      "representative": "black rapists"
-    },
-    {
-      "items": [
-        "python"
-      ],
-      "representative": "python"
-    },
-    {
-      "items": [
-        "scare"
-      ],
-      "representative": "scare"
+      "representative": "greatest"
     },
     {
       "items": [
@@ -2127,21 +1344,51 @@
     },
     {
       "items": [
-        "boss"
+        "help"
       ],
-      "representative": "boss"
+      "representative": "help"
     },
     {
       "items": [
-        "money"
+        "punish"
       ],
-      "representative": "money"
+      "representative": "punish"
     },
     {
       "items": [
-        "boyfriend"
+        "arouse"
       ],
-      "representative": "boyfriend"
+      "representative": "arouse"
+    },
+    {
+      "items": [
+        "wrong"
+      ],
+      "representative": "wrong"
+    },
+    {
+      "items": [
+        "car technician"
+      ],
+      "representative": "car technician"
+    },
+    {
+      "items": [
+        "challenging"
+      ],
+      "representative": "challenging"
+    },
+    {
+      "items": [
+        "dickens"
+      ],
+      "representative": "dickens"
+    },
+    {
+      "items": [
+        "need"
+      ],
+      "representative": "need"
     },
     {
       "items": [
@@ -2151,105 +1398,219 @@
     },
     {
       "items": [
-        "morally"
+        "nice"
       ],
-      "representative": "morally"
+      "representative": "nice"
     },
     {
       "items": [
-        "ill"
+        "oliver twist"
       ],
-      "representative": "ill"
+      "representative": "oliver twist"
     },
     {
       "items": [
-        "wreck"
+        "ego death"
       ],
-      "representative": "wreck"
+      "representative": "ego death"
     },
     {
       "items": [
-        "stereotypes"
+        "house"
       ],
-      "representative": "stereotypes"
+      "representative": "house"
     },
     {
       "items": [
-        "big"
+        "mind"
       ],
-      "representative": "big"
+      "representative": "mind"
     },
     {
       "items": [
-        "come"
+        "decision"
       ],
-      "representative": "come"
+      "representative": "decision"
     },
     {
       "items": [
-        "easier"
+        "hyatt hotel fortune"
       ],
-      "representative": "easier"
+      "representative": "hyatt hotel fortune"
     },
     {
       "items": [
-        "protect"
+        "pool"
       ],
-      "representative": "protect"
+      "representative": "pool"
     },
     {
       "items": [
-        "dropping"
+        "term"
       ],
-      "representative": "dropping"
+      "representative": "term"
     },
     {
       "items": [
-        "reasons"
+        "food"
       ],
-      "representative": "reasons"
+      "representative": "food"
     },
     {
       "items": [
-        "recommend"
+        "work"
       ],
-      "representative": "recommend"
+      "representative": "work"
     },
     {
       "items": [
-        "race"
+        "want"
       ],
-      "representative": "race"
+      "representative": "want"
     },
     {
       "items": [
-        "ways"
+        "consumer product"
       ],
-      "representative": "ways"
+      "representative": "consumer product"
     },
     {
       "items": [
-        "americans"
+        "decriminalized"
       ],
-      "representative": "americans"
+      "representative": "decriminalized"
     },
     {
       "items": [
-        "word"
+        "interact"
       ],
-      "representative": "word"
+      "representative": "interact"
     },
     {
       "items": [
-        "being peed on"
+        "polite conversation"
       ],
-      "representative": "being peed on"
+      "representative": "polite conversation"
     },
     {
       "items": [
-        "badly"
+        "cousin"
       ],
-      "representative": "badly"
+      "representative": "cousin"
+    },
+    {
+      "items": [
+        "casino"
+      ],
+      "representative": "casino"
+    },
+    {
+      "items": [
+        "scary"
+      ],
+      "representative": "scary"
+    },
+    {
+      "items": [
+        "learning"
+      ],
+      "representative": "learning"
+    },
+    {
+      "items": [
+        "history books"
+      ],
+      "representative": "history books"
+    },
+    {
+      "items": [
+        "beliefs"
+      ],
+      "representative": "beliefs"
+    },
+    {
+      "items": [
+        "trick"
+      ],
+      "representative": "trick"
+    },
+    {
+      "items": [
+        "explain"
+      ],
+      "representative": "explain"
+    },
+    {
+      "items": [
+        "leave"
+      ],
+      "representative": "leave"
+    },
+    {
+      "items": [
+        "cook"
+      ],
+      "representative": "cook"
+    },
+    {
+      "items": [
+        "individual"
+      ],
+      "representative": "individual"
+    },
+    {
+      "items": [
+        "ruin"
+      ],
+      "representative": "ruin"
+    },
+    {
+      "items": [
+        "foreign exchange student"
+      ],
+      "representative": "foreign exchange student"
+    },
+    {
+      "items": [
+        "money"
+      ],
+      "representative": "money"
+    },
+    {
+      "items": [
+        "tonight"
+      ],
+      "representative": "tonight"
+    },
+    {
+      "items": [
+        "okay"
+      ],
+      "representative": "okay"
+    },
+    {
+      "items": [
+        "insurance"
+      ],
+      "representative": "insurance"
+    },
+    {
+      "items": [
+        "nas x"
+      ],
+      "representative": "nas x"
+    },
+    {
+      "items": [
+        "glass"
+      ],
+      "representative": "glass"
+    },
+    {
+      "items": [
+        "2016"
+      ],
+      "representative": "2016"
     },
     {
       "items": [
@@ -2259,81 +1620,493 @@
     },
     {
       "items": [
-        "someone"
+        "atm"
       ],
-      "representative": "someone"
+      "representative": "atm"
     },
     {
       "items": [
-        "cars"
+        "born"
       ],
-      "representative": "cars"
+      "representative": "born"
     },
     {
       "items": [
-        "commit"
+        "stop"
       ],
-      "representative": "commit"
+      "representative": "stop"
     },
     {
       "items": [
-        "threaten"
+        "pranks"
       ],
-      "representative": "threaten"
+      "representative": "pranks"
     },
     {
       "items": [
-        "words"
+        "misdemeanor"
       ],
-      "representative": "words"
+      "representative": "misdemeanor"
     },
     {
       "items": [
-        "websites"
+        "disappearing"
       ],
-      "representative": "websites"
+      "representative": "disappearing"
     },
     {
       "items": [
-        "funny"
+        "antisemitic"
       ],
-      "representative": "funny"
+      "representative": "antisemitic"
+    },
+    {
+      "items": [
+        "corrupt"
+      ],
+      "representative": "corrupt"
+    },
+    {
+      "items": [
+        "activity"
+      ],
+      "representative": "activity"
+    },
+    {
+      "items": [
+        "set"
+      ],
+      "representative": "set"
+    },
+    {
+      "items": [
+        "start"
+      ],
+      "representative": "start"
+    },
+    {
+      "items": [
+        "pew research center"
+      ],
+      "representative": "pew research center"
+    },
+    {
+      "items": [
+        "facts"
+      ],
+      "representative": "facts"
+    },
+    {
+      "items": [
+        "bring"
+      ],
+      "representative": "bring"
+    },
+    {
+      "items": [
+        "added"
+      ],
+      "representative": "added"
+    },
+    {
+      "items": [
+        "copy"
+      ],
+      "representative": "copy"
+    },
+    {
+      "items": [
+        "locate"
+      ],
+      "representative": "locate"
+    },
+    {
+      "items": [
+        "limited"
+      ],
+      "representative": "limited"
+    },
+    {
+      "items": [
+        "jewish name"
+      ],
+      "representative": "jewish name"
+    },
+    {
+      "items": [
+        "parked"
+      ],
+      "representative": "parked"
+    },
+    {
+      "items": [
+        "begin"
+      ],
+      "representative": "begin"
+    },
+    {
+      "items": [
+        "quality"
+      ],
+      "representative": "quality"
+    },
+    {
+      "items": [
+        "schools"
+      ],
+      "representative": "schools"
+    },
+    {
+      "items": [
+        "owner"
+      ],
+      "representative": "owner"
+    },
+    {
+      "items": [
+        "place"
+      ],
+      "representative": "place"
+    },
+    {
+      "items": [
+        "conflict"
+      ],
+      "representative": "conflict"
+    },
+    {
+      "items": [
+        "bathtub"
+      ],
+      "representative": "bathtub"
+    },
+    {
+      "items": [
+        "option"
+      ],
+      "representative": "option"
+    },
+    {
+      "items": [
+        "accident"
+      ],
+      "representative": "accident"
+    },
+    {
+      "items": [
+        "great"
+      ],
+      "representative": "great"
+    },
+    {
+      "items": [
+        "establishments"
+      ],
+      "representative": "establishments"
+    },
+    {
+      "items": [
+        "player"
+      ],
+      "representative": "player"
+    },
+    {
+      "items": [
+        "controversial"
+      ],
+      "representative": "controversial"
+    },
+    {
+      "items": [
+        "popular"
+      ],
+      "representative": "popular"
+    },
+    {
+      "items": [
+        "brothels"
+      ],
+      "representative": "brothels"
+    },
+    {
+      "items": [
+        "name"
+      ],
+      "representative": "name"
+    },
+    {
+      "items": [
+        "tires"
+      ],
+      "representative": "tires"
+    },
+    {
+      "items": [
+        "human trafficking"
+      ],
+      "representative": "human trafficking"
+    },
+    {
+      "items": [
+        "check"
+      ],
+      "representative": "check"
+    },
+    {
+      "items": [
+        "thought experiment"
+      ],
+      "representative": "thought experiment"
+    },
+    {
+      "items": [
+        "empty buildings"
+      ],
+      "representative": "empty buildings"
+    },
+    {
+      "items": [
+        "like"
+      ],
+      "representative": "like"
+    },
+    {
+      "items": [
+        "j.b. pritzker"
+      ],
+      "representative": "j.b. pritzker"
+    },
+    {
+      "items": [
+        "locations"
+      ],
+      "representative": "locations"
     },
     {
       "items": [
         "come back"
       ],
       "representative": "come back"
+    },
+    {
+      "items": [
+        "lil nas x"
+      ],
+      "representative": "lil nas x"
+    },
+    {
+      "items": [
+        "forcing"
+      ],
+      "representative": "forcing"
+    },
+    {
+      "items": [
+        "sorry"
+      ],
+      "representative": "sorry"
+    },
+    {
+      "items": [
+        "knowledge"
+      ],
+      "representative": "knowledge"
+    },
+    {
+      "items": [
+        "quarts"
+      ],
+      "representative": "quarts"
+    },
+    {
+      "items": [
+        "specific"
+      ],
+      "representative": "specific"
+    },
+    {
+      "items": [
+        "black neighborhoods"
+      ],
+      "representative": "black neighborhoods"
+    },
+    {
+      "items": [
+        "nosy"
+      ],
+      "representative": "nosy"
+    },
+    {
+      "items": [
+        "avoid"
+      ],
+      "representative": "avoid"
+    },
+    {
+      "items": [
+        "serviced"
+      ],
+      "representative": "serviced"
+    },
+    {
+      "items": [
+        "less"
+      ],
+      "representative": "less"
+    },
+    {
+      "items": [
+        "general manager"
+      ],
+      "representative": "general manager"
+    },
+    {
+      "items": [
+        "scare"
+      ],
+      "representative": "scare"
+    },
+    {
+      "items": [
+        "history"
+      ],
+      "representative": "history"
+    },
+    {
+      "items": [
+        "put"
+      ],
+      "representative": "put"
+    },
+    {
+      "items": [
+        "mirror"
+      ],
+      "representative": "mirror"
+    },
+    {
+      "items": [
+        "opinion"
+      ],
+      "representative": "opinion"
+    },
+    {
+      "items": [
+        "catch"
+      ],
+      "representative": "catch"
+    },
+    {
+      "items": [
+        "nosy neighbor"
+      ],
+      "representative": "nosy neighbor"
+    },
+    {
+      "items": [
+        "heir"
+      ],
+      "representative": "heir"
+    },
+    {
+      "items": [
+        "black rapists"
+      ],
+      "representative": "black rapists"
+    },
+    {
+      "items": [
+        "business"
+      ],
+      "representative": "business"
+    },
+    {
+      "items": [
+        "writing"
+      ],
+      "representative": "writing"
+    },
+    {
+      "items": [
+        "accomplish"
+      ],
+      "representative": "accomplish"
+    },
+    {
+      "items": [
+        "topic"
+      ],
+      "representative": "topic"
+    },
+    {
+      "items": [
+        "spelled"
+      ],
+      "representative": "spelled"
+    },
+    {
+      "items": [
+        "race"
+      ],
+      "representative": "race"
+    },
+    {
+      "items": [
+        "forever"
+      ],
+      "representative": "forever"
+    },
+    {
+      "items": [
+        "grow"
+      ],
+      "representative": "grow"
+    },
+    {
+      "items": [
+        "wall"
+      ],
+      "representative": "wall"
+    },
+    {
+      "items": [
+        "senator rand paul"
+      ],
+      "representative": "senator rand paul"
+    },
+    {
+      "items": [
+        "poison"
+      ],
+      "representative": "poison"
     }
   ],
   "edge_clusters": [
     {
       "items": [
         "is",
-        "was",
-        "are",
-        "is not",
         "is a",
-        "is part of",
-        "is about",
-        "is slang for",
-        "is usually",
-        "is sent to",
-        "is offered for",
-        "is associated with",
-        "is opposed to",
-        "is less than",
-        "is not sure to be",
-        "is described as",
-        "is common for",
-        "is an example of",
         "is called",
-        "is used to",
-        "is illegal and immoral to",
-        "is illegal in",
-        "is less great than"
+        "is described as",
+        "is an example of",
+        "is slang for"
       ],
       "representative": "is"
+    },
+    {
+      "items": [
+        "will help",
+        "might help",
+        "to help"
+      ],
+      "representative": "to help"
+    },
+    {
+      "items": [
+        "like",
+        "like to"
+      ],
+      "representative": "like"
     },
     {
       "items": [
@@ -2344,363 +2117,45 @@
     },
     {
       "items": [
-        "to hear"
-      ],
-      "representative": "to hear"
-    },
-    {
-      "items": [
-        "to go out"
-      ],
-      "representative": "to go out"
-    },
-    {
-      "items": [
-        "can cook"
-      ],
-      "representative": "can cook"
-    },
-    {
-      "items": [
-        "to help"
-      ],
-      "representative": "to help"
-    },
-    {
-      "items": [
-        "unlikely to"
-      ],
-      "representative": "unlikely to"
-    },
-    {
-      "items": [
-        "interact in"
-      ],
-      "representative": "interact in"
-    },
-    {
-      "items": [
-        "did not interpret"
-      ],
-      "representative": "did not interpret"
-    },
-    {
-      "items": [
-        "about how to"
-      ],
-      "representative": "about how to"
-    },
-    {
-      "items": [
-        "like to"
-      ],
-      "representative": "like to"
-    },
-    {
-      "items": [
-        "have decriminalized"
-      ],
-      "representative": "have decriminalized"
-    },
-    {
-      "items": [
-        "would love to"
-      ],
-      "representative": "would love to"
-    },
-    {
-      "items": [
-        "have"
-      ],
-      "representative": "have"
-    },
-    {
-      "items": [
-        "influences"
-      ],
-      "representative": "influences"
-    },
-    {
-      "items": [
-        "looking for"
-      ],
-      "representative": "looking for"
-    },
-    {
-      "items": [
-        "for"
-      ],
-      "representative": "for"
-    },
-    {
-      "items": [
-        "hurting"
-      ],
-      "representative": "hurting"
-    },
-    {
-      "items": [
-        "of the water on"
-      ],
-      "representative": "of the water on"
-    },
-    {
-      "items": [
-        "because"
-      ],
-      "representative": "because"
-    },
-    {
-      "items": [
-        "with"
-      ],
-      "representative": "with"
-    },
-    {
-      "items": [
-        "should not be with"
-      ],
-      "representative": "should not be with"
-    },
-    {
-      "items": [
-        "need to"
-      ],
-      "representative": "need to"
-    },
-    {
-      "items": [
-        "to accomplish"
-      ],
-      "representative": "to accomplish"
-    },
-    {
-      "items": [
-        "should be in"
-      ],
-      "representative": "should be in"
-    },
-    {
-      "items": [
-        "can do"
-      ],
-      "representative": "can do"
-    },
-    {
-      "items": [
-        "includes"
-      ],
-      "representative": "includes"
-    },
-    {
-      "items": [
-        "are because of"
-      ],
-      "representative": "are because of"
-    },
-    {
-      "items": [
-        "do not"
-      ],
-      "representative": "do not"
-    },
-    {
-      "items": [
-        "where"
-      ],
-      "representative": "where"
-    },
-    {
-      "items": [
-        "in some other way"
-      ],
-      "representative": "in some other way"
-    },
-    {
-      "items": [
-        "affirm"
-      ],
-      "representative": "affirm"
-    },
-    {
-      "items": [
-        "reads"
-      ],
-      "representative": "reads"
-    },
-    {
-      "items": [
-        "not find in"
-      ],
-      "representative": "not find in"
-    },
-    {
-      "items": [
-        "can be done"
-      ],
-      "representative": "can be done"
-    },
-    {
-      "items": [
-        "will help"
-      ],
-      "representative": "will help"
-    },
-    {
-      "items": [
-        "make sure"
-      ],
-      "representative": "make sure"
-    },
-    {
-      "items": [
-        "was born in"
+        "was born in",
+        "were born in"
       ],
       "representative": "was born in"
     },
     {
       "items": [
-        "has added"
+        "describe",
+        "describes"
       ],
-      "representative": "has added"
+      "representative": "describe"
     },
     {
       "items": [
-        "are made to be driven on"
-      ],
-      "representative": "are made to be driven on"
-    },
-    {
-      "items": [
-        "used the term"
-      ],
-      "representative": "used the term"
-    },
-    {
-      "items": [
-        "are allowed to work in"
-      ],
-      "representative": "are allowed to work in"
-    },
-    {
-      "items": [
-        "to pick up or meet"
-      ],
-      "representative": "to pick up or meet"
-    },
-    {
-      "items": [
-        "should be"
+        "should be",
+        "should be in"
       ],
       "representative": "should be"
     },
     {
       "items": [
-        "are inappropriate for"
+        "in",
+        "are in"
+      ],
+      "representative": "in"
+    },
+    {
+      "items": [
+        "are inappropriate for",
+        "are not good to use in"
       ],
       "representative": "are inappropriate for"
     },
     {
       "items": [
-        "use"
+        "can do",
+        "can"
       ],
-      "representative": "use"
-    },
-    {
-      "items": [
-        "to"
-      ],
-      "representative": "to"
-    },
-    {
-      "items": [
-        "of immigration from"
-      ],
-      "representative": "of immigration from"
-    },
-    {
-      "items": [
-        "from"
-      ],
-      "representative": "from"
-    },
-    {
-      "items": [
-        "of the population"
-      ],
-      "representative": "of the population"
-    },
-    {
-      "items": [
-        "next to"
-      ],
-      "representative": "next to"
-    },
-    {
-      "items": [
-        "refers to"
-      ],
-      "representative": "refers to"
-    },
-    {
-      "items": [
-        "are not good to use in"
-      ],
-      "representative": "are not good to use in"
-    },
-    {
-      "items": [
-        "should not"
-      ],
-      "representative": "should not"
-    },
-    {
-      "items": [
-        "pushing against"
-      ],
-      "representative": "pushing against"
-    },
-    {
-      "items": [
-        "around"
-      ],
-      "representative": "around"
-    },
-    {
-      "items": [
-        "describes"
-      ],
-      "representative": "describes"
-    },
-    {
-      "items": [
-        "are in"
-      ],
-      "representative": "are in"
-    },
-    {
-      "items": [
-        "filled with"
-      ],
-      "representative": "filled with"
-    },
-    {
-      "items": [
-        "should write"
-      ],
-      "representative": "should write"
-    },
-    {
-      "items": [
-        "may be found guilty of"
-      ],
-      "representative": "may be found guilty of"
-    },
-    {
-      "items": [
-        "to protect"
-      ],
-      "representative": "to protect"
+      "representative": "can do"
     },
     {
       "items": [
@@ -2716,57 +2171,9 @@
     },
     {
       "items": [
-        "address"
+        "should not"
       ],
-      "representative": "address"
-    },
-    {
-      "items": [
-        "target"
-      ],
-      "representative": "target"
-    },
-    {
-      "items": [
-        "were born in"
-      ],
-      "representative": "were born in"
-    },
-    {
-      "items": [
-        "are overrepresented in"
-      ],
-      "representative": "are overrepresented in"
-    },
-    {
-      "items": [
-        "try to"
-      ],
-      "representative": "try to"
-    },
-    {
-      "items": [
-        "can"
-      ],
-      "representative": "can"
-    },
-    {
-      "items": [
-        "about"
-      ],
-      "representative": "about"
-    },
-    {
-      "items": [
-        "of"
-      ],
-      "representative": "of"
-    },
-    {
-      "items": [
-        "like"
-      ],
-      "representative": "like"
+      "representative": "should not"
     },
     {
       "items": [
@@ -2776,45 +2183,21 @@
     },
     {
       "items": [
-        "to do"
+        "to hear"
       ],
-      "representative": "to do"
+      "representative": "to hear"
     },
     {
       "items": [
-        "specialize in"
+        "is common for"
       ],
-      "representative": "specialize in"
+      "representative": "is common for"
     },
     {
       "items": [
-        "should"
+        "could be"
       ],
-      "representative": "should"
-    },
-    {
-      "items": [
-        "in"
-      ],
-      "representative": "in"
-    },
-    {
-      "items": [
-        "describe"
-      ],
-      "representative": "describe"
-    },
-    {
-      "items": [
-        "according to"
-      ],
-      "representative": "according to"
-    },
-    {
-      "items": [
-        "why not happy with"
-      ],
-      "representative": "why not happy with"
+      "representative": "could be"
     },
     {
       "items": [
@@ -2824,21 +2207,111 @@
     },
     {
       "items": [
-        "contains"
+        "have"
       ],
-      "representative": "contains"
+      "representative": "have"
     },
     {
       "items": [
-        "might help"
+        "would love to"
       ],
-      "representative": "might help"
+      "representative": "would love to"
     },
     {
       "items": [
-        "of mexican immigration"
+        "can cook"
       ],
-      "representative": "of mexican immigration"
+      "representative": "can cook"
+    },
+    {
+      "items": [
+        "of the population"
+      ],
+      "representative": "of the population"
+    },
+    {
+      "items": [
+        "are made to be driven on"
+      ],
+      "representative": "are made to be driven on"
+    },
+    {
+      "items": [
+        "is offered for"
+      ],
+      "representative": "is offered for"
+    },
+    {
+      "items": [
+        "is less than"
+      ],
+      "representative": "is less than"
+    },
+    {
+      "items": [
+        "next to"
+      ],
+      "representative": "next to"
+    },
+    {
+      "items": [
+        "in some other way"
+      ],
+      "representative": "in some other way"
+    },
+    {
+      "items": [
+        "pushing against"
+      ],
+      "representative": "pushing against"
+    },
+    {
+      "items": [
+        "have decriminalized"
+      ],
+      "representative": "have decriminalized"
+    },
+    {
+      "items": [
+        "of the water on"
+      ],
+      "representative": "of the water on"
+    },
+    {
+      "items": [
+        "unlikely to"
+      ],
+      "representative": "unlikely to"
+    },
+    {
+      "items": [
+        "should not be with"
+      ],
+      "representative": "should not be with"
+    },
+    {
+      "items": [
+        "from"
+      ],
+      "representative": "from"
+    },
+    {
+      "items": [
+        "for"
+      ],
+      "representative": "for"
+    },
+    {
+      "items": [
+        "is illegal and immoral to"
+      ],
+      "representative": "is illegal and immoral to"
+    },
+    {
+      "items": [
+        "may be found guilty of"
+      ],
+      "representative": "may be found guilty of"
     },
     {
       "items": [
@@ -2848,9 +2321,351 @@
     },
     {
       "items": [
-        "could be"
+        "has added"
       ],
-      "representative": "could be"
+      "representative": "has added"
+    },
+    {
+      "items": [
+        "about how to"
+      ],
+      "representative": "about how to"
+    },
+    {
+      "items": [
+        "is not sure to be"
+      ],
+      "representative": "is not sure to be"
+    },
+    {
+      "items": [
+        "is associated with"
+      ],
+      "representative": "is associated with"
+    },
+    {
+      "items": [
+        "try to"
+      ],
+      "representative": "try to"
+    },
+    {
+      "items": [
+        "looking for"
+      ],
+      "representative": "looking for"
+    },
+    {
+      "items": [
+        "to protect"
+      ],
+      "representative": "to protect"
+    },
+    {
+      "items": [
+        "make sure"
+      ],
+      "representative": "make sure"
+    },
+    {
+      "items": [
+        "use"
+      ],
+      "representative": "use"
+    },
+    {
+      "items": [
+        "of immigration from"
+      ],
+      "representative": "of immigration from"
+    },
+    {
+      "items": [
+        "is not"
+      ],
+      "representative": "is not"
+    },
+    {
+      "items": [
+        "is illegal in"
+      ],
+      "representative": "is illegal in"
+    },
+    {
+      "items": [
+        "is opposed to"
+      ],
+      "representative": "is opposed to"
+    },
+    {
+      "items": [
+        "to go out"
+      ],
+      "representative": "to go out"
+    },
+    {
+      "items": [
+        "reads"
+      ],
+      "representative": "reads"
+    },
+    {
+      "items": [
+        "of"
+      ],
+      "representative": "of"
+    },
+    {
+      "items": [
+        "is less great than"
+      ],
+      "representative": "is less great than"
+    },
+    {
+      "items": [
+        "are overrepresented in"
+      ],
+      "representative": "are overrepresented in"
+    },
+    {
+      "items": [
+        "not find in"
+      ],
+      "representative": "not find in"
+    },
+    {
+      "items": [
+        "interact in"
+      ],
+      "representative": "interact in"
+    },
+    {
+      "items": [
+        "do not"
+      ],
+      "representative": "do not"
+    },
+    {
+      "items": [
+        "influences"
+      ],
+      "representative": "influences"
+    },
+    {
+      "items": [
+        "is part of"
+      ],
+      "representative": "is part of"
+    },
+    {
+      "items": [
+        "should write"
+      ],
+      "representative": "should write"
+    },
+    {
+      "items": [
+        "was"
+      ],
+      "representative": "was"
+    },
+    {
+      "items": [
+        "filled with"
+      ],
+      "representative": "filled with"
+    },
+    {
+      "items": [
+        "to"
+      ],
+      "representative": "to"
+    },
+    {
+      "items": [
+        "hurting"
+      ],
+      "representative": "hurting"
+    },
+    {
+      "items": [
+        "is used to"
+      ],
+      "representative": "is used to"
+    },
+    {
+      "items": [
+        "target"
+      ],
+      "representative": "target"
+    },
+    {
+      "items": [
+        "should"
+      ],
+      "representative": "should"
+    },
+    {
+      "items": [
+        "need to"
+      ],
+      "representative": "need to"
+    },
+    {
+      "items": [
+        "about"
+      ],
+      "representative": "about"
+    },
+    {
+      "items": [
+        "contains"
+      ],
+      "representative": "contains"
+    },
+    {
+      "items": [
+        "around"
+      ],
+      "representative": "around"
+    },
+    {
+      "items": [
+        "is about"
+      ],
+      "representative": "is about"
+    },
+    {
+      "items": [
+        "according to"
+      ],
+      "representative": "according to"
+    },
+    {
+      "items": [
+        "because"
+      ],
+      "representative": "because"
+    },
+    {
+      "items": [
+        "used the term"
+      ],
+      "representative": "used the term"
+    },
+    {
+      "items": [
+        "to accomplish"
+      ],
+      "representative": "to accomplish"
+    },
+    {
+      "items": [
+        "address"
+      ],
+      "representative": "address"
+    },
+    {
+      "items": [
+        "where"
+      ],
+      "representative": "where"
+    },
+    {
+      "items": [
+        "refers to"
+      ],
+      "representative": "refers to"
+    },
+    {
+      "items": [
+        "can be done"
+      ],
+      "representative": "can be done"
+    },
+    {
+      "items": [
+        "to pick up or meet"
+      ],
+      "representative": "to pick up or meet"
+    },
+    {
+      "items": [
+        "are because of"
+      ],
+      "representative": "are because of"
+    },
+    {
+      "items": [
+        "why not happy with"
+      ],
+      "representative": "why not happy with"
+    },
+    {
+      "items": [
+        "is usually"
+      ],
+      "representative": "is usually"
+    },
+    {
+      "items": [
+        "affirm"
+      ],
+      "representative": "affirm"
+    },
+    {
+      "items": [
+        "includes"
+      ],
+      "representative": "includes"
+    },
+    {
+      "items": [
+        "are allowed to work in"
+      ],
+      "representative": "are allowed to work in"
+    },
+    {
+      "items": [
+        "are"
+      ],
+      "representative": "are"
+    },
+    {
+      "items": [
+        "of mexican immigration"
+      ],
+      "representative": "of mexican immigration"
+    },
+    {
+      "items": [
+        "to do"
+      ],
+      "representative": "to do"
+    },
+    {
+      "items": [
+        "with"
+      ],
+      "representative": "with"
+    },
+    {
+      "items": [
+        "is sent to"
+      ],
+      "representative": "is sent to"
+    },
+    {
+      "items": [
+        "did not interpret"
+      ],
+      "representative": "did not interpret"
+    },
+    {
+      "items": [
+        "specialize in"
+      ],
+      "representative": "specialize in"
     }
   ]
 }
