@@ -9,7 +9,7 @@ This directory contains scripts for extracting knowledge graphs from text data.
 ## Run
 
 You'll need to set the `OPENAI_API_KEY` environment variable to your OpenAI API key before running the scripts.
-Also, be sure to change the file path variables in the scripts to make sure they point to the correct input and output paths.
+Also, be sure to change the file path variables in each script to make sure they point to the correct input and output paths. (sorry for the inconvenience)
 
 Run in this order:
 - `python index.py`
