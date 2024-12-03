@@ -30,9 +30,9 @@ client = OpenAI()
 MODEL = "gpt-4o-2024-08-06"
 
 # Define global variables for paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-SOURCE_DATA_DIR = os.path.join(BASE_DIR, 'source_data', 'exp4')
-KGS_DIR = os.path.join(BASE_DIR, 'kgs', 'exp4')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SOURCE_DATA_DIR = os.path.join(BASE_DIR, 'source_data')
+KGS_DIR = os.path.join(BASE_DIR, 'kgs')
 
 # Check if the API key is set in the environment variables
 api_key = os.environ.get('OPENAI_API_KEY')
@@ -261,11 +261,11 @@ def process_sample(user_query: str, assistant_response: str, shared_query_entiti
         )
 
 if __name__ == "__main__":    
+    print(f"SOURCE_DATA_DIR: {SOURCE_DATA_DIR}")
+
     # List of files to process
     files_to_process = [
-        "harmless_base_rejected_test_10.jsonl"
-        # "harmless_base_rejected_test_50.jsonl",
-        # "harmless_base_chosen_test_50.jsonl"
+        "harmless_base_rejected_test_50.jsonl"
     ]
 
     # Extract query entities from first file

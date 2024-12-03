@@ -1,3 +1,11 @@
+"""
+This script visualizes knowledge graphs from JSON data.
+It loads entity and relation data, creates a directed graph,
+and generates a visual representation of the knowledge graph.
+The script uses NetworkX for graph creation and Matplotlib for visualization.
+Graphs are saved as PNG files in the './kgs' directory.
+"""
+
 import json
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -38,7 +46,7 @@ def visualize_knowledge_graph(G: nx.DiGraph, title: str) -> None:
     plt.xlim(min(x_values) - x_margin, max(x_values) + x_margin)
     plt.ylim(min(y_values) - y_margin, max(y_values) + y_margin)
     
-    plt.savefig(f"./kgs/exp2/{title.replace(' ', '_')}.png", dpi=300, bbox_inches='tight')
+    plt.savefig(f"./kgs/{title.replace(' ', '_')}.png", dpi=300, bbox_inches='tight')
     plt.close()
 
 def process_json_data(data: dict, filename: str) -> None:
@@ -53,7 +61,7 @@ def main():
     ]
     
     for filename in json_files:
-        json_data = load_json_data(f'./kgs/exp2/{filename}')
+        json_data = load_json_data(f'./kgs/{filename}')
         try:
             process_json_data(json_data, filename)
             print(f"Successfully processed {filename}")
