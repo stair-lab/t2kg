@@ -1,0 +1,671 @@
+{
+  "entity_clusters": [
+    {
+      "items": [
+        "acetaminophen",
+        "paracetamol",
+        "apap",
+        "n-acetyl-p-aminophenol",
+        "panadol",
+        "c8h9no2",
+        "tylenol"
+      ],
+      "representative": "paracetamol"
+    },
+    {
+      "items": [
+        "ibuprofen",
+        "advil",
+        "brufen",
+        "motrin"
+      ],
+      "representative": "ibuprofen"
+    },
+    {
+      "items": [
+        "gastrointestinal bleeding",
+        "gastrointestinal irritation",
+        "stomach upset",
+        "heartburn"
+      ],
+      "representative": "gastrointestinal bleeding"
+    },
+    {
+      "items": [
+        "cox enzymes",
+        "cyclooxygenase",
+        "cox-1",
+        "cox-2"
+      ],
+      "representative": "cox enzymes"
+    },
+    {
+      "items": [
+        "hypersensitivity",
+        "allergic reactions"
+      ],
+      "representative": "hypersensitivity"
+    },
+    {
+      "items": [
+        "nsaids",
+        "nonsteroidal anti-inflammatory drug"
+      ],
+      "representative": "nsaids"
+    },
+    {
+      "items": [
+        "liver damage",
+        "liver toxicity"
+      ],
+      "representative": "liver damage"
+    },
+    {
+      "items": [
+        "kidney damage",
+        "kidney issues"
+      ],
+      "representative": "kidney damage"
+    },
+    {
+      "items": [
+        "peptic ulcers",
+        "ulcers"
+      ],
+      "representative": "peptic ulcers"
+    },
+    {
+      "items": [
+        "analgesic-antipyretic agents"
+      ],
+      "representative": "analgesic-antipyretic agents"
+    },
+    {
+      "items": [
+        "formula"
+      ],
+      "representative": "formula"
+    },
+    {
+      "items": [
+        "synthesis"
+      ],
+      "representative": "synthesis"
+    },
+    {
+      "items": [
+        "arthritis"
+      ],
+      "representative": "arthritis"
+    },
+    {
+      "items": [
+        "rash"
+      ],
+      "representative": "rash"
+    },
+    {
+      "items": [
+        "medication"
+      ],
+      "representative": "medication"
+    },
+    {
+      "items": [
+        "cardiovascular events"
+      ],
+      "representative": "cardiovascular events"
+    },
+    {
+      "items": [
+        "anticoagulants"
+      ],
+      "representative": "anticoagulants"
+    },
+    {
+      "items": [
+        "combination medications"
+      ],
+      "representative": "combination medications"
+    },
+    {
+      "items": [
+        "aspirin"
+      ],
+      "representative": "aspirin"
+    },
+    {
+      "items": [
+        "mild to moderate injuries"
+      ],
+      "representative": "mild to moderate injuries"
+    },
+    {
+      "items": [
+        "toothaches"
+      ],
+      "representative": "toothaches"
+    },
+    {
+      "items": [
+        "overdose"
+      ],
+      "representative": "overdose"
+    },
+    {
+      "items": [
+        "ketoprofen"
+      ],
+      "representative": "ketoprofen"
+    },
+    {
+      "items": [
+        "menstrual cramps"
+      ],
+      "representative": "menstrual cramps"
+    },
+    {
+      "items": [
+        "stroke"
+      ],
+      "representative": "stroke"
+    },
+    {
+      "items": [
+        "pharmacological effects"
+      ],
+      "representative": "pharmacological effects"
+    },
+    {
+      "items": [
+        "warfarin"
+      ],
+      "representative": "warfarin"
+    },
+    {
+      "items": [
+        "inflammation"
+      ],
+      "representative": "inflammation"
+    },
+    {
+      "items": [
+        "aleve"
+      ],
+      "representative": "aleve"
+    },
+    {
+      "items": [
+        "diuretics"
+      ],
+      "representative": "diuretics"
+    },
+    {
+      "items": [
+        "half-life"
+      ],
+      "representative": "half-life"
+    },
+    {
+      "items": [
+        "common cold"
+      ],
+      "representative": "common cold"
+    },
+    {
+      "items": [
+        "strains"
+      ],
+      "representative": "strains"
+    },
+    {
+      "items": [
+        "caffeine"
+      ],
+      "representative": "caffeine"
+    },
+    {
+      "items": [
+        "contraindication"
+      ],
+      "representative": "contraindication"
+    },
+    {
+      "items": [
+        "ace inhibitors"
+      ],
+      "representative": "ace inhibitors"
+    },
+    {
+      "items": [
+        "alcohol"
+      ],
+      "representative": "alcohol"
+    },
+    {
+      "items": [
+        "rheumatoid arthritis"
+      ],
+      "representative": "rheumatoid arthritis"
+    },
+    {
+      "items": [
+        "backaches"
+      ],
+      "representative": "backaches"
+    },
+    {
+      "items": [
+        "pregnant women"
+      ],
+      "representative": "pregnant women"
+    },
+    {
+      "items": [
+        "infections"
+      ],
+      "representative": "infections"
+    },
+    {
+      "items": [
+        "liver disease"
+      ],
+      "representative": "liver disease"
+    },
+    {
+      "items": [
+        "phenacetin"
+      ],
+      "representative": "phenacetin"
+    },
+    {
+      "items": [
+        "organic acids"
+      ],
+      "representative": "organic acids"
+    },
+    {
+      "items": [
+        "carboxylic acid group"
+      ],
+      "representative": "carboxylic acid group"
+    },
+    {
+      "items": [
+        "prostaglandins"
+      ],
+      "representative": "prostaglandins"
+    },
+    {
+      "items": [
+        "pain relief"
+      ],
+      "representative": "pain relief"
+    },
+    {
+      "items": [
+        "chemical composition"
+      ],
+      "representative": "chemical composition"
+    },
+    {
+      "items": [
+        "fever"
+      ],
+      "representative": "fever"
+    },
+    {
+      "items": [
+        "dosing guidelines"
+      ],
+      "representative": "dosing guidelines"
+    },
+    {
+      "items": [
+        "headaches"
+      ],
+      "representative": "headaches"
+    },
+    {
+      "items": [
+        "warnings"
+      ],
+      "representative": "warnings"
+    },
+    {
+      "items": [
+        "bleeding"
+      ],
+      "representative": "bleeding"
+    },
+    {
+      "items": [
+        "osteoarthritis"
+      ],
+      "representative": "osteoarthritis"
+    },
+    {
+      "items": [
+        "hepatotoxic drugs"
+      ],
+      "representative": "hepatotoxic drugs"
+    },
+    {
+      "items": [
+        "codeine"
+      ],
+      "representative": "codeine"
+    },
+    {
+      "items": [
+        "racemic mixture"
+      ],
+      "representative": "racemic mixture"
+    },
+    {
+      "items": [
+        "enantiomers"
+      ],
+      "representative": "enantiomers"
+    },
+    {
+      "items": [
+        "diclofenac"
+      ],
+      "representative": "diclofenac"
+    },
+    {
+      "items": [
+        "c13h18o2"
+      ],
+      "representative": "c13h18o2"
+    },
+    {
+      "items": [
+        "sprains"
+      ],
+      "representative": "sprains"
+    },
+    {
+      "items": [
+        "central nervous system"
+      ],
+      "representative": "central nervous system"
+    },
+    {
+      "items": [
+        "nausea"
+      ],
+      "representative": "nausea"
+    },
+    {
+      "items": [
+        "naproxen"
+      ],
+      "representative": "naproxen"
+    },
+    {
+      "items": [
+        "fever reduction"
+      ],
+      "representative": "fever reduction"
+    },
+    {
+      "items": [
+        "prescription labeling"
+      ],
+      "representative": "prescription labeling"
+    },
+    {
+      "items": [
+        "heart attack"
+      ],
+      "representative": "heart attack"
+    },
+    {
+      "items": [
+        "para-aminophenol derivative"
+      ],
+      "representative": "para-aminophenol derivative"
+    },
+    {
+      "items": [
+        "propionic acid derivative"
+      ],
+      "representative": "propionic acid derivative"
+    },
+    {
+      "items": [
+        "side effects"
+      ],
+      "representative": "side effects"
+    },
+    {
+      "items": [
+        "pain conditions"
+      ],
+      "representative": "pain conditions"
+    },
+    {
+      "items": [
+        "chronic alcohol use"
+      ],
+      "representative": "chronic alcohol use"
+    },
+    {
+      "items": [
+        "muscle aches"
+      ],
+      "representative": "muscle aches"
+    },
+    {
+      "items": [
+        "flu"
+      ],
+      "representative": "flu"
+    }
+  ],
+  "edge_clusters": [
+    {
+      "items": [
+        "is also known as",
+        "is known as"
+      ],
+      "representative": "is known as"
+    },
+    {
+      "items": [
+        "has",
+        "have"
+      ],
+      "representative": "have"
+    },
+    {
+      "items": [
+        "causes",
+        "can cause"
+      ],
+      "representative": "causes"
+    },
+    {
+      "items": [
+        "interacts poorly with"
+      ],
+      "representative": "interacts poorly with"
+    },
+    {
+      "items": [
+        "has risk of"
+      ],
+      "representative": "has risk of"
+    },
+    {
+      "items": [
+        "inhibits"
+      ],
+      "representative": "inhibits"
+    },
+    {
+      "items": [
+        "has short"
+      ],
+      "representative": "has short"
+    },
+    {
+      "items": [
+        "causes less"
+      ],
+      "representative": "causes less"
+    },
+    {
+      "items": [
+        "is for"
+      ],
+      "representative": "is for"
+    },
+    {
+      "items": [
+        "is combined with"
+      ],
+      "representative": "is combined with"
+    },
+    {
+      "items": [
+        "should be avoided in"
+      ],
+      "representative": "should be avoided in"
+    },
+    {
+      "items": [
+        "is a"
+      ],
+      "representative": "is a"
+    },
+    {
+      "items": [
+        "should not be combined with"
+      ],
+      "representative": "should not be combined with"
+    },
+    {
+      "items": [
+        "has formula"
+      ],
+      "representative": "has formula"
+    },
+    {
+      "items": [
+        "is used for"
+      ],
+      "representative": "is used for"
+    },
+    {
+      "items": [
+        "is used in"
+      ],
+      "representative": "is used in"
+    },
+    {
+      "items": [
+        "manages"
+      ],
+      "representative": "manages"
+    },
+    {
+      "items": [
+        "is safer for"
+      ],
+      "representative": "is safer for"
+    },
+    {
+      "items": [
+        "is classified as"
+      ],
+      "representative": "is classified as"
+    },
+    {
+      "items": [
+        "is caused by"
+      ],
+      "representative": "is caused by"
+    },
+    {
+      "items": [
+        "interacts with"
+      ],
+      "representative": "interacts with"
+    },
+    {
+      "items": [
+        "is in"
+      ],
+      "representative": "is in"
+    },
+    {
+      "items": [
+        "lacks"
+      ],
+      "representative": "lacks"
+    },
+    {
+      "items": [
+        "requires"
+      ],
+      "representative": "requires"
+    },
+    {
+      "items": [
+        "is short for"
+      ],
+      "representative": "is short for"
+    },
+    {
+      "items": [
+        "alleviates"
+      ],
+      "representative": "alleviates"
+    },
+    {
+      "items": [
+        "is similar to"
+      ],
+      "representative": "is similar to"
+    },
+    {
+      "items": [
+        "contains"
+      ],
+      "representative": "contains"
+    },
+    {
+      "items": [
+        "does not possess"
+      ],
+      "representative": "does not possess"
+    },
+    {
+      "items": [
+        "increases risk of"
+      ],
+      "representative": "increases risk of"
+    },
+    {
+      "items": [
+        "is a derivative of"
+      ],
+      "representative": "is a derivative of"
+    },
+    {
+      "items": [
+        "reduces"
+      ],
+      "representative": "reduces"
+    },
+    {
+      "items": [
+        "include"
+      ],
+      "representative": "include"
+    }
+  ]
+}
