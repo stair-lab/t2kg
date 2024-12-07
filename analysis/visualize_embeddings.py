@@ -14,8 +14,9 @@ FIGURE_SIZE = (15, 10)
 DPI = 400
 
 def plot_embeddings_for_graph(saved_graph_info_dir, plot_dir):
-    entity_to_id_map, entity_embeddings = graph_utils.load_plotting_data(saved_graph_info_dir)
-
+    entity_embeddings, _, graph_data = graph_utils.load_saved_graph_data(saved_graph_info_dir)
+    entity_to_id_map = graph_data[analysis_constants.ENTITY_MAPPING_KEY]
+    
     scaler = StandardScaler()
     scaled_embeddings = scaler.fit_transform(entity_embeddings)
 

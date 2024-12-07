@@ -31,6 +31,10 @@ else:
 EMBEDDINGS_BASE_PATH = os.path.join(DATA_BASE_PATH, "embeddings")
 EMBEDDING_PLOTS_BASE_PATH = os.path.join(DATA_BASE_PATH, "embedding_plots")
 
+IMPUTATION_BASE_PATH = os.path.join(DATA_BASE_PATH, "imputation")
+ORIGINAL_TRIPLES_KEY = "original_triples"
+PREDICTED_TRIPLES_KEY = "predicted_triples"
+
 TRANSR = "TransR"
 
 EMBEDDING_MODELS = [TRANSR]
