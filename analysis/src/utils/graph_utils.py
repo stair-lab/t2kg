@@ -1,47 +1,76 @@
 import json
 import torch
 from torch_geometric.data import Data
+import analysis_constants
+import os
 
+def load_kg_from_json(json_file_path):
+    try:
+        with open(json_file_path, 'r') as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"Error {e} in reading JSON file from {json_file_path}.")
+        return None
+    return data
 
 def load_kg_data(json_file_path):
     # Load the JSON file
-    with open(json_file_path, 'r') as f:
-        data = json.load(f)
+    try:
+        with open(json_file_path, 'r') as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"Error {e} in reading JSON file: {json_file_path}.")
+        return None
+    return data
 
-    entities = data["entities"]
-    relations = data["relations"]
+def prepare_knowledge_graph(knowledge_graph):
+    entities = list(set([ent for ent in     ([r[0] for r in knowledge_graph[analysis_constants.RELATIONS_KEY]] + [r[2] for r in knowledge_graph[analysis_constants.RELATIONS_KEY]] )  ]))
+    relations = list(set([rel[1] for rel in knowledge_graph[analysis_constants.RELATIONS_KEY]]))
 
-    # Map each entity to a unique ID
-    entity_to_idx = {entity: idx for idx, entity in enumerate(entities)}
+    entity_to_idx = {ent: idx for idx, ent in enumerate(entities)}
+    relation_to_idx = {rel: idx for idx, rel in enumerate(relations)}
 
-    # Map each unique relation type to an ID
-    relation_types = list(set(relation[1] for relation in relations))
-    relation_to_id = {relation: idx for idx, relation in enumerate(relation_types)}
+    return {
+        analysis_constants.ENTITIES_KEY: entities,
+        analysis_constants.RELATIONS_KEY: relations,
+        analysis_constants.ENTITY_MAPPING_KEY : entity_to_idx,
+        analysis_constants.RELATION_MAPPING_KEY: relation_to_idx,
+        analysis_constants.TRIPLES_KEY: knowledge_graph[analysis_constants.JSON_RELATIONS_KEY] 
+    }
 
-    # Create edge_index and edge_type lists
-    edge_index = []
-    edge_type = []
+def load_plotting_data(saved_graph_info_dir):
+    graph_name = get_graph_name(saved_graph_info_dir)
+    graph_data_path = get_graph_data_path(saved_graph_info_dir, graph_name)
+    entity_embeddings_path = get_embeddings_path(saved_graph_info_dir, graph_name)  
+    
+    graph_data = load_kg_data(graph_data_path)
 
-    for head, relation, tail in relations:
-        head_idx = entity_to_idx[head]
-        tail_idx = entity_to_idx[tail]
-        relation_idx = relation_to_id[relation]
+    entity_to_id_map = graph_data[analysis_constants.ENTITY_MAPPING_KEY]
+    entity_embeddings = torch.load(entity_embeddings_path).weight.detach().cpu().numpy() 
 
-        edge_index.append([head_idx, tail_idx])
-        edge_type.append(relation_idx)
+    return entity_to_id_map, entity_embeddings
 
-    # Convert lists to tensors
-    edge_index = torch.tensor(edge_index, dtype=torch.long).t()  # Shape [2, num_edges]
-    edge_type = torch.tensor(edge_type, dtype=torch.long)  # Shape [num_edges]
+def get_embeddings_path(save_folder_path, graph_name): 
+    entity_embeddings_path = os.path.join(save_folder_path, f"{graph_name}_entity_embeddings.pt")
+    return entity_embeddings_path
 
-    # Number of nodes is the number of unique entities
-    num_nodes = len(entities)
+def get_relation_embeddings_path(save_folder_path, graph_name): 
+    relation_embeddings_path = os.path.join(save_folder_path, f"{graph_name}_relation_embeddings.pt")
+    return relation_embeddings_path
 
-    # Create the PyG data object
-    pyg_data = Data(num_nodes=num_nodes, edge_index=edge_index, edge_type=edge_type)
+def get_graph_data_path(save_folder_path, graph_name): 
+    graph_data_path = os.path.join(save_folder_path, f"{graph_name}_graph_data.json")
+    return graph_data_path
 
-    return pyg_data
+def get_graph_name(graph_path):
+    return os.path.splitext(os.path.basename(graph_path))[0]
 
-# Example usage:
-# data = load_kg_data('path_to_your_file.json')
-# print(data)
+def get_plot_image_path(saved_graph_info_dir, plot_dir): 
+    graph_name = get_graph_name(saved_graph_info_dir)
+    plot_image_path = os.path.join(plot_dir, f"{graph_name}.png")
+    return plot_image_path
+
+def get_save_folder_path(graph_path, output_path, _): 
+    graph_name = get_graph_name(graph_path)
+    save_folder_path = os.path.join(output_path, graph_name)
+    return save_folder_path

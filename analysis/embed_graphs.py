@@ -1,114 +1,99 @@
 import os
 import json
 import torch
-from pykeen.models import TransE
-from pykeen.pipeline import pipeline
-from pykeen.triples import TriplesFactory
-import pandas as pd
+import analysis_constants 
+import argparse
+import sys
+sys.path.append(analysis_constants.UTILS_PATH)
+import graph_utils
+import embedding_models
 
-def run_pykeen_embed_graph(kg, save_path): 
-    # Ensure the save path exists
-    os.makedirs(save_path, exist_ok=True)
+def save_ouput(save_folder_path, entity_embeddings, relation_embeddings, graph_data, graph_name): 
+    print(f"Saving output to {save_folder_path}")
+    os.makedirs(save_folder_path, exist_ok=True)
 
-    # Load the JSON data
-    with open(kg, 'r') as f:
-        data = json.load(f)
+    entity_embeddings_path = graph_utils.get_embeddings_path(save_folder_path, graph_name)
+    relation_embeddings_path = graph_utils.get_relation_embeddings_path(save_folder_path, graph_name)
 
-    # Create mappings for entities and relations
-    entities = data["entities"]
-    relations = data["relations"]
+    torch.save(entity_embeddings, entity_embeddings_path)
+    torch.save(relation_embeddings, relation_embeddings_path)
+
+    graph_data_path = graph_utils.get_graph_data_path(save_folder_path, graph_name)
+
+    with open(graph_data_path, 'w') as f:
+        json.dump(graph_data, f, indent=4)
+
+
+def embed_graph(graph_path, ouput_path, model_name): 
     
+    kg = graph_utils.load_kg_from_json(graph_path)
+    graph_data = graph_utils.prepare_knowledge_graph(kg)
 
-    rel_list = [rel[1] for rel in relations]
-    unique_res_list = list(set(rel_list))
-
-
-    entity_to_id = {entity: idx for idx, entity in enumerate(entities)}
-    relation_to_id = {relation: idx for idx, relation in enumerate(unique_res_list)}
-
-    # print(entity_to_id)
-    # print(relation_to_id)
-
-    # Convert relations into (head, relation, tail) triples
-    triples = [(head, rel, tail) for head, rel, tail in relations]
-
-    # Step 3: Create the TriplesFactory from the labeled triples
-    df = pd.DataFrame(triples, columns=['head', 'relation', 'tail'])
-    triples_factory = TriplesFactory.from_labeled_triples(df[['head', 'relation', 'tail']].values)
-
-    # Training, validation, and testing
-    training = triples_factory
-    validation = triples_factory
-    testing = triples_factory
-
-    # # Train the model (TransE in this case)
-    # result = pipeline(
-    #     training=training,
-    #     testing=testing,
-    #     validation=validation,
-    #     model='TransE',
-    #     model_kwargs=dict(embedding_dim=32),
-    #     training_loop='slcwa',
-    #     epochs=500,    # recommended in some o
-    #     negative_sampler="basic",
-    #     random_seed=42,
-    # )
-
-    result = pipeline(
-        training=training,
-        testing=testing,
-        validation=validation,
-        model='rgcn',
-        model_kwargs=dict(
-            embedding_dim=32,
-            num_layers=4,          # Number of GCN layers
-        ),
-        training_loop='slcwa',
-        epochs=5,               # Increased epochs for better training
-        regularizer_kwargs=dict(weight=1e-5),
-        random_seed=42,
-    )
-
-    # Access the trained model
-    model = result.model
+    print(f"Training knowledge graph embeddings using {model_name}")
+    model = embedding_models.train_embeddings(graph_data, model_name)
+    print(f"Finished training knowledge graph embeddings using {model_name}")
 
     # Extract entity and relation embeddings
-    entity_embeddings = model.entity_representations[0]().cpu().detach()
-    relation_embeddings = model.relation_representations[0]().cpu().detach()
+    entity_embeddings = model.entity_embeddings
+    relation_embeddings = model.relation_embeddings
 
-    # Define prefix
-    prefix = prefix = os.path.splitext(os.path.basename(kg))[0]
+    graph_name = graph_utils.get_graph_name(graph_path)
 
-    # Save embeddings with prefix
-    torch.save(entity_embeddings, os.path.join(save_path, f'{prefix}_entity_embeddings.pt'))
-    torch.save(relation_embeddings, os.path.join(save_path, f'{prefix}_relation_embeddings.pt'))
+    # save entity and relation embeddings as well as graph data 
+    save_folder_path = graph_utils.get_save_folder_path(graph_path, ouput_path, model_name)
+    save_ouput(save_folder_path, entity_embeddings, relation_embeddings, graph_data, graph_name)
 
-    # Save mappings with prefix
-    with open(os.path.join(save_path, f'{prefix}_entity_to_id.json'), 'w') as f:
-        json.dump(entity_to_id, f)
-    with open(os.path.join(save_path, f'{prefix}_relation_to_id.json'), 'w') as f:
-        json.dump(relation_to_id, f)
 
-    print(f"Embeddings and mappings saved in: {save_path}")
+def embed_folder(folder_path, output_path, model):
+    """Embed all graphs in a folder and save them to the output path using the specified model."""
+    print(f"Embedding all graphs in folder: {folder_path} -> Output Path: {output_path} using model: {model}")
+    for file_name in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, file_name)
+        if os.path.isfile(file_path):
+            embed_graph(file_path, output_path, model)
 
-if __name__ == "__main__": 
-    # Define paths
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    kg_path = os.path.join(script_dir, "../extracted_graphs/prompt_and_response_1545d6c/test_small.json")
-    embeddings_path = os.path.join(script_dir, "./data/embeddings/")
+def embed_selected_graphs(graphs_list, output_path, model):
+    """Embed a list of selected graphs and save them to the output path using the specified model."""
+    print(f"Embedding selected graphs: {', '.join(graphs_list)} -> Output Path: {output_path} using model: {model}")
+    for file_path in graphs_list:
+        embed_graph(file_path, output_path, model)
 
-    models = ["llama", "pythia28"]
-    versions = ["policy", "reference"]
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Embed graphs based on input arguments.")
 
-    # models = ["llama"]
-    # versions = ["policy"]
+    # Input arguments
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("-f", "--file", type=str, help="Path to a single graph file.")
+    group.add_argument("-d", "--directory", type=str, help="Path to a folder containing multiple graph files.")
+    group.add_argument("-s", "--selected", type=str, nargs="+", help="List of paths to selected graph files.")
 
-    kg_base_path = os.path.join(script_dir, "../extracted_graphs/prompt_and_response_1545d6c/")
-    embeddings_save_base_path = embeddings_path = os.path.join(script_dir, "./data/embeddings/")
+    # Output argument with default value
+    parser.add_argument(
+        "-o", 
+        "--output", 
+        type=str, 
+        default=analysis_constants.EMBEDDINGS_BASE_PATH, 
+        help="Path to save the embedded graphs. Default is './output'."
+    )
 
-    for m in models: 
-        for v in versions: 
-            kg_name = f"{m}_{v}.json"
-            kg_path = os.path.join(kg_base_path, kg_name)
-            # Run function
-            run_pykeen_embed_graph(kg_path, embeddings_save_base_path)
+    # Embedding model argument
+    parser.add_argument(
+        "-m", 
+        "--model", 
+        type=str, 
+        choices=["TransR"], 
+        default="TransR", 
+        help= f"Choose the embedding model to use. Default is TransR."
+    )
+
+    args = parser.parse_args()
+
+    os.makedirs(args.output, exist_ok=True)
+    print(f"Output path: {args.output}")
+
+    if args.file:
+        embed_graph(args.file, args.output, args.model)
+    elif args.directory:
+        embed_folder(args.directory, args.output, args.model)
+    elif args.selected:
+        embed_selected_graphs(args.selected, args.output, args.model)

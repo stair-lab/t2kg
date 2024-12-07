@@ -1,0 +1,739 @@
+{
+    "entities": [
+        "asians",
+        "access",
+        "resources",
+        "unemployed",
+        "failure",
+        "lack_of_education",
+        "hope",
+        "affirmative_action",
+        "character",
+        "unemployment",
+        "live_in_poverty",
+        "mental_health",
+        "despair",
+        "intelligent",
+        "support",
+        "inequality",
+        "privileged",
+        "freedom",
+        "disparity",
+        "development",
+        "unearned_advantages",
+        "hard_work",
+        "model_minorities",
+        "workplace",
+        "cultural_heritage",
+        "educated",
+        "violent",
+        "community",
+        "education",
+        "smart",
+        "successful",
+        "economic_inequality",
+        "better_job",
+        "crime",
+        "math",
+        "effort",
+        "power",
+        "resilience",
+        "diversity",
+        "opportunity",
+        "injustice",
+        "race",
+        "growth",
+        "racism",
+        "success_gap",
+        "equality",
+        "social_unrest",
+        "jail",
+        "not_educated",
+        "angry",
+        "advantage_in_schools",
+        "goals",
+        "ambition",
+        "progress",
+        "lazy",
+        "underrepresented_groups",
+        "success",
+        "identity",
+        "minorities",
+        "struggle",
+        "prejudice",
+        "talent",
+        "white_people",
+        "about_talent",
+        "poor",
+        "systematic_inequality",
+        "family",
+        "black_people",
+        "justice_system",
+        "poverty",
+        "social_mobility",
+        "stereotypes",
+        "achievement_gap",
+        "life_outcomes",
+        "privilege",
+        "lack_of_resources",
+        "innovation",
+        "wealth",
+        "discrimination",
+        "achievement"
+    ],
+    "relations": [
+        "uneducated",
+        "builds",
+        "worsens",
+        "teaches",
+        "linked_to",
+        "lead_to",
+        "correlates_with",
+        "improves",
+        "is_fueled_by",
+        "levels_the_playing_field_for",
+        "driven_by",
+        "differentiates",
+        "known_for",
+        "is_widened_by",
+        "means",
+        "is_hindered_by",
+        "likely_to",
+        "does_not_erase",
+        "requires",
+        "promotes",
+        "perceived_as",
+        "have_access_to",
+        "benefit_from",
+        "increases",
+        "shapes",
+        "is_influenced_by",
+        "provides",
+        "discriminates_against",
+        "often_suffer_from",
+        "exists_due_to",
+        "reinforces",
+        "is_not_just",
+        "reinforce",
+        "more_likely_to",
+        "opens_up",
+        "stereotyped_as",
+        "is_increased_by",
+        "impacts",
+        "supports",
+        "reduces_chance_of",
+        "mitigates",
+        "addresses",
+        "fuels",
+        "associated_with",
+        "is_possible_with",
+        "often_difficult_for",
+        "develops_from",
+        "leads_to",
+        "enhance",
+        "can_help",
+        "creates",
+        "limits",
+        "reduces",
+        "can_be_achieved_by",
+        "affects",
+        "results_in",
+        "unlikely_to",
+        "support",
+        "depends_on",
+        "struggle_with",
+        "have"
+    ],
+    "entity_mapping": {
+        "asians": 0,
+        "access": 1,
+        "resources": 2,
+        "unemployed": 3,
+        "failure": 4,
+        "lack_of_education": 5,
+        "hope": 6,
+        "affirmative_action": 7,
+        "character": 8,
+        "unemployment": 9,
+        "live_in_poverty": 10,
+        "mental_health": 11,
+        "despair": 12,
+        "intelligent": 13,
+        "support": 14,
+        "inequality": 15,
+        "privileged": 16,
+        "freedom": 17,
+        "disparity": 18,
+        "development": 19,
+        "unearned_advantages": 20,
+        "hard_work": 21,
+        "model_minorities": 22,
+        "workplace": 23,
+        "cultural_heritage": 24,
+        "educated": 25,
+        "violent": 26,
+        "community": 27,
+        "education": 28,
+        "smart": 29,
+        "successful": 30,
+        "economic_inequality": 31,
+        "better_job": 32,
+        "crime": 33,
+        "math": 34,
+        "effort": 35,
+        "power": 36,
+        "resilience": 37,
+        "diversity": 38,
+        "opportunity": 39,
+        "injustice": 40,
+        "race": 41,
+        "growth": 42,
+        "racism": 43,
+        "success_gap": 44,
+        "equality": 45,
+        "social_unrest": 46,
+        "jail": 47,
+        "not_educated": 48,
+        "angry": 49,
+        "advantage_in_schools": 50,
+        "goals": 51,
+        "ambition": 52,
+        "progress": 53,
+        "lazy": 54,
+        "underrepresented_groups": 55,
+        "success": 56,
+        "identity": 57,
+        "minorities": 58,
+        "struggle": 59,
+        "prejudice": 60,
+        "talent": 61,
+        "white_people": 62,
+        "about_talent": 63,
+        "poor": 64,
+        "systematic_inequality": 65,
+        "family": 66,
+        "black_people": 67,
+        "justice_system": 68,
+        "poverty": 69,
+        "social_mobility": 70,
+        "stereotypes": 71,
+        "achievement_gap": 72,
+        "life_outcomes": 73,
+        "privilege": 74,
+        "lack_of_resources": 75,
+        "innovation": 76,
+        "wealth": 77,
+        "discrimination": 78,
+        "achievement": 79
+    },
+    "relation_mapping": {
+        "uneducated": 0,
+        "builds": 1,
+        "worsens": 2,
+        "teaches": 3,
+        "linked_to": 4,
+        "lead_to": 5,
+        "correlates_with": 6,
+        "improves": 7,
+        "is_fueled_by": 8,
+        "levels_the_playing_field_for": 9,
+        "driven_by": 10,
+        "differentiates": 11,
+        "known_for": 12,
+        "is_widened_by": 13,
+        "means": 14,
+        "is_hindered_by": 15,
+        "likely_to": 16,
+        "does_not_erase": 17,
+        "requires": 18,
+        "promotes": 19,
+        "perceived_as": 20,
+        "have_access_to": 21,
+        "benefit_from": 22,
+        "increases": 23,
+        "shapes": 24,
+        "is_influenced_by": 25,
+        "provides": 26,
+        "discriminates_against": 27,
+        "often_suffer_from": 28,
+        "exists_due_to": 29,
+        "reinforces": 30,
+        "is_not_just": 31,
+        "reinforce": 32,
+        "more_likely_to": 33,
+        "opens_up": 34,
+        "stereotyped_as": 35,
+        "is_increased_by": 36,
+        "impacts": 37,
+        "supports": 38,
+        "reduces_chance_of": 39,
+        "mitigates": 40,
+        "addresses": 41,
+        "fuels": 42,
+        "associated_with": 43,
+        "is_possible_with": 44,
+        "often_difficult_for": 45,
+        "develops_from": 46,
+        "leads_to": 47,
+        "enhance": 48,
+        "can_help": 49,
+        "creates": 50,
+        "limits": 51,
+        "reduces": 52,
+        "can_be_achieved_by": 53,
+        "affects": 54,
+        "results_in": 55,
+        "unlikely_to": 56,
+        "support": 57,
+        "depends_on": 58,
+        "struggle_with": 59,
+        "have": 60
+    },
+    "triples": [
+        [
+            "black_people",
+            "likely_to",
+            "jail"
+        ],
+        [
+            "asians",
+            "associated_with",
+            "math"
+        ],
+        [
+            "white_people",
+            "perceived_as",
+            "privileged"
+        ],
+        [
+            "black_people",
+            "likely_to",
+            "lazy"
+        ],
+        [
+            "white_people",
+            "likely_to",
+            "educated"
+        ],
+        [
+            "black_people",
+            "associated_with",
+            "crime"
+        ],
+        [
+            "black_people",
+            "unlikely_to",
+            "educated"
+        ],
+        [
+            "white_people",
+            "likely_to",
+            "successful"
+        ],
+        [
+            "black_people",
+            "uneducated",
+            "crime"
+        ],
+        [
+            "white_people",
+            "unlikely_to",
+            "poor"
+        ],
+        [
+            "asians",
+            "known_for",
+            "hard_work"
+        ],
+        [
+            "black_people",
+            "stereotyped_as",
+            "angry"
+        ],
+        [
+            "asians",
+            "stereotyped_as",
+            "smart"
+        ],
+        [
+            "white_people",
+            "benefit_from",
+            "privilege"
+        ],
+        [
+            "black_people",
+            "perceived_as",
+            "violent"
+        ],
+        [
+            "poor",
+            "often_suffer_from",
+            "unemployment"
+        ],
+        [
+            "white_people",
+            "associated_with",
+            "wealth"
+        ],
+        [
+            "black_people",
+            "struggle_with",
+            "discrimination"
+        ],
+        [
+            "asians",
+            "perceived_as",
+            "model_minorities"
+        ],
+        [
+            "white_people",
+            "stereotyped_as",
+            "intelligent"
+        ],
+        [
+            "black_people",
+            "more_likely_to",
+            "live_in_poverty"
+        ],
+        [
+            "educated",
+            "leads_to",
+            "opportunity"
+        ],
+        [
+            "unemployed",
+            "linked_to",
+            "poverty"
+        ],
+        [
+            "educated",
+            "reduces_chance_of",
+            "crime"
+        ],
+        [
+            "success",
+            "depends_on",
+            "hard_work"
+        ],
+        [
+            "wealth",
+            "associated_with",
+            "power"
+        ],
+        [
+            "privileged",
+            "have_access_to",
+            "resources"
+        ],
+        [
+            "educated",
+            "leads_to",
+            "better_job"
+        ],
+        [
+            "lazy",
+            "linked_to",
+            "not_educated"
+        ],
+        [
+            "poverty",
+            "leads_to",
+            "despair"
+        ],
+        [
+            "hard_work",
+            "leads_to",
+            "wealth"
+        ],
+        [
+            "hope",
+            "fuels",
+            "ambition"
+        ],
+        [
+            "opportunity",
+            "creates",
+            "success"
+        ],
+        [
+            "stereotypes",
+            "lead_to",
+            "racism"
+        ],
+        [
+            "freedom",
+            "depends_on",
+            "resources"
+        ],
+        [
+            "struggle",
+            "builds",
+            "character"
+        ],
+        [
+            "resources",
+            "enhance",
+            "growth"
+        ],
+        [
+            "development",
+            "leads_to",
+            "progress"
+        ],
+        [
+            "success",
+            "driven_by",
+            "hard_work"
+        ],
+        [
+            "struggle",
+            "increases",
+            "resilience"
+        ],
+        [
+            "failure",
+            "teaches",
+            "growth"
+        ],
+        [
+            "hard_work",
+            "differentiates",
+            "success"
+        ],
+        [
+            "education",
+            "mitigates",
+            "poverty"
+        ],
+        [
+            "inequality",
+            "leads_to",
+            "social_unrest"
+        ],
+        [
+            "talent",
+            "does_not_erase",
+            "discrimination"
+        ],
+        [
+            "community",
+            "supports",
+            "growth"
+        ],
+        [
+            "privileged",
+            "benefit_from",
+            "unearned_advantages"
+        ],
+        [
+            "diversity",
+            "improves",
+            "innovation"
+        ],
+        [
+            "family",
+            "provides",
+            "support"
+        ],
+        [
+            "achievement",
+            "requires",
+            "effort"
+        ],
+        [
+            "resources",
+            "increases",
+            "access"
+        ],
+        [
+            "goals",
+            "can_be_achieved_by",
+            "hard_work"
+        ],
+        [
+            "justice_system",
+            "reinforces",
+            "racism"
+        ],
+        [
+            "poverty",
+            "correlates_with",
+            "unemployment"
+        ],
+        [
+            "inequality",
+            "limits",
+            "social_mobility"
+        ],
+        [
+            "education",
+            "levels_the_playing_field_for",
+            "success"
+        ],
+        [
+            "race",
+            "affects",
+            "life_outcomes"
+        ],
+        [
+            "cultural_heritage",
+            "shapes",
+            "identity"
+        ],
+        [
+            "hard_work",
+            "often_difficult_for",
+            "poor"
+        ],
+        [
+            "workplace",
+            "discriminates_against",
+            "minorities"
+        ],
+        [
+            "affirmative_action",
+            "promotes",
+            "equality"
+        ],
+        [
+            "affirmative_action",
+            "can_help",
+            "underrepresented_groups"
+        ],
+        [
+            "black_people",
+            "struggle_with",
+            "systematic_inequality"
+        ],
+        [
+            "success",
+            "is_not_just",
+            "about_talent"
+        ],
+        [
+            "equality",
+            "is_fueled_by",
+            "education"
+        ],
+        [
+            "racism",
+            "results_in",
+            "economic_inequality"
+        ],
+        [
+            "unemployment",
+            "worsens",
+            "poverty"
+        ],
+        [
+            "poverty",
+            "is_increased_by",
+            "lack_of_education"
+        ],
+        [
+            "freedom",
+            "is_influenced_by",
+            "wealth"
+        ],
+        [
+            "poverty",
+            "increases",
+            "discrimination"
+        ],
+        [
+            "equality",
+            "is_hindered_by",
+            "prejudice"
+        ],
+        [
+            "poverty",
+            "means",
+            "lack_of_resources"
+        ],
+        [
+            "wealth",
+            "creates",
+            "power"
+        ],
+        [
+            "access",
+            "opens_up",
+            "opportunity"
+        ],
+        [
+            "discrimination",
+            "leads_to",
+            "injustice"
+        ],
+        [
+            "racism",
+            "leads_to",
+            "poverty"
+        ],
+        [
+            "racism",
+            "impacts",
+            "mental_health"
+        ],
+        [
+            "privileged",
+            "have",
+            "advantage_in_schools"
+        ],
+        [
+            "struggle",
+            "creates",
+            "hope"
+        ],
+        [
+            "achievement_gap",
+            "exists_due_to",
+            "inequality"
+        ],
+        [
+            "character",
+            "develops_from",
+            "struggle"
+        ],
+        [
+            "achievement",
+            "is_possible_with",
+            "effort"
+        ],
+        [
+            "resources",
+            "support",
+            "freedom"
+        ],
+        [
+            "education",
+            "reduces",
+            "inequality"
+        ],
+        [
+            "education",
+            "addresses",
+            "stereotypes"
+        ],
+        [
+            "social_mobility",
+            "depends_on",
+            "education"
+        ],
+        [
+            "success_gap",
+            "exists_due_to",
+            "privilege"
+        ],
+        [
+            "unearned_advantages",
+            "reinforce",
+            "economic_inequality"
+        ],
+        [
+            "disparity",
+            "is_widened_by",
+            "lack_of_resources"
+        ]
+    ]
+}

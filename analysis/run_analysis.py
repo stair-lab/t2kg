@@ -13,12 +13,6 @@ plots_base_path = os.path.join(script_dir, "./data/plots/")
 
 term_pairs = []
 
-models = ["llama", "pythia28"]
-versions = ["policy", "reference"]
-
-# models = ["llama"]
-# versions = ["policy"]
-
 
 def load_entity_embedding(entity_pair, embeddings_filename, entity_to_id_filename):
 
@@ -59,37 +53,35 @@ PTEXT = ".pt"
 
 
 def visualize_embeddings():
-    for model in models:
-        for version in versions:
-            fig, ax = plt.subplots(figsize=(10, 8))
-            
-            kg_name_without_ext = f"{model}_{version}"
-            entity_to_id_filename = os.path.join(embeddings_base_path, kg_name_without_ext + "_entity_to_id.json")
-            embeddings_filename = os.path.join(embeddings_base_path, kg_name_without_ext + "_entity_embeddings.pt")
-            
-            embeddings, entity_to_id = load_entity_embeddings_and_ids(embeddings_filename, entity_to_id_filename)
-            id_to_entity = {v: k for k, v in entity_to_id.items()}
+    fig, ax = plt.subplots(figsize=(10, 8))
+    
+    kg_name_without_ext = f"harmless_base_rejected_test_50"
+    entity_to_id_filename = os.path.join(embeddings_base_path, kg_name_without_ext + "_entity_to_id.json")
+    embeddings_filename = os.path.join(embeddings_base_path, kg_name_without_ext + "_entity_embeddings.pt")
+    
+    embeddings, entity_to_id = load_entity_embeddings_and_ids(embeddings_filename, entity_to_id_filename)
+    id_to_entity = {v: k for k, v in entity_to_id.items()}
 
-            # Convert embeddings to numpy and perform PCA to reduce dimensionality to 2D
-            embeddings_array = np.array([emb.numpy() for emb in embeddings])
-            pca = PCA(n_components=2)
-            reduced_embeddings = pca.fit_transform(embeddings_array)
+    # Convert embeddings to numpy and perform PCA to reduce dimensionality to 2D
+    embeddings_array = np.array([emb.numpy() for emb in embeddings])
+    pca = PCA(n_components=2)
+    reduced_embeddings = pca.fit_transform(embeddings_array)
 
-            # Plot each point with an annotation for the entity name
-            for i, (x, y) in enumerate(reduced_embeddings):
-                ax.scatter(x, y, color='blue', s=20)  # Plot the point
-                entity_name = id_to_entity.get(i, f"Entity {i}")
+    # Plot each point with an annotation for the entity name
+    for i, (x, y) in enumerate(reduced_embeddings):
+        ax.scatter(x, y, color='blue', s=20)  # Plot the point
+        entity_name = id_to_entity.get(i, f"Entity {i}")
 
-            ax.set_title(f"Embedding Visualization for Model: {model}, Version: {version}")
-            ax.set_xlabel("PCA Dimension 1")
-            ax.set_ylabel("PCA Dimension 2")
+    ax.set_title(f"Embedding Visualization for Model: {kg_name_without_ext}")
+    ax.set_xlabel("PCA Dimension 1")
+    ax.set_ylabel("PCA Dimension 2")
 
-            # Save the plot
-            plot_filename = f"{model}_{version}_embeddings.png"
-            plt_path = os.path.join(plots_base_path, plot_filename)
-            plt.savefig(plt_path)
-            plt.close()
-            print(f"Saved plot at {plt_path}")
+    # Save the plot
+    plot_filename = f"{kg_name_without_ext}_embeddings.png"
+    plt_path = os.path.join(plots_base_path, plot_filename)
+    plt.savefig(plt_path)
+    plt.close()
+    print(f"Saved plot at {plt_path}")
 
 
 def cosine_similarity(v1, v2):
@@ -124,4 +116,4 @@ def run_kg_graph_analysis():
 
 
 if __name__ == '__main__':
-    run_kg_graph_analysis()
+    ""
