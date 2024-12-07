@@ -71,8 +71,6 @@ def impute_graphs(selected, directory, output):
         saved_graph_info_dir = os.path.join(directory, graph_name)
         run_imputation_on_graph(saved_graph_info_dir, output, K)
 
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Visualize embeddings for knowledge graphs.")
     parser.add_argument(
@@ -81,7 +79,7 @@ if __name__ == "__main__":
         type=str,
         nargs="+",
         default=None,
-        help="Names of the graphs to visualize. Defaults to all graphs in the directory."
+        help="Names of the graphs to impute. Defaults to all graphs in the directory."
     )
     parser.add_argument(
         "-d",

@@ -166,9 +166,6 @@ def train_embeddings(graph_data, model_name):
     if model_name == analysis_constants.TRANSR: 
         return train_embeddings_transr(graph_data)
     
-    elif model_name == analysis_constants.RGCN: 
-        raise NotImplementedError
-    
-    elif model_name == analysis_constants.GCN: 
-        raise NotImplementedError
+    else:
+        raise ValueError(f"Model name {model_name} not supported")
     

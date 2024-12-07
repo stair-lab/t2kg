@@ -30,6 +30,7 @@ else:
     
 EMBEDDINGS_BASE_PATH = os.path.join(DATA_BASE_PATH, "embeddings")
 EMBEDDING_PLOTS_BASE_PATH = os.path.join(DATA_BASE_PATH, "embedding_plots")
+EMBEDDING_DIM = 64
 
 IMPUTATION_BASE_PATH = os.path.join(DATA_BASE_PATH, "imputation")
 ORIGINAL_TRIPLES_KEY = "original_triples"
@@ -50,6 +51,21 @@ ENTITIES_KEY = "entities"
 RELATIONS_KEY = "relations"
 RELATION_MAPPING_KEY = "relation_mapping"
 ENTITY_MAPPING_KEY = "entity_mapping"
+
+QUERY_BASE_PATH = os.path.join(DATA_BASE_PATH, "query")
+
+PINECONE = "pinecone"
+QUERY_MODELS = [PINECONE]
+DEFAULT_QUERY_MODEL = PINECONE
+
+QUERY_SYSTEM_EXIT_COMMAND = "exit"
+QUERY_QUERIES_KEY = "queries"
+QUERY_RESPONSE_KEY = "responses"
+
+QUERY_SYSTEM_MODES = ["batch", "interactive"]
+DEFAULT_QUERY_SYSTEM_MODE = "interactive"
+
+PINE_API_KEY = 'pcsk_6ktnFZ_HVs4214sfzmCDpKVvqAA1YDy5Fz8kjL9AX9ScrFGxZ7D16ATqdqHAyAsJnv2CwK'
 
 
 

@@ -74,6 +74,16 @@ def get_imputation_results_path(saved_graph_info_dir, output_dir):
     imputation_results_path = os.path.join(output_dir, f"{graph_name}_imputation_results.json")
     return imputation_results_path
 
+def get_query_results_path(saved_graph_info_dir, output_dir): 
+    graph_name = get_graph_name(saved_graph_info_dir)
+    query_results_path = os.path.join(output_dir, f"{graph_name}_query_results.json")
+    return query_results_path
+
+def get_index_name(saved_graph_info_dir):
+    graph_name = get_graph_name(saved_graph_info_dir)
+    index_name = f"{graph_name}index"
+    return index_name
+
 def get_save_folder_path(graph_path, output_path, _): 
     graph_name = get_graph_name(graph_path)
     save_folder_path = os.path.join(output_path, graph_name)

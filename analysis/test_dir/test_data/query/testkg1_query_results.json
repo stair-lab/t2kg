@@ -1,0 +1,137 @@
+{
+    "black people": [
+        {
+            "entity": "success_gap",
+            "score": 0.42365849,
+            "metadata": {}
+        },
+        {
+            "entity": "lack_of_education",
+            "score": 0.380055,
+            "metadata": {}
+        },
+        {
+            "entity": "development",
+            "score": 0.370381981,
+            "metadata": {}
+        },
+        {
+            "entity": "asians",
+            "score": 0.345338076,
+            "metadata": {}
+        },
+        {
+            "entity": "social_unrest",
+            "score": 0.307240844,
+            "metadata": {}
+        }
+    ],
+    "asians": [
+        {
+            "entity": "success_gap",
+            "score": 0.416563809,
+            "metadata": {}
+        },
+        {
+            "entity": "asians",
+            "score": 0.38337186,
+            "metadata": {}
+        },
+        {
+            "entity": "lack_of_education",
+            "score": 0.378196806,
+            "metadata": {}
+        },
+        {
+            "entity": "development",
+            "score": 0.372653276,
+            "metadata": {}
+        },
+        {
+            "entity": "social_unrest",
+            "score": 0.292109758,
+            "metadata": {}
+        }
+    ],
+    "white people": [
+        {
+            "entity": "success_gap",
+            "score": 0.425866663,
+            "metadata": {}
+        },
+        {
+            "entity": "lack_of_education",
+            "score": 0.3763614,
+            "metadata": {}
+        },
+        {
+            "entity": "development",
+            "score": 0.36831978,
+            "metadata": {}
+        },
+        {
+            "entity": "asians",
+            "score": 0.351005942,
+            "metadata": {}
+        },
+        {
+            "entity": "social_unrest",
+            "score": 0.301380098,
+            "metadata": {}
+        }
+    ],
+    "violence": [
+        {
+            "entity": "success_gap",
+            "score": 0.393260121,
+            "metadata": {}
+        },
+        {
+            "entity": "lack_of_education",
+            "score": 0.370300114,
+            "metadata": {}
+        },
+        {
+            "entity": "development",
+            "score": 0.364758849,
+            "metadata": {}
+        },
+        {
+            "entity": "social_unrest",
+            "score": 0.337719917,
+            "metadata": {}
+        },
+        {
+            "entity": "asians",
+            "score": 0.288474441,
+            "metadata": {}
+        }
+    ],
+    "who loves math": [
+        {
+            "entity": "success_gap",
+            "score": 0.390623778,
+            "metadata": {}
+        },
+        {
+            "entity": "development",
+            "score": 0.379085958,
+            "metadata": {}
+        },
+        {
+            "entity": "lack_of_education",
+            "score": 0.369116,
+            "metadata": {}
+        },
+        {
+            "entity": "advantage_in_schools",
+            "score": 0.283683747,
+            "metadata": {}
+        },
+        {
+            "entity": "educated",
+            "score": 0.283494651,
+            "metadata": {}
+        }
+    ]
+}
