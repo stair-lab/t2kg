@@ -320,10 +320,10 @@ def process_file(input_file: str):
             if not isinstance(data, dict) or not all(k in data for k in ['entities', 'edges']):
                 raise KeyError("Input file must contain 'entities' and 'edges' fields")
             
-            # entity_clusters = sorted(
-            #   cluster_items(set(sorted(data['entities'])), "entities"), 
-            #   key=lambda c: len(c.items), reverse=True
-            # )
+            entity_clusters = sorted(
+              cluster_items(set(sorted(data['entities'])), "entities"), 
+              key=lambda c: len(c.items), reverse=True
+            )
             edge_clusters = sorted(
               cluster_items(set(sorted(data['edges'])), "edges"), 
               key=lambda c: len(c.items), reverse=True
@@ -356,11 +356,11 @@ def process_file(input_file: str):
 
 if __name__ == "__main__":
     input_files = [
-        # 'kgs/224w_final_deliverable/advil.json',
-        'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.json',
-        'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.json',
-        'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.json',
-        'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.json',
+        'kgs/224w_final_deliverable/advil.json',
+        # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.json',
+        # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.json',
+        # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.json',
+        # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.json',
     ]
     
     for input_file in input_files:
