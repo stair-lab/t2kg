@@ -47,8 +47,8 @@ if __name__ == "__main__":
         # 'pythia28_policy.jsonl',
         # 'pythia28_reference.jsonl'
         # '224w_final_deliverable/cleaned_300_pku-safe-30k-Mistral-7B-Instruct-v0.2.jsonl',
-        '224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.jsonl',
-        '224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.jsonl',
+        '224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.jsonl',
+        '224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.jsonl',
     ]
     
     for input_file in input_files:

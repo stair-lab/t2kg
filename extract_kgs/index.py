@@ -275,38 +275,43 @@ if __name__ == "__main__":
         # "harmless_base_rejected_test_50.jsonl"
         # "advil.jsonl"
         # "224w_final_deliverable/test.jsonl",
-        "224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.jsonl",
-        "224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.jsonl",
         "224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.jsonl",
-        "224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.jsonl"
+        "224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.jsonl",
+        # "224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.jsonl",
+        # "224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.jsonl",
+        # "224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.jsonl",
+        # "224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.jsonl"
     ]
 
     # Extract query entities from first file
-    all_query_entities = set()
-    query_entities_list = []
-    file_path = os.path.join(SOURCE_DATA_DIR, files_to_process[0])
-    print(f"Processing file: {file_path}")
-    data = process_jsonl(file_path)
-    print(f"Number of samples in {file_path}: {len(data)}")
-    for sample in data:
-        user_query = sample['human_query']
-        print(f"Processing user query: {user_query}")
-        extracted_entities = extract_entities(user_query)
-        print(f"Extracted entities: {extracted_entities}")
-        all_query_entities.update(extracted_entities)
-        query_entities_list.append(extracted_entities)
-    print(f"Total unique entities extracted: {len(all_query_entities)}")
-    shared_query_entities = list(all_query_entities)
-    print(f"Shared query entities: {shared_query_entities}")
-    print(f"Query-specific entities: {query_entities_list}")
-    # Save extracted entities and query-specific entities for future reference
+    # Load extracted entities from the output file
     entities_output_file = os.path.join(KGS_DIR, "extracted_entities.json")
-    with open(entities_output_file, 'w') as f:
-        json.dump({
-            "shared_query_entities": list(shared_query_entities),
-            "query_specific_entities": query_entities_list
-        }, f, indent=2)
-    print(f"Saved extracted entities to {entities_output_file}")
+    print(f"Loading extracted entities from {entities_output_file}")
+    with open(entities_output_file, 'r') as f:
+        extracted_entities_data = json.load(f)
+    
+    shared_query_entities = extracted_entities_data["shared_query_entities"]
+    query_entities_list = extracted_entities_data["query_specific_entities"]
+    
+    print(f"Loaded {len(shared_query_entities)} shared query entities")
+    print(f"Loaded {len(query_entities_list)} query-specific entity lists")
+    
+    all_query_entities = set(shared_query_entities)
+    print(f"Total unique entities loaded: {len(all_query_entities)}")
+    
+    print(f"Shared query entities: {shared_query_entities}")
+    print(f"Shared query entities values:")
+    for entity in shared_query_entities:
+        print(f"  - {entity}")
+    
+    print(f"\nQuery-specific entities: {query_entities_list}")
+    print("Query-specific entities values:")
+    for i, entity_list in enumerate(query_entities_list):
+        print(f"  Query {i + 1}:")
+        for entity in entity_list:
+            print(f"    - {entity}")
+            
+    print('\n\n\n\n')
 
     for file_name in files_to_process:
         file_path = os.path.join(SOURCE_DATA_DIR, file_name)
@@ -316,11 +321,40 @@ if __name__ == "__main__":
         gold_label_dataset = []
         # Open the output file for writing
         output_file = os.path.join(KGS_DIR, file_name)
-        with open(output_file, 'w') as f:
-            for i, sample in enumerate(data):
+        
+        last_processed_index = -1
+        # Check if the output file exists
+        if os.path.exists(output_file):
+            # If it exists, read existing data to determine the last processed index
+            with open(output_file, 'r') as existing_file:
+                existing_data = [json.loads(line) for line in existing_file]
+            last_processed_index = len(existing_data) - 1
+            # Print the last processed index and the last sample
+            if last_processed_index >= 0 and last_processed_index < len(existing_data):
+                print("Last processed sample:")
+                print(json.dumps(existing_data[last_processed_index], indent=2))
+            else:
+                print("No samples have been processed yet.")
+            print(f"Last processed index: {last_processed_index}")
+            # Print the query_entities_list at the last processed index
+            if last_processed_index >= 0 and last_processed_index < len(query_entities_list):
+                print(f"Query entities for last processed sample:")
+                print(json.dumps(query_entities_list[last_processed_index], indent=2))
+            else:
+                print("No query entities available for the last processed sample.")
+        
+        # Open the file in append mode
+        with open(output_file, 'a') as f:
+            for i in range(last_processed_index + 1, len(data)):
+                sample = data[i]
                 user_query = sample['human_query']
+                print('last processed index', last_processed_index)
+                print('i', i)
+                print('CURR_INDEX', i)
                 assistant_response = sample['assistant_response']
-                sample_query_entities = query_entities_list[i] if i < len(query_entities_list)  else []
+                
+                sample_query_entities = query_entities_list[i] if i  < len(query_entities_list) else []
+                print('SAMPLE QUERY ENTITIES', sample_query_entities)
                 processed_sample = process_sample(user_query, assistant_response, sample_query_entities)
                 gold_label_dataset.append(processed_sample)
                 
