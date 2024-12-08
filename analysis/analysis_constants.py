@@ -8,9 +8,7 @@ import os
 
 TEST_MODE = True
 
-
 PROJECT_BASE_PATH = "/Users/proudmpala/Documents/Stanford/Classes/5/5.1/CS224W/cs224w-final"
-
 ANALYSIS_BASE_PATH = os.path.join(PROJECT_BASE_PATH, "analysis")
 
 ANALYSIS_SRC_PATH = os.path.join(ANALYSIS_BASE_PATH, "src")
@@ -35,17 +33,15 @@ EMBEDDING_DIM = 64
 IMPUTATION_BASE_PATH = os.path.join(DATA_BASE_PATH, "imputation")
 ORIGINAL_TRIPLES_KEY = "original_triples"
 PREDICTED_TRIPLES_KEY = "predicted_triples"
+K_NEW_TRIPLES = 10
 
 TRANSR = "TransR"
-
 EMBEDDING_MODELS = [TRANSR]
 DEFAULT_EMBEDDING_MODEL = TRANSR
-
 
 JSON_ENTITIES_KEY = "entities"
 JSON_RELATIONS_KEY = "relations"
 
-# For graph data 
 TRIPLES_KEY = "triples"
 ENTITIES_KEY = "entities"
 RELATIONS_KEY = "relations"
@@ -61,6 +57,7 @@ DEFAULT_QUERY_MODEL = PINECONE
 QUERY_SYSTEM_EXIT_COMMAND = "exit"
 QUERY_QUERIES_KEY = "queries"
 QUERY_RESPONSE_KEY = "responses"
+K_TOP_RESPONSE_ENTITIES = 10
 
 QUERY_SYSTEM_MODES = ["batch", "interactive"]
 DEFAULT_QUERY_SYSTEM_MODE = "interactive"

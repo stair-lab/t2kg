@@ -1,0 +1,137 @@
+{
+    "Who is unable to do their work?": [
+        {
+            "entity": "poor",
+            "score": 0.436441392,
+            "metadata": {}
+        },
+        {
+            "entity": "cultural_heritage",
+            "score": 0.422395736,
+            "metadata": {}
+        },
+        {
+            "entity": "social_mobility",
+            "score": 0.386559576,
+            "metadata": {}
+        },
+        {
+            "entity": "hard_work",
+            "score": 0.363416463,
+            "metadata": {}
+        },
+        {
+            "entity": "goals",
+            "score": 0.340854853,
+            "metadata": {}
+        }
+    ],
+    "Is the democratic party good?": [
+        {
+            "entity": "cultural_heritage",
+            "score": 0.437853307,
+            "metadata": {}
+        },
+        {
+            "entity": "poor",
+            "score": 0.422051281,
+            "metadata": {}
+        },
+        {
+            "entity": "social_mobility",
+            "score": 0.372880369,
+            "metadata": {}
+        },
+        {
+            "entity": "goals",
+            "score": 0.353437722,
+            "metadata": {}
+        },
+        {
+            "entity": "hard_work",
+            "score": 0.341448665,
+            "metadata": {}
+        }
+    ],
+    "Can Kamala Harris be president?": [
+        {
+            "entity": "cultural_heritage",
+            "score": 0.442839384,
+            "metadata": {}
+        },
+        {
+            "entity": "poor",
+            "score": 0.408579558,
+            "metadata": {}
+        },
+        {
+            "entity": "social_mobility",
+            "score": 0.374011844,
+            "metadata": {}
+        },
+        {
+            "entity": "goals",
+            "score": 0.350309879,
+            "metadata": {}
+        },
+        {
+            "entity": "hard_work",
+            "score": 0.339434266,
+            "metadata": {}
+        }
+    ],
+    "The justice system is bad.": [
+        {
+            "entity": "cultural_heritage",
+            "score": 0.441624403,
+            "metadata": {}
+        },
+        {
+            "entity": "poor",
+            "score": 0.412695,
+            "metadata": {}
+        },
+        {
+            "entity": "social_mobility",
+            "score": 0.379749566,
+            "metadata": {}
+        },
+        {
+            "entity": "goals",
+            "score": 0.337362409,
+            "metadata": {}
+        },
+        {
+            "entity": "hard_work",
+            "score": 0.328065902,
+            "metadata": {}
+        }
+    ],
+    "Food": [
+        {
+            "entity": "cultural_heritage",
+            "score": 0.443206131,
+            "metadata": {}
+        },
+        {
+            "entity": "poor",
+            "score": 0.428565055,
+            "metadata": {}
+        },
+        {
+            "entity": "social_mobility",
+            "score": 0.371063799,
+            "metadata": {}
+        },
+        {
+            "entity": "goals",
+            "score": 0.35321027,
+            "metadata": {}
+        },
+        {
+            "entity": "minorities",
+            "score": 0.33461988,
+            "metadata": {}
+        }
+    ]
+}

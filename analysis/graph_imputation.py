@@ -52,7 +52,7 @@ def run_imputation_on_graph(saved_graph_info_dir, output_dir, k):
         triple_scores.append((head, relation, tail, score))
     top_triples = sorted(triple_scores, key=lambda x: x[3], reverse=True)[:k]
 
-    print("Top 5 Predicted New Triples:")
+    print(f"Top {k} Predicted New Triples:")
     for head, relation, tail, score in top_triples:
         print(f"{head} --[{relation}]--> {tail} (Score: {score:.4f})")
     triples_to_be_saved = [(head, relation, tail) for head, relation, tail, _ in top_triples]
@@ -69,18 +69,11 @@ def impute_graphs(selected, directory, output):
 
     for graph_name in selected:
         saved_graph_info_dir = os.path.join(directory, graph_name)
-        run_imputation_on_graph(saved_graph_info_dir, output, K)
+        run_imputation_on_graph(saved_graph_info_dir, output, analysis_constants.K_NEW_TRIPLES)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Visualize embeddings for knowledge graphs.")
-    parser.add_argument(
-        "-s",
-        "--selected",
-        type=str,
-        nargs="+",
-        default=None,
-        help="Names of the graphs to impute. Defaults to all graphs in the directory."
-    )
+   
     parser.add_argument(
         "-d",
         "--directory",
@@ -97,4 +90,4 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    impute_graphs(selected=args.selected, directory=args.directory, output=args.output)
+    impute_graphs(selected=None, directory=args.directory, output=args.output)

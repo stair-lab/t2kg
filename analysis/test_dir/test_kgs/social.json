@@ -1,0 +1,32 @@
+{
+    "entities": [
+        "community", "growth", "privilege", "effort", "unearned_advantages", "diversity", 
+        "innovation", "family", "support", "achievement", "resources", "access", "goals", 
+        "hard_work", "justice_system", "racism", "poverty", "unemployment", "inequality", 
+        "social_mobility", "education", "success", "race", "life_outcomes", "cultural_heritage", 
+        "identity", "workplace", "minorities", "affirmative_action", "underrepresented_groups", 
+        "black_people", "systematic_inequality", "talent"
+    ],
+    "relations": [
+        ["community", "supports", "growth"],
+        ["privileged", "benefit_from", "unearned_advantages"],
+        ["diversity", "improves", "innovation"],
+        ["family", "provides", "support"],
+        ["achievement", "requires", "effort"],
+        ["resources", "increases", "access"],
+        ["goals", "can_be_achieved_by", "hard_work"],
+        ["justice_system", "reinforces", "racism"],
+        ["poverty", "correlates_with", "unemployment"],
+        ["inequality", "limits", "social_mobility"],
+        ["education", "levels_the_playing_field_for", "success"],
+        ["race", "affects", "life_outcomes"],
+        ["cultural_heritage", "shapes", "identity"],
+        ["hard_work", "often_difficult_for", "poor"],
+        ["workplace", "discriminates_against", "minorities"],
+        ["affirmative_action", "promotes", "equality"],
+        ["affirmative_action", "can_help", "underrepresented_groups"],
+        ["black_people", "struggle_with", "systematic_inequality"],
+        ["success", "is_not_just", "about_talent"]
+    
+    ]
+}

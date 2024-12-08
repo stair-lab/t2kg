@@ -62,10 +62,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Embed graphs based on input arguments.")
 
     # Input arguments
-    group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("-f", "--file", type=str, help="Path to a single graph file.")
-    group.add_argument("-d", "--directory", type=str, help="Path to a folder containing multiple graph files.")
-    group.add_argument("-s", "--selected", type=str, nargs="+", help="List of paths to selected graph files.")
+
+    parser.add_argument(
+        "-d", "--directory", type=str, 
+        default=analysis_constants.KNOWLEDGE_BASE_PATH, 
+        help="Path to a folder containing multiple graph files."
+    )
 
     # Output argument with default value
     parser.add_argument(
@@ -91,9 +93,6 @@ if __name__ == "__main__":
     os.makedirs(args.output, exist_ok=True)
     print(f"Output path: {args.output}")
 
-    if args.file:
-        embed_graph(args.file, args.output, args.model)
-    elif args.directory:
-        embed_folder(args.directory, args.output, args.model)
-    elif args.selected:
-        embed_selected_graphs(args.selected, args.output, args.model)
+
+    embed_folder(args.directory, args.output, args.model)
+    

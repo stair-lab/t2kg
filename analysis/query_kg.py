@@ -79,7 +79,7 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-d",
-        "--all_kgs",
+        "--directory",
         type=str,
         default=analysis_constants.EMBEDDINGS_BASE_PATH,
         help="Directory containing the directories of saved data of all kgs."
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     print("Running query system...")
-    run_batch_query_system(args.file, args.output, args.all_kgs)
+    run_batch_query_system(args.file, args.output, args.directory)
     
    
 

@@ -62,20 +62,13 @@ def visualize_embeddings(selected, directory, output):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Visualize embeddings for knowledge graphs.")
-    parser.add_argument(
-        "-s",
-        "--selected",
-        type=str,
-        nargs="+",
-        default=None,
-        help="Names of the graphs to visualize. Defaults to all graphs in the directory."
-    )
+ 
     parser.add_argument(
         "-d",
         "--directory",
         type=str,
         default=analysis_constants.EMBEDDINGS_BASE_PATH,  # Default placeholder value
-        help="Path to the directory containing saved data for graphs. Default is './data'."
+        help="Path to the directory containing saved data for graphs."
     )
     parser.add_argument(
         "-o",
@@ -86,4 +79,4 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    visualize_embeddings(selected=args.selected, directory=args.directory, output=args.output)
+    visualize_embeddings(None, directory=args.directory, output=args.output)

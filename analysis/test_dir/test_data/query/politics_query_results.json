@@ -1,0 +1,137 @@
+{
+    "Who is unable to do their work?": [
+        {
+            "entity": "American_History",
+            "score": 0.423590928,
+            "metadata": {}
+        },
+        {
+            "entity": "First_Lady",
+            "score": 0.399161547,
+            "metadata": {}
+        },
+        {
+            "entity": "Racial_Justice",
+            "score": 0.374638736,
+            "metadata": {}
+        },
+        {
+            "entity": "Abraham_Lincoln",
+            "score": 0.33654505,
+            "metadata": {}
+        },
+        {
+            "entity": "Emancipation_Proclamation",
+            "score": 0.296613783,
+            "metadata": {}
+        }
+    ],
+    "Is the democratic party good?": [
+        {
+            "entity": "American_History",
+            "score": 0.40011543,
+            "metadata": {}
+        },
+        {
+            "entity": "First_Lady",
+            "score": 0.38116765,
+            "metadata": {}
+        },
+        {
+            "entity": "Racial_Justice",
+            "score": 0.359973431,
+            "metadata": {}
+        },
+        {
+            "entity": "Tax_Increases",
+            "score": 0.315683573,
+            "metadata": {}
+        },
+        {
+            "entity": "Abraham_Lincoln",
+            "score": 0.309657782,
+            "metadata": {}
+        }
+    ],
+    "Can Kamala Harris be president?": [
+        {
+            "entity": "Racial_Justice",
+            "score": 0.412145197,
+            "metadata": {}
+        },
+        {
+            "entity": "First_Lady",
+            "score": 0.4031519,
+            "metadata": {}
+        },
+        {
+            "entity": "American_History",
+            "score": 0.401783228,
+            "metadata": {}
+        },
+        {
+            "entity": "Abraham_Lincoln",
+            "score": 0.326731086,
+            "metadata": {}
+        },
+        {
+            "entity": "Kamala_Harris",
+            "score": 0.313563645,
+            "metadata": {}
+        }
+    ],
+    "The justice system is bad.": [
+        {
+            "entity": "American_History",
+            "score": 0.43029806,
+            "metadata": {}
+        },
+        {
+            "entity": "Racial_Justice",
+            "score": 0.424473047,
+            "metadata": {}
+        },
+        {
+            "entity": "First_Lady",
+            "score": 0.388903618,
+            "metadata": {}
+        },
+        {
+            "entity": "Abraham_Lincoln",
+            "score": 0.315502554,
+            "metadata": {}
+        },
+        {
+            "entity": "Foreign_Policy",
+            "score": 0.292421609,
+            "metadata": {}
+        }
+    ],
+    "Food": [
+        {
+            "entity": "American_History",
+            "score": 0.425889671,
+            "metadata": {}
+        },
+        {
+            "entity": "First_Lady",
+            "score": 0.39449,
+            "metadata": {}
+        },
+        {
+            "entity": "Racial_Justice",
+            "score": 0.381492496,
+            "metadata": {}
+        },
+        {
+            "entity": "Abraham_Lincoln",
+            "score": 0.324505299,
+            "metadata": {}
+        },
+        {
+            "entity": "Foreign_Policy",
+            "score": 0.295534492,
+            "metadata": {}
+        }
+    ]
+}

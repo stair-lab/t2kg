@@ -9,60 +9,25 @@ from typing import Dict, List
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
-
 from torch_geometric.nn import GCNConv
 from pykeen.models import TransE
 from pykeen.pipeline import pipeline
 from pykeen.triples import TriplesFactory
-
+from torch_geometric.nn import Node2Vec as PyGNode2Vec
 import analysis_constants 
 
-# Define the RGCN model
-class RGCN(torch.nn.Module):
-    def __init__(self, in_channels, hidden_channels, out_channels, num_relations):
-        super(RGCN, self).__init__()
-        self.rgcn1 = RGCNConv(in_channels, hidden_channels, num_relations)
-        self.rgcn2 = RGCNConv(hidden_channels, out_channels, num_relations)
+TRANSR_NUM_EPOCHS = 1000
+TRANSR_PRINT_EVERY = 100
+TRANSR_LEARNING_RATE = 0.01
+TRANSR_MARGIN = 1.0
 
-    def forward(self, x, edge_index, edge_type):
-        x = self.rgcn1(x, edge_index, edge_type)
-        x = torch.relu(x)
-        x = self.rgcn2(x, edge_index, edge_type)
-        return x
-    
+NODE2VEC_NUM_EPOCHS =100
+NODE2VEC_WALK_LENGTH=80
+NODE2VEC_CONTEXT_SIZE=10
+NODE2VEC_WALKS_PER_NODE=10 
 
-# adapted from colab 2 of the homework 
-class GCN(torch.nn.Module):
-    def __init__(self, input_dim, hidden_dim, output_dim, num_layers, dropout, return_embeds=False):
-        super(GCN, self).__init__()
-        self.num_layers = num_layers
-        self.convs = torch.nn.ModuleList(
-            [GCNConv(input_dim if i == 0 else hidden_dim, output_dim if i == num_layers - 1 else hidden_dim) 
-             for i in range(num_layers)]
-        )
-        self.bns = torch.nn.ModuleList([torch.nn.BatchNorm1d(hidden_dim) for _ in range(num_layers - 1)])
-        self.softmax = torch.nn.LogSoftmax()
-        self.dropout = dropout
-        self.return_embeds = return_embeds
-
-    def reset_parameters(self):
-        for conv in self.convs:
-            conv.reset_parameters()
-        for bn in self.bns:
-            bn.reset_parameters()
-
-    def forward(self, x, adj_t):
-        H = x
-        for i in range(self.num_layers - 1):
-            H = self.convs[i](H, adj_t)
-            H = self.bns[i](H)
-            H = torch.nn.functional.relu(H)
-            H = torch.nn.functional.dropout(H, p=self.dropout, training=self.training)
-        H = self.convs[self.num_layers - 1](H, adj_t)
-        return H if self.return_embeds else self.softmax(H)
-    
 class TransREmbedding(torch.nn.Module):
-    def __init__(self, num_entities, num_relations, embedding_dim=64):
+    def __init__(self, num_entities, num_relations, embedding_dim=analysis_constants.EMBEDDING_DIM):
         super().__init__()
         # LLM-based entity embeddings
         self.tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
@@ -91,7 +56,6 @@ class TransREmbedding(torch.nn.Module):
         x = x + self.entity_embeddings(torch.arange(len(entities)))
         return x
     
-    
     def link_prediction_loss(self, pos_edges, neg_edges, relation_type):
         # TransR-style margin-based loss
         pos_head, pos_tail = pos_edges
@@ -108,26 +72,23 @@ class TransREmbedding(torch.nn.Module):
         neg_distance = torch.norm(neg_head_proj + self.relation_embeddings(torch.tensor(relation_type)) - neg_tail_proj)
 
         # Margin-based ranking loss
-        margin = 1.0
+        margin = TRANSR_MARGIN
         loss = torch.max(pos_distance - neg_distance + margin, torch.tensor(0.0))
 
         return loss
 
-def train_embeddings_transr(graph_data, epochs=10):
+def train_embeddings_transr(graph_data, epochs=TRANSR_NUM_EPOCHS):
 
-    # Initialize model
     model = TransREmbedding(
-        num_entities=len(graph_data['entities']),
-        num_relations=len(graph_data['relations'])
+        num_entities=len(graph_data[analysis_constants.ENTITIES_KEY]),
+        num_relations=len(graph_data[analysis_constants.RELATIONS_KEY])
     )
 
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+    optimizer = torch.optim.Adam(model.parameters(), lr=TRANSR_LEARNING_RATE)
 
-    # Training loop
     for epoch in range(epochs):
         total_loss = 0
 
-        # Sample positive and negative edges
         for relation in graph_data[analysis_constants.TRIPLES_KEY]:      
             source, pred, target = relation
             # Get entity indices
@@ -156,9 +117,45 @@ def train_embeddings_transr(graph_data, epochs=10):
             loss.backward()
             optimizer.step()
             total_loss += loss.item()
-
-        print(f"Epoch {epoch+1}, Loss: {total_loss}")
+        if (epoch+1) % TRANSR_PRINT_EVERY == 0:
+            print(f"Epoch {epoch+1}/{epochs}, Loss: {total_loss}")
     return model
+
+
+def train_node2vec(graph_data, epochs=NODE2VEC_NUM_EPOCHS, embedding_dim=analysis_constants.EMBEDDING_DIM, 
+                   walk_length=NODE2VEC_WALK_LENGTH, context_size=NODE2VEC_CONTEXT_SIZE, walks_per_node=NODE2VEC_WALKS_PER_NODE):
+    # Create edge index for the graph
+    edge_index = torch.tensor([
+        [graph_data[analysis_constants.ENTITY_MAPPING_KEY][source], 
+         graph_data[analysis_constants.ENTITY_MAPPING_KEY][target]]
+        for source, _, target in graph_data[analysis_constants.TRIPLES_KEY]
+    ], dtype=torch.long).t().contiguous()
+    
+    model = PyGNode2Vec(
+        edge_index, 
+        embedding_dim=embedding_dim, 
+        walk_length=walk_length,
+        context_size=context_size,
+        walks_per_node=walks_per_node
+    )
+    
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    model = model.to(device)
+    
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+    model.train()
+    for epoch in range(epochs):
+        total_loss = 0
+        pos_sample, neg_sample = model.sample()
+        
+        optimizer.zero_grad()
+        loss = model.loss(pos_sample, neg_sample)
+        loss.backward()
+        optimizer.step()
+        total_loss += loss.item()
+        
+        if (epoch + 1) % 10 == 0:
+            print(f"Epoch {epoch+1}/{epochs}, Loss: {total_loss}")
 
 
 def train_embeddings(graph_data, model_name): 

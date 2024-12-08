@@ -1,0 +1,215 @@
+{
+    "entities": [
+        "community",
+        "justice_system",
+        "race",
+        "hard_work",
+        "effort",
+        "inequality",
+        "support",
+        "access",
+        "systematic_inequality",
+        "achievement",
+        "poverty",
+        "growth",
+        "affirmative_action",
+        "poor",
+        "unearned_advantages",
+        "racism",
+        "innovation",
+        "diversity",
+        "education",
+        "black_people",
+        "success",
+        "family",
+        "unemployment",
+        "cultural_heritage",
+        "about_talent",
+        "resources",
+        "privileged",
+        "underrepresented_groups",
+        "social_mobility",
+        "identity",
+        "equality",
+        "minorities",
+        "goals",
+        "life_outcomes",
+        "workplace"
+    ],
+    "relations": [
+        "struggle_with",
+        "correlates_with",
+        "benefit_from",
+        "often_difficult_for",
+        "can_help",
+        "is_not_just",
+        "promotes",
+        "provides",
+        "supports",
+        "affects",
+        "levels_the_playing_field_for",
+        "increases",
+        "improves",
+        "can_be_achieved_by",
+        "reinforces",
+        "shapes",
+        "requires",
+        "discriminates_against",
+        "limits"
+    ],
+    "entity_mapping": {
+        "community": 0,
+        "justice_system": 1,
+        "race": 2,
+        "hard_work": 3,
+        "effort": 4,
+        "inequality": 5,
+        "support": 6,
+        "access": 7,
+        "systematic_inequality": 8,
+        "achievement": 9,
+        "poverty": 10,
+        "growth": 11,
+        "affirmative_action": 12,
+        "poor": 13,
+        "unearned_advantages": 14,
+        "racism": 15,
+        "innovation": 16,
+        "diversity": 17,
+        "education": 18,
+        "black_people": 19,
+        "success": 20,
+        "family": 21,
+        "unemployment": 22,
+        "cultural_heritage": 23,
+        "about_talent": 24,
+        "resources": 25,
+        "privileged": 26,
+        "underrepresented_groups": 27,
+        "social_mobility": 28,
+        "identity": 29,
+        "equality": 30,
+        "minorities": 31,
+        "goals": 32,
+        "life_outcomes": 33,
+        "workplace": 34
+    },
+    "relation_mapping": {
+        "struggle_with": 0,
+        "correlates_with": 1,
+        "benefit_from": 2,
+        "often_difficult_for": 3,
+        "can_help": 4,
+        "is_not_just": 5,
+        "promotes": 6,
+        "provides": 7,
+        "supports": 8,
+        "affects": 9,
+        "levels_the_playing_field_for": 10,
+        "increases": 11,
+        "improves": 12,
+        "can_be_achieved_by": 13,
+        "reinforces": 14,
+        "shapes": 15,
+        "requires": 16,
+        "discriminates_against": 17,
+        "limits": 18
+    },
+    "triples": [
+        [
+            "community",
+            "supports",
+            "growth"
+        ],
+        [
+            "privileged",
+            "benefit_from",
+            "unearned_advantages"
+        ],
+        [
+            "diversity",
+            "improves",
+            "innovation"
+        ],
+        [
+            "family",
+            "provides",
+            "support"
+        ],
+        [
+            "achievement",
+            "requires",
+            "effort"
+        ],
+        [
+            "resources",
+            "increases",
+            "access"
+        ],
+        [
+            "goals",
+            "can_be_achieved_by",
+            "hard_work"
+        ],
+        [
+            "justice_system",
+            "reinforces",
+            "racism"
+        ],
+        [
+            "poverty",
+            "correlates_with",
+            "unemployment"
+        ],
+        [
+            "inequality",
+            "limits",
+            "social_mobility"
+        ],
+        [
+            "education",
+            "levels_the_playing_field_for",
+            "success"
+        ],
+        [
+            "race",
+            "affects",
+            "life_outcomes"
+        ],
+        [
+            "cultural_heritage",
+            "shapes",
+            "identity"
+        ],
+        [
+            "hard_work",
+            "often_difficult_for",
+            "poor"
+        ],
+        [
+            "workplace",
+            "discriminates_against",
+            "minorities"
+        ],
+        [
+            "affirmative_action",
+            "promotes",
+            "equality"
+        ],
+        [
+            "affirmative_action",
+            "can_help",
+            "underrepresented_groups"
+        ],
+        [
+            "black_people",
+            "struggle_with",
+            "systematic_inequality"
+        ],
+        [
+            "success",
+            "is_not_just",
+            "about_talent"
+        ]
+    ]
+}
