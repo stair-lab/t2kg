@@ -10,7 +10,7 @@ This directory includes code to analyze knowledge graphs and specifically contai
 
 We will set the TEST_MODE=True in analysis_constants.py. This sets the two 
 directories DATA_BASE_PATH (where we store analysis results) KNOWLEDGE_BASE_PATH where the json knowledge graphs live. Test mode will set
-these two to be test_data/ and test_data/ within test_dir/. 
+these two to be test_data/ and test_data/ within test_dir/ but you can set these to be other directories and set TEST_MODE = False if you do 
 
 ## Embedding knowledge graphs. embed_graphs.py 
 
