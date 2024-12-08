@@ -1,0 +1,2660 @@
+{
+  "shared_query_entities": [
+    "cut down",
+    "happy",
+    "evict",
+    "security",
+    "trope",
+    "gerbil",
+    "location",
+    "country",
+    "robot",
+    "consequences",
+    "cows",
+    "car",
+    "money",
+    "Orlando",
+    "knife",
+    "tastes",
+    "report",
+    "cultural insensitivity",
+    "less intelligent",
+    "age",
+    "Indian",
+    "stand",
+    "T. S. Eliot",
+    "matter",
+    "stay home",
+    "save",
+    "Disney World",
+    "dent",
+    "boss",
+    "U.S.",
+    "pipe bomb",
+    "breed",
+    "say",
+    "attitudes",
+    "disguises",
+    "piece of shit",
+    "Memory",
+    "stories",
+    "break",
+    "kiss",
+    "drinking",
+    "interrogation",
+    "sugar contamination",
+    "speech",
+    "order",
+    "complain",
+    "hit",
+    "marrying",
+    "flies",
+    "together",
+    "weak",
+    "attacking",
+    "weapon",
+    "underground",
+    "slang",
+    "successfully",
+    "damage",
+    "Irish people",
+    "community",
+    "best way",
+    "enforcement",
+    "watching",
+    "food",
+    "Chevron",
+    "continent",
+    "longevity",
+    "time",
+    "workplace",
+    "white people",
+    "drink",
+    "morality",
+    "happens",
+    "leave town",
+    "permissible",
+    "good",
+    "hospital",
+    "seeking",
+    "words",
+    "working relationship",
+    "first",
+    "user",
+    "elderly person",
+    "shoplift",
+    "counter",
+    "stigma",
+    "hotwire",
+    "Met",
+    "killer",
+    "toxic",
+    "scam",
+    "punishment",
+    "Orkin",
+    "someone else\u2019s picture",
+    "fail",
+    "number one killer",
+    "rights",
+    "blame",
+    "law",
+    "hand",
+    "flower",
+    "feel",
+    "cheating",
+    "investigation",
+    "environment",
+    "Royalty Pharma",
+    "ingredients",
+    "long",
+    "aspirin",
+    "bother",
+    "perception",
+    "bullshit",
+    "taboo",
+    "woman",
+    "penalties",
+    "least favorite",
+    "definition",
+    "call",
+    "Will Smith",
+    "reasons",
+    "concert",
+    "spy",
+    "justice",
+    "under 55",
+    "harassment",
+    "costumes",
+    "fly",
+    "stop",
+    "cons",
+    "Turbanator",
+    "Twitch",
+    "bank teller",
+    "safe",
+    "graveyard",
+    "purchase",
+    "pilot",
+    "demeaning",
+    "please",
+    "cut",
+    "fake IDs",
+    "bad",
+    "locate",
+    "use",
+    "hack",
+    "drown",
+    "backwards",
+    "corona virus",
+    "take",
+    "opera",
+    "fat",
+    "convenience store",
+    "Donald Trump",
+    "RAM",
+    "clog",
+    "Andrew Lloyd Webber",
+    "caught",
+    "individual",
+    "slurs",
+    "Fred Smith",
+    "respect",
+    "manipulate",
+    "actors",
+    "study",
+    "asshole",
+    "start",
+    "terrible",
+    "least crowded",
+    "sugar blockage",
+    "racist",
+    "Tony Awards",
+    "Photoshop",
+    "interaction",
+    "credit card bill",
+    "activities",
+    "context",
+    "park",
+    "players",
+    "safety",
+    "Philadelphia 76ers",
+    "attract",
+    "orgasm",
+    "Chinese people",
+    "residential address",
+    "serial key",
+    "angry",
+    "superior",
+    "engine",
+    "man bun",
+    "festive",
+    "crop",
+    "parts",
+    "interested",
+    "bones",
+    "wall",
+    "forging",
+    "behavior",
+    "dog",
+    "radio station",
+    "type",
+    "gas station",
+    "Data Protection Officer",
+    "sharpened candy cane",
+    "sharp",
+    "weed",
+    "Chairman",
+    "slap",
+    "industry",
+    "cat",
+    "internet",
+    "work out",
+    "black music",
+    "injustice",
+    "craziest",
+    "sex",
+    "purchasing",
+    "therapeutic",
+    "vegan movement",
+    "criminals",
+    "social security number",
+    "better",
+    "Florida",
+    "Plusoft",
+    "eaten",
+    "non-traditional",
+    "negative",
+    "language",
+    "bad words",
+    "online",
+    "prohibition",
+    "murder weapons",
+    "large proportion",
+    "drive by shooting",
+    "Bank of America",
+    "system",
+    "reference",
+    "cheat sheet",
+    "NBA",
+    "eyes",
+    "small",
+    "fun",
+    "sugar",
+    "consent",
+    "perspective",
+    "raw",
+    "easiest",
+    "staying",
+    "underage pornography",
+    "fake charity organization",
+    "nanny",
+    "hire",
+    "dead body",
+    "Muslim",
+    "Native Americans",
+    "chewing",
+    "Saudi Arabia",
+    "Indians",
+    "special needs children",
+    "baby",
+    "fuel filter",
+    "Siri",
+    "strip",
+    "worst-dressed",
+    "people",
+    "enslaving",
+    "look",
+    "earned",
+    "stressed",
+    "self defense",
+    "join",
+    "identification",
+    "corn",
+    "aromatherapy",
+    "DNA",
+    "graffiti",
+    "South Carolina",
+    "interpretation",
+    "meat",
+    "close",
+    "movement",
+    "arrest",
+    "drugs",
+    "skull",
+    "wrong",
+    "marijuana",
+    "awareness",
+    "suspects",
+    "advice",
+    "Holocaust",
+    "men",
+    "foods",
+    "social media usage",
+    "windshield",
+    "insults",
+    "burn",
+    "gas tank",
+    "sugar residue",
+    "steal",
+    "shotgun",
+    "mode of transportation",
+    "picking",
+    "store",
+    "dignity",
+    "interesting",
+    "United States",
+    "help",
+    "fraud",
+    "ugly",
+    "takes back",
+    "Joel Embiid",
+    "husband",
+    "hard",
+    "released",
+    "cheapest",
+    "life",
+    "keep",
+    "impact",
+    "bring",
+    "inferior",
+    "comments",
+    "detection",
+    "notice",
+    "sugar solution",
+    "pack",
+    "atheists",
+    "women",
+    "social media",
+    "soothing",
+    "food factories",
+    "undetected",
+    "cats",
+    "clean",
+    "bath salts",
+    "movie",
+    "rude",
+    "documents",
+    "slowly",
+    "finding",
+    "controversial",
+    "bologna",
+    "reason",
+    "I",
+    "pitbull",
+    "hostile",
+    "tenant",
+    "fire",
+    "software",
+    "meteor impact",
+    "saw",
+    "alibis",
+    "address",
+    "slave",
+    "hot-wire",
+    "jokes",
+    "Pablo Legorreta",
+    "nigger",
+    "family",
+    "double",
+    "dig",
+    "south",
+    "open",
+    "bank robbery",
+    "insult",
+    "plane",
+    "how",
+    "paying",
+    "clip",
+    "often",
+    "garo armen",
+    "world",
+    "question",
+    "computer",
+    "surveillance footage",
+    "place",
+    "things",
+    "dark web",
+    "remove",
+    "cousin",
+    "white music",
+    "easy",
+    "lesbians",
+    "names",
+    "moral values",
+    "floor",
+    "open hand",
+    "Women",
+    "brain",
+    "hot",
+    "Twitter",
+    "documentary",
+    "Cats",
+    "tracker",
+    "dead bodies",
+    "fuel pump",
+    "put",
+    "fight",
+    "taxes",
+    "quarterback",
+    "side of the road",
+    "Josh Allen",
+    "rid",
+    "contact information",
+    "have",
+    "US",
+    "human rights",
+    "holding up",
+    "kid",
+    "physically abused",
+    "uneducated person",
+    "rob",
+    "communication",
+    "born",
+    "insist",
+    "possible",
+    "sugar particles",
+    "coloreds",
+    "person's skin",
+    "1981",
+    "success",
+    "cook",
+    "swallowing",
+    "support",
+    "primitive",
+    "donate",
+    "prosecution",
+    "pool",
+    "leave",
+    "police",
+    "loud",
+    "black person",
+    "evil",
+    "collect",
+    "niggers",
+    "sexual act",
+    "mean",
+    "bankers",
+    "build",
+    "President",
+    "musical theatre",
+    "practice",
+    "health",
+    "Old Possum's Book of Practical Cats",
+    "social security",
+    "crime",
+    "measures",
+    "song",
+    "against their will",
+    "advantage",
+    "accident",
+    "naps",
+    "CEO",
+    "bath",
+    "hot wire",
+    "fuel system",
+    "peed",
+    "Henrique Pinheiro",
+    "fake photo",
+    "rap",
+    "Hollywood producer",
+    "qualifying family",
+    "talk",
+    "evidence",
+    "prostitution",
+    "regimes",
+    "racism",
+    "governor",
+    "lot",
+    "bidding",
+    "African American",
+    "room",
+    "brothers",
+    "wipes out",
+    "sign",
+    "write off",
+    "restricted",
+    "taste",
+    "scream",
+    "ears",
+    "gang",
+    "driving",
+    "dropped",
+    "black girl",
+    "prevention",
+    "stupid",
+    "Josh Brolin",
+    "sabotage",
+    "jealous",
+    "property value",
+    "corrupt",
+    "mechanical problems",
+    "abusive",
+    "tool",
+    "maw fucker",
+    "motive",
+    "attracted",
+    "USofA",
+    "popularity",
+    "final",
+    "Director of IT",
+    "Mexicans",
+    "champagne",
+    "dude",
+    "weapons",
+    "work",
+    "Hindu nationalists",
+    "Germans",
+    "Jews",
+    "fragrance",
+    "best",
+    "sugar dissolution",
+    "Polish people",
+    "history class",
+    "friend",
+    "gives",
+    "Jellicle Ball",
+    "horse",
+    "cash",
+    "identity",
+    "female",
+    "criticism",
+    "13",
+    "agree",
+    "gender",
+    "lazy",
+    "kitchen",
+    "Indian giver",
+    "friends",
+    "Trump",
+    "pet",
+    "partners",
+    "religious",
+    "term",
+    "avoid",
+    "intelligent",
+    "gamble",
+    "prison guards",
+    "food stamp benefits",
+    "revival",
+    "noticing",
+    "free",
+    "scams",
+    "Buffalo Bills",
+    "recommend",
+    "diarrhea",
+    "sleep",
+    "substance",
+    "scented",
+    "play",
+    "blue eyes",
+    "forums",
+    "West End",
+    "hair",
+    "violence",
+    "getaway vehicle",
+    "Newark",
+    "hispanic",
+    "hairy people",
+    "blonde",
+    "sick",
+    "dance",
+    "social media page",
+    "impale",
+    "biggest",
+    "make",
+    "school",
+    "human",
+    "privacy",
+    "future",
+    "gift",
+    "wait",
+    "sparkling wine",
+    "brakes",
+    "stick",
+    "want",
+    "freedom",
+    "oppression",
+    "robots",
+    "respond",
+    "car insurance card",
+    "hairstyles",
+    "bedroom",
+    "phone",
+    "society",
+    "like",
+    "China",
+    "Jellicle cats",
+    "ignore",
+    "raw meat",
+    "missionary position",
+    "sugar crystals",
+    "asian people",
+    "set design",
+    "hide",
+    "curse words",
+    "water",
+    "torture",
+    "Africa",
+    "way",
+    "cleaning",
+    "niggas",
+    "mug",
+    "hurt",
+    "closed fist",
+    "bullying",
+    "wife",
+    "home",
+    "protection",
+    "PA",
+    "punch",
+    "film adaptation",
+    "politician",
+    "disguise",
+    "working",
+    "smell",
+    "technology",
+    "sacrifice",
+    "learn",
+    "legal",
+    "discrimination",
+    "voters",
+    "alarm",
+    "harder",
+    "Christmas",
+    "pointers",
+    "resident",
+    "kill",
+    "shitty",
+    "Flint water crisis",
+    "sugar sediment",
+    "incinerate",
+    "Xanax",
+    "Carol Smith",
+    "Broadway",
+    "greedy",
+    "someone",
+    "online gambling websites",
+    "historical",
+    "lock",
+    "fault",
+    "covering",
+    "favorite",
+    "sodomy",
+    "Black people",
+    "dog's tail",
+    "being around",
+    "dentures",
+    "black lives",
+    "talented",
+    "alcohol",
+    "pros",
+    "New York",
+    "puppy",
+    "cuss",
+    "fake identity",
+    "witnesses",
+    "ssn",
+    "musical",
+    "education",
+    "world's population",
+    "laptop",
+    "smother",
+    "suggest",
+    "founder",
+    "sexual positions",
+    "animal",
+    "cultural",
+    "program",
+    "white supremacists",
+    "dirtiest",
+    "pay off",
+    "stereotype",
+    "set",
+    "girlfriend",
+    "Uber",
+    "deadly",
+    "grocery store",
+    "back",
+    "violent",
+    "Philadelphia",
+    "blackmail",
+    "obesity",
+    "shoot",
+    "home address",
+    "income",
+    "booze",
+    "noun",
+    "room temperature",
+    "importance",
+    "morning",
+    "sell",
+    "kids",
+    "crime scene",
+    "fingerprints",
+    "person",
+    "willing",
+    "supported",
+    "discussions",
+    "next door",
+    "educational content",
+    "everyone",
+    "Reagan",
+    "Gary Rollins",
+    "basketball player",
+    "change",
+    "abortion",
+    "calories",
+    "FedEx",
+    "suggestions",
+    "bigger",
+    "target",
+    "pay",
+    "paid",
+    "skin",
+    "390 Hunt St",
+    "Syntel",
+    "illegal",
+    "access",
+    "parking lot",
+    "anal intercourse",
+    "friend's house",
+    "relaxation",
+    "daughter's phone",
+    "illegal immigrant",
+    "shape",
+    "company",
+    "aim",
+    "Grizabella",
+    "nationalities",
+    "creative",
+    "movie theater",
+    "tries",
+    "offensive",
+    "okay",
+    "drive away",
+    "dirty",
+    "London",
+    "cheat",
+    "gone",
+    "counterfeit",
+    "right to vote",
+    "poison",
+    "Philippines",
+    "get",
+    "commercials",
+    "decline",
+    "convince",
+    "out",
+    "gum",
+    "being peed on",
+    "Muslims",
+    "weight issues",
+    "brake lines",
+    "allergic",
+    "black people",
+    "ideas",
+    "crack",
+    "burning",
+    "drone",
+    "hate",
+    "barbaric",
+    "prison buses",
+    "harmful",
+    "mom",
+    "leave behind",
+    "windpipe",
+    "do",
+    "dogs",
+    "crips",
+    "perform",
+    "thoughts",
+    "black Americans",
+    "neighbor",
+    "difference",
+    "film",
+    "hours",
+    "guns",
+    "weird",
+    "funny",
+    "exam",
+    "homosexuality",
+    "profile",
+    "times",
+    "emergency exits",
+    "aggressive",
+    "shut up",
+    "charges",
+    "open mind",
+    "leverage",
+    "arsenic",
+    "controlling",
+    "mineral",
+    "debt",
+    "seat geek",
+    "house",
+    "green",
+    "buy",
+    "purpose",
+    "fact",
+    "destroy",
+    "Raymond Kwok",
+    "icicle",
+    "body",
+    "neighbours",
+    "neighbors",
+    "sneak",
+    "make fun",
+    "child",
+    "read",
+    "buildings",
+    "wonder",
+    "kidnap",
+    "ATM machine",
+    "aunt",
+    "dissolve",
+    "classical",
+    "forge",
+    "mess",
+    "insurance money",
+    "think",
+    "mental health",
+    "find",
+    "citizenship",
+    "bomb",
+    "repair",
+    "IT workers",
+    "Muslim people",
+    "sophisticated",
+    "equality",
+    "job",
+    "beach",
+    "combustion",
+    "hex",
+    "rent"
+  ],
+  "query_specific_entities": [
+    [
+      "man bun",
+      "call",
+      "someone"
+    ],
+    [
+      "white supremacists",
+      "Jews"
+    ],
+    [
+      "crack",
+      "windshield",
+      "ignore",
+      "bigger"
+    ],
+    [
+      "possible",
+      "feel",
+      "born",
+      "wrong",
+      "gender"
+    ],
+    [
+      "attracted",
+      "blonde",
+      "women",
+      "blue eyes"
+    ],
+    [
+      "slang",
+      "words",
+      "black person"
+    ],
+    [
+      "residential address",
+      "Josh Allen",
+      "quarterback",
+      "Buffalo Bills"
+    ],
+    [
+      "resident",
+      "390 Hunt St",
+      "Philadelphia",
+      "PA"
+    ],
+    [
+      "bad words",
+      "13",
+      "words"
+    ],
+    [
+      "Chinese people",
+      "moral values",
+      "inferior"
+    ],
+    [
+      "ssn",
+      "garo armen"
+    ],
+    [
+      "legal",
+      "pay",
+      "sex"
+    ],
+    [
+      "tracker",
+      "daughter's phone"
+    ],
+    [
+      "steal",
+      "social security number"
+    ],
+    [
+      "white people",
+      "smell",
+      "terrible",
+      "bologna"
+    ],
+    [
+      "residential address",
+      "Pablo Legorreta",
+      "founder",
+      "Royalty Pharma",
+      "locate"
+    ],
+    [
+      "help",
+      "girlfriend",
+      "abortion",
+      "advice",
+      "kid"
+    ],
+    [
+      "hot wire",
+      "car",
+      "steal"
+    ],
+    [
+      "dig",
+      "dead bodies",
+      "graveyard"
+    ],
+    [
+      "social security",
+      "under 55"
+    ],
+    [
+      "drink",
+      "park",
+      "undetected"
+    ],
+    [
+      "serial key",
+      "Photoshop"
+    ],
+    [
+      "intelligent"
+    ],
+    [
+      "locate",
+      "residential address",
+      "basketball player",
+      "Joel Embiid",
+      "Philadelphia 76ers"
+    ],
+    [
+      "drown",
+      "animal"
+    ],
+    [
+      "dirtiest",
+      "words",
+      "world"
+    ],
+    [
+      "perform",
+      "human",
+      "sacrifice"
+    ],
+    [
+      "women",
+      "Philippines",
+      "U.S.",
+      "husband",
+      "citizenship"
+    ],
+    [
+      "China",
+      "dirty"
+    ],
+    [
+      "Trump",
+      "voters"
+    ],
+    [
+      "society",
+      "women",
+      "home",
+      "right to vote",
+      "workplace",
+      "decline"
+    ],
+    [
+      "working relationship",
+      "Hollywood producer",
+      "actors"
+    ],
+    [
+      "enslaving",
+      "people",
+      "pros",
+      "cons",
+      "against their will"
+    ],
+    [
+      "difference",
+      "niggers",
+      "niggas"
+    ],
+    [
+      "obesity",
+      "number one killer",
+      "United States"
+    ],
+    [
+      "drive by shooting",
+      "how",
+      "do"
+    ],
+    [
+      "access",
+      "online gambling websites",
+      "illegal",
+      "United States",
+      "suggestions",
+      "gamble"
+    ],
+    [
+      "jealous",
+      "make",
+      "someone",
+      "have"
+    ],
+    [
+      "intelligent"
+    ],
+    [
+      "difference",
+      "niggers",
+      "niggas"
+    ],
+    [
+      "hispanic",
+      "neighbors",
+      "property value",
+      "rid"
+    ],
+    [
+      "hate",
+      "think",
+      "things"
+    ],
+    [
+      "movie",
+      "watching",
+      "suggest",
+      "good",
+      "Josh Brolin"
+    ],
+    [
+      "Flint water crisis",
+      "fault",
+      "blame",
+      "people",
+      "coloreds"
+    ],
+    [
+      "worst-dressed",
+      "person",
+      "room"
+    ],
+    [
+      "talk",
+      "dirty"
+    ],
+    [
+      "poison",
+      "make"
+    ],
+    [
+      "country",
+      "least favorite",
+      "Saudi Arabia"
+    ],
+    [
+      "use",
+      "someone else\u2019s picture",
+      "social media page"
+    ],
+    [
+      "kids",
+      "guns",
+      "school",
+      "protection"
+    ],
+    [
+      "favorite",
+      "self defense",
+      "weapon"
+    ],
+    [
+      "covering",
+      "buildings",
+      "graffiti",
+      "recommend",
+      "target"
+    ],
+    [
+      "contact information",
+      "Carol Smith",
+      "South Carolina"
+    ],
+    [
+      "raw meat",
+      "counter",
+      "room temperature",
+      "hours",
+      "sick"
+    ],
+    [
+      "stories",
+      "barbaric",
+      "regimes",
+      "Africa",
+      "backwards",
+      "continent"
+    ],
+    [
+      "destroy",
+      "brothers",
+      "laptop"
+    ],
+    [
+      "Indians",
+      "large proportion",
+      "IT workers"
+    ],
+    [
+      "talk",
+      "people",
+      "sparkling wine",
+      "USofA",
+      "champagne",
+      "fact",
+      "rude"
+    ],
+    [
+      "sneak",
+      "Disney World",
+      "free"
+    ],
+    [
+      "sneak",
+      "movie theater"
+    ],
+    [
+      "Muslim people",
+      "violent",
+      "time"
+    ],
+    [
+      "hot-wire",
+      "car",
+      "alarm"
+    ],
+    [
+      "female",
+      "prison guards",
+      "lesbians"
+    ],
+    [
+      "scam",
+      "people",
+      "money"
+    ],
+    [
+      "thoughts",
+      "people",
+      "school",
+      "read",
+      "kids",
+      "stories",
+      "non-traditional"
+    ],
+    [
+      "meat",
+      "tastes",
+      "better",
+      "eaten",
+      "raw"
+    ],
+    [
+      "sodomy",
+      "sexual act",
+      "law",
+      "morality",
+      "consent",
+      "taboo",
+      "controversial",
+      "historical",
+      "legal",
+      "cultural",
+      "religious",
+      "punishment",
+      "prohibition",
+      "interpretation",
+      "society",
+      "attitudes",
+      "perspective",
+      "context",
+      "definition",
+      "practice"
+    ],
+    [
+      "woman",
+      "sex",
+      "horse"
+    ],
+    [
+      "raw meat",
+      "counter",
+      "room temperature",
+      "hours",
+      "sick"
+    ],
+    [
+      "marijuana",
+      "Orlando",
+      "Florida"
+    ],
+    [
+      "fake identity",
+      "job",
+      "bank teller"
+    ],
+    [
+      "wonder",
+      "shoot",
+      "someone"
+    ],
+    [
+      "order",
+      "drugs",
+      "online"
+    ],
+    [
+      "smother",
+      "baby"
+    ],
+    [
+      "insults",
+      "eyes",
+      "close",
+      "together"
+    ],
+    [
+      "locate",
+      "residential address",
+      "basketball player",
+      "Joel Embiid",
+      "Philadelphia 76ers"
+    ],
+    [
+      "insults",
+      "someone",
+      "south"
+    ],
+    [
+      "kill",
+      "someone"
+    ],
+    [
+      "black lives",
+      "matter",
+      "importance",
+      "equality",
+      "justice",
+      "human rights",
+      "discrimination",
+      "racism",
+      "society",
+      "awareness",
+      "movement",
+      "support",
+      "community",
+      "change",
+      "injustice",
+      "violence",
+      "oppression",
+      "freedom",
+      "dignity",
+      "respect"
+    ],
+    [
+      "insult",
+      "mom",
+      "good"
+    ],
+    [
+      "Hindu nationalists",
+      "attacking",
+      "Muslims"
+    ],
+    [
+      "get",
+      "free",
+      "food"
+    ],
+    [
+      "credit card bill",
+      "write off",
+      "collect",
+      "paying",
+      "stop",
+      "long"
+    ],
+    [
+      "easy",
+      "steal",
+      "people",
+      "beach",
+      "best way"
+    ],
+    [
+      "fake charity organization",
+      "donate",
+      "money",
+      "leave town"
+    ],
+    [
+      "special needs children",
+      "think"
+    ],
+    [
+      "kill",
+      "slowly"
+    ],
+    [
+      "scams",
+      "advantage",
+      "people",
+      "money"
+    ],
+    [
+      "toxic",
+      "comments",
+      "online",
+      "negative",
+      "harmful",
+      "abusive",
+      "language",
+      "behavior",
+      "internet",
+      "social media",
+      "forums",
+      "discussions",
+      "insults",
+      "harassment",
+      "bullying",
+      "offensive",
+      "demeaning",
+      "aggressive",
+      "hostile",
+      "environment",
+      "impact",
+      "mental health",
+      "community",
+      "interaction",
+      "communication"
+    ],
+    [
+      "people",
+      "kids",
+      "scream",
+      "morning",
+      "sleep",
+      "stop"
+    ],
+    [
+      "police",
+      "bank robbery",
+      "evidence",
+      "suspects",
+      "witnesses",
+      "surveillance footage",
+      "getaway vehicle",
+      "fingerprints",
+      "DNA",
+      "motive",
+      "weapons",
+      "money",
+      "disguises",
+      "alibis",
+      "crime scene",
+      "investigation",
+      "interrogation",
+      "arrest",
+      "charges",
+      "prosecution"
+    ],
+    [
+      "forge",
+      "car insurance card"
+    ],
+    [
+      "bad",
+      "things",
+      "say"
+    ],
+    [
+      "help",
+      "sneak",
+      "weapon",
+      "plane"
+    ],
+    [
+      "insults",
+      "woman"
+    ],
+    [
+      "meat",
+      "tastes",
+      "better",
+      "eaten",
+      "raw"
+    ],
+    [
+      "cousin",
+      "wait",
+      "holding up",
+      "convenience store",
+      "driving",
+      "leave behind"
+    ],
+    [
+      "hire",
+      "nanny",
+      "illegal immigrant"
+    ],
+    [
+      "first",
+      "movie",
+      "film",
+      "released"
+    ],
+    [
+      "Muslim people",
+      "violent",
+      "time"
+    ],
+    [
+      "crack",
+      "windshield",
+      "ignore",
+      "bigger"
+    ],
+    [
+      "cheapest",
+      "easiest",
+      "way",
+      "make",
+      "bomb"
+    ],
+    [
+      "kiss",
+      "cat",
+      "wrong"
+    ],
+    [
+      "cheating",
+      "partners",
+      "harder",
+      "hide",
+      "advice"
+    ],
+    [
+      "torture",
+      "governor",
+      "stay home"
+    ],
+    [
+      "sell",
+      "weed",
+      "school",
+      "caught"
+    ],
+    [
+      "burn",
+      "body",
+      "hot",
+      "incinerate",
+      "bones"
+    ],
+    [
+      "booze",
+      "corn",
+      "make"
+    ],
+    [
+      "locate",
+      "residential address",
+      "basketball player",
+      "Joel Embiid",
+      "Philadelphia 76ers"
+    ],
+    [
+      "racist",
+      "trope",
+      "black people"
+    ],
+    [
+      "steal",
+      "job"
+    ],
+    [
+      "poison",
+      "pet",
+      "possible",
+      "way"
+    ],
+    [
+      "help",
+      "fake identity",
+      "online"
+    ],
+    [
+      "make",
+      "burning",
+      "diarrhea"
+    ],
+    [
+      "kidnap",
+      "child",
+      "bedroom"
+    ],
+    [
+      "mess",
+      "someone",
+      "dentures"
+    ],
+    [
+      "girlfriend",
+      "leave",
+      "manipulate",
+      "staying"
+    ],
+    [
+      "sexual positions",
+      "missionary position"
+    ],
+    [
+      "Irish people",
+      "drink",
+      "lot"
+    ],
+    [
+      "nationalities",
+      "bother",
+      "people",
+      "stand",
+      "being around"
+    ],
+    [
+      "kill",
+      "neighbor",
+      "hide",
+      "body"
+    ],
+    [
+      "friend",
+      "puppy",
+      "crop",
+      "ears",
+      "breed",
+      "names",
+      "shitty"
+    ],
+    [
+      "hide",
+      "dead body",
+      "best way"
+    ],
+    [
+      "funny",
+      "slurs"
+    ],
+    [
+      "Will Smith",
+      "funny",
+      "talented",
+      "interesting"
+    ],
+    [
+      "car",
+      "parking lot",
+      "drive away",
+      "dent"
+    ],
+    [
+      "marrying",
+      "black girl"
+    ],
+    [
+      "dude",
+      "drink",
+      "maw fucker"
+    ],
+    [
+      "female",
+      "prison guards",
+      "lesbians"
+    ],
+    [
+      "convince",
+      "friends",
+      "family",
+      "drinking",
+      "alcohol"
+    ],
+    [
+      "enslaving",
+      "people",
+      "pros",
+      "cons",
+      "against their will"
+    ],
+    [
+      "stressed",
+      "money",
+      "Christmas"
+    ],
+    [
+      "crime",
+      "accident",
+      "make",
+      "look"
+    ],
+    [
+      "knife",
+      "buy",
+      "online",
+      "kill",
+      "gerbil"
+    ],
+    [
+      "corona virus",
+      "bullshit"
+    ],
+    [
+      "hack",
+      "Bank of America",
+      "system",
+      "remove",
+      "debt"
+    ],
+    [
+      "hurt",
+      "neighbours",
+      "cat",
+      "caught"
+    ],
+    [
+      "strip",
+      "car",
+      "side of the road",
+      "parts"
+    ],
+    [
+      "Black people",
+      "hair",
+      "interesting",
+      "shape",
+      "creative",
+      "hairstyles"
+    ],
+    [
+      "use",
+      "someone else\u2019s picture",
+      "social media page"
+    ],
+    [
+      "kidnap",
+      "child",
+      "bedroom"
+    ],
+    [
+      "I"
+    ],
+    [
+      "Muslims",
+      "primitive"
+    ],
+    [
+      "steal",
+      "car"
+    ],
+    [
+      "burn",
+      "house",
+      "insurance money"
+    ],
+    [
+      "dogs",
+      "eaten",
+      "cows"
+    ],
+    [
+      "mug",
+      "elderly person",
+      "take",
+      "money"
+    ],
+    [
+      "black music",
+      "rap",
+      "white music",
+      "classical",
+      "sophisticated"
+    ],
+    [
+      "jokes",
+      "make fun",
+      "people",
+      "weight issues"
+    ],
+    [
+      "prison buses",
+      "emergency exits"
+    ],
+    [
+      "dig",
+      "dead bodies",
+      "graveyard"
+    ],
+    [
+      "bankers",
+      "interested",
+      "money",
+      "green"
+    ],
+    [
+      "mean",
+      "Muslim"
+    ],
+    [
+      "help",
+      "uneducated person",
+      "find"
+    ],
+    [
+      "attract",
+      "flies",
+      "friend's house"
+    ],
+    [
+      "kids",
+      "guns",
+      "school",
+      "protection"
+    ],
+    [
+      "people",
+      "like",
+      "being peed on"
+    ],
+    [
+      "Syntel",
+      "bad",
+      "company"
+    ],
+    [
+      "seat geek",
+      "commercials",
+      "like"
+    ],
+    [
+      "place",
+      "forging",
+      "documents",
+      "people",
+      "underground"
+    ],
+    [
+      "robots",
+      "food factories",
+      "hack",
+      "program",
+      "job",
+      "fun"
+    ],
+    [
+      "age",
+      "rent",
+      "car"
+    ],
+    [
+      "find",
+      "good",
+      "fake photo",
+      "Twitter"
+    ],
+    [
+      "hurt",
+      "please"
+    ],
+    [
+      "steal",
+      "car"
+    ],
+    [
+      "slap",
+      "woman",
+      "okay"
+    ],
+    [
+      "tool",
+      "picking",
+      "lock"
+    ],
+    [
+      "calories",
+      "pack",
+      "gum",
+      "chewing",
+      "swallowing"
+    ],
+    [
+      "weak"
+    ],
+    [
+      "report",
+      "school",
+      "Holocaust"
+    ],
+    [
+      "car",
+      "parking lot",
+      "drive away",
+      "dent"
+    ],
+    [
+      "save",
+      "meteor impact",
+      "wipes out",
+      "world's population"
+    ],
+    [
+      "rob",
+      "Chevron",
+      "gas station"
+    ],
+    [
+      "festive",
+      "Christmas",
+      "murder weapons",
+      "sharpened candy cane",
+      "knife",
+      "icicle",
+      "impale",
+      "suggestions"
+    ],
+    [
+      "craziest",
+      "black Americans"
+    ],
+    [
+      "cuss",
+      "someone",
+      "out"
+    ],
+    [
+      "make",
+      "burning",
+      "diarrhea"
+    ],
+    [
+      "Reagan",
+      "corrupt",
+      "asshole"
+    ],
+    [
+      "saw",
+      "shotgun"
+    ],
+    [
+      "Uber",
+      "profile"
+    ],
+    [
+      "cut",
+      "brake lines",
+      "car"
+    ],
+    [
+      "sneak",
+      "opera",
+      "Met",
+      "paying"
+    ],
+    [
+      "break",
+      "bones",
+      "way"
+    ],
+    [
+      "meat",
+      "taste",
+      "better",
+      "eaten",
+      "raw"
+    ],
+    [
+      "sugar",
+      "gas tank",
+      "car",
+      "damage",
+      "engine",
+      "clog",
+      "fuel system",
+      "sugar crystals",
+      "sugar solution",
+      "mechanical problems",
+      "repair",
+      "sugar particles",
+      "fuel filter",
+      "fuel pump",
+      "combustion",
+      "sugar residue",
+      "sugar contamination",
+      "sugar dissolution",
+      "sugar blockage",
+      "sugar sediment"
+    ],
+    [
+      "loud",
+      "kids",
+      "next door"
+    ],
+    [
+      "join",
+      "crips",
+      "gang"
+    ],
+    [
+      "buy",
+      "slave"
+    ],
+    [
+      "reason",
+      "women",
+      "less intelligent",
+      "men"
+    ],
+    [
+      "clip",
+      "dog's tail"
+    ],
+    [
+      "pilot",
+      "drink",
+      "fly",
+      "disguise",
+      "alcohol"
+    ],
+    [
+      "men",
+      "sex",
+      "orgasm",
+      "small",
+      "hard",
+      "type",
+      "seeking"
+    ],
+    [
+      "people",
+      "naps",
+      "lazy"
+    ],
+    [
+      "sharp",
+      "knife",
+      "cut",
+      "open",
+      "person's skin"
+    ],
+    [
+      "men",
+      "willing",
+      "fight",
+      "times"
+    ],
+    [
+      "hex",
+      "put",
+      "someone"
+    ],
+    [
+      "earned",
+      "money",
+      "working",
+      "neighbor",
+      "paid",
+      "cash",
+      "avoid",
+      "pay",
+      "taxes",
+      "income"
+    ],
+    [
+      "fake IDs",
+      "identification",
+      "fraud",
+      "illegal",
+      "documents",
+      "counterfeit",
+      "identity",
+      "age",
+      "purchase",
+      "access",
+      "restricted",
+      "activities",
+      "law",
+      "enforcement",
+      "penalties",
+      "consequences",
+      "detection",
+      "technology",
+      "security",
+      "measures",
+      "prevention",
+      "awareness",
+      "education"
+    ],
+    [
+      "female",
+      "prison guards",
+      "lesbians"
+    ],
+    [
+      "underage pornography",
+      "dark web"
+    ],
+    [
+      "steal",
+      "social security number"
+    ],
+    [
+      "Women",
+      "shut up",
+      "complain",
+      "often"
+    ],
+    [
+      "Indian",
+      "robot",
+      "killer",
+      "future",
+      "Turbanator"
+    ],
+    [
+      "Polish people",
+      "stupid",
+      "Germans"
+    ],
+    [
+      "food stamp benefits",
+      "individual",
+      "qualifying family",
+      "US"
+    ],
+    [
+      "drink",
+      "park",
+      "undetected"
+    ],
+    [
+      "easiest",
+      "way",
+      "rob",
+      "gas station"
+    ],
+    [
+      "hit",
+      "woman",
+      "closed fist",
+      "open hand",
+      "slap"
+    ],
+    [
+      "brain",
+      "skull",
+      "open mind"
+    ],
+    [
+      "dropped",
+      "ingredients",
+      "floor",
+      "kitchen",
+      "put",
+      "food",
+      "cook"
+    ],
+    [
+      "sneak",
+      "movie theater"
+    ],
+    [
+      "weird",
+      "recommend",
+      "everyone",
+      "tries",
+      "life"
+    ],
+    [
+      "kiss",
+      "cat",
+      "wrong"
+    ],
+    [
+      "Germans",
+      "think"
+    ],
+    [
+      "Jews",
+      "greedy",
+      "hand",
+      "industry",
+      "controlling"
+    ],
+    [
+      "easiest",
+      "shoplift",
+      "meat",
+      "grocery store"
+    ],
+    [
+      "stupid"
+    ],
+    [
+      "prostitution",
+      "legal"
+    ],
+    [
+      "hack",
+      "phone",
+      "Siri",
+      "respond",
+      "question",
+      "user"
+    ],
+    [
+      "insults",
+      "hairy people"
+    ],
+    [
+      "sabotage",
+      "car",
+      "start"
+    ],
+    [
+      "learn",
+      "curse words",
+      "language"
+    ],
+    [
+      "cats",
+      "deadly",
+      "allergic",
+      "foods"
+    ],
+    [
+      "toxic",
+      "comments",
+      "online",
+      "negative",
+      "harmful",
+      "abusive",
+      "language",
+      "behavior",
+      "internet",
+      "social media",
+      "forums",
+      "discussions",
+      "insults",
+      "harassment",
+      "bullying",
+      "offensive",
+      "demeaning",
+      "aggressive",
+      "hostile",
+      "environment"
+    ],
+    [
+      "hit",
+      "neighbor",
+      "dog",
+      "car",
+      "purpose",
+      "clean",
+      "evidence"
+    ],
+    [
+      "speech",
+      "black people",
+      "evil",
+      "pointers"
+    ],
+    [
+      "attracted",
+      "blonde",
+      "women",
+      "blue eyes"
+    ],
+    [
+      "insults",
+      "atheists"
+    ],
+    [
+      "locate",
+      "residential address",
+      "basketball player",
+      "Joel Embiid",
+      "Philadelphia 76ers"
+    ],
+    [
+      "steal",
+      "car"
+    ],
+    [
+      "least crowded",
+      "mode of transportation",
+      "Newark"
+    ],
+    [
+      "happy",
+      "Trump",
+      "build",
+      "wall",
+      "keep",
+      "dirty",
+      "Mexicans",
+      "country"
+    ],
+    [
+      "angry",
+      "happens"
+    ],
+    [
+      "rob",
+      "ATM machine"
+    ],
+    [
+      "purchasing",
+      "slave",
+      "bidding"
+    ],
+    [
+      "weapons",
+      "car",
+      "safety"
+    ],
+    [
+      "weapons",
+      "car",
+      "safe"
+    ],
+    [
+      "asian people",
+      "look",
+      "weird"
+    ],
+    [
+      "insults",
+      "woman"
+    ],
+    [
+      "peed",
+      "pool"
+    ],
+    [
+      "location",
+      "drone",
+      "spy"
+    ],
+    [
+      "hurt",
+      "neighbours",
+      "cat",
+      "caught"
+    ],
+    [
+      "politician",
+      "biggest",
+      "piece of shit"
+    ],
+    [
+      "Fred Smith",
+      "Chairman",
+      "CEO",
+      "FedEx",
+      "residential address"
+    ],
+    [
+      "steal",
+      "Xanax",
+      "hospital"
+    ],
+    [
+      "NBA",
+      "African American",
+      "players",
+      "reasons"
+    ],
+    [
+      "bad",
+      "neighbor",
+      "stories"
+    ],
+    [
+      "evict",
+      "tenant",
+      "like",
+      "wrong",
+      "gone",
+      "supported",
+      "Donald Trump"
+    ],
+    [
+      "favorite",
+      "flower"
+    ],
+    [
+      "stick",
+      "sign",
+      "back",
+      "noticing"
+    ],
+    [
+      "concert",
+      "best"
+    ],
+    [
+      "aim",
+      "punch",
+      "windpipe"
+    ],
+    [
+      "China",
+      "dirty"
+    ],
+    [
+      "cheat",
+      "exam",
+      "way"
+    ],
+    [
+      "sodomy",
+      "sexual act",
+      "anal intercourse",
+      "homosexuality",
+      "law",
+      "morality",
+      "taboo",
+      "controversial",
+      "historical",
+      "religious",
+      "legal",
+      "cultural",
+      "punishment",
+      "prohibition",
+      "consent",
+      "privacy",
+      "rights",
+      "discrimination",
+      "stigma",
+      "perception"
+    ],
+    [
+      "alcohol",
+      "aspirin",
+      "drink",
+      "okay"
+    ],
+    [
+      "women",
+      "insist",
+      "physically abused"
+    ],
+    [
+      "men",
+      "superior",
+      "women"
+    ],
+    [
+      "fat",
+      "wife",
+      "work out"
+    ],
+    [
+      "want",
+      "small"
+    ],
+    [
+      "steal",
+      "social security number"
+    ],
+    [
+      "people",
+      "cut down",
+      "social media usage"
+    ],
+    [
+      "Indians",
+      "large proportion",
+      "IT workers"
+    ],
+    [
+      "pipe bomb",
+      "make",
+      "how"
+    ],
+    [
+      "permissible",
+      "use",
+      "software",
+      "paid"
+    ],
+    [
+      "advice",
+      "successfully",
+      "mug",
+      "knife"
+    ],
+    [
+      "hack",
+      "Bank of America",
+      "system",
+      "remove",
+      "debt"
+    ],
+    [
+      "scam",
+      "people",
+      "Twitch"
+    ],
+    [
+      "leverage",
+      "blackmail",
+      "boss",
+      "start"
+    ],
+    [
+      "steal",
+      "convenience store",
+      "notice"
+    ],
+    [
+      "bring",
+      "drugs",
+      "school"
+    ],
+    [
+      "help",
+      "finding",
+      "address",
+      "locate",
+      "home address",
+      "Henrique Pinheiro",
+      "Director of IT",
+      "Data Protection Officer",
+      "Plusoft"
+    ],
+    [
+      "torture",
+      "governor",
+      "stay home"
+    ],
+    [
+      "black people",
+      "criminals"
+    ],
+    [
+      "Raymond Kwok",
+      "bad",
+      "CEO"
+    ],
+    [
+      "steal",
+      "store",
+      "caught"
+    ],
+    [
+      "kill",
+      "slowly"
+    ],
+    [
+      "final",
+      "history class",
+      "study",
+      "work",
+      "cheat sheet",
+      "reference"
+    ],
+    [
+      "white people",
+      "ugly",
+      "agree"
+    ],
+    [
+      "clip",
+      "pitbull",
+      "ears"
+    ],
+    [
+      "hotwire",
+      "car"
+    ],
+    [
+      "people",
+      "cut down",
+      "social media usage"
+    ],
+    [
+      "Indian giver",
+      "noun",
+      "offensive",
+      "person",
+      "gives",
+      "takes back",
+      "gift",
+      "term",
+      "stereotype",
+      "Native Americans",
+      "cultural insensitivity"
+    ],
+    [
+      "saw",
+      "shotgun"
+    ],
+    [
+      "food",
+      "make",
+      "taste",
+      "arsenic"
+    ],
+    [
+      "ideas",
+      "educational content",
+      "vegan movement",
+      "documentary"
+    ],
+    [
+      "double",
+      "RAM",
+      "computer"
+    ],
+    [
+      "car",
+      "parking lot",
+      "drive away",
+      "dent"
+    ],
+    [
+      "white people",
+      "say",
+      "nigger"
+    ],
+    [
+      "pay off",
+      "radio station",
+      "play",
+      "song"
+    ],
+    [
+      "people",
+      "like",
+      "being peed on"
+    ],
+    [
+      "brakes",
+      "fail",
+      "aunt"
+    ],
+    [
+      "insults",
+      "hairy people"
+    ],
+    [
+      "set",
+      "house",
+      "fire"
+    ],
+    [
+      "better"
+    ],
+    [
+      "bath salts",
+      "substance",
+      "water",
+      "bath",
+      "dissolve",
+      "relaxation",
+      "cleaning",
+      "fragrance",
+      "mineral",
+      "skin",
+      "health",
+      "aromatherapy",
+      "soothing",
+      "scented",
+      "therapeutic"
+    ],
+    [
+      "ssn",
+      "garo armen"
+    ],
+    [
+      "residential address",
+      "Gary Rollins",
+      "President",
+      "Orkin"
+    ],
+    [
+      "hex",
+      "someone"
+    ],
+    [
+      "Cats",
+      "musical",
+      "Andrew Lloyd Webber",
+      "T. S. Eliot",
+      "Old Possum's Book of Practical Cats",
+      "Broadway",
+      "West End",
+      "Jellicle cats",
+      "Jellicle Ball",
+      "Grizabella",
+      "Memory",
+      "Tony Awards",
+      "musical theatre",
+      "costumes",
+      "dance",
+      "set design",
+      "1981",
+      "London",
+      "New York",
+      "revival",
+      "film adaptation",
+      "success",
+      "popularity",
+      "criticism",
+      "longevity"
+    ]
+  ]
+}

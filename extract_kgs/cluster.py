@@ -356,8 +356,9 @@ def process_file(input_file: str):
 
 if __name__ == "__main__":
     input_files = [
-        # 'kgs/harmless_base_rejected_test_50.json',
-        'kgs/advil.json'
+        # 'kgs/advil.json'
+        'kgs/224w_final_deliverable/complete/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.json',
+        'kgs/224w_final_deliverable/complete/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.json',
     ]
     
     for input_file in input_files:

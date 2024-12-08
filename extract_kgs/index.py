@@ -21,6 +21,7 @@ import logging
 from enum import Enum
 from pydantic import Field, model_validator
 import os
+import time
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -55,6 +56,23 @@ def get_relation_extraction_prompt() -> str:
     return """Extract subject-predicate-object triples from the assistant message. A predicate (1-3 words) defines the relationship between the subject and object. Relationship may be fact or sentiment based on assistant's message. Subject and object are entities. Entities provided are from the assistant message and prior conversation history, though you may not need all of them. This is for an extraction task, please be thorough, accurate, and faithful to the reference text."""
 ""
 
+def handle_openai_error(func):
+    def wrapper(*args, **kwargs):
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                return func(*args, **kwargs)
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt  # Exponential backoff
+                    logger.warning(f"OpenAI API error: {str(e)}. Retrying in {wait_time} seconds...")
+                    time.sleep(wait_time)
+                else:
+                    logger.error(f"OpenAI API error after {max_retries} attempts: {str(e)}")
+                    return ""  # Return an empty string as requested
+    return wrapper
+
+@handle_openai_error
 def extract_entities(text: str, system_prompt: str = get_entity_extraction_prompt()) -> List[str]:
     completion = client.beta.chat.completions.parse(
         model=MODEL,
@@ -138,6 +156,7 @@ def create_relation_models(entities: List[str]) -> Tuple[type, type]:
     
     return KnowledgeGraphRelation, KnowledgeGraphRelations
 
+@handle_openai_error
 def extract_relations(text: str, entities: List[str], system_prompt: str = get_relation_extraction_prompt()) -> List[Tuple[str, str, str]]:
     if not entities:
         logger.warning("No entities provided for relation extraction")
@@ -196,20 +215,8 @@ class GoldLabelDataset(BaseModel):
 def process_jsonl(file_path: str) -> List[dict]:
     with open(file_path, 'r') as file:
         return [json.loads(line) for line in file if json.loads(line)]
-    
-def extract_entities(text: str, system_prompt: str = get_entity_extraction_prompt()) -> List[str]:
-    completion = client.beta.chat.completions.parse(
-        model=MODEL,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": 'Text: ' + text},
-        ],
-        response_format=KnowledgeGraphEntities,
-        temperature=0
-    )
-    parsed = completion.choices[0].message.parsed
-    return parsed.entities if parsed else []
 
+@handle_openai_error
 def extract_additional_entities(text: str, exclude: List[str], system_prompt: str = None) -> List[str]:
     if system_prompt is None:
         system_prompt = get_additional_entity_extraction_prompt(exclude)
@@ -266,7 +273,12 @@ if __name__ == "__main__":
     # List of files to process
     files_to_process = [
         # "harmless_base_rejected_test_50.jsonl"
-        "advil.jsonl"
+        # "advil.jsonl"
+        # "224w_final_deliverable/test.jsonl",
+        "224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.jsonl",
+        "224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.jsonl",
+        "224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.jsonl",
+        "224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.jsonl"
     ]
 
     # Extract query entities from first file
@@ -287,6 +299,14 @@ if __name__ == "__main__":
     shared_query_entities = list(all_query_entities)
     print(f"Shared query entities: {shared_query_entities}")
     print(f"Query-specific entities: {query_entities_list}")
+    # Save extracted entities and query-specific entities for future reference
+    entities_output_file = os.path.join(KGS_DIR, "extracted_entities.json")
+    with open(entities_output_file, 'w') as f:
+        json.dump({
+            "shared_query_entities": list(shared_query_entities),
+            "query_specific_entities": query_entities_list
+        }, f, indent=2)
+    print(f"Saved extracted entities to {entities_output_file}")
 
     for file_name in files_to_process:
         file_path = os.path.join(SOURCE_DATA_DIR, file_name)
@@ -300,7 +320,7 @@ if __name__ == "__main__":
             for i, sample in enumerate(data):
                 user_query = sample['human_query']
                 assistant_response = sample['assistant_response']
-                sample_query_entities = query_entities_list[i] if i < len(query_entities_list) else []
+                sample_query_entities = query_entities_list[i] if i < len(query_entities_list)  else []
                 processed_sample = process_sample(user_query, assistant_response, sample_query_entities)
                 gold_label_dataset.append(processed_sample)
                 

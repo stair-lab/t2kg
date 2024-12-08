@@ -23,25 +23,27 @@ def create_knowledge_graph(entities: List[str], relations: List[List[str]]) -> n
     return G
 
 def visualize_knowledge_graph(G: nx.DiGraph, title: str) -> None:
-    plt.figure(figsize=(48, 36))  # Greatly increased figure size for much better visibility
-    pos = nx.spring_layout(G, k=3, iterations=200)  # Significantly increased k and iterations for much more spread
+    plt.figure(figsize=(60, 45))  # Increased figure size for more space
+    pos = nx.spring_layout(G, k=10, iterations=1000)  # Increased k and iterations for more spread
     
     # Draw nodes
-    nx.draw_networkx_nodes(G, pos, node_color='lightblue', node_size=12000)
-    nx.draw_networkx_labels(G, pos, font_size=16, font_weight='bold')
+    nx.draw_networkx_nodes(G, pos, node_color='lightblue', node_size=8000)
+    nx.draw_networkx_labels(G, pos, font_size=12, font_weight='bold')
     
     # Draw edges with arrows
-    nx.draw_networkx_edges(G, pos, edge_color='gray', arrows=True, arrowsize=60, connectionstyle="arc3,rad=0.2", width=3, arrowstyle='->', min_source_margin=100, min_target_margin=100)
+    nx.draw_networkx_edges(G, pos, edge_color='gray', arrows=True, arrowsize=30, 
+                           connectionstyle="arc3,rad=0.3", width=1.5, arrowstyle='->',
+                           min_source_margin=30, min_target_margin=30)
     edge_labels = nx.get_edge_attributes(G, 'label')
-    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=14)
-    plt.title(title, fontsize=18)
-    plt.axis('off')
-    plt.tight_layout()
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=10)
     
-    # Add some padding around the graph
+    plt.title(title, fontsize=20)
+    plt.axis('off')
+    
+    # Add more padding around the graph
     x_values, y_values = zip(*pos.values())
-    x_margin = (max(x_values) - min(x_values)) * 0.15
-    y_margin = (max(y_values) - min(y_values)) * 0.15
+    x_margin = (max(x_values) - min(x_values)) * 0.4
+    y_margin = (max(y_values) - min(y_values)) * 0.4
     plt.xlim(min(x_values) - x_margin, max(x_values) + x_margin)
     plt.ylim(min(y_values) - y_margin, max(y_values) + y_margin)
     
