@@ -14,17 +14,36 @@ from pykeen.models import TransE
 from pykeen.pipeline import pipeline
 from pykeen.triples import TriplesFactory
 from torch_geometric.nn import Node2Vec as PyGNode2Vec
+from torch.utils.data import DataLoader, Dataset
 import analysis_constants 
 
 TRANSR_NUM_EPOCHS = 1000
 TRANSR_PRINT_EVERY = 100
 TRANSR_LEARNING_RATE = 0.01
 TRANSR_MARGIN = 1.0
+TRANSR_BATCH_SIZE = 32
 
 NODE2VEC_NUM_EPOCHS =100
 NODE2VEC_WALK_LENGTH=80
 NODE2VEC_CONTEXT_SIZE=10
 NODE2VEC_WALKS_PER_NODE=10 
+
+
+class KnowledgeGraphDataset(Dataset):
+    def __init__(self, relations, entity_mapping, relation_mapping):
+        self.relations = relations
+        self.entity_mapping = entity_mapping
+        self.relation_mapping = relation_mapping
+
+    def __len__(self):
+        return len(self.relations)
+
+    def __getitem__(self, idx):
+        source, pred, target = self.relations[idx]
+        source_idx = self.entity_mapping[source]
+        target_idx = self.entity_mapping[target]
+        relation_idx = self.relation_mapping[pred]
+        return source_idx, relation_idx, target_idx
 
 class TransREmbedding(torch.nn.Module):
     def __init__(self, num_entities, num_relations, embedding_dim=analysis_constants.EMBEDDING_DIM):
@@ -56,25 +75,19 @@ class TransREmbedding(torch.nn.Module):
         x = x + self.entity_embeddings(torch.arange(len(entities)))
         return x
     
-    def link_prediction_loss(self, pos_edges, neg_edges, relation_type):
+    def link_prediction_loss(self, pos_edges, neg_edges, relation_types):
         # TransR-style margin-based loss
         pos_head, pos_tail = pos_edges
         neg_head, neg_tail = neg_edges
 
-        proj_matrix = self.relation_matrices[relation_type]
-
-        pos_head_proj = torch.matmul(pos_head, proj_matrix)
-        pos_tail_proj = torch.matmul(pos_tail, proj_matrix)
-        neg_head_proj = torch.matmul(neg_head, proj_matrix)
-        neg_tail_proj = torch.matmul(neg_tail, proj_matrix)
-
-        pos_distance = torch.norm(pos_head_proj + self.relation_embeddings(torch.tensor(relation_type)) - pos_tail_proj)
-        neg_distance = torch.norm(neg_head_proj + self.relation_embeddings(torch.tensor(relation_type)) - neg_tail_proj)
-
-        # Margin-based ranking loss
+        pos_distance = torch.norm(
+            pos_head + self.relation_embeddings(relation_types) - pos_tail, dim=1
+        )
+        neg_distance = torch.norm(
+            neg_head + self.relation_embeddings(relation_types) - neg_tail, dim=1
+        )
         margin = TRANSR_MARGIN
-        loss = torch.max(pos_distance - neg_distance + margin, torch.tensor(0.0))
-
+        loss = torch.mean(torch.relu(pos_distance - neg_distance + margin))
         return loss
 
 def train_embeddings_transr(graph_data, epochs=TRANSR_NUM_EPOCHS):
@@ -86,39 +99,46 @@ def train_embeddings_transr(graph_data, epochs=TRANSR_NUM_EPOCHS):
 
     optimizer = torch.optim.Adam(model.parameters(), lr=TRANSR_LEARNING_RATE)
 
+    entities = graph_data[analysis_constants.ENTITIES_KEY]
+    entity_mapping = graph_data[analysis_constants.ENTITY_MAPPING_KEY]
+    relation_mapping = graph_data[analysis_constants.RELATION_MAPPING_KEY]
+    triples = graph_data[analysis_constants.TRIPLES_KEY]    
+
+    dataset = KnowledgeGraphDataset(
+        relations=triples,
+        entity_mapping=entity_mapping,
+        relation_mapping=relation_mapping
+    )
+    data_loader = DataLoader(dataset, batch_size=TRANSR_BATCH_SIZE, shuffle=True)
+
+    # Training loop
     for epoch in range(epochs):
         total_loss = 0
+        for batch in data_loader:
+            source_batch, relation_batch, target_batch = batch
 
-        for relation in graph_data[analysis_constants.TRIPLES_KEY]:      
-            source, pred, target = relation
-            # Get entity indices
-            source_idx = graph_data[analysis_constants.ENTITY_MAPPING_KEY][source]
-            target_idx = graph_data[analysis_constants.ENTITY_MAPPING_KEY][target]
-            relation_idx = graph_data[analysis_constants.RELATION_MAPPING_KEY][pred]
+            neg_source_batch = torch.randint(0, len(entities), source_batch.size())
+            neg_target_batch = torch.randint(0, len(entities), target_batch.size())
 
-            # Create positive and negative samples
-            pos_edges = (
-                model.entity_embeddings(torch.tensor([source_idx])),
-                model.entity_embeddings(torch.tensor([target_idx]))
+            pos_heads = model.entity_embeddings(source_batch)
+            pos_tails = model.entity_embeddings(target_batch)
+            neg_heads = model.entity_embeddings(neg_source_batch)
+            neg_tails = model.entity_embeddings(neg_target_batch)
+
+            loss = model.link_prediction_loss(
+                (pos_heads, pos_tails),
+                (neg_heads, neg_tails),
+                relation_batch
             )
-            # Generate negative samples (random entities)
-            neg_source_idx = torch.randint(0, len(graph_data['entities']), (1,))
-            neg_target_idx = torch.randint(0, len(graph_data['entities']), (1,))
-
-            neg_edges = (
-                model.entity_embeddings(neg_source_idx),
-                model.entity_embeddings(neg_target_idx)
-            )
-            # Compute loss
-            loss = model.link_prediction_loss(pos_edges, neg_edges, relation_idx)
-
-            # Optimization step
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+
             total_loss += loss.item()
-        if (epoch+1) % TRANSR_PRINT_EVERY == 0:
-            print(f"Epoch {epoch+1}/{epochs}, Loss: {total_loss}")
+
+        if (epoch + 1) % TRANSR_PRINT_EVERY == 0:
+            print(f"Epoch {epoch + 1}, Loss: {total_loss}")
+
     return model
 
 
