@@ -28,6 +28,8 @@ NODE2VEC_WALK_LENGTH=80
 NODE2VEC_CONTEXT_SIZE=10
 NODE2VEC_WALKS_PER_NODE=10 
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 
 class KnowledgeGraphDataset(Dataset):
     def __init__(self, relations, entity_mapping, relation_mapping):
@@ -45,38 +47,37 @@ class KnowledgeGraphDataset(Dataset):
         relation_idx = self.relation_mapping[pred]
         return source_idx, relation_idx, target_idx
 
+
 class TransREmbedding(torch.nn.Module):
     def __init__(self, num_entities, num_relations, embedding_dim=analysis_constants.EMBEDDING_DIM):
         super().__init__()
         # LLM-based entity embeddings
         self.tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-        self.llm_model = AutoModel.from_pretrained("bert-base-uncased")
+        self.llm_model = AutoModel.from_pretrained("bert-base-uncased").to(device)
         # Trainable embeddings
-        self.entity_embeddings = torch.nn.Embedding(num_entities, embedding_dim)
-        self.relation_embeddings = torch.nn.Embedding(num_relations, embedding_dim)
+        self.entity_embeddings = torch.nn.Embedding(num_entities, embedding_dim).to(device)
+        self.relation_embeddings = torch.nn.Embedding(num_relations, embedding_dim).to(device)
         # Relation-specific projection matrices
         self.relation_matrices = torch.nn.ParameterList([
-            torch.nn.Parameter(torch.randn(embedding_dim, embedding_dim))
+            torch.nn.Parameter(torch.randn(embedding_dim, embedding_dim).to(device))
             for _ in range(num_relations)
         ])
-    def get_llm_embeddings(self, entities: List[str]) -> torch.Tensor:
-        # Use LLM to get initial embeddings
+
+    def get_llm_embeddings(self, entities):
         embeddings = []
         for entity in entities:
-            inputs = self.tokenizer(entity, return_tensors="pt", padding=True, truncation=True)
+            inputs = self.tokenizer(entity, return_tensors="pt", padding=True, truncation=True).to(device)
             with torch.no_grad():
                 outputs = self.llm_model(**inputs)
                 embeddings.append(outputs.last_hidden_state.mean(dim=1))
-        return torch.stack(embeddings)
+        return torch.cat(embeddings)
+
     def forward(self, edge_index, edge_type, entities):
-        # Initial LLM embeddings
         x = self.get_llm_embeddings(entities)
-        # Combine with trainable embeddings
-        x = x + self.entity_embeddings(torch.arange(len(entities)))
+        x = x + self.entity_embeddings(torch.arange(len(entities)).to(device))
         return x
-    
+
     def link_prediction_loss(self, pos_edges, neg_edges, relation_types):
-        # TransR-style margin-based loss
         pos_head, pos_tail = pos_edges
         neg_head, neg_tail = neg_edges
 
@@ -90,19 +91,19 @@ class TransREmbedding(torch.nn.Module):
         loss = torch.mean(torch.relu(pos_distance - neg_distance + margin))
         return loss
 
-def train_embeddings_transr(graph_data, epochs=TRANSR_NUM_EPOCHS):
 
+def train_embeddings_transr(graph_data, epochs=TRANSR_NUM_EPOCHS):
     model = TransREmbedding(
         num_entities=len(graph_data[analysis_constants.ENTITIES_KEY]),
         num_relations=len(graph_data[analysis_constants.RELATIONS_KEY])
-    )
+    ).to(device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=TRANSR_LEARNING_RATE)
 
     entities = graph_data[analysis_constants.ENTITIES_KEY]
     entity_mapping = graph_data[analysis_constants.ENTITY_MAPPING_KEY]
     relation_mapping = graph_data[analysis_constants.RELATION_MAPPING_KEY]
-    triples = graph_data[analysis_constants.TRIPLES_KEY]    
+    triples = graph_data[analysis_constants.TRIPLES_KEY]
 
     dataset = KnowledgeGraphDataset(
         relations=triples,
@@ -111,14 +112,13 @@ def train_embeddings_transr(graph_data, epochs=TRANSR_NUM_EPOCHS):
     )
     data_loader = DataLoader(dataset, batch_size=TRANSR_BATCH_SIZE, shuffle=True)
 
-    # Training loop
     for epoch in range(epochs):
         total_loss = 0
         for batch in data_loader:
-            source_batch, relation_batch, target_batch = batch
+            source_batch, relation_batch, target_batch = [b.to(device) for b in batch]
 
-            neg_source_batch = torch.randint(0, len(entities), source_batch.size())
-            neg_target_batch = torch.randint(0, len(entities), target_batch.size())
+            neg_source_batch = torch.randint(0, len(entities), source_batch.size(), device=device)
+            neg_target_batch = torch.randint(0, len(entities), target_batch.size(), device=device)
 
             pos_heads = model.entity_embeddings(source_batch)
             pos_tails = model.entity_embeddings(target_batch)
@@ -140,7 +140,6 @@ def train_embeddings_transr(graph_data, epochs=TRANSR_NUM_EPOCHS):
             print(f"Epoch {epoch + 1}, Loss: {total_loss}")
 
     return model
-
 
 def train_node2vec(graph_data, epochs=NODE2VEC_NUM_EPOCHS, embedding_dim=analysis_constants.EMBEDDING_DIM, 
                    walk_length=NODE2VEC_WALK_LENGTH, context_size=NODE2VEC_CONTEXT_SIZE, walks_per_node=NODE2VEC_WALKS_PER_NODE):
@@ -176,7 +175,6 @@ def train_node2vec(graph_data, epochs=NODE2VEC_NUM_EPOCHS, embedding_dim=analysi
         
         if (epoch + 1) % 10 == 0:
             print(f"Epoch {epoch+1}/{epochs}, Loss: {total_loss}")
-
 
 def train_embeddings(graph_data, model_name): 
     assert model_name in analysis_constants.EMBEDDING_MODELS, f"Model name {model_name} not supported"
