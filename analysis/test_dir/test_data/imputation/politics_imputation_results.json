@@ -103,54 +103,54 @@
     ],
     "predicted_triples": [
         [
-            "Kamala_Harris",
-            "influenced",
-            "Oval_Office"
-        ],
-        [
-            "Equality",
-            "influenced",
-            "First_Lady"
-        ],
-        [
-            "Equality",
+            "First_Lady",
             "influenced",
             "Foreign_Policy"
         ],
         [
-            "Kamala_Harris",
-            "influenced",
-            "Racial_Justice"
-        ],
-        [
-            "George_Washington",
-            "influenced",
-            "First_U.S._President"
-        ],
-        [
-            "Equality",
-            "influenced",
-            "Healthcare_Reform"
-        ],
-        [
-            "Equality",
-            "influenced",
-            "Civil_Rights_Movement"
+            "Donald_Trump",
+            "emphasized",
+            "Barack_Obama"
         ],
         [
             "Democratic_Party",
-            "influenced",
-            "Healthcare_Reform"
+            "championed",
+            "Barack_Obama"
         ],
         [
-            "Equality",
-            "influenced",
+            "Civil_Rights_Movement",
+            "promoted",
+            "Conservation_Efforts"
+        ],
+        [
+            "Legislation",
+            "focused_on",
+            "Congressman"
+        ],
+        [
+            "Democratic_Party",
+            "emphasized",
+            "Barack_Obama"
+        ],
+        [
+            "Democratic_Party",
+            "promoted",
+            "Joe_Biden"
+        ],
+        [
+            "Donald_Trump",
+            "emphasized",
             "Civil_War"
         ],
         [
-            "Equality",
-            "influenced",
-            "U.S._President"
+            "Civil_War",
+            "championed",
+            "Civil_Rights_Movement"
+        ],
+        [
+            "Civil_War",
+            "championed",
+            "Barack_Obama"
         ]
     ]
 }

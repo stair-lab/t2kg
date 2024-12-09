@@ -82,6 +82,10 @@ def get_query_results_path(saved_graph_info_dir, output_dir):
 def get_index_name(saved_graph_info_dir):
     graph_name = get_graph_name(saved_graph_info_dir)
     index_name = f"{graph_name}index"
+    #remove special characters
+    index_name = ''.join(c for c in index_name if c.isalnum())
+    # should be less than 45 characters
+    index_name = index_name[:45]
     return index_name
 
 def get_save_folder_path(graph_path, output_path, _): 

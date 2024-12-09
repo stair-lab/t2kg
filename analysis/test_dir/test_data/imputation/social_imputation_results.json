@@ -98,54 +98,54 @@
     ],
     "predicted_triples": [
         [
-            "family",
-            "limits",
-            "access"
+            "innovation",
+            "struggle_with",
+            "systematic_inequality"
         ],
         [
-            "family",
-            "limits",
-            "success"
+            "social_mobility",
+            "struggle_with",
+            "systematic_inequality"
         ],
         [
-            "family",
-            "limits",
-            "resources"
-        ],
-        [
-            "family",
-            "limits",
-            "minorities"
-        ],
-        [
-            "family",
-            "limits",
+            "black_people",
+            "reinforces",
             "racism"
         ],
         [
-            "justice_system",
-            "limits",
-            "racism"
+            "affirmative_action",
+            "improves",
+            "justice_system"
         ],
         [
-            "family",
-            "limits",
+            "systematic_inequality",
+            "often_difficult_for",
             "poor"
         ],
         [
-            "family",
-            "limits",
-            "support"
+            "cultural_heritage",
+            "shapes",
+            "education"
         ],
         [
-            "about_talent",
-            "limits",
-            "success"
+            "cultural_heritage",
+            "struggle_with",
+            "systematic_inequality"
         ],
         [
-            "family",
-            "limits",
+            "cultural_heritage",
+            "struggle_with",
+            "identity"
+        ],
+        [
+            "minorities",
+            "supports",
             "growth"
+        ],
+        [
+            "minorities",
+            "shapes",
+            "resources"
         ]
     ]
 }
