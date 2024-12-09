@@ -358,11 +358,19 @@ def process_file(input_file: str):
 
 if __name__ == "__main__":
     input_files = [
+<<<<<<< HEAD
         #'kgs/224w_final_deliverable/advil.json',
         'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.json',
         'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.json',
         'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.json',
         'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.json',
+=======
+        'kgs/224w_final_deliverable/advil.json',
+        # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.json',
+        # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.json',
+        # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.json',
+        # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.json',
+>>>>>>> aaefbbd1cfdf257e71a7672b14ebfd2fa38bd2a7
     ]
     
     for input_file in input_files:
