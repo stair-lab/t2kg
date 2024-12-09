@@ -17,7 +17,7 @@ from torch_geometric.nn import Node2Vec as PyGNode2Vec
 from torch.utils.data import DataLoader, Dataset
 import analysis_constants 
 
-TRANSR_NUM_EPOCHS = 1000
+TRANSR_NUM_EPOCHS = 100
 TRANSR_PRINT_EVERY = 100
 TRANSR_LEARNING_RATE = 0.01
 TRANSR_MARGIN = 1.0
@@ -51,13 +51,11 @@ class KnowledgeGraphDataset(Dataset):
 class TransREmbedding(torch.nn.Module):
     def __init__(self, num_entities, num_relations, embedding_dim=analysis_constants.EMBEDDING_DIM):
         super().__init__()
-        # LLM-based entity embeddings
         self.tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
         self.llm_model = AutoModel.from_pretrained("bert-base-uncased").to(device)
-        # Trainable embeddings
         self.entity_embeddings = torch.nn.Embedding(num_entities, embedding_dim).to(device)
         self.relation_embeddings = torch.nn.Embedding(num_relations, embedding_dim).to(device)
-        # Relation-specific projection matrices
+
         self.relation_matrices = torch.nn.ParameterList([
             torch.nn.Parameter(torch.randn(embedding_dim, embedding_dim).to(device))
             for _ in range(num_relations)
@@ -136,8 +134,7 @@ def train_embeddings_transr(graph_data, epochs=TRANSR_NUM_EPOCHS):
 
             total_loss += loss.item()
 
-        if (epoch + 1) % TRANSR_PRINT_EVERY == 0:
-            print(f"Epoch {epoch + 1}, Loss: {total_loss}")
+        print(f"Epoch {epoch + 1}/ {epochs}, Loss: {total_loss}")
 
     return model
 

@@ -6,8 +6,10 @@ sys.path.append(analysis_constants.UTILS_PATH)
 import graph_utils
 import itertools
 import numpy as np
-import torch
 import json
+import torch
+import heapq
+import torch
 
 K = 5
 
@@ -18,11 +20,19 @@ def save_results(results_to_be_saved, saved_graph_info_dir, output_dir):
         json.dump(results_to_be_saved, f, indent=4)
 
 def run_imputation_on_graph(saved_graph_info_dir, output_dir, k):
+    print(f"Running imputation on {saved_graph_info_dir}")
     entity_embeddings, relation_embeddings, graph_data = graph_utils.load_saved_graph_data(saved_graph_info_dir)
+
+    # Move embeddings to GPU if available
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    entity_embeddings = torch.tensor(entity_embeddings, device=device, dtype=torch.float32)
+    relation_embeddings = torch.tensor(relation_embeddings, device=device, dtype=torch.float32)
 
     entities = graph_data[analysis_constants.ENTITIES_KEY]
     relations = graph_data[analysis_constants.RELATIONS_KEY]
-    candidate_triples = list(itertools.product(entities, relations, entities))
+    existing_triples = set(
+        (head, relation, tail) for head, relation, tail in graph_data[analysis_constants.TRIPLES_KEY]
+    )
 
     def score_triple(head, relation, tail):
         # Get embeddings
@@ -34,28 +44,31 @@ def run_imputation_on_graph(saved_graph_info_dir, output_dir, k):
         tail_emb = entity_embeddings[tail_idx]
         relation_emb = relation_embeddings[relation_idx]
 
-        distance = np.linalg.norm(head_emb + relation_emb - tail_emb)
-        return -distance  # Negative distance so higher scores are better
+        distance = torch.norm(head_emb + relation_emb - tail_emb)
+        return -distance.item()  # Negative distance so higher scores are better
 
-    triple_scores = []
-    for head, relation, tail in candidate_triples:
-        # Skip existing triples
-        if any(
-            (existing_head == head and
-            existing_relation == relation and
-            existing_tail == tail) or (head == tail)
-            for existing_head, existing_relation, existing_tail in graph_data[analysis_constants.TRIPLES_KEY]
-        ):
+    # Use a min-heap to track the top k triples
+    heap = []
+
+    for head, relation, tail in itertools.product(entities, relations, entities):
+        # Skip existing triples or invalid triples where head == tail
+        if (head, relation, tail) in existing_triples or head == tail:
             continue
 
         score = score_triple(head, relation, tail)
-        triple_scores.append((head, relation, tail, score))
-    top_triples = sorted(triple_scores, key=lambda x: x[3], reverse=True)[:k]
+        if len(heap) < k:
+            heapq.heappush(heap, (score, head, relation, tail))
+        else:
+            heapq.heappushpop(heap, (score, head, relation, tail))
+
+    # Extract the top k triples
+    top_triples = sorted(heap, key=lambda x: x[0], reverse=True)
 
     print(f"Top {k} Predicted New Triples:")
-    for head, relation, tail, score in top_triples:
-        print(f"{head} --[{relation}]--> {tail} (Score: {score:.4f})")
-    triples_to_be_saved = [(head, relation, tail) for head, relation, tail, _ in top_triples]
+    for score, head, relation, tail in top_triples:
+        print(f"{head} --[{relation}]--> {tail} (Score: {-score:.4f})")
+
+    triples_to_be_saved = [(head, relation, tail) for _, head, relation, tail in top_triples]
     results_to_be_saved = {
         analysis_constants.ORIGINAL_TRIPLES_KEY: graph_data[analysis_constants.TRIPLES_KEY],
         analysis_constants.PREDICTED_TRIPLES_KEY: triples_to_be_saved

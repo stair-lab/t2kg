@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 COLOR_MAP = {}
 NODE_COLOR = 'gray'
-FIGURE_SIZE = (15, 10)
+FIGURE_SIZE = (60, 40)
 DPI = 400
 
 def plot_embeddings_for_graph(saved_graph_info_dir, plot_dir):
@@ -32,7 +32,7 @@ def plot_embeddings_for_graph(saved_graph_info_dir, plot_dir):
         plt.scatter(x, y, c=color)
         plt.annotate(entity, (x, y), xytext=(5, 5),
                      textcoords='offset points',
-                     fontsize=8,
+                     fontsize=3,
                      color='black')
 
     plt.title('Entity Embeddings after Training')
