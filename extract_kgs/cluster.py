@@ -146,9 +146,10 @@ def extract_single_cluster(items: List[str], item_type: str = "entities") -> Lis
                 {"role": "user", "content": items_text},
             ],
             response_format=ClusterResponse,
-            temperature=0
+            temperature=0,
+	    max_tokens=1000
         )
-        
+       	print(f'completion choices: {completion}') 
         cluster = completion.choices[0].message.parsed.cluster
         if not cluster:
             logger.debug(f"No suitable {item_type} clusters found in batch")
@@ -160,7 +161,8 @@ def extract_single_cluster(items: List[str], item_type: str = "entities") -> Lis
         
     except Exception as e:
         logger.error(f"Error extracting cluster: {str(e)}")
-        raise
+        #raise
+        return []
 
 @handle_rate_limit
 def validate_cluster(cluster: List[str], item_type: str = "entities") -> List[str]:
@@ -290,8 +292,8 @@ def cluster_items(items: Set[str], item_type: str = "entities") -> List[Cluster]
             random.shuffle(remaining_items)
             logger.info(f"Shuffled the remaining {len(remaining_items)} items")
             
-            if no_progress_count >= 2:
-                logger.warning(f"No progress for 2 iterations. Checking remaining {item_type} for existing clusters.")
+            if no_progress_count >= 10:
+                logger.warning(f"No progress for 10 iterations. Checking remaining {item_type} for existing clusters.")
                 items_to_remove = []
                 for i in range(0, len(remaining_items), 10):
                     batch = remaining_items[i:i+10]
@@ -320,10 +322,10 @@ def process_file(input_file: str):
             if not isinstance(data, dict) or not all(k in data for k in ['entities', 'edges']):
                 raise KeyError("Input file must contain 'entities' and 'edges' fields")
             
-            # entity_clusters = sorted(
-            #   cluster_items(set(sorted(data['entities'])), "entities"), 
-            #   key=lambda c: len(c.items), reverse=True
-            # )
+            entity_clusters = sorted(
+              cluster_items(set(sorted(data['entities'])), "entities"), 
+              key=lambda c: len(c.items), reverse=True
+            )
             edge_clusters = sorted(
               cluster_items(set(sorted(data['edges'])), "edges"), 
               key=lambda c: len(c.items), reverse=True
@@ -356,7 +358,7 @@ def process_file(input_file: str):
 
 if __name__ == "__main__":
     input_files = [
-        # 'kgs/224w_final_deliverable/advil.json',
+        #'kgs/224w_final_deliverable/advil.json',
         'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.json',
         'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.json',
         'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.json',
