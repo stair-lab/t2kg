@@ -6,9 +6,8 @@ This directory includes code to analyze knowledge graphs and specifically contai
 - Predict new triples in the knowledge graph 
 - Query the knowledge graph using the result embeddings. 
 
-# Walking example of how to use the given scripts 
 
-We will set the TEST_MODE=True in analysis_constants.py. This sets the two 
+**NB** Currently there is a constant, TEST_MODE=True in analysis_constants.py. This sets the two 
 directories DATA_BASE_PATH (where we store analysis results) KNOWLEDGE_BASE_PATH where the json knowledge graphs live. Test mode will set
 these two to be test_data/ and test_data/ within test_dir/ but you can set these to be other directories and set TEST_MODE = False if you do 
 
@@ -27,6 +26,8 @@ Path to save the embedded graphs. Default: DATA_BASE_PATH/embeddings
 -m, --model (optional)
 Embedding model to use. Default: TransR. Choices: TransR.
 
+These embeds our knowledge graph and clusters the entities based on proximity in the embedding space
+
 The ouput for each graph is a directory i.e embedding_directory that contains several files 
     - entity embeddings     
     - relation embeddings 
@@ -35,6 +36,8 @@ The ouput for each graph is a directory i.e embedding_directory that contains se
         - relation  (set of edge types)
         - entity to index map 
         - relation to index map 
+        - cluster assignments 
+        
 we save these together since they are useful for downstream analysis tasks. 
 
 Running "python embed_graphs.py" will embed graphs in test_kgs i.e social.json and politics.json
