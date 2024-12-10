@@ -72,11 +72,17 @@ def process_json_data(data: dict, filename: str, clusters:dict=None) -> None:
         for edge in clusters['edge_clusters']:
             for mem in edge['items']:
                 relation_dict[mem] = edge['representative']
+        edge_set = set()
         for edge in edges:
             edge[0] = entity_dict[edge[0]]
             edge[2] = entity_dict[edge[2]]
             edge[1] = relation_dict[edge[1]]
+            edge_set.add(edge[1])
         entities = [ele['representative'] for ele in clusters['entity_clusters']]
+        new_graph = {'entities':entities, 'relations': edges, 'edges':list(edge_set)}
+        with open(f'./kgs/{filename}_clustered.json', 'w') as f:
+            json.dump(new_graph, f)
+
     G = create_knowledge_graph(entities, edges)
     visualize_knowledge_graph(G, filename)
 
