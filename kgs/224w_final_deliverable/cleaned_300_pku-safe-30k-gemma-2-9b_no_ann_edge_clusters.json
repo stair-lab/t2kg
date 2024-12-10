@@ -1,0 +1,3606 @@
+{
+  "edges_clusters": [
+    {
+      "items": [
+        "are portrayed as",
+        "are depicted as"
+      ],
+      "representative": "are depicted as"
+    },
+    {
+      "items": [
+        "is considered",
+        "are considered",
+        "considered",
+        "considers",
+        "will consider"
+      ],
+      "representative": "considered"
+    },
+    {
+      "items": [
+        "cause",
+        "causes",
+        "caused",
+        "can cause"
+      ],
+      "representative": "cause"
+    },
+    {
+      "items": [
+        "is",
+        "are",
+        "was",
+        "were",
+        "is being"
+      ],
+      "representative": "is"
+    },
+    {
+      "items": [
+        "is used for",
+        "used for",
+        "can be used for",
+        "are used for"
+      ],
+      "representative": "used for"
+    },
+    {
+      "items": [
+        "say",
+        "says",
+        "said",
+        "to say"
+      ],
+      "representative": "say"
+    },
+    {
+      "items": [
+        "can be used on",
+        "can be used",
+        "can be used with",
+        "can be used to"
+      ],
+      "representative": "can be used"
+    },
+    {
+      "items": [
+        "is used to cut",
+        "could use to cut",
+        "cut"
+      ],
+      "representative": "cut"
+    },
+    {
+      "items": [
+        "send to",
+        "sent to",
+        "sends to",
+        "is sent to"
+      ],
+      "representative": "send to"
+    },
+    {
+      "items": [
+        "show",
+        "can show",
+        "shows"
+      ],
+      "representative": "show"
+    },
+    {
+      "items": [
+        "is attached to",
+        "attached to",
+        "attaches to"
+      ],
+      "representative": "attached to"
+    },
+    {
+      "items": [
+        "influence",
+        "to influence"
+      ],
+      "representative": "influence"
+    },
+    {
+      "items": [
+        "helps",
+        "can help",
+        "help with",
+        "help to",
+        "helped",
+        "can help in"
+      ],
+      "representative": "help"
+    },
+    {
+      "items": [
+        "to buy",
+        "buy",
+        "buying",
+        "bought"
+      ],
+      "representative": "buy"
+    },
+    {
+      "items": [
+        "is used in",
+        "is used by",
+        "is used to describe",
+        "is used as"
+      ],
+      "representative": "is used"
+    },
+    {
+      "items": [
+        "use",
+        "used in",
+        "was used to describe",
+        "has been used against",
+        "used as",
+        "used to",
+        "uses",
+        "is used to prevent",
+        "is used to reduce",
+        "is used without",
+        "used to steal"
+      ],
+      "representative": "use"
+    },
+    {
+      "items": [
+        "want to be",
+        "wants to be"
+      ],
+      "representative": "want to be"
+    },
+    {
+      "items": [
+        "believe in",
+        "believes in"
+      ],
+      "representative": "believe in"
+    },
+    {
+      "items": [
+        "is from",
+        "are from",
+        "from"
+      ],
+      "representative": "are from"
+    },
+    {
+      "items": [
+        "charge",
+        "charged with"
+      ],
+      "representative": "charge"
+    },
+    {
+      "items": [
+        "saves",
+        "has saved up"
+      ],
+      "representative": "saves"
+    },
+    {
+      "items": [
+        "help",
+        "helps to reduce",
+        "help understand",
+        "help learn",
+        "help people in need of",
+        "can help people who suffer from",
+        "helps avoid"
+      ],
+      "representative": "help"
+    },
+    {
+      "items": [
+        "is responsible for",
+        "responsible for"
+      ],
+      "representative": "responsible for"
+    },
+    {
+      "items": [
+        "to tell",
+        "tell",
+        "can tell",
+        "could tell"
+      ],
+      "representative": "tell"
+    },
+    {
+      "items": [
+        "affects",
+        "effects on",
+        "is affected by"
+      ],
+      "representative": "affects"
+    },
+    {
+      "items": [
+        "don't like",
+        "do not like",
+        "does not like"
+      ],
+      "representative": "don't like"
+    },
+    {
+      "items": [
+        "perpetuate",
+        "is perpetuated by",
+        "perpetuated by"
+      ],
+      "representative": "perpetuate"
+    },
+    {
+      "items": [
+        "to play",
+        "were playing",
+        "play",
+        "played"
+      ],
+      "representative": "play"
+    },
+    {
+      "items": [
+        "is part of",
+        "part of"
+      ],
+      "representative": "part of"
+    },
+    {
+      "items": [
+        "is used when",
+        "used when saying"
+      ],
+      "representative": "used when"
+    },
+    {
+      "items": [
+        "called",
+        "calls",
+        "is called",
+        "are called"
+      ],
+      "representative": "called"
+    },
+    {
+      "items": [
+        "might get shut down for not having",
+        "might get shut down for not following"
+      ],
+      "representative": "might get shut down for not"
+    },
+    {
+      "items": [
+        "provide",
+        "provides",
+        "can provide"
+      ],
+      "representative": "provide"
+    },
+    {
+      "items": [
+        "to release",
+        "releases"
+      ],
+      "representative": "releases"
+    },
+    {
+      "items": [
+        "has",
+        "had",
+        "have",
+        "having",
+        "has been",
+        "have had",
+        "to have",
+        "have to",
+        "have always been",
+        "had to"
+      ],
+      "representative": "have"
+    },
+    {
+      "items": [
+        "may reduce",
+        "can be used to reduce",
+        "can reduce"
+      ],
+      "representative": "can reduce"
+    },
+    {
+      "items": [
+        "require",
+        "requires",
+        "is required by",
+        "is needed",
+        "needs",
+        "needed for",
+        "is needed for",
+        "need to"
+      ],
+      "representative": "require"
+    },
+    {
+      "items": [
+        "tried to",
+        "try to",
+        "trying to"
+      ],
+      "representative": "try to"
+    },
+    {
+      "items": [
+        "ask for",
+        "asks for",
+        "will ask for",
+        "to ask"
+      ],
+      "representative": "ask for"
+    },
+    {
+      "items": [
+        "is related to",
+        "related to"
+      ],
+      "representative": "related to"
+    },
+    {
+      "items": [
+        "is a method for",
+        "is a way to"
+      ],
+      "representative": "is a way to"
+    },
+    {
+      "items": [
+        "is a sophisticated",
+        "is a sophisticated"
+      ],
+      "representative": "is a sophisticated"
+    },
+    {
+      "items": [
+        "is a type of",
+        "is a form of",
+        "is an example of",
+        "is a",
+        "is an"
+      ],
+      "representative": "is a"
+    },
+    {
+      "items": [
+        "is open to",
+        "is open to",
+        "open for"
+      ],
+      "representative": "is open to"
+    },
+    {
+      "items": [
+        "is not considered",
+        "not considered",
+        "does not consider"
+      ],
+      "representative": "not considered"
+    },
+    {
+      "items": [
+        "make feel",
+        "makes feel"
+      ],
+      "representative": "make feel"
+    },
+    {
+      "items": [
+        "is liked by",
+        "is not liked by"
+      ],
+      "representative": "is liked by"
+    },
+    {
+      "items": [
+        "is increasing because of",
+        "increases with"
+      ],
+      "representative": "increases with"
+    },
+    {
+      "items": [
+        "made of",
+        "is made of",
+        "made from",
+        "are made from"
+      ],
+      "representative": "made of"
+    },
+    {
+      "items": [
+        "track",
+        "to track",
+        "for tracking"
+      ],
+      "representative": "track"
+    },
+    {
+      "items": [
+        "look for",
+        "look for after",
+        "looked for on",
+        "looking for",
+        "wants to find",
+        "are looking for",
+        "need to find",
+        "can help find"
+      ],
+      "representative": "look for"
+    },
+    {
+      "items": [
+        "is kidnapped",
+        "kidnapped"
+      ],
+      "representative": "kidnapped"
+    },
+    {
+      "items": [
+        "plays for",
+        "team he plays for"
+      ],
+      "representative": "plays for"
+    },
+    {
+      "items": [
+        "connect",
+        "is connected to",
+        "connects"
+      ],
+      "representative": "connect"
+    },
+    {
+      "items": [
+        "enjoys",
+        "enjoy",
+        "would enjoy"
+      ],
+      "representative": "enjoy"
+    },
+    {
+      "items": [
+        "involve",
+        "involves",
+        "is involved in"
+      ],
+      "representative": "involve"
+    },
+    {
+      "items": [
+        "to create",
+        "create",
+        "can create"
+      ],
+      "representative": "create"
+    },
+    {
+      "items": [
+        "take",
+        "taken to",
+        "takes",
+        "took",
+        "taking a"
+      ],
+      "representative": "take"
+    },
+    {
+      "items": [
+        "threatens",
+        "is a threat to",
+        "threatened to",
+        "are a threat to",
+        "threaten"
+      ],
+      "representative": "threaten"
+    },
+    {
+      "items": [
+        "known for",
+        "are known for"
+      ],
+      "representative": "known for"
+    },
+    {
+      "items": [
+        "directed at",
+        "are directed at",
+        "is directed towards",
+        "can be directed at"
+      ],
+      "representative": "directed at"
+    },
+    {
+      "items": [
+        "tries",
+        "been trying for",
+        "is trying to learn",
+        "trying to get",
+        "tried"
+      ],
+      "representative": "tries"
+    },
+    {
+      "items": [
+        "is similar to",
+        "is like"
+      ],
+      "representative": "is like"
+    },
+    {
+      "items": [
+        "shut down",
+        "turned off",
+        "deactivating",
+        "shut down for",
+        "should be turned off"
+      ],
+      "representative": "shut down"
+    },
+    {
+      "items": [
+        "are more likely to be",
+        "are more likely to"
+      ],
+      "representative": "are more likely to"
+    },
+    {
+      "items": [
+        "is important to",
+        "is important for"
+      ],
+      "representative": "is important for"
+    },
+    {
+      "items": [
+        "include",
+        "includes",
+        "can include"
+      ],
+      "representative": "include"
+    },
+    {
+      "items": [
+        "get",
+        "gets",
+        "getting"
+      ],
+      "representative": "get"
+    },
+    {
+      "items": [
+        "can solve",
+        "could solve"
+      ],
+      "representative": "can solve"
+    },
+    {
+      "items": [
+        "sell",
+        "sells"
+      ],
+      "representative": "sell"
+    },
+    {
+      "items": [
+        "want",
+        "wants",
+        "wanted"
+      ],
+      "representative": "want"
+    },
+    {
+      "items": [
+        "find out how to make",
+        "can't find out how to make",
+        "do not know how to",
+        "know how to make"
+      ],
+      "representative": "find out how to make"
+    },
+    {
+      "items": [
+        "is caused by",
+        "are because of",
+        "brought on by"
+      ],
+      "representative": "is caused by"
+    },
+    {
+      "items": [
+        "does not require",
+        "not require"
+      ],
+      "representative": "not require"
+    },
+    {
+      "items": [
+        "need to test for",
+        "test for"
+      ],
+      "representative": "test for"
+    },
+    {
+      "items": [
+        "affect",
+        "starting to affect"
+      ],
+      "representative": "affect"
+    },
+    {
+      "items": [
+        "to improve",
+        "improve"
+      ],
+      "representative": "improve"
+    },
+    {
+      "items": [
+        "can be found in",
+        "found in",
+        "can be found on",
+        "found on"
+      ],
+      "representative": "found in"
+    },
+    {
+      "items": [
+        "suggest",
+        "suggests"
+      ],
+      "representative": "suggest"
+    },
+    {
+      "items": [
+        "located in",
+        "location in",
+        "in",
+        "is in",
+        "are in"
+      ],
+      "representative": "in"
+    },
+    {
+      "items": [
+        "seek",
+        "seeks to"
+      ],
+      "representative": "seek"
+    },
+    {
+      "items": [
+        "make",
+        "makes",
+        "making",
+        "made"
+      ],
+      "representative": "make"
+    },
+    {
+      "items": [
+        "invented",
+        "to invent"
+      ],
+      "representative": "invented"
+    },
+    {
+      "items": [
+        "applied to",
+        "applies to"
+      ],
+      "representative": "applies to"
+    },
+    {
+      "items": [
+        "delivered to",
+        "ship to",
+        "send",
+        "sent",
+        "dropped on"
+      ],
+      "representative": "send"
+    },
+    {
+      "items": [
+        "see",
+        "sees",
+        "saw",
+        "to see"
+      ],
+      "representative": "see"
+    },
+    {
+      "items": [
+        "drink a lot of",
+        "drink in",
+        "drink before",
+        "drink"
+      ],
+      "representative": "drink"
+    },
+    {
+      "items": [
+        "wants to arm",
+        "wants to agree",
+        "wants to post with",
+        "wants to make",
+        "wants to put",
+        "wants to get",
+        "wants to convince"
+      ],
+      "representative": "wants to"
+    },
+    {
+      "items": [
+        "has a lot of",
+        "had a lot of"
+      ],
+      "representative": "has a lot of"
+    },
+    {
+      "items": [
+        "premiered",
+        "premiered on"
+      ],
+      "representative": "premiered"
+    },
+    {
+      "items": [
+        "was wont to have",
+        "was wont to make",
+        "was wont to"
+      ],
+      "representative": "was wont to"
+    },
+    {
+      "items": [
+        "change",
+        "changed"
+      ],
+      "representative": "change"
+    },
+    {
+      "items": [
+        "doesn't",
+        "does not",
+        "don't",
+        "do not"
+      ],
+      "representative": "don't"
+    },
+    {
+      "items": [
+        "has phone number",
+        "has contact information",
+        "has po box",
+        "has email address"
+      ],
+      "representative": "has contact information"
+    },
+    {
+      "items": [
+        "does not have",
+        "do not have",
+        "don't have"
+      ],
+      "representative": "don't have"
+    },
+    {
+      "items": [
+        "are offered by",
+        "offer"
+      ],
+      "representative": "offer"
+    },
+    {
+      "items": [
+        "works",
+        "work",
+        "working on",
+        "works on"
+      ],
+      "representative": "work"
+    },
+    {
+      "items": [
+        "became",
+        "becomes",
+        "become"
+      ],
+      "representative": "become"
+    },
+    {
+      "items": [
+        "to understand",
+        "want to understand",
+        "want to know",
+        "to know",
+        "learn about",
+        "to learn",
+        "find out",
+        "to discover"
+      ],
+      "representative": "learn about"
+    },
+    {
+      "items": [
+        "is not",
+        "is not a",
+        "is not with",
+        "is not about",
+        "is not going to get",
+        "is not completely",
+        "is not looking in the right",
+        "is not worried about",
+        "is not going to cause",
+        "is not less sophisticated than",
+        "is not the sharpest",
+        "is not always",
+        "is not received by",
+        "is not for",
+        "is not easy",
+        "is not a fuel for"
+      ],
+      "representative": "is not"
+    },
+    {
+      "items": [
+        "like to use"
+      ],
+      "representative": "like to use"
+    },
+    {
+      "items": [
+        "ensures",
+        "should ensure"
+      ],
+      "representative": "ensures"
+    },
+    {
+      "items": [
+        "refer to"
+      ],
+      "representative": "refer to"
+    },
+    {
+      "items": [
+        "was under",
+        "under"
+      ],
+      "representative": "was under"
+    },
+    {
+      "items": [
+        "contains"
+      ],
+      "representative": "contains"
+    },
+    {
+      "items": [
+        "to kill"
+      ],
+      "representative": "to kill"
+    },
+    {
+      "items": [
+        "is so"
+      ],
+      "representative": "is so"
+    },
+    {
+      "items": [
+        "taken from"
+      ],
+      "representative": "taken from"
+    },
+    {
+      "items": [
+        "wants to"
+      ],
+      "representative": "wants to"
+    },
+    {
+      "items": [
+        "may be forced to close"
+      ],
+      "representative": "may be forced to close"
+    },
+    {
+      "items": [
+        "effect on"
+      ],
+      "representative": "effect on"
+    },
+    {
+      "items": [
+        "poison"
+      ],
+      "representative": "poison"
+    },
+    {
+      "items": [
+        "has a thickness of"
+      ],
+      "representative": "has a thickness of"
+    },
+    {
+      "items": [
+        "updated with"
+      ],
+      "representative": "updated with"
+    },
+    {
+      "items": [
+        "typically from"
+      ],
+      "representative": "typically from"
+    },
+    {
+      "items": [
+        "tell to drive to"
+      ],
+      "representative": "tell to drive to"
+    },
+    {
+      "items": [
+        "comes to"
+      ],
+      "representative": "comes to"
+    },
+    {
+      "items": [
+        "not as weird as"
+      ],
+      "representative": "not as weird as"
+    },
+    {
+      "items": [
+        "could give"
+      ],
+      "representative": "could give"
+    },
+    {
+      "items": [
+        "sat in"
+      ],
+      "representative": "sat in"
+    },
+    {
+      "items": [
+        "say she had no"
+      ],
+      "representative": "say she had no"
+    },
+    {
+      "items": [
+        "cool down"
+      ],
+      "representative": "cool down"
+    },
+    {
+      "items": [
+        "is threatened by"
+      ],
+      "representative": "is threatened by"
+    },
+    {
+      "items": [
+        "wished by"
+      ],
+      "representative": "wished by"
+    },
+    {
+      "items": [
+        "is a good"
+      ],
+      "representative": "is a good"
+    },
+    {
+      "items": [
+        "aware of"
+      ],
+      "representative": "aware of"
+    },
+    {
+      "items": [
+        "decreased"
+      ],
+      "representative": "decreased"
+    },
+    {
+      "items": [
+        "spending on"
+      ],
+      "representative": "spending on"
+    },
+    {
+      "items": [
+        "by",
+        "done by"
+      ],
+      "representative": "by"
+    },
+    {
+      "items": [
+        "describes",
+        "describe",
+        "is described as"
+      ],
+      "representative": "describes"
+    },
+    {
+      "items": [
+        "see through"
+      ],
+      "representative": "see through"
+    },
+    {
+      "items": [
+        "not able to get"
+      ],
+      "representative": "not able to get"
+    },
+    {
+      "items": [
+        "are eaten during"
+      ],
+      "representative": "are eaten during"
+    },
+    {
+      "items": [
+        "was in"
+      ],
+      "representative": "was in"
+    },
+    {
+      "items": [
+        "interested in"
+      ],
+      "representative": "interested in"
+    },
+    {
+      "items": [
+        "rescind"
+      ],
+      "representative": "rescind"
+    },
+    {
+      "items": [
+        "get from"
+      ],
+      "representative": "get from"
+    },
+    {
+      "items": [
+        "manipulate"
+      ],
+      "representative": "manipulate"
+    },
+    {
+      "items": [
+        "needed to incinerate"
+      ],
+      "representative": "needed to incinerate"
+    },
+    {
+      "items": [
+        "can lead to"
+      ],
+      "representative": "can lead to"
+    },
+    {
+      "items": [
+        "spawned"
+      ],
+      "representative": "spawned"
+    },
+    {
+      "items": [
+        "are always"
+      ],
+      "representative": "are always"
+    },
+    {
+      "items": [
+        "produce"
+      ],
+      "representative": "produce"
+    },
+    {
+      "items": [
+        "are more",
+        "are generally more"
+      ],
+      "representative": "are more"
+    },
+    {
+      "items": [
+        "investigating"
+      ],
+      "representative": "investigating"
+    },
+    {
+      "items": [
+        "so hot it"
+      ],
+      "representative": "so hot it"
+    },
+    {
+      "items": [
+        "not connecting"
+      ],
+      "representative": "not connecting"
+    },
+    {
+      "items": [
+        "used to assert"
+      ],
+      "representative": "used to assert"
+    },
+    {
+      "items": [
+        "are severe for"
+      ],
+      "representative": "are severe for"
+    },
+    {
+      "items": [
+        "consider cats"
+      ],
+      "representative": "consider cats"
+    },
+    {
+      "items": [
+        "wash after"
+      ],
+      "representative": "wash after"
+    },
+    {
+      "items": [
+        "depths"
+      ],
+      "representative": "depths"
+    },
+    {
+      "items": [
+        "is a small place"
+      ],
+      "representative": "is a small place"
+    },
+    {
+      "items": [
+        "should not make"
+      ],
+      "representative": "should not make"
+    },
+    {
+      "items": [
+        "sitting out on"
+      ],
+      "representative": "sitting out on"
+    },
+    {
+      "items": [
+        "determine"
+      ],
+      "representative": "determine"
+    },
+    {
+      "items": [
+        "is best for"
+      ],
+      "representative": "is best for"
+    },
+    {
+      "items": [
+        "be more"
+      ],
+      "representative": "be more"
+    },
+    {
+      "items": [
+        "throw"
+      ],
+      "representative": "throw"
+    },
+    {
+      "items": [
+        "through"
+      ],
+      "representative": "through"
+    },
+    {
+      "items": [
+        "pulled back into"
+      ],
+      "representative": "pulled back into"
+    },
+    {
+      "items": [
+        "make want to punch in"
+      ],
+      "representative": "make want to punch in"
+    },
+    {
+      "items": [
+        "used"
+      ],
+      "representative": "used"
+    },
+    {
+      "items": [
+        "may be left with no place to"
+      ],
+      "representative": "may be left with no place to"
+    },
+    {
+      "items": [
+        "does not mention"
+      ],
+      "representative": "does not mention"
+    },
+    {
+      "items": [
+        "sure"
+      ],
+      "representative": "sure"
+    },
+    {
+      "items": [
+        "is expression of"
+      ],
+      "representative": "is expression of"
+    },
+    {
+      "items": [
+        "cut out from"
+      ],
+      "representative": "cut out from"
+    },
+    {
+      "items": [
+        "defend themselves in"
+      ],
+      "representative": "defend themselves in"
+    },
+    {
+      "items": [
+        "is the value of"
+      ],
+      "representative": "is the value of"
+    },
+    {
+      "items": [
+        "not being"
+      ],
+      "representative": "not being"
+    },
+    {
+      "items": [
+        "not allowed to testify against"
+      ],
+      "representative": "not allowed to testify against"
+    },
+    {
+      "items": [
+        "planned for",
+        "planning"
+      ],
+      "representative": "planned for"
+    },
+    {
+      "items": [
+        "way"
+      ],
+      "representative": "way"
+    },
+    {
+      "items": [
+        "are in love with"
+      ],
+      "representative": "are in love with"
+    },
+    {
+      "items": [
+        "not learning"
+      ],
+      "representative": "not learning"
+    },
+    {
+      "items": [
+        "was asked by"
+      ],
+      "representative": "was asked by"
+    },
+    {
+      "items": [
+        "bans"
+      ],
+      "representative": "bans"
+    },
+    {
+      "items": [
+        "saw about"
+      ],
+      "representative": "saw about"
+    },
+    {
+      "items": [
+        "score higher than"
+      ],
+      "representative": "score higher than"
+    },
+    {
+      "items": [
+        "are not the same as"
+      ],
+      "representative": "are not the same as"
+    },
+    {
+      "items": [
+        "needs to reach"
+      ],
+      "representative": "needs to reach"
+    },
+    {
+      "items": [
+        "find someone to"
+      ],
+      "representative": "find someone to"
+    },
+    {
+      "items": [
+        "studying at"
+      ],
+      "representative": "studying at"
+    },
+    {
+      "items": [
+        "does not list"
+      ],
+      "representative": "does not list"
+    },
+    {
+      "items": [
+        "to weave"
+      ],
+      "representative": "to weave"
+    },
+    {
+      "items": [
+        "finding"
+      ],
+      "representative": "finding"
+    },
+    {
+      "items": [
+        "can't control"
+      ],
+      "representative": "can't control"
+    },
+    {
+      "items": [
+        "are immune to"
+      ],
+      "representative": "are immune to"
+    },
+    {
+      "items": [
+        "not strong"
+      ],
+      "representative": "not strong"
+    },
+    {
+      "items": [
+        "drive out",
+        "drive away"
+      ],
+      "representative": "drive out"
+    },
+    {
+      "items": [
+        "can quiet"
+      ],
+      "representative": "can quiet"
+    },
+    {
+      "items": [
+        "performs"
+      ],
+      "representative": "performs"
+    },
+    {
+      "items": [
+        "are treated as"
+      ],
+      "representative": "are treated as"
+    },
+    {
+      "items": [
+        "pretend to have"
+      ],
+      "representative": "pretend to have"
+    },
+    {
+      "items": [
+        "can study at"
+      ],
+      "representative": "can study at"
+    },
+    {
+      "items": [
+        "attend",
+        "attended"
+      ],
+      "representative": "attend"
+    },
+    {
+      "items": [
+        "is a mystery"
+      ],
+      "representative": "is a mystery"
+    },
+    {
+      "items": [
+        "can be checked in"
+      ],
+      "representative": "can be checked in"
+    },
+    {
+      "items": [
+        "pioneers"
+      ],
+      "representative": "pioneers"
+    },
+    {
+      "items": [
+        "may lose"
+      ],
+      "representative": "may lose"
+    },
+    {
+      "items": [
+        "starting to"
+      ],
+      "representative": "starting to"
+    },
+    {
+      "items": [
+        "oversees"
+      ],
+      "representative": "oversees"
+    },
+    {
+      "items": [
+        "is better than"
+      ],
+      "representative": "is better than"
+    },
+    {
+      "items": [
+        "believe hinduism is threatened by"
+      ],
+      "representative": "believe hinduism is threatened by"
+    },
+    {
+      "items": [
+        "can check if number is"
+      ],
+      "representative": "can check if number is"
+    },
+    {
+      "items": [
+        "is key to making"
+      ],
+      "representative": "is key to making"
+    },
+    {
+      "items": [
+        "of choice for"
+      ],
+      "representative": "of choice for"
+    },
+    {
+      "items": [
+        "is more than"
+      ],
+      "representative": "is more than"
+    },
+    {
+      "items": [
+        "accused of calling"
+      ],
+      "representative": "accused of calling"
+    },
+    {
+      "items": [
+        "craft"
+      ],
+      "representative": "craft"
+    },
+    {
+      "items": [
+        "has sophisticated"
+      ],
+      "representative": "has sophisticated"
+    },
+    {
+      "items": [
+        "installed in"
+      ],
+      "representative": "installed in"
+    },
+    {
+      "items": [
+        "entertain"
+      ],
+      "representative": "entertain"
+    },
+    {
+      "items": [
+        "is good at convincing"
+      ],
+      "representative": "is good at convincing"
+    },
+    {
+      "items": [
+        "is lit in"
+      ],
+      "representative": "is lit in"
+    },
+    {
+      "items": [
+        "lack"
+      ],
+      "representative": "lack"
+    },
+    {
+      "items": [
+        "is done around"
+      ],
+      "representative": "is done around"
+    },
+    {
+      "items": [
+        "area"
+      ],
+      "representative": "area"
+    },
+    {
+      "items": [
+        "can do from"
+      ],
+      "representative": "can do from"
+    },
+    {
+      "items": [
+        "allowed to drive"
+      ],
+      "representative": "allowed to drive"
+    },
+    {
+      "items": [
+        "hear",
+        "have heard from"
+      ],
+      "representative": "hear"
+    },
+    {
+      "items": [
+        "is per"
+      ],
+      "representative": "is per"
+    },
+    {
+      "items": [
+        "have to go to"
+      ],
+      "representative": "have to go to"
+    },
+    {
+      "items": [
+        "caught"
+      ],
+      "representative": "caught"
+    },
+    {
+      "items": [
+        "means"
+      ],
+      "representative": "means"
+    },
+    {
+      "items": [
+        "has more sophisticated"
+      ],
+      "representative": "has more sophisticated"
+    },
+    {
+      "items": [
+        "promote"
+      ],
+      "representative": "promote"
+    },
+    {
+      "items": [
+        "are new to"
+      ],
+      "representative": "are new to"
+    },
+    {
+      "items": [
+        "redshirting due to"
+      ],
+      "representative": "redshirting due to"
+    },
+    {
+      "items": [
+        "leave scene of"
+      ],
+      "representative": "leave scene of"
+    },
+    {
+      "items": [
+        "did not go off"
+      ],
+      "representative": "did not go off"
+    },
+    {
+      "items": [
+        "working from"
+      ],
+      "representative": "working from"
+    },
+    {
+      "items": [
+        "sitting out at"
+      ],
+      "representative": "sitting out at"
+    },
+    {
+      "items": [
+        "best way gives"
+      ],
+      "representative": "best way gives"
+    },
+    {
+      "items": [
+        "possible to"
+      ],
+      "representative": "possible to"
+    },
+    {
+      "items": [
+        "may contain"
+      ],
+      "representative": "may contain"
+    },
+    {
+      "items": [
+        "more to"
+      ],
+      "representative": "more to"
+    },
+    {
+      "items": [
+        "should fight for"
+      ],
+      "representative": "should fight for"
+    },
+    {
+      "items": [
+        "up"
+      ],
+      "representative": "up"
+    },
+    {
+      "items": [
+        "moves"
+      ],
+      "representative": "moves"
+    },
+    {
+      "items": [
+        "do not help with"
+      ],
+      "representative": "do not help with"
+    },
+    {
+      "items": [
+        "to be limited to"
+      ],
+      "representative": "to be limited to"
+    },
+    {
+      "items": [
+        "drives"
+      ],
+      "representative": "drives"
+    },
+    {
+      "items": [
+        "think they are so"
+      ],
+      "representative": "think they are so"
+    },
+    {
+      "items": [
+        "feels like",
+        "feels"
+      ],
+      "representative": "feels like"
+    },
+    {
+      "items": [
+        "are for"
+      ],
+      "representative": "are for"
+    },
+    {
+      "items": [
+        "does not mind"
+      ],
+      "representative": "does not mind"
+    },
+    {
+      "items": [
+        "and"
+      ],
+      "representative": "and"
+    },
+    {
+      "items": [
+        "worth asking"
+      ],
+      "representative": "worth asking"
+    },
+    {
+      "items": [
+        "not deposit"
+      ],
+      "representative": "not deposit"
+    },
+    {
+      "items": [
+        "having hard time finding"
+      ],
+      "representative": "having hard time finding"
+    },
+    {
+      "items": [
+        "has a certain"
+      ],
+      "representative": "has a certain"
+    },
+    {
+      "items": [
+        "can apply for"
+      ],
+      "representative": "can apply for"
+    },
+    {
+      "items": [
+        "on purpose"
+      ],
+      "representative": "on purpose"
+    },
+    {
+      "items": [
+        "is going to"
+      ],
+      "representative": "is going to"
+    },
+    {
+      "items": [
+        "tracked down"
+      ],
+      "representative": "tracked down"
+    },
+    {
+      "items": [
+        "with"
+      ],
+      "representative": "with"
+    },
+    {
+      "items": [
+        "intent of inflicting"
+      ],
+      "representative": "intent of inflicting"
+    },
+    {
+      "items": [
+        "look on websites of"
+      ],
+      "representative": "look on websites of"
+    },
+    {
+      "items": [
+        "not constantly"
+      ],
+      "representative": "not constantly"
+    },
+    {
+      "items": [
+        "associated with"
+      ],
+      "representative": "associated with"
+    },
+    {
+      "items": [
+        "stay home"
+      ],
+      "representative": "stay home"
+    },
+    {
+      "items": [
+        "to take out"
+      ],
+      "representative": "to take out"
+    },
+    {
+      "items": [
+        "taken by"
+      ],
+      "representative": "taken by"
+    },
+    {
+      "items": [
+        "can increase"
+      ],
+      "representative": "can increase"
+    },
+    {
+      "items": [
+        "entered"
+      ],
+      "representative": "entered"
+    },
+    {
+      "items": [
+        "can throw signs at"
+      ],
+      "representative": "can throw signs at"
+    },
+    {
+      "items": [
+        "is done in"
+      ],
+      "representative": "is done in"
+    },
+    {
+      "items": [
+        "object"
+      ],
+      "representative": "object"
+    },
+    {
+      "items": [
+        "been doing",
+        "doing"
+      ],
+      "representative": "been doing"
+    },
+    {
+      "items": [
+        "has age"
+      ],
+      "representative": "has age"
+    },
+    {
+      "items": [
+        "can speak to"
+      ],
+      "representative": "can speak to"
+    },
+    {
+      "items": [
+        "to honor"
+      ],
+      "representative": "to honor"
+    },
+    {
+      "items": [
+        "invested in"
+      ],
+      "representative": "invested in"
+    },
+    {
+      "items": [
+        "do"
+      ],
+      "representative": "do"
+    },
+    {
+      "items": [
+        "is out of"
+      ],
+      "representative": "is out of"
+    },
+    {
+      "items": [
+        "restricted in"
+      ],
+      "representative": "restricted in"
+    },
+    {
+      "items": [
+        "against",
+        "is against"
+      ],
+      "representative": "against"
+    },
+    {
+      "items": [
+        "revealed to"
+      ],
+      "representative": "revealed to"
+    },
+    {
+      "items": [
+        "is available on"
+      ],
+      "representative": "is available on"
+    },
+    {
+      "items": [
+        "pay in"
+      ],
+      "representative": "pay in"
+    },
+    {
+      "items": [
+        "gave"
+      ],
+      "representative": "gave"
+    },
+    {
+      "items": [
+        "are attacking"
+      ],
+      "representative": "are attacking"
+    },
+    {
+      "items": [
+        "born in"
+      ],
+      "representative": "born in"
+    },
+    {
+      "items": [
+        "of working with"
+      ],
+      "representative": "of working with"
+    },
+    {
+      "items": [
+        "drafted in"
+      ],
+      "representative": "drafted in"
+    },
+    {
+      "items": [
+        "likely to be"
+      ],
+      "representative": "likely to be"
+    },
+    {
+      "items": [
+        "heights"
+      ],
+      "representative": "heights"
+    },
+    {
+      "items": [
+        "is sweet"
+      ],
+      "representative": "is sweet"
+    },
+    {
+      "items": [
+        "be able to get"
+      ],
+      "representative": "be able to get"
+    },
+    {
+      "items": [
+        "sitting out for"
+      ],
+      "representative": "sitting out for"
+    },
+    {
+      "items": [
+        "has children with"
+      ],
+      "representative": "has children with"
+    },
+    {
+      "items": [
+        "don't care about"
+      ],
+      "representative": "don't care about"
+    },
+    {
+      "items": [
+        "possible by"
+      ],
+      "representative": "possible by"
+    },
+    {
+      "items": [
+        "did not get"
+      ],
+      "representative": "did not get"
+    },
+    {
+      "items": [
+        "enables"
+      ],
+      "representative": "enables"
+    },
+    {
+      "items": [
+        "to master"
+      ],
+      "representative": "to master"
+    },
+    {
+      "items": [
+        "knows"
+      ],
+      "representative": "knows"
+    },
+    {
+      "items": [
+        "remove"
+      ],
+      "representative": "remove"
+    },
+    {
+      "items": [
+        "getting a code for"
+      ],
+      "representative": "getting a code for"
+    },
+    {
+      "items": [
+        "like"
+      ],
+      "representative": "like"
+    },
+    {
+      "items": [
+        "depends on"
+      ],
+      "representative": "depends on"
+    },
+    {
+      "items": [
+        "is ruining"
+      ],
+      "representative": "is ruining"
+    },
+    {
+      "items": [
+        "use small"
+      ],
+      "representative": "use small"
+    },
+    {
+      "items": [
+        "enters"
+      ],
+      "representative": "enters"
+    },
+    {
+      "items": [
+        "declared"
+      ],
+      "representative": "declared"
+    },
+    {
+      "items": [
+        "can calculate"
+      ],
+      "representative": "can calculate"
+    },
+    {
+      "items": [
+        "can shape"
+      ],
+      "representative": "can shape"
+    },
+    {
+      "items": [
+        "costs more than"
+      ],
+      "representative": "costs more than"
+    },
+    {
+      "items": [
+        "played college football at"
+      ],
+      "representative": "played college football at"
+    },
+    {
+      "items": [
+        "not performed on"
+      ],
+      "representative": "not performed on"
+    },
+    {
+      "items": [
+        "are sold in"
+      ],
+      "representative": "are sold in"
+    },
+    {
+      "items": [
+        "lit by"
+      ],
+      "representative": "lit by"
+    },
+    {
+      "items": [
+        "is used to"
+      ],
+      "representative": "is used to"
+    },
+    {
+      "items": [
+        "happened at"
+      ],
+      "representative": "happened at"
+    },
+    {
+      "items": [
+        "killed by"
+      ],
+      "representative": "killed by"
+    },
+    {
+      "items": [
+        "spending a lot of"
+      ],
+      "representative": "spending a lot of"
+    },
+    {
+      "items": [
+        "buy from"
+      ],
+      "representative": "buy from"
+    },
+    {
+      "items": [
+        "love to cover"
+      ],
+      "representative": "love to cover"
+    },
+    {
+      "items": [
+        "will get money from"
+      ],
+      "representative": "will get money from"
+    },
+    {
+      "items": [
+        "is alternative to"
+      ],
+      "representative": "is alternative to"
+    },
+    {
+      "items": [
+        "buy in"
+      ],
+      "representative": "buy in"
+    },
+    {
+      "items": [
+        "are fond of"
+      ],
+      "representative": "are fond of"
+    },
+    {
+      "items": [
+        "governed"
+      ],
+      "representative": "governed"
+    },
+    {
+      "items": [
+        "fall in"
+      ],
+      "representative": "fall in"
+    },
+    {
+      "items": [
+        "than"
+      ],
+      "representative": "than"
+    },
+    {
+      "items": [
+        "collides with"
+      ],
+      "representative": "collides with"
+    },
+    {
+      "items": [
+        "goes from"
+      ],
+      "representative": "goes from"
+    },
+    {
+      "items": [
+        "should be set for"
+      ],
+      "representative": "should be set for"
+    },
+    {
+      "items": [
+        "sneak into"
+      ],
+      "representative": "sneak into"
+    },
+    {
+      "items": [
+        "not leave"
+      ],
+      "representative": "not leave"
+    },
+    {
+      "items": [
+        "end"
+      ],
+      "representative": "end"
+    },
+    {
+      "items": [
+        "is removed from"
+      ],
+      "representative": "is removed from"
+    },
+    {
+      "items": [
+        "are many"
+      ],
+      "representative": "are many"
+    },
+    {
+      "items": [
+        "set in"
+      ],
+      "representative": "set in"
+    },
+    {
+      "items": [
+        "need to contact"
+      ],
+      "representative": "need to contact"
+    },
+    {
+      "items": [
+        "have a cel for"
+      ],
+      "representative": "have a cel for"
+    },
+    {
+      "items": [
+        "believe"
+      ],
+      "representative": "believe"
+    },
+    {
+      "items": [
+        "hates"
+      ],
+      "representative": "hates"
+    },
+    {
+      "items": [
+        "wonder"
+      ],
+      "representative": "wonder"
+    },
+    {
+      "items": [
+        "would have to be"
+      ],
+      "representative": "would have to be"
+    },
+    {
+      "items": [
+        "jump into"
+      ],
+      "representative": "jump into"
+    },
+    {
+      "items": [
+        "never seen drink in"
+      ],
+      "representative": "never seen drink in"
+    },
+    {
+      "items": [
+        "cannot be"
+      ],
+      "representative": "cannot be"
+    },
+    {
+      "items": [
+        "away"
+      ],
+      "representative": "away"
+    },
+    {
+      "items": [
+        "can be attracted by"
+      ],
+      "representative": "can be attracted by"
+    },
+    {
+      "items": [
+        "will feel bad about"
+      ],
+      "representative": "will feel bad about"
+    },
+    {
+      "items": [
+        "starts with",
+        "start with"
+      ],
+      "representative": "starts with"
+    },
+    {
+      "items": [
+        "way to hotwire"
+      ],
+      "representative": "way to hotwire"
+    },
+    {
+      "items": [
+        "are not to blame for"
+      ],
+      "representative": "are not to blame for"
+    },
+    {
+      "items": [
+        "turned back on"
+      ],
+      "representative": "turned back on"
+    },
+    {
+      "items": [
+        "is to post"
+      ],
+      "representative": "is to post"
+    },
+    {
+      "items": [
+        "read before",
+        "should be read before using"
+      ],
+      "representative": "read before"
+    },
+    {
+      "items": [
+        "based on"
+      ],
+      "representative": "based on"
+    },
+    {
+      "items": [
+        "carries connotation of"
+      ],
+      "representative": "carries connotation of"
+    },
+    {
+      "items": [
+        "status"
+      ],
+      "representative": "status"
+    },
+    {
+      "items": [
+        "cloud of"
+      ],
+      "representative": "cloud of"
+    },
+    {
+      "items": [
+        "to steal from"
+      ],
+      "representative": "to steal from"
+    },
+    {
+      "items": [
+        "has maximum benefits"
+      ],
+      "representative": "has maximum benefits"
+    },
+    {
+      "items": [
+        "sit on"
+      ],
+      "representative": "sit on"
+    },
+    {
+      "items": [
+        "is as old as"
+      ],
+      "representative": "is as old as"
+    },
+    {
+      "items": [
+        "fulfill"
+      ],
+      "representative": "fulfill"
+    },
+    {
+      "items": [
+        "sucks out"
+      ],
+      "representative": "sucks out"
+    },
+    {
+      "items": [
+        "are not flattering on"
+      ],
+      "representative": "are not flattering on"
+    },
+    {
+      "items": [
+        "don't give"
+      ],
+      "representative": "don't give"
+    },
+    {
+      "items": [
+        "prose"
+      ],
+      "representative": "prose"
+    },
+    {
+      "items": [
+        "ways to"
+      ],
+      "representative": "ways to"
+    },
+    {
+      "items": [
+        "will meet at"
+      ],
+      "representative": "will meet at"
+    },
+    {
+      "items": [
+        "action on"
+      ],
+      "representative": "action on"
+    },
+    {
+      "items": [
+        "repeats like"
+      ],
+      "representative": "repeats like"
+    },
+    {
+      "items": [
+        "wake up"
+      ],
+      "representative": "wake up"
+    },
+    {
+      "items": [
+        "across"
+      ],
+      "representative": "across"
+    },
+    {
+      "items": [
+        "are less capable than"
+      ],
+      "representative": "are less capable than"
+    },
+    {
+      "items": [
+        "said to"
+      ],
+      "representative": "said to"
+    },
+    {
+      "items": [
+        "skills"
+      ],
+      "representative": "skills"
+    },
+    {
+      "items": [
+        "must report"
+      ],
+      "representative": "must report"
+    },
+    {
+      "items": [
+        "can be said by"
+      ],
+      "representative": "can be said by"
+    },
+    {
+      "items": [
+        "realms"
+      ],
+      "representative": "realms"
+    },
+    {
+      "items": [
+        "is done for"
+      ],
+      "representative": "is done for"
+    },
+    {
+      "items": [
+        "has no"
+      ],
+      "representative": "has no"
+    },
+    {
+      "items": [
+        "to draw"
+      ],
+      "representative": "to draw"
+    },
+    {
+      "items": [
+        "committed to"
+      ],
+      "representative": "committed to"
+    },
+    {
+      "items": [
+        "live in"
+      ],
+      "representative": "live in"
+    },
+    {
+      "items": [
+        "accepts as hypothesis"
+      ],
+      "representative": "accepts as hypothesis"
+    },
+    {
+      "items": [
+        "woke up to"
+      ],
+      "representative": "woke up to"
+    },
+    {
+      "items": [
+        "practice"
+      ],
+      "representative": "practice"
+    },
+    {
+      "items": [
+        "will have a bad"
+      ],
+      "representative": "will have a bad"
+    },
+    {
+      "items": [
+        "is downloaded"
+      ],
+      "representative": "is downloaded"
+    },
+    {
+      "items": [
+        "claim to have"
+      ],
+      "representative": "claim to have"
+    },
+    {
+      "items": [
+        "may choose to poison"
+      ],
+      "representative": "may choose to poison"
+    },
+    {
+      "items": [
+        "is built around"
+      ],
+      "representative": "is built around"
+    },
+    {
+      "items": [
+        "can vary"
+      ],
+      "representative": "can vary"
+    },
+    {
+      "items": [
+        "to rotate"
+      ],
+      "representative": "to rotate"
+    },
+    {
+      "items": [
+        "is legal in"
+      ],
+      "representative": "is legal in"
+    },
+    {
+      "items": [
+        "is insulated with"
+      ],
+      "representative": "is insulated with"
+    },
+    {
+      "items": [
+        "will fail"
+      ],
+      "representative": "will fail"
+    },
+    {
+      "items": [
+        "to observe"
+      ],
+      "representative": "to observe"
+    },
+    {
+      "items": [
+        "can be harmful to"
+      ],
+      "representative": "can be harmful to"
+    },
+    {
+      "items": [
+        "larger"
+      ],
+      "representative": "larger"
+    },
+    {
+      "items": [
+        "forging"
+      ],
+      "representative": "forging"
+    },
+    {
+      "items": [
+        "resonate"
+      ],
+      "representative": "resonate"
+    },
+    {
+      "items": [
+        "born on"
+      ],
+      "representative": "born on"
+    },
+    {
+      "items": [
+        "crossed with"
+      ],
+      "representative": "crossed with"
+    },
+    {
+      "items": [
+        "is putting in place"
+      ],
+      "representative": "is putting in place"
+    },
+    {
+      "items": [
+        "not for"
+      ],
+      "representative": "not for"
+    },
+    {
+      "items": [
+        "claims"
+      ],
+      "representative": "claims"
+    },
+    {
+      "items": [
+        "worried about"
+      ],
+      "representative": "worried about"
+    },
+    {
+      "items": [
+        "determine what"
+      ],
+      "representative": "determine what"
+    },
+    {
+      "items": [
+        "will lay"
+      ],
+      "representative": "will lay"
+    },
+    {
+      "items": [
+        "led team to"
+      ],
+      "representative": "led team to"
+    },
+    {
+      "items": [
+        "was sleeping in"
+      ],
+      "representative": "was sleeping in"
+    },
+    {
+      "items": [
+        "is probably"
+      ],
+      "representative": "is probably"
+    },
+    {
+      "items": [
+        "could get"
+      ],
+      "representative": "could get"
+    },
+    {
+      "items": [
+        "stuck"
+      ],
+      "representative": "stuck"
+    },
+    {
+      "items": [
+        "not ask"
+      ],
+      "representative": "not ask"
+    },
+    {
+      "items": [
+        "take some"
+      ],
+      "representative": "take some"
+    },
+    {
+      "items": [
+        "are on",
+        "is on",
+        "on"
+      ],
+      "representative": "are on"
+    },
+    {
+      "items": [
+        "can grow"
+      ],
+      "representative": "can grow"
+    },
+    {
+      "items": [
+        "not in full for"
+      ],
+      "representative": "not in full for"
+    },
+    {
+      "items": [
+        "are more willing to take"
+      ],
+      "representative": "are more willing to take"
+    },
+    {
+      "items": [
+        "check with"
+      ],
+      "representative": "check with"
+    },
+    {
+      "items": [
+        "is over"
+      ],
+      "representative": "is over"
+    },
+    {
+      "items": [
+        "uses to steal"
+      ],
+      "representative": "uses to steal"
+    },
+    {
+      "items": [
+        "allows search by"
+      ],
+      "representative": "allows search by"
+    },
+    {
+      "items": [
+        "named after",
+        "named"
+      ],
+      "representative": "named after"
+    },
+    {
+      "items": [
+        "not put in"
+      ],
+      "representative": "not put in"
+    },
+    {
+      "items": [
+        "of"
+      ],
+      "representative": "of"
+    },
+    {
+      "items": [
+        "is with"
+      ],
+      "representative": "is with"
+    },
+    {
+      "items": [
+        "performed during"
+      ],
+      "representative": "performed during"
+    },
+    {
+      "items": [
+        "when"
+      ],
+      "representative": "when"
+    },
+    {
+      "items": [
+        "has had no"
+      ],
+      "representative": "has had no"
+    },
+    {
+      "items": [
+        "is getting ready to"
+      ],
+      "representative": "is getting ready to"
+    },
+    {
+      "items": [
+        "are eaten in"
+      ],
+      "representative": "are eaten in"
+    },
+    {
+      "items": [
+        "on the"
+      ],
+      "representative": "on the"
+    },
+    {
+      "items": [
+        "can't come to"
+      ],
+      "representative": "can't come to"
+    },
+    {
+      "items": [
+        "not"
+      ],
+      "representative": "not"
+    },
+    {
+      "items": [
+        "is at fault for"
+      ],
+      "representative": "is at fault for"
+    },
+    {
+      "items": [
+        "finish"
+      ],
+      "representative": "finish"
+    },
+    {
+      "items": [
+        "copied to"
+      ],
+      "representative": "copied to"
+    },
+    {
+      "items": [
+        "should be read by"
+      ],
+      "representative": "should be read by"
+    },
+    {
+      "items": [
+        "buy at"
+      ],
+      "representative": "buy at"
+    },
+    {
+      "items": [
+        "location"
+      ],
+      "representative": "location"
+    },
+    {
+      "items": [
+        "has relationship status"
+      ],
+      "representative": "has relationship status"
+    },
+    {
+      "items": [
+        "outlawed"
+      ],
+      "representative": "outlawed"
+    },
+    {
+      "items": [
+        "in their own"
+      ],
+      "representative": "in their own"
+    },
+    {
+      "items": [
+        "avoids"
+      ],
+      "representative": "avoids"
+    },
+    {
+      "items": [
+        "to explore"
+      ],
+      "representative": "to explore"
+    },
+    {
+      "items": [
+        "is the darkest"
+      ],
+      "representative": "is the darkest"
+    },
+    {
+      "items": [
+        "did"
+      ],
+      "representative": "did"
+    },
+    {
+      "items": [
+        "should not allow"
+      ],
+      "representative": "should not allow"
+    },
+    {
+      "items": [
+        "prevents"
+      ],
+      "representative": "prevents"
+    },
+    {
+      "items": [
+        "in other"
+      ],
+      "representative": "in other"
+    },
+    {
+      "items": [
+        "are paid less to guard"
+      ],
+      "representative": "are paid less to guard"
+    },
+    {
+      "items": [
+        "carol smith"
+      ],
+      "representative": "carol smith"
+    },
+    {
+      "items": [
+        "not accepted in"
+      ],
+      "representative": "not accepted in"
+    },
+    {
+      "items": [
+        "buy without"
+      ],
+      "representative": "buy without"
+    },
+    {
+      "items": [
+        "says if can get"
+      ],
+      "representative": "says if can get"
+    },
+    {
+      "items": [
+        "is to blame for"
+      ],
+      "representative": "is to blame for"
+    },
+    {
+      "items": [
+        "designed to"
+      ],
+      "representative": "designed to"
+    },
+    {
+      "items": [
+        "passionate"
+      ],
+      "representative": "passionate"
+    },
+    {
+      "items": [
+        "is place of"
+      ],
+      "representative": "is place of"
+    },
+    {
+      "items": [
+        "most effective"
+      ],
+      "representative": "most effective"
+    },
+    {
+      "items": [
+        "put on"
+      ],
+      "representative": "put on"
+    },
+    {
+      "items": [
+        "have relationships with"
+      ],
+      "representative": "have relationships with"
+    },
+    {
+      "items": [
+        "remains in"
+      ],
+      "representative": "remains in"
+    },
+    {
+      "items": [
+        "not sure how much"
+      ],
+      "representative": "not sure how much"
+    },
+    {
+      "items": [
+        "is to not drink"
+      ],
+      "representative": "is to not drink"
+    },
+    {
+      "items": [
+        "hotter than"
+      ],
+      "representative": "hotter than"
+    },
+    {
+      "items": [
+        "is done with"
+      ],
+      "representative": "is done with"
+    },
+    {
+      "items": [
+        "can be about"
+      ],
+      "representative": "can be about"
+    },
+    {
+      "items": [
+        "came"
+      ],
+      "representative": "came"
+    },
+    {
+      "items": [
+        "working for"
+      ],
+      "representative": "working for"
+    },
+    {
+      "items": [
+        "is more"
+      ],
+      "representative": "is more"
+    },
+    {
+      "items": [
+        "to pay"
+      ],
+      "representative": "to pay"
+    },
+    {
+      "items": [
+        "try other"
+      ],
+      "representative": "try other"
+    },
+    {
+      "items": [
+        "do not speak"
+      ],
+      "representative": "do not speak"
+    },
+    {
+      "items": [
+        "threatened to kill"
+      ],
+      "representative": "threatened to kill"
+    },
+    {
+      "items": [
+        "popular ways to buy"
+      ],
+      "representative": "popular ways to buy"
+    },
+    {
+      "items": [
+        "duration"
+      ],
+      "representative": "duration"
+    },
+    {
+      "items": [
+        "held hostage"
+      ],
+      "representative": "held hostage"
+    },
+    {
+      "items": [
+        "are all over"
+      ],
+      "representative": "are all over"
+    },
+    {
+      "items": [
+        "not order"
+      ],
+      "representative": "not order"
+    },
+    {
+      "items": [
+        "paid to"
+      ],
+      "representative": "paid to"
+    },
+    {
+      "items": [
+        "to polish"
+      ],
+      "representative": "to polish"
+    },
+    {
+      "items": [
+        "stimulate"
+      ],
+      "representative": "stimulate"
+    },
+    {
+      "items": [
+        "melted into"
+      ],
+      "representative": "melted into"
+    },
+    {
+      "items": [
+        "is small"
+      ],
+      "representative": "is small"
+    },
+    {
+      "items": [
+        "to fail"
+      ],
+      "representative": "to fail"
+    },
+    {
+      "items": [
+        "captivate"
+      ],
+      "representative": "captivate"
+    },
+    {
+      "items": [
+        "say she didn't want to"
+      ],
+      "representative": "say she didn't want to"
+    },
+    {
+      "items": [
+        "must read"
+      ],
+      "representative": "must read"
+    },
+    {
+      "items": [
+        "can get"
+      ],
+      "representative": "can get"
+    },
+    {
+      "items": [
+        "from selling"
+      ],
+      "representative": "from selling"
+    },
+    {
+      "items": [
+        "are available"
+      ],
+      "representative": "are available"
+    },
+    {
+      "items": [
+        "eat"
+      ],
+      "representative": "eat"
+    },
+    {
+      "items": [
+        "can cut"
+      ],
+      "representative": "can cut"
+    },
+    {
+      "items": [
+        "die in"
+      ],
+      "representative": "die in"
+    },
+    {
+      "items": [
+        "as"
+      ],
+      "representative": "as"
+    },
+    {
+      "items": [
+        "lives in"
+      ],
+      "representative": "lives in"
+    },
+    {
+      "items": [
+        "control"
+      ],
+      "representative": "control"
+    },
+    {
+      "items": [
+        "does not cause"
+      ],
+      "representative": "does not cause"
+    },
+    {
+      "items": [
+        "is damaged for"
+      ],
+      "representative": "is damaged for"
+    },
+    {
+      "items": [
+        "seem to"
+      ],
+      "representative": "seem to"
+    },
+    {
+      "items": [
+        "facing"
+      ],
+      "representative": "facing"
+    },
+    {
+      "items": [
+        "happened in"
+      ],
+      "representative": "happened in"
+    },
+    {
+      "items": [
+        "given priority over"
+      ],
+      "representative": "given priority over"
+    },
+    {
+      "items": [
+        "must run on"
+      ],
+      "representative": "must run on"
+    },
+    {
+      "items": [
+        "are not allowed"
+      ],
+      "representative": "are not allowed"
+    },
+    {
+      "items": [
+        "not paying"
+      ],
+      "representative": "not paying"
+    },
+    {
+      "items": [
+        "cannot do in"
+      ],
+      "representative": "cannot do in"
+    },
+    {
+      "items": [
+        "to hone"
+      ],
+      "representative": "to hone"
+    },
+    {
+      "items": [
+        "robbed"
+      ],
+      "representative": "robbed"
+    },
+    {
+      "items": [
+        "are compared to"
+      ],
+      "representative": "are compared to"
+    },
+    {
+      "items": [
+        "runs"
+      ],
+      "representative": "runs"
+    },
+    {
+      "items": [
+        "may be"
+      ],
+      "representative": "may be"
+    },
+    {
+      "items": [
+        "can't ignore"
+      ],
+      "representative": "can't ignore"
+    },
+    {
+      "items": [
+        "post in"
+      ],
+      "representative": "post in"
+    },
+    {
+      "items": [
+        "designed to spread"
+      ],
+      "representative": "designed to spread"
+    },
+    {
+      "items": [
+        "home to"
+      ],
+      "representative": "home to"
+    },
+    {
+      "items": [
+        "is good at"
+      ],
+      "representative": "is good at"
+    },
+    {
+      "items": [
+        "to school for"
+      ],
+      "representative": "to school for"
+    },
+    {
+      "items": [
+        "get into"
+      ],
+      "representative": "get into"
+    },
+    {
+      "items": [
+        "allowed in"
+      ],
+      "representative": "allowed in"
+    },
+    {
+      "items": [
+        "go to",
+        "went to",
+        "goes to"
+      ],
+      "representative": "go to"
+    },
+    {
+      "items": [
+        "was going to"
+      ],
+      "representative": "was going to"
+    },
+    {
+      "items": [
+        "can ruin"
+      ],
+      "representative": "can ruin"
+    },
+    {
+      "items": [
+        "look like"
+      ],
+      "representative": "look like"
+    },
+    {
+      "items": [
+        "is one of"
+      ],
+      "representative": "is one of"
+    },
+    {
+      "items": [
+        "allows"
+      ],
+      "representative": "allows"
+    },
+    {
+      "items": [
+        "insist upon"
+      ],
+      "representative": "insist upon"
+    },
+    {
+      "items": [
+        "not pay"
+      ],
+      "representative": "not pay"
+    },
+    {
+      "items": [
+        "owned by"
+      ],
+      "representative": "owned by"
+    },
+    {
+      "items": [
+        "want to see"
+      ],
+      "representative": "want to see"
+    },
+    {
+      "items": [
+        "took over"
+      ],
+      "representative": "took over"
+    },
+    {
+      "items": [
+        "at"
+      ],
+      "representative": "at"
+    },
+    {
+      "items": [
+        "thanked for"
+      ],
+      "representative": "thanked for"
+    },
+    {
+      "items": [
+        "turn to ash"
+      ],
+      "representative": "turn to ash"
+    },
+    {
+      "items": [
+        "does not work on"
+      ],
+      "representative": "does not work on"
+    },
+    {
+      "items": [
+        "make something"
+      ],
+      "representative": "make something"
+    },
+    {
+      "items": [
+        "does"
+      ],
+      "representative": "does"
+    },
+    {
+      "items": [
+        "putting"
+      ],
+      "representative": "putting"
+    },
+    {
+      "items": [
+        "is written in"
+      ],
+      "representative": "is written in"
+    },
+    {
+      "items": [
+        "is better in"
+      ],
+      "representative": "is better in"
+    },
+    {
+      "items": [
+        "possible with"
+      ],
+      "representative": "possible with"
+    },
+    {
+      "items": [
+        "belongs to"
+      ],
+      "representative": "belongs to"
+    },
+    {
+      "items": [
+        "a tool"
+      ],
+      "representative": "a tool"
+    },
+    {
+      "items": [
+        "to make"
+      ],
+      "representative": "to make"
+    },
+    {
+      "items": [
+        "next to"
+      ],
+      "representative": "next to"
+    },
+    {
+      "items": [
+        "get sympathy"
+      ],
+      "representative": "get sympathy"
+    },
+    {
+      "items": [
+        "away from"
+      ],
+      "representative": "away from"
+    },
+    {
+      "items": [
+        "address in"
+      ],
+      "representative": "address in"
+    },
+    {
+      "items": [
+        "put in"
+      ],
+      "representative": "put in"
+    },
+    {
+      "items": [
+        "used with"
+      ],
+      "representative": "used with"
+    }
+  ],
+  "remaining_edges": [],
+  "status": "done"
+}
