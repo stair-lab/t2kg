@@ -28,6 +28,8 @@ NODE2VEC_WALK_LENGTH=80
 NODE2VEC_CONTEXT_SIZE=10
 NODE2VEC_WALKS_PER_NODE=10 
 
+
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 

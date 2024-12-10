@@ -47,6 +47,7 @@ ENTITIES_KEY = "entities"
 RELATIONS_KEY = "relations"
 RELATION_MAPPING_KEY = "relation_mapping"
 ENTITY_MAPPING_KEY = "entity_mapping"
+ENTITY_CLUSTERS_KEY = "entity_clusters"
 
 QUERY_BASE_PATH = os.path.join(DATA_BASE_PATH, "query")
 
@@ -61,6 +62,9 @@ K_TOP_RESPONSE_ENTITIES = 10
 
 QUERY_SYSTEM_MODES = ["batch", "interactive"]
 DEFAULT_QUERY_SYSTEM_MODE = "interactive"
+
+
+CLUSTER_OUTPUT_BASE_PATH = os.path.join(DATA_BASE_PATH, "cluster")
 
 PINE_API_KEY = 'pcsk_6ktnFZ_HVs4214sfzmCDpKVvqAA1YDy5Fz8kjL9AX9ScrFGxZ7D16ATqdqHAyAsJnv2CwK'
 

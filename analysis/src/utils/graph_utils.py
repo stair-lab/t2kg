@@ -92,3 +92,9 @@ def get_save_folder_path(graph_path, output_path, _):
     graph_name = get_graph_name(graph_path)
     save_folder_path = os.path.join(output_path, graph_name)
     return save_folder_path
+
+
+def get_cluster_assignments_save_path(saved_graph_info_dir, output_dir): 
+    graph_name = get_graph_name(saved_graph_info_dir)
+    cluster_assignments_save_path = os.path.join(output_dir, f"{graph_name}_cluster_assignments.json")
+    return cluster_assignments_save_path
