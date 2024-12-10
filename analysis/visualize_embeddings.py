@@ -13,7 +13,7 @@ from matplotlib.colors import ListedColormap
 
 COLOR_MAP = {}
 NODE_COLOR = 'gray'
-LOW_RES = True 
+LOW_RES = False 
 if LOW_RES:
     FIGURE_SIZE = (15, 10)
     DPI = 100

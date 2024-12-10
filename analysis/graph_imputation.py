@@ -10,8 +10,10 @@ import json
 import torch
 import heapq
 import torch
+import random
 
-K = 5
+PROPORTION_OF_RELATIONS_TO_SAMPLE = 0.1
+
 
 def save_results(results_to_be_saved, saved_graph_info_dir, output_dir):
     os.makedirs(output_dir, exist_ok=True)
@@ -34,6 +36,12 @@ def run_imputation_on_graph(saved_graph_info_dir, output_dir, k):
         (head, relation, tail) for head, relation, tail in graph_data[analysis_constants.TRIPLES_KEY]
     )
 
+    clusters = graph_data[analysis_constants.ENTITY_CLUSTERS_KEY]
+
+    cluster_to_entities = {}
+    for entity, cluster_label in zip(entities, clusters):
+        cluster_to_entities.setdefault(cluster_label, []).append(entity)
+
     def score_triple(head, relation, tail):
         # Get embeddings
         head_idx = graph_data[analysis_constants.ENTITY_MAPPING_KEY][head]
@@ -49,17 +57,24 @@ def run_imputation_on_graph(saved_graph_info_dir, output_dir, k):
 
     # Use a min-heap to track the top k triples
     heap = []
+    num_relations_to_sample = int(len(relations) * PROPORTION_OF_RELATIONS_TO_SAMPLE)
 
-    for head, relation, tail in itertools.product(entities, relations, entities):
-        # Skip existing triples or invalid triples where head == tail
-        if (head, relation, tail) in existing_triples or head == tail:
-            continue
-
-        score = score_triple(head, relation, tail)
-        if len(heap) < k:
-            heapq.heappush(heap, (score, head, relation, tail))
-        else:
-            heapq.heappushpop(heap, (score, head, relation, tail))
+    i = 0
+    for cluster_label, cluster_entities in cluster_to_entities.items():
+        print(f"Processing {i}/{len(cluster_to_entities)} cluster, cluster label: {cluster_label} with {len(cluster_entities)} entities")
+        for head, tail in itertools.product(cluster_entities, repeat=2):
+            if head == tail:  # Skip invalid triples where head == tail
+                continue
+            # Randomly select K relations
+            selected_relations = random.sample(relations, min(len(relations), num_relations_to_sample))
+            for relation in selected_relations:
+                if (head, relation, tail) in existing_triples:
+                    continue
+                score = score_triple(head, relation, tail)
+                if len(heap) < k:
+                    heapq.heappush(heap, (score, head, relation, tail))
+                else:
+                    heapq.heappushpop(heap, (score, head, relation, tail))
 
     # Extract the top k triples
     top_triples = sorted(heap, key=lambda x: x[0], reverse=True)

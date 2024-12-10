@@ -1,0 +1,34 @@
+{
+    "entities": [
+        "Barack_Obama", "Donald_Trump", "Hillary_Clinton", "Joe_Biden", "Kamala_Harris",
+        "Abraham_Lincoln", "George_Washington", "Theodore_Roosevelt", "Civil_Rights_Movement", 
+        "Democratic_Party", "Republican_Party", "U.S._President", "Vice_President", 
+        "First_Lady", "Senator", "Congressman", "Supreme_Court", "Oval_Office", 
+        "White_House", "Constitution", "Emancipation_Proclamation", "Bill_of_Rights",
+        "Equality", "Democracy", "War_on_Terror", "Climate_Change", "Healthcare_Reform",
+        "Foreign_Policy", "Civil_War", "World_War_II", "Tax_Reform", "Immigration", 
+        "Gun_Control"
+    ],
+    "relations": [
+        ["Barack_Obama", "is_a_member_of", "Democratic_Party"],
+        ["Donald_Trump", "is_a_member_of", "Republican_Party"],
+        ["Joe_Biden", "is_a_member_of", "Democratic_Party"],
+        ["Kamala_Harris", "is_a", "Vice_President"],
+        ["Abraham_Lincoln", "issued", "Emancipation_Proclamation"],
+        ["Theodore_Roosevelt", "championed", "Conservation_Efforts"],
+        ["Hillary_Clinton", "was_a", "First_Lady"],
+        ["George_Washington", "was_the", "First_U.S._President"],
+        ["Civil_Rights_Movement", "promoted", "Equality"],
+        ["Democratic_Party", "advocates_for", "Healthcare_Reform"],
+        ["Republican_Party", "opposes", "Tax_Increases"],
+        ["Barack_Obama", "focused_on", "Climate_Change"],
+        ["Donald_Trump", "emphasized", "Immigration_Policy"],
+        ["Joe_Biden", "prioritized", "Gun_Control"],
+        ["Kamala_Harris", "addresses", "Racial_Justice"],
+        ["U.S._President", "works_in", "Oval_Office"],
+        ["Supreme_Court", "interprets", "Constitution"],
+        ["Congressman", "proposes", "Legislation"],
+        ["Civil_War", "shaped", "American_History"],
+        ["World_War_II", "influenced", "Foreign_Policy"]
+    ]
+}

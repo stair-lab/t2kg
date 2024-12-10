@@ -16,6 +16,7 @@ except ImportError:
     CUDA_AVAILABLE = False
 
 NUMBER_OF_CLUSTERS = 5
+EXPECTED_CLUSTER_SIZE = 30
 
 def save_ouput(save_folder_path, entity_embeddings, relation_embeddings, graph_data, graph_name): 
     print(f"Saving output to {save_folder_path}")
@@ -48,6 +49,10 @@ def perform_clustering(entity_embeddings, num_clusters, use_gpu=False):
     cluster_labels = clustering_model.fit_predict(scaled_embeddings)
     return cluster_labels
 
+def get_number_of_clusters(graph_data, expected_cluster_size):
+    num_entities = len(graph_data[analysis_constants.ENTITIES_KEY])
+    return num_entities // expected_cluster_size
+
 
 def embed_graph(graph_path, ouput_path, model_name): 
     
@@ -60,15 +65,18 @@ def embed_graph(graph_path, ouput_path, model_name):
 
 
     use_gpu = CUDA_AVAILABLE
+    expected_cluster_size = EXPECTED_CLUSTER_SIZE
 
     # Extract entity and relation embeddings
     entity_embeddings = model.entity_embeddings
     relation_embeddings = model.relation_embeddings
 
+    number_of_clusters = get_number_of_clusters(graph_data, expected_cluster_size)
+
     np_embeddings = entity_embeddings.weight.detach().cpu().numpy()
 
-    print(f"Clustering entities into {NUMBER_OF_CLUSTERS} clusters")
-    cluster_labels = perform_clustering(np_embeddings, num_clusters=NUMBER_OF_CLUSTERS, use_gpu=use_gpu)
+    print(f"Clustering entities into {number_of_clusters} clusters")
+    cluster_labels = perform_clustering(np_embeddings, num_clusters=number_of_clusters, use_gpu=use_gpu)
     graph_data[analysis_constants.ENTITY_CLUSTERS_KEY] = cluster_labels.tolist()
 
 

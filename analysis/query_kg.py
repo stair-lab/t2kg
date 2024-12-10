@@ -17,7 +17,6 @@ class KnowledgeGraphQuerySystem:
                 self.queries = [line.strip() for line in f if line.strip()]
 
             
-
     def execute_query(self, query):
         return self.query_model.predict(query)
 

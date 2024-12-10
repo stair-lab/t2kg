@@ -17,7 +17,7 @@ from torch_geometric.nn import Node2Vec as PyGNode2Vec
 from torch.utils.data import DataLoader, Dataset
 import analysis_constants 
 
-TRANSR_NUM_EPOCHS = 100
+TRANSR_NUM_EPOCHS = 1000
 TRANSR_PRINT_EVERY = 100
 TRANSR_LEARNING_RATE = 0.01
 TRANSR_MARGIN = 1.0
@@ -27,7 +27,6 @@ NODE2VEC_NUM_EPOCHS =100
 NODE2VEC_WALK_LENGTH=80
 NODE2VEC_CONTEXT_SIZE=10
 NODE2VEC_WALKS_PER_NODE=10 
-
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
