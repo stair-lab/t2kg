@@ -8,7 +8,7 @@ This approach aims to reduce redundancy and improve the coherence of the knowled
 by grouping semantically equivalent or closely related entities.
 """
 
-from typing import List, Dict, Set, Optional
+from typing import List, Dict, Set, Optional, Tuple
 import json
 from pydantic import BaseModel, model_validator, Field
 from openai import OpenAI
@@ -17,6 +17,7 @@ from index import client, MODEL
 import random
 import time
 from openai import RateLimitError
+import os
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -65,7 +66,7 @@ Predicates are the relations between subject and object entities. Ensure that th
 Return the predicates that you are confident belong together as a single cluster.
 If you're not confident, return an empty list."""
 
-MAX_RETRIES = 3
+MAX_RETRIES = 10
 BASE_DELAY = 1  # Start with 1 second
 MAX_DELAY = 60  # Maximum delay of 60 seconds
 JITTER_RANGE = 0.1  # 10% jitter
@@ -109,8 +110,8 @@ class Cluster(BaseModel):
     def validate_representative(self) -> 'Cluster':
         if not self.items:
             raise ValueError("Cluster must contain at least one item")
-        if self.representative not in self.items:
-            raise ValueError("Representative must be one of the items in the cluster")
+        # if self.representative not in self.items:
+        #     raise ValueError("Representative must be one of the items in the cluster")
         return self
 
 class ClusterResponse(BaseModel):
@@ -133,7 +134,7 @@ def extract_single_cluster(items: List[str], item_type: str = "entities") -> Lis
     items_text = "\n".join([f"- {item}" for item in items])
     items_set = set(items)
     
-    logger.debug(f"Attempting to extract {item_type} cluster from {len(items)} items")
+    logger.info(f"Attempting to extract {item_type} cluster from {len(items)} items")
     try:
         ClusterResponse._valid_entities = items_set
         
@@ -152,7 +153,7 @@ def extract_single_cluster(items: List[str], item_type: str = "entities") -> Lis
        	print(f'completion choices: {completion}') 
         cluster = completion.choices[0].message.parsed.cluster
         if not cluster:
-            logger.debug(f"No suitable {item_type} clusters found in batch")
+            logger.info(f"No suitable {item_type} clusters found in batch")
         else:
             logger.info(f"Found {item_type} cluster with {len(cluster)} items: {cluster}")
             
@@ -161,13 +162,12 @@ def extract_single_cluster(items: List[str], item_type: str = "entities") -> Lis
         
     except Exception as e:
         logger.error(f"Error extracting cluster: {str(e)}")
-        #raise
         return []
 
 @handle_rate_limit
 def validate_cluster(cluster: List[str], item_type: str = "entities") -> List[str]:
     """Validate that cluster members are truly synonyms"""
-    logger.debug(f"Validating {item_type} cluster with {len(cluster)} items")
+    logger.info(f"Validating {item_type} cluster with {len(cluster)} items")
     try:
         completion = client.beta.chat.completions.parse(
             model=MODEL,
@@ -179,16 +179,16 @@ def validate_cluster(cluster: List[str], item_type: str = "entities") -> List[st
             temperature=0
         )
         validated = completion.choices[0].message.parsed.cluster
-        logger.debug(f"Validation result: {len(validated)}/{len(cluster)} items validated")
+        logger.info(f"Validation result: {len(validated)}/{len(cluster)} items validated")
         return validated
     except Exception as e:
         logger.error(f"Error in cluster validation: {str(e)}")
-        raise
+        return []
 
 @handle_rate_limit
 def choose_representative(cluster: List[str]) -> str:
     """Choose the best entity name to represent the cluster"""
-    logger.debug(f"Choosing representative for cluster with {len(cluster)} items")
+    logger.info(f"Choosing representative for cluster with {len(cluster)} items")
     max_retries = 3
     for attempt in range(max_retries):
         try:
@@ -209,61 +209,137 @@ Consider the following criteria:
             representative = completion.choices[0].message.parsed.representative
             if representative not in cluster:
                 raise ValueError(f"Chosen representative '{representative}' not in cluster")
-            logger.debug(f"Chose representative: {representative}")
+            logger.info(f"Chose representative: {representative}")
             return representative
         except ValueError as ve:
-            logger.warning(f"Representative selection attempt {attempt + 1}/{max_retries} failed: {ve}")
+            logger.warning(f"Representative selection attempt {attempt + 1}/{max_retries} warning: {ve}")
             if attempt == max_retries - 1:
-                logger.error("All attempts failed, falling back to heuristic")
-                return min(cluster, key=lambda x: (len(x), x.lower()))
+                logger.error(f"All attempts failed, using representative that is not in cluster: representative={representative}")
+                return representative
         except Exception as e:
             logger.error(f"Error choosing representative: {str(e)}")
-            raise
+            return min(cluster, key=lambda x: (len(x), x.lower()))
 
 class ClusterIndexResponse(BaseModel):
     cluster_indices: List[Optional[int]] = Field(description="A list of indices corresponding to the clusters each item can be added to, or None if they don't fit any existing cluster")
+    
 
 @handle_rate_limit
 def check_items_for_existing_clusters(items: List[str], clusters: List[Cluster], item_type: str) -> List[Optional[int]]:
     """Check if multiple items can be added to any existing clusters"""
-    logger.debug(f"Checking {len(items)} items against {len(clusters)} existing clusters")
-    try:
-        items_str = ", ".join(items)
-        clusters_str = ", ".join([f"Cluster {i}: {c.items}" for i, c in enumerate(clusters)])
-        
-        completion = client.beta.chat.completions.parse(
-            model=MODEL,
-            messages=[
-                {"role": "system", "content": f"Determine if the given {item_type} can be added to any of the existing clusters. Return a list of indices corresponding to the clusters each item can be added to, or null if it doesn't fit any cluster."},
-                {"role": "user", "content": f"{item_type.capitalize()}: {items_str}\nExisting clusters: {clusters_str}"},
-            ],
-            response_format=ClusterIndexResponse,
-            temperature=0
-        )
-        
-        cluster_indices = completion.choices[0].message.parsed.cluster_indices
-        logger.debug(f"Found potential matches: {cluster_indices}")
-        
-        # Validate the new clusters
-        for i, index in enumerate(cluster_indices):
-            if index is not None:
-                new_cluster = clusters[index].items + [items[i]]
-                validated_cluster = validate_cluster(new_cluster, item_type)
-                
-                if len(validated_cluster) != len(clusters[index].items) + 1:
-                    logger.debug(f"Validation failed for item {items[i]} in cluster {index}")
+    logger.info(f"Checking {len(items)} items against {len(clusters)} existing clusters")
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            items_str = ", ".join(items)
+            clusters_str = ", ".join([f"Cluster {i}: {c.items}" for i, c in enumerate(clusters)])
+            
+            completion = client.beta.chat.completions.parse(
+                model=MODEL,
+                messages=[
+                    {"role": "system", "content": f"Determine if the given {item_type} can be added to any of the existing clusters. Return a list of indices corresponding to the clusters each item can be added to, or null if it doesn't fit any cluster."},
+                    {"role": "user", "content": f"List of {len(items)} {item_type.capitalize()} to check: {items_str}\nExisting clusters: {clusters_str}"},
+                ],
+                response_format=ClusterIndexResponse,
+                temperature=0
+            )
+            
+            cluster_indices = completion.choices[0].message.parsed.cluster_indices
+            logger.info(f"Found potential matches: {cluster_indices}")
+            
+            # Check for exceptions in the cluster_indices
+            if len(cluster_indices) != len(items) or any(index is not None and (index < 0 or index >= len(clusters)) for index in cluster_indices):
+                logger.warning(f"Found {len(cluster_indices)} potential matches for {len(items)} items")
+                raise ValueError("Invalid cluster index found in response")
+            
+            # Validate the new clusters
+            for i, index in enumerate(cluster_indices):
+                if index is not None:
+                    new_cluster = clusters[index].items + [items[i]]
+                    validated_cluster = validate_cluster(new_cluster, item_type)
+                    
+                    if len(validated_cluster) != len(clusters[index].items) + 1:
+                        logger.info(f"Validation failed for item {items[i]} in cluster {index}")
+                        cluster_indices[i] = None
+                elif index is not None:
+                    logger.info(f"Index {index} is out of range for clusters list or {i} is out of range for items list. Skipping.")
                     cluster_indices[i] = None
-        
-        return cluster_indices
-      
-    except Exception as e:
-        logger.error(f"Error checking items for existing clusters: {str(e)}")
-        raise
+            
+            return cluster_indices
+        except Exception as e:
+            logger.error(f"Error checking items for existing clusters (attempt {attempt + 1}/{max_retries}): {str(e)}")
+            if attempt == max_retries - 1:
+                logger.error("All attempts failed. Returning empty list.")
+                return [None] * len(items)
 
-def cluster_items(items: Set[str], item_type: str = "entities") -> List[Cluster]:
+def save_progress(output_file: str, clusters: List[Cluster], remaining_items: List[str], item_type: str, status: str = "in_progress"):
+    """Save the current clustering progress to a file"""
+    try:
+        # Read existing data if file exists
+        data = {}
+        if os.path.exists(output_file):
+            with open(output_file, 'r') as f:
+                data = json.load(f)
+        
+        # Update with new data
+        cluster_key = f"{item_type}_clusters"
+        remaining_key = f"remaining_{item_type}"
+        data[cluster_key] = [cluster.dict() for cluster in clusters]
+        data[remaining_key] = remaining_items
+        data["status"] = status
+        
+        # Write back to file
+        with open(output_file, 'w') as f:
+            json.dump(data, f, indent=2)
+        
+        logger.info(f"Saved progress to {output_file}: {len(clusters)} clusters, {len(remaining_items)} remaining items")
+    except Exception as e:
+        logger.error(f"Error saving progress to {output_file}: {e}")
+
+def load_progress(output_file: str, item_type: str) -> Tuple[List[Cluster], List[str], str]:
+    """Load clustering progress from a file"""
+    try:
+        if not os.path.exists(output_file):
+            return [], [], "in_progress"
+            
+        with open(output_file, 'r') as f:
+            data = json.load(f)
+            
+        cluster_key = f"{item_type}_clusters"
+        remaining_key = f"remaining_{item_type}"
+        
+        if cluster_key not in data or remaining_key not in data:
+            return [], [], "in_progress"
+            
+        clusters = [Cluster(**cluster_data) for cluster_data in data[cluster_key]]
+        remaining_items = data[remaining_key]
+        status = data.get("status", "in_progress")
+        
+        logger.info(f"Loaded progress from {output_file}: {len(clusters)} clusters, {len(remaining_items)} remaining items")
+        return clusters, remaining_items, status
+    except Exception as e:
+        logger.error(f"Error loading progress from {output_file}: {e}")
+        return [], [], "in_progress"
+
+def cluster_items(items: Set[str], output_file: str, item_type: str = "entities") -> List[Cluster]:
     """Generic clustering function that works for both entities and edges"""
-    remaining_items = list(items)
-    clusters: List[Cluster] = []
+    # Load existing progress if any
+    clusters, loaded_remaining_items, status = load_progress(output_file, item_type)
+    
+    # If the clustering is already done, return the existing clusters
+    if status == "done":
+        logger.info(f"Clustering already completed for {output_file}. Skipping.")
+        return clusters
+    
+    # If we have existing progress and it's not done, use it
+    if status == "in_progress" and loaded_remaining_items:
+        remaining_items = loaded_remaining_items
+    else:
+        # If no progress or completed, start fresh
+        remaining_items = list(items)
+        clusters = []
+        save_progress(output_file, clusters, remaining_items, item_type)
+    
     iteration = 0
     no_progress_count = 0
     
@@ -285,6 +361,9 @@ def cluster_items(items: Set[str], item_type: str = "entities") -> List[Cluster]
             remaining_items = [item for item in remaining_items if item not in validated_cluster]
             logger.info(f"Created {item_type} cluster with {len(validated_cluster)} items: {validated_cluster}")
             logger.info(f"Representative: {representative}")
+            
+            # Save progress after each new cluster
+            save_progress(output_file, clusters, remaining_items, item_type)
         else:
             no_progress_count += 1
             logger.info(f"No valid cluster found. Attempts without progress: {no_progress_count}")
@@ -295,23 +374,52 @@ def cluster_items(items: Set[str], item_type: str = "entities") -> List[Cluster]
             if no_progress_count >= 10:
                 logger.warning(f"No progress for 10 iterations. Checking remaining {item_type} for existing clusters.")
                 items_to_remove = []
+                
+                # Process remaining items in batches of 10
                 for i in range(0, len(remaining_items), 10):
                     batch = remaining_items[i:i+10]
                     cluster_indices = check_items_for_existing_clusters(batch, clusters, item_type)
+                    
+                    if not cluster_indices:
+                        logger.warning(f"Failed to get cluster indices for batch {i//10 + 1}")
+                        continue
+                        
+                    # Process each item in the batch
                     for j, index in enumerate(cluster_indices):
-                        if index is not None:
-                            clusters[index].items.append(batch[j])
-                            items_to_remove.append(batch[j])
-                            logger.info(f"Added {batch[j]} to existing cluster: {clusters[index].items}")
-                        else:
-                            clusters.append(Cluster(
-                                items=[batch[j]],
-                                representative=batch[j]
-                            ))
-                            items_to_remove.append(batch[j])
-                            logger.info(f"Created single-item cluster for {batch[j]}")
-                remaining_items = [item for item in remaining_items if item not in items_to_remove]
+                        try: # This try catch for debugging
+                            item = batch[j]
+                            
+                            if index is not None:
+                                # Add to existing cluster after validation
+                                new_cluster = clusters[index].items + [item]
+                                validated_cluster = validate_cluster(new_cluster, item_type)
+                                
+                                if len(validated_cluster) == len(new_cluster):
+                                    clusters[index].items = validated_cluster
+                                    items_to_remove.append(item)
+                                    logger.info(f"Added {item} to existing cluster {index}")
+                            else:
+                                # Create new single-item cluster
+                                new_cluster = Cluster(
+                                    items=[item],
+                                    representative=item
+                                )
+                                clusters.append(new_cluster)
+                                items_to_remove.append(item)
+                                logger.info(f"Created new single-item cluster for {item}")
+                                
+                        except Exception as e:
+                            logger.error(f"Error processing item {j} in batch {i//10 + 1}: {str(e)}")
+                    
+                    # Save progress after each batch
+                    remaining_items = [item for item in remaining_items if item not in items_to_remove]
+                    save_progress(output_file, clusters, remaining_items, item_type)
+                
+                logger.info(f"Processed all remaining items. {len(items_to_remove)} items processed.")
                 break
+    
+    # Mark as complete
+    save_progress(output_file, clusters, [], item_type, status="done")
     return clusters
 
 def process_file(input_file: str):
@@ -322,25 +430,32 @@ def process_file(input_file: str):
             if not isinstance(data, dict) or not all(k in data for k in ['entities', 'edges']):
                 raise KeyError("Input file must contain 'entities' and 'edges' fields")
             
+            # Generate output filenames
+            base_output = input_file.replace('.json', '_clusters.json')
+            entity_output = input_file.replace('.json', '_entity_clusters.json')
+            edge_output = input_file.replace('.json', '_edge_clusters.json')
+            
             entity_clusters = sorted(
-              cluster_items(set(sorted(data['entities'])), "entities"), 
-              key=lambda c: len(c.items), reverse=True
+                cluster_items(set(sorted(data['entities'])), entity_output, "entities"),
+                key=lambda c: len(c.items), reverse=True
             )
             edge_clusters = sorted(
-              cluster_items(set(sorted(data['edges'])), "edges"), 
-              key=lambda c: len(c.items), reverse=True
+                cluster_items(set(sorted(data['edges'])), edge_output, "edges"),
+                key=lambda c: len(c.items), reverse=True
             )
+            
+            # Save final combined output
             output = {
                 'entity_clusters': [cluster.dict() for cluster in entity_clusters],
-                'edge_clusters': [cluster.dict() for cluster in edge_clusters]
+                'edge_clusters': [cluster.dict() for cluster in edge_clusters],
+                'status': 'done'
             }
             
-            output_file = input_file.replace('.json', '_clusters.json')
-            with open(output_file, 'w') as f:
+            with open(base_output, 'w') as f:
                 json.dump(output, f, indent=2)
             
             logger.info(f"Created {len(entity_clusters)} entity clusters and {len(edge_clusters)} edge clusters")
-            logger.info(f"Saved clusters to {output_file}")
+            logger.info(f"Saved final clusters to {base_output}")
             
             # Print statistics for both types
             for cluster_type, clusters in [("Entity", entity_clusters), ("Edge", edge_clusters)]:
@@ -358,19 +473,12 @@ def process_file(input_file: str):
 
 if __name__ == "__main__":
     input_files = [
-<<<<<<< HEAD
-        #'kgs/224w_final_deliverable/advil.json',
-        'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.json',
-        'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.json',
-        'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.json',
         'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.json',
-=======
         'kgs/224w_final_deliverable/advil.json',
         # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-gemma-2-9b-it.json',
         # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-v0.2_no_ann.json',
         # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-gemma-2-9b_no_ann.json',
         # 'kgs/224w_final_deliverable/cleaned_300_pku-safe-30k-test-Mistral-7B-Instruct-v0.2.json',
->>>>>>> aaefbbd1cfdf257e71a7672b14ebfd2fa38bd2a7
     ]
     
     for input_file in input_files:

@@ -1,21 +1,13 @@
 {
-  "entity_clusters": [
+  "entities_clusters": [
     {
       "items": [
-        "pain conditions",
-        "toothaches",
-        "osteoarthritis",
-        "rheumatoid arthritis",
-        "sprains",
-        "headaches",
-        "muscle aches",
-        "backaches",
-        "mild to moderate injuries",
-        "arthritis",
-        "strains",
-        "menstrual cramps"
+        "ibuprofen",
+        "advil",
+        "motrin",
+        "brufen"
       ],
-      "representative": "pain conditions"
+      "representative": "ibuprofen"
     },
     {
       "items": [
@@ -42,12 +34,28 @@
     },
     {
       "items": [
-        "ibuprofen",
-        "advil",
-        "motrin",
-        "brufen"
+        "pain conditions",
+        "toothaches",
+        "osteoarthritis",
+        "rheumatoid arthritis",
+        "sprains",
+        "headaches",
+        "muscle aches",
+        "backaches",
+        "mild to moderate injuries",
+        "arthritis",
+        "strains",
+        "menstrual cramps"
       ],
-      "representative": "ibuprofen"
+      "representative": "pain conditions"
+    },
+    {
+      "items": [
+        "liver disease",
+        "liver toxicity",
+        "liver damage"
+      ],
+      "representative": "liver disease"
     },
     {
       "items": [
@@ -69,19 +77,18 @@
     },
     {
       "items": [
-        "liver disease",
-        "liver toxicity",
-        "liver damage"
-      ],
-      "representative": "liver disease"
-    },
-    {
-      "items": [
         "pain relief",
         "analgesic-antipyretic agents",
         "fever reduction"
       ],
       "representative": "pain relief"
+    },
+    {
+      "items": [
+        "ulcers",
+        "peptic ulcers"
+      ],
+      "representative": "ulcers"
     },
     {
       "items": [
@@ -93,25 +100,18 @@
     },
     {
       "items": [
+        "gastrointestinal bleeding",
+        "bleeding"
+      ],
+      "representative": "bleeding"
+    },
+    {
+      "items": [
         "stroke",
         "heart attack",
         "cardiovascular events"
       ],
       "representative": "cardiovascular events"
-    },
-    {
-      "items": [
-        "ulcers",
-        "peptic ulcers"
-      ],
-      "representative": "ulcers"
-    },
-    {
-      "items": [
-        "gastrointestinal bleeding",
-        "bleeding"
-      ],
-      "representative": "bleeding"
     },
     {
       "items": [
@@ -256,143 +256,6 @@
       "representative": "ace inhibitors"
     }
   ],
-  "edge_clusters": [
-    {
-      "items": [
-        "is used in",
-        "is used for",
-        "is for"
-      ],
-      "representative": "is used for"
-    },
-    {
-      "items": [
-        "is known as",
-        "is also known as"
-      ],
-      "representative": "is known as"
-    },
-    {
-      "items": [
-        "has",
-        "have"
-      ],
-      "representative": "has"
-    },
-    {
-      "items": [
-        "include"
-      ],
-      "representative": "include"
-    },
-    {
-      "items": [
-        "is a"
-      ],
-      "representative": "is a"
-    },
-    {
-      "items": [
-        "can cause"
-      ],
-      "representative": "can cause"
-    },
-    {
-      "items": [
-        "is similar to"
-      ],
-      "representative": "is similar to"
-    },
-    {
-      "items": [
-        "should not be combined with"
-      ],
-      "representative": "should not be combined with"
-    },
-    {
-      "items": [
-        "has short"
-      ],
-      "representative": "has short"
-    },
-    {
-      "items": [
-        "interacts poorly with"
-      ],
-      "representative": "interacts poorly with"
-    },
-    {
-      "items": [
-        "reduces"
-      ],
-      "representative": "reduces"
-    },
-    {
-      "items": [
-        "causes"
-      ],
-      "representative": "causes"
-    },
-    {
-      "items": [
-        "is classified as"
-      ],
-      "representative": "is classified as"
-    },
-    {
-      "items": [
-        "has formula"
-      ],
-      "representative": "has formula"
-    },
-    {
-      "items": [
-        "is in"
-      ],
-      "representative": "is in"
-    },
-    {
-      "items": [
-        "contains"
-      ],
-      "representative": "contains"
-    },
-    {
-      "items": [
-        "interacts with"
-      ],
-      "representative": "interacts with"
-    },
-    {
-      "items": [
-        "is combined with"
-      ],
-      "representative": "is combined with"
-    },
-    {
-      "items": [
-        "causes less"
-      ],
-      "representative": "causes less"
-    },
-    {
-      "items": [
-        "is caused by"
-      ],
-      "representative": "is caused by"
-    },
-    {
-      "items": [
-        "is a derivative of"
-      ],
-      "representative": "is a derivative of"
-    },
-    {
-      "items": [
-        "requires"
-      ],
-      "representative": "requires"
-    }
-  ],
+  "remaining_entities": [],
   "status": "done"
 }
