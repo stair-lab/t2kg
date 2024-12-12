@@ -6,7 +6,7 @@ Constants for the project. The details are in the analysis README
 """
 import os 
 
-TEST_MODE = True
+TEST_MODE = False
 
 PROJECT_BASE_PATH = "/Users/proudmpala/Documents/Stanford/Classes/5/5.1/CS224W/cs224w-final"
 ANALYSIS_BASE_PATH = os.path.join(PROJECT_BASE_PATH, "analysis")
@@ -24,7 +24,7 @@ if TEST_MODE:
 
 else: 
     DATA_BASE_PATH = os.path.join(ANALYSIS_BASE_PATH, "data")
-    KNOWLEDGE_BASE_PATH = os.path.join(PROJECT_BASE_PATH, "kgs")
+    KNOWLEDGE_BASE_PATH = os.path.join(ANALYSIS_BASE_PATH, "kgs")
     
 EMBEDDINGS_BASE_PATH = os.path.join(DATA_BASE_PATH, "embeddings")
 EMBEDDING_PLOTS_BASE_PATH = os.path.join(DATA_BASE_PATH, "embedding_plots")
@@ -33,7 +33,7 @@ EMBEDDING_DIM = 64
 IMPUTATION_BASE_PATH = os.path.join(DATA_BASE_PATH, "imputation")
 ORIGINAL_TRIPLES_KEY = "original_triples"
 PREDICTED_TRIPLES_KEY = "predicted_triples"
-K_NEW_TRIPLES = 50
+K_NEW_TRIPLES = 100
 
 TRANSR = "TransR"
 EMBEDDING_MODELS = [TRANSR]
@@ -67,6 +67,12 @@ DEFAULT_QUERY_SYSTEM_MODE = "interactive"
 CLUSTER_OUTPUT_BASE_PATH = os.path.join(DATA_BASE_PATH, "cluster")
 
 PINE_API_KEY = 'pcsk_6ktnFZ_HVs4214sfzmCDpKVvqAA1YDy5Fz8kjL9AX9ScrFGxZ7D16ATqdqHAyAsJnv2CwK'
+
+
+TOXICITY_BASE_PATH = os.path.join(DATA_BASE_PATH, "toxicity")
+
+AGGREGATE_TOXICITY_STATS_KEY = "aggregate_toxicity_stats"
+CLUSTER_TOXICITY_STATS_KEY = "clusters_toxicity"
 
 
 

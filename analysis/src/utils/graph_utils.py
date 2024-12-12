@@ -62,7 +62,8 @@ def get_graph_data_path(save_folder_path, graph_name):
     return graph_data_path
 
 def get_graph_name(graph_path):
-    return os.path.splitext(os.path.basename(graph_path))[0]
+    return os.path.basename(graph_path)
+    
 
 def get_plot_image_path(saved_graph_info_dir, plot_dir): 
     graph_name = get_graph_name(saved_graph_info_dir)
@@ -98,3 +99,10 @@ def get_cluster_assignments_save_path(saved_graph_info_dir, output_dir):
     graph_name = get_graph_name(saved_graph_info_dir)
     cluster_assignments_save_path = os.path.join(output_dir, f"{graph_name}_cluster_assignments.json")
     return cluster_assignments_save_path
+
+
+
+def get_toxicity_results_save_path(saved_graph_info_dir, output_dir): 
+    graph_name = get_graph_name(saved_graph_info_dir)
+    toxicity_results_save_path = os.path.join(output_dir, f"{graph_name}_toxicity_results.json")
+    return toxicity_results_save_path

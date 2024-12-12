@@ -17,7 +17,7 @@ from torch_geometric.nn import Node2Vec as PyGNode2Vec
 from torch.utils.data import DataLoader, Dataset
 import analysis_constants 
 
-TRANSR_NUM_EPOCHS = 1000
+TRANSR_NUM_EPOCHS = 5000
 TRANSR_PRINT_EVERY = 100
 TRANSR_LEARNING_RATE = 0.01
 TRANSR_MARGIN = 1.0

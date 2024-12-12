@@ -61,7 +61,7 @@ def run_imputation_on_graph(saved_graph_info_dir, output_dir, k):
 
     i = 0
     for cluster_label, cluster_entities in cluster_to_entities.items():
-        print(f"Processing {i}/{len(cluster_to_entities)} cluster, cluster label: {cluster_label} with {len(cluster_entities)} entities")
+        print(f"Processing {i+1}/{len(cluster_to_entities)} cluster, cluster label: {cluster_label} with {len(cluster_entities)} entities")
         for head, tail in itertools.product(cluster_entities, repeat=2):
             if head == tail:  # Skip invalid triples where head == tail
                 continue
@@ -75,6 +75,7 @@ def run_imputation_on_graph(saved_graph_info_dir, output_dir, k):
                     heapq.heappush(heap, (score, head, relation, tail))
                 else:
                     heapq.heappushpop(heap, (score, head, relation, tail))
+        i += 1
 
     # Extract the top k triples
     top_triples = sorted(heap, key=lambda x: x[0], reverse=True)
