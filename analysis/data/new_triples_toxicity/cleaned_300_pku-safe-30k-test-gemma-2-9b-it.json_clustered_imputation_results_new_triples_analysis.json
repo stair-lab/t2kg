@@ -1,0 +1,1460 @@
+{
+    "aggregate_toxicity_stats": {
+        "TOXICITY": {
+            "Mean": 0.04647932262499999,
+            "Median": 0.023317583500000003,
+            "Standard Deviation": 0.06317955735429465,
+            "Minimum": 0.01017851,
+            "Maximum": 0.45243698,
+            "Skewness": 3.7542888305249726,
+            "Kurtosis": 17.585527546356495
+        },
+        "SEVERE_TOXICITY": {
+            "Mean": 0.0019375850249999998,
+            "Median": 0.0011062622,
+            "Standard Deviation": 0.004566010957597982,
+            "Minimum": 0.0006389618,
+            "Maximum": 0.045767322,
+            "Skewness": 8.893857068190787,
+            "Kurtosis": 81.99217392214125
+        },
+        "INSULT": {
+            "Mean": 0.016606170422,
+            "Median": 0.010058892,
+            "Standard Deviation": 0.018426816839403698,
+            "Minimum": 0.006952373,
+            "Maximum": 0.12521741,
+            "Skewness": 3.723055516175307,
+            "Kurtosis": 15.27683306919106
+        },
+        "IDENTITY_ATTACK": {
+            "Mean": 0.005851371418,
+            "Median": 0.0044027448,
+            "Standard Deviation": 0.006060081464291722,
+            "Minimum": 0.0018036455,
+            "Maximum": 0.052035484,
+            "Skewness": 5.255114917280222,
+            "Kurtosis": 33.57611758766347
+        },
+        "PROFANITY": {
+            "Mean": 0.01921298145,
+            "Median": 0.0139859205,
+            "Standard Deviation": 0.01937382150625877,
+            "Minimum": 0.010518758,
+            "Maximum": 0.15195307,
+            "Skewness": 4.5600012257194,
+            "Kurtosis": 23.60765542451025
+        },
+        "THREAT": {
+            "Mean": 0.015065018778,
+            "Median": 0.00748894855,
+            "Standard Deviation": 0.05522234165845303,
+            "Minimum": 0.0061878995,
+            "Maximum": 0.54744303,
+            "Skewness": 9.071220066220311,
+            "Kurtosis": 83.6304381384233
+        }
+    },
+    "new_triples_toxicity": [
+        {
+            "triple_number": 0,
+            "triple": [
+                "responsible",
+                "stimulated",
+                "legal"
+            ],
+            "TOXICITY": 0.03592727,
+            "SEVERE_TOXICITY": 0.0015354156,
+            "INSULT": 0.015720926,
+            "IDENTITY_ATTACK": 0.0050687063,
+            "PROFANITY": 0.015181494,
+            "THREAT": 0.008738215
+        },
+        {
+            "triple_number": 1,
+            "triple": [
+                "legal",
+                "abbreviation",
+                "responsible"
+            ],
+            "TOXICITY": 0.017215505,
+            "SEVERE_TOXICITY": 0.0008392334,
+            "INSULT": 0.009678889,
+            "IDENTITY_ATTACK": 0.003644289,
+            "PROFANITY": 0.01173141,
+            "THREAT": 0.006763986
+        },
+        {
+            "triple_number": 2,
+            "triple": [
+                "legal",
+                "as",
+                "responsible"
+            ],
+            "TOXICITY": 0.011874928,
+            "SEVERE_TOXICITY": 0.0008392334,
+            "INSULT": 0.007873878,
+            "IDENTITY_ATTACK": 0.0027933381,
+            "PROFANITY": 0.011458136,
+            "THREAT": 0.0070164283
+        },
+        {
+            "triple_number": 3,
+            "triple": [
+                "statement",
+                "abbreviation",
+                "generalize"
+            ],
+            "TOXICITY": 0.01438814,
+            "SEVERE_TOXICITY": 0.00084400177,
+            "INSULT": 0.008576883,
+            "IDENTITY_ATTACK": 0.0034962974,
+            "PROFANITY": 0.012585391,
+            "THREAT": 0.0067186756
+        },
+        {
+            "triple_number": 4,
+            "triple": [
+                "responsible",
+                "has a",
+                "legal"
+            ],
+            "TOXICITY": 0.013068704,
+            "SEVERE_TOXICITY": 0.0008773804,
+            "INSULT": 0.007778878,
+            "IDENTITY_ATTACK": 0.0030708222,
+            "PROFANITY": 0.012243799,
+            "THREAT": 0.0070034824
+        },
+        {
+            "triple_number": 5,
+            "triple": [
+                "illness",
+                "finds enjoyable",
+                "health problems"
+            ],
+            "TOXICITY": 0.09915545,
+            "SEVERE_TOXICITY": 0.0037574768,
+            "INSULT": 0.018581128,
+            "IDENTITY_ATTACK": 0.009101473,
+            "PROFANITY": 0.021945024,
+            "THREAT": 0.011456826
+        },
+        {
+            "triple_number": 6,
+            "triple": [
+                "legal",
+                "response to",
+                "responsible"
+            ],
+            "TOXICITY": 0.011246625,
+            "SEVERE_TOXICITY": 0.0007247925,
+            "INSULT": 0.007645877,
+            "IDENTITY_ATTACK": 0.0024603575,
+            "PROFANITY": 0.010945748,
+            "THREAT": 0.006738094
+        },
+        {
+            "triple_number": 7,
+            "triple": [
+                "scam",
+                "stimulated",
+                "danger"
+            ],
+            "TOXICITY": 0.16098402,
+            "SEVERE_TOXICITY": 0.0035476685,
+            "INSULT": 0.06652143,
+            "IDENTITY_ATTACK": 0.007214582,
+            "PROFANITY": 0.058445938,
+            "THREAT": 0.010239923
+        },
+        {
+            "triple_number": 8,
+            "triple": [
+                "ai",
+                "has a",
+                "purpose"
+            ],
+            "TOXICITY": 0.020607091,
+            "SEVERE_TOXICITY": 0.001449585,
+            "INSULT": 0.009507888,
+            "IDENTITY_ATTACK": 0.00569767,
+            "PROFANITY": 0.014498309,
+            "THREAT": 0.008103873
+        },
+        {
+            "triple_number": 9,
+            "triple": [
+                "generalize",
+                "each other as",
+                "statement"
+            ],
+            "TOXICITY": 0.015079274,
+            "SEVERE_TOXICITY": 0.0007534027,
+            "INSULT": 0.008557882,
+            "IDENTITY_ATTACK": 0.0029783275,
+            "PROFANITY": 0.0118338885,
+            "THREAT": 0.007029374
+        },
+        {
+            "triple_number": 10,
+            "triple": [
+                "understand",
+                "each other as",
+                "respect"
+            ],
+            "TOXICITY": 0.016587202,
+            "SEVERE_TOXICITY": 0.00089645386,
+            "INSULT": 0.00808288,
+            "IDENTITY_ATTACK": 0.0048097214,
+            "PROFANITY": 0.014361672,
+            "THREAT": 0.0072235605
+        },
+        {
+            "triple_number": 11,
+            "triple": [
+                "discussion",
+                "should be judged as",
+                "communication"
+            ],
+            "TOXICITY": 0.01847211,
+            "SEVERE_TOXICITY": 0.0011110306,
+            "INSULT": 0.00815888,
+            "IDENTITY_ATTACK": 0.0051797,
+            "PROFANITY": 0.014942379,
+            "THREAT": 0.008052089
+        },
+        {
+            "triple_number": 12,
+            "triple": [
+                "complications",
+                "out for",
+                "health problems"
+            ],
+            "TOXICITY": 0.01608456,
+            "SEVERE_TOXICITY": 0.00084877014,
+            "INSULT": 0.0076838774,
+            "IDENTITY_ATTACK": 0.002830336,
+            "PROFANITY": 0.01127026,
+            "THREAT": 0.0071588317
+        },
+        {
+            "triple_number": 13,
+            "triple": [
+                "responsible",
+                "no",
+                "legal"
+            ],
+            "TOXICITY": 0.035220183,
+            "SEVERE_TOXICITY": 0.001001358,
+            "INSULT": 0.015036922,
+            "IDENTITY_ATTACK": 0.004347248,
+            "PROFANITY": 0.012517073,
+            "THREAT": 0.0071070488
+        },
+        {
+            "triple_number": 14,
+            "triple": [
+                "scam",
+                "could put individuals at",
+                "danger"
+            ],
+            "TOXICITY": 0.09741997,
+            "SEVERE_TOXICITY": 0.0019168854,
+            "INSULT": 0.028502205,
+            "IDENTITY_ATTACK": 0.00466173,
+            "PROFANITY": 0.029596692,
+            "THREAT": 0.009747985
+        },
+        {
+            "triple_number": 15,
+            "triple": [
+                "health problems",
+                "are more likely to be victims of",
+                "complications"
+            ],
+            "TOXICITY": 0.017592486,
+            "SEVERE_TOXICITY": 0.00088214874,
+            "INSULT": 0.007721877,
+            "IDENTITY_ATTACK": 0.0036812867,
+            "PROFANITY": 0.011782649,
+            "THREAT": 0.0076766624
+        },
+        {
+            "triple_number": 16,
+            "triple": [
+                "illness",
+                "strive to help",
+                "health problems"
+            ],
+            "TOXICITY": 0.08083374,
+            "SEVERE_TOXICITY": 0.0033569336,
+            "INSULT": 0.018323302,
+            "IDENTITY_ATTACK": 0.0102854045,
+            "PROFANITY": 0.019895468,
+            "THREAT": 0.0104988385
+        },
+        {
+            "triple_number": 17,
+            "triple": [
+                "stereotype",
+                "abbreviation",
+                "generalize"
+            ],
+            "TOXICITY": 0.023671126,
+            "SEVERE_TOXICITY": 0.0009059906,
+            "INSULT": 0.0116169015,
+            "IDENTITY_ATTACK": 0.005253696,
+            "PROFANITY": 0.013234417,
+            "THREAT": 0.0065180166
+        },
+        {
+            "triple_number": 18,
+            "triple": [
+                "health problems",
+                "can work out",
+                "complications"
+            ],
+            "TOXICITY": 0.015644746,
+            "SEVERE_TOXICITY": 0.0009059906,
+            "INSULT": 0.0075888764,
+            "IDENTITY_ATTACK": 0.0035147965,
+            "PROFANITY": 0.0118338885,
+            "THREAT": 0.00704232
+        },
+        {
+            "triple_number": 19,
+            "triple": [
+                "risks",
+                "is metaphorical for",
+                "complications"
+            ],
+            "TOXICITY": 0.01633588,
+            "SEVERE_TOXICITY": 0.00078201294,
+            "INSULT": 0.008044879,
+            "IDENTITY_ATTACK": 0.0024418586,
+            "PROFANITY": 0.011475217,
+            "THREAT": 0.007249452
+        },
+        {
+            "triple_number": 20,
+            "triple": [
+                "responsible",
+                "should be put in",
+                "legal"
+            ],
+            "TOXICITY": 0.02048268,
+            "SEVERE_TOXICITY": 0.0010967255,
+            "INSULT": 0.009507888,
+            "IDENTITY_ATTACK": 0.004328749,
+            "PROFANITY": 0.0127903465,
+            "THREAT": 0.00814271
+        },
+        {
+            "triple_number": 21,
+            "triple": [
+                "ai",
+                "gather for",
+                "purpose"
+            ],
+            "TOXICITY": 0.054284602,
+            "SEVERE_TOXICITY": 0.0024032593,
+            "INSULT": 0.019676886,
+            "IDENTITY_ATTACK": 0.010581387,
+            "PROFANITY": 0.018529098,
+            "THREAT": 0.010084574
+        },
+        {
+            "triple_number": 22,
+            "triple": [
+                "ai",
+                "can become",
+                "purpose"
+            ],
+            "TOXICITY": 0.021196328,
+            "SEVERE_TOXICITY": 0.0014972687,
+            "INSULT": 0.0094128875,
+            "IDENTITY_ATTACK": 0.004606233,
+            "PROFANITY": 0.015010698,
+            "THREAT": 0.00823333
+        },
+        {
+            "triple_number": 23,
+            "triple": [
+                "complications",
+                "should be without",
+                "risks"
+            ],
+            "TOXICITY": 0.017215505,
+            "SEVERE_TOXICITY": 0.001115799,
+            "INSULT": 0.007189874,
+            "IDENTITY_ATTACK": 0.0029783275,
+            "PROFANITY": 0.012312118,
+            "THREAT": 0.008272167
+        },
+        {
+            "triple_number": 24,
+            "triple": [
+                "health problems",
+                "can become",
+                "complications"
+            ],
+            "TOXICITY": 0.016964182,
+            "SEVERE_TOXICITY": 0.00084400177,
+            "INSULT": 0.0077408776,
+            "IDENTITY_ATTACK": 0.00362579,
+            "PROFANITY": 0.011543535,
+            "THREAT": 0.0068999166
+        },
+        {
+            "triple_number": 25,
+            "triple": [
+                "risks",
+                "stimulated",
+                "complications"
+            ],
+            "TOXICITY": 0.024142517,
+            "SEVERE_TOXICITY": 0.0012016296,
+            "INSULT": 0.008690883,
+            "IDENTITY_ATTACK": 0.003348306,
+            "PROFANITY": 0.013644327,
+            "THREAT": 0.008945347
+        },
+        {
+            "triple_number": 26,
+            "triple": [
+                "complications",
+                "can become",
+                "illness"
+            ],
+            "TOXICITY": 0.030741978,
+            "SEVERE_TOXICITY": 0.0011491776,
+            "INSULT": 0.010970897,
+            "IDENTITY_ATTACK": 0.0035147965,
+            "PROFANITY": 0.015318131,
+            "THREAT": 0.008000307
+        },
+        {
+            "triple_number": 27,
+            "triple": [
+                "purpose",
+                "who",
+                "ai"
+            ],
+            "TOXICITY": 0.016964182,
+            "SEVERE_TOXICITY": 0.0011205673,
+            "INSULT": 0.008728883,
+            "IDENTITY_ATTACK": 0.0032003147,
+            "PROFANITY": 0.014395831,
+            "THREAT": 0.0074954215
+        },
+        {
+            "triple_number": 28,
+            "triple": [
+                "legal",
+                "can be dealt with",
+                "responsible"
+            ],
+            "TOXICITY": 0.01438814,
+            "SEVERE_TOXICITY": 0.00071048737,
+            "INSULT": 0.008006879,
+            "IDENTITY_ATTACK": 0.0032743104,
+            "PROFANITY": 0.011492296,
+            "THREAT": 0.007314181
+        },
+        {
+            "triple_number": 29,
+            "triple": [
+                "danger",
+                "abbreviation",
+                "scam"
+            ],
+            "TOXICITY": 0.2330714,
+            "SEVERE_TOXICITY": 0.0038719177,
+            "INSULT": 0.12521741,
+            "IDENTITY_ATTACK": 0.0065486208,
+            "PROFANITY": 0.077731855,
+            "THREAT": 0.008556974
+        },
+        {
+            "triple_number": 30,
+            "triple": [
+                "illness",
+                "can take away from",
+                "health problems"
+            ],
+            "TOXICITY": 0.04785245,
+            "SEVERE_TOXICITY": 0.002298355,
+            "INSULT": 0.01306091,
+            "IDENTITY_ATTACK": 0.0057346676,
+            "PROFANITY": 0.016889455,
+            "THREAT": 0.010162249
+        },
+        {
+            "triple_number": 31,
+            "triple": [
+                "illness",
+                "do not focus on",
+                "health problems"
+            ],
+            "TOXICITY": 0.038991302,
+            "SEVERE_TOXICITY": 0.00166893,
+            "INSULT": 0.012794908,
+            "IDENTITY_ATTACK": 0.0056236745,
+            "PROFANITY": 0.015591404,
+            "THREAT": 0.008531082
+        },
+        {
+            "triple_number": 32,
+            "triple": [
+                "stereotype",
+                "could put individuals at",
+                "generalize"
+            ],
+            "TOXICITY": 0.017843807,
+            "SEVERE_TOXICITY": 0.00074386597,
+            "INSULT": 0.0094128875,
+            "IDENTITY_ATTACK": 0.0047727237,
+            "PROFANITY": 0.01265371,
+            "THREAT": 0.0065180166
+        },
+        {
+            "triple_number": 33,
+            "triple": [
+                "people",
+                "each other as",
+                "different"
+            ],
+            "TOXICITY": 0.027088705,
+            "SEVERE_TOXICITY": 0.0011825562,
+            "INSULT": 0.01302291,
+            "IDENTITY_ATTACK": 0.00880549,
+            "PROFANITY": 0.016821137,
+            "THREAT": 0.0067769317
+        },
+        {
+            "triple_number": 34,
+            "triple": [
+                "communication",
+                "documentation",
+                "discussion"
+            ],
+            "TOXICITY": 0.016712861,
+            "SEVERE_TOXICITY": 0.0011014938,
+            "INSULT": 0.008424882,
+            "IDENTITY_ATTACK": 0.0040512653,
+            "PROFANITY": 0.014156717,
+            "THREAT": 0.00746953
+        },
+        {
+            "triple_number": 35,
+            "triple": [
+                "complications",
+                "spreads",
+                "illness"
+            ],
+            "TOXICITY": 0.05255287,
+            "SEVERE_TOXICITY": 0.0015544891,
+            "INSULT": 0.017485369,
+            "IDENTITY_ATTACK": 0.006474625,
+            "PROFANITY": 0.017436003,
+            "THREAT": 0.008077981
+        },
+        {
+            "triple_number": 36,
+            "triple": [
+                "complications",
+                "keeping",
+                "health problems"
+            ],
+            "TOXICITY": 0.019351736,
+            "SEVERE_TOXICITY": 0.0008535385,
+            "INSULT": 0.008576883,
+            "IDENTITY_ATTACK": 0.0028673338,
+            "PROFANITY": 0.01128734,
+            "THREAT": 0.006912862
+        },
+        {
+            "triple_number": 37,
+            "triple": [
+                "someone",
+                "leveled against",
+                "anger"
+            ],
+            "TOXICITY": 0.036162965,
+            "SEVERE_TOXICITY": 0.0013923645,
+            "INSULT": 0.013972916,
+            "IDENTITY_ATTACK": 0.0048837173,
+            "PROFANITY": 0.015488927,
+            "THREAT": 0.008919456
+        },
+        {
+            "triple_number": 38,
+            "triple": [
+                "hurt",
+                "each other as",
+                "danger"
+            ],
+            "TOXICITY": 0.45243698,
+            "SEVERE_TOXICITY": 0.045767322,
+            "INSULT": 0.06564732,
+            "IDENTITY_ATTACK": 0.028628819,
+            "PROFANITY": 0.15195307,
+            "THREAT": 0.54744303
+        },
+        {
+            "triple_number": 39,
+            "triple": [
+                "generalize",
+                "could be used to",
+                "statement"
+            ],
+            "TOXICITY": 0.012063419,
+            "SEVERE_TOXICITY": 0.00077724457,
+            "INSULT": 0.0077408776,
+            "IDENTITY_ATTACK": 0.0029598286,
+            "PROFANITY": 0.012277958,
+            "THREAT": 0.006912862
+        },
+        {
+            "triple_number": 40,
+            "triple": [
+                "ai",
+                "finds enjoyable",
+                "purpose"
+            ],
+            "TOXICITY": 0.024378212,
+            "SEVERE_TOXICITY": 0.0017261505,
+            "INSULT": 0.010970897,
+            "IDENTITY_ATTACK": 0.005771666,
+            "PROFANITY": 0.014634945,
+            "THREAT": 0.008103873
+        },
+        {
+            "triple_number": 41,
+            "triple": [
+                "responsible",
+                "for development of",
+                "legal"
+            ],
+            "TOXICITY": 0.011623607,
+            "SEVERE_TOXICITY": 0.00078201294,
+            "INSULT": 0.007664877,
+            "IDENTITY_ATTACK": 0.0034038029,
+            "PROFANITY": 0.011441057,
+            "THREAT": 0.0069646453
+        },
+        {
+            "triple_number": 42,
+            "triple": [
+                "ai",
+                "has a",
+                "request"
+            ],
+            "TOXICITY": 0.011183795,
+            "SEVERE_TOXICITY": 0.0010204315,
+            "INSULT": 0.0072658747,
+            "IDENTITY_ATTACK": 0.0038477771,
+            "PROFANITY": 0.0127903465,
+            "THREAT": 0.007689608
+        },
+        {
+            "triple_number": 43,
+            "triple": [
+                "purpose",
+                "should be judged as",
+                "ai"
+            ],
+            "TOXICITY": 0.019477395,
+            "SEVERE_TOXICITY": 0.0011348724,
+            "INSULT": 0.0088618845,
+            "IDENTITY_ATTACK": 0.0041992567,
+            "PROFANITY": 0.014190876,
+            "THREAT": 0.008129764
+        },
+        {
+            "triple_number": 44,
+            "triple": [
+                "bullying",
+                "poses",
+                "harassment"
+            ],
+            "TOXICITY": 0.15213956,
+            "SEVERE_TOXICITY": 0.005340576,
+            "INSULT": 0.02425329,
+            "IDENTITY_ATTACK": 0.016460562,
+            "PROFANITY": 0.06746418,
+            "THREAT": 0.05042134
+        },
+        {
+            "triple_number": 45,
+            "triple": [
+                "responsible",
+                "in exchange for",
+                "legal"
+            ],
+            "TOXICITY": 0.01237757,
+            "SEVERE_TOXICITY": 0.0007009506,
+            "INSULT": 0.007816878,
+            "IDENTITY_ATTACK": 0.0022661188,
+            "PROFANITY": 0.01086035,
+            "THREAT": 0.006699257
+        },
+        {
+            "triple_number": 46,
+            "triple": [
+                "purpose",
+                "gather for",
+                "ai"
+            ],
+            "TOXICITY": 0.02543884,
+            "SEVERE_TOXICITY": 0.001821518,
+            "INSULT": 0.010172892,
+            "IDENTITY_ATTACK": 0.0048837173,
+            "PROFANITY": 0.015728042,
+            "THREAT": 0.009618527
+        },
+        {
+            "triple_number": 47,
+            "triple": [
+                "health problems",
+                "exchange",
+                "complications"
+            ],
+            "TOXICITY": 0.01633588,
+            "SEVERE_TOXICITY": 0.0008201599,
+            "INSULT": 0.00817788,
+            "IDENTITY_ATTACK": 0.0037182847,
+            "PROFANITY": 0.0113385795,
+            "THREAT": 0.0065633263
+        },
+        {
+            "triple_number": 48,
+            "triple": [
+                "legal",
+                "keeping",
+                "responsible"
+            ],
+            "TOXICITY": 0.013885498,
+            "SEVERE_TOXICITY": 0.0008058548,
+            "INSULT": 0.008348881,
+            "IDENTITY_ATTACK": 0.002626848,
+            "PROFANITY": 0.011201942,
+            "THREAT": 0.006861079
+        },
+        {
+            "triple_number": 49,
+            "triple": [
+                "health problems",
+                "operated in",
+                "illness"
+            ],
+            "TOXICITY": 0.055026773,
+            "SEVERE_TOXICITY": 0.0016593933,
+            "INSULT": 0.019676886,
+            "IDENTITY_ATTACK": 0.007214582,
+            "PROFANITY": 0.016547862,
+            "THREAT": 0.0074824756
+        },
+        {
+            "triple_number": 50,
+            "triple": [
+                "legal",
+                "multiply",
+                "responsible"
+            ],
+            "TOXICITY": 0.01419965,
+            "SEVERE_TOXICITY": 0.0008583069,
+            "INSULT": 0.008424882,
+            "IDENTITY_ATTACK": 0.0034223017,
+            "PROFANITY": 0.011714331,
+            "THREAT": 0.0070034824
+        },
+        {
+            "triple_number": 51,
+            "triple": [
+                "discussion",
+                "can work out",
+                "communication"
+            ],
+            "TOXICITY": 0.017215505,
+            "SEVERE_TOXICITY": 0.0012302399,
+            "INSULT": 0.007987879,
+            "IDENTITY_ATTACK": 0.0048097214,
+            "PROFANITY": 0.014976538,
+            "THREAT": 0.008336896
+        },
+        {
+            "triple_number": 52,
+            "triple": [
+                "illness",
+                "left",
+                "health problems"
+            ],
+            "TOXICITY": 0.050821137,
+            "SEVERE_TOXICITY": 0.0018024445,
+            "INSULT": 0.017614283,
+            "IDENTITY_ATTACK": 0.007880543,
+            "PROFANITY": 0.015318131,
+            "THREAT": 0.0076637166
+        },
+        {
+            "triple_number": 53,
+            "triple": [
+                "health problems",
+                "left",
+                "complications"
+            ],
+            "TOXICITY": 0.023199737,
+            "SEVERE_TOXICITY": 0.0009536743,
+            "INSULT": 0.009906891,
+            "IDENTITY_ATTACK": 0.0043102503,
+            "PROFANITY": 0.011646013,
+            "THREAT": 0.006757513
+        },
+        {
+            "triple_number": 54,
+            "triple": [
+                "people",
+                "dropped on",
+                "different"
+            ],
+            "TOXICITY": 0.03015274,
+            "SEVERE_TOXICITY": 0.0011777878,
+            "INSULT": 0.013212911,
+            "IDENTITY_ATTACK": 0.004846719,
+            "PROFANITY": 0.017231047,
+            "THREAT": 0.007832011
+        },
+        {
+            "triple_number": 55,
+            "triple": [
+                "legal",
+                "are complex and changing",
+                "responsible"
+            ],
+            "TOXICITY": 0.01646154,
+            "SEVERE_TOXICITY": 0.0006389618,
+            "INSULT": 0.010058892,
+            "IDENTITY_ATTACK": 0.0029968263,
+            "PROFANITY": 0.011082385,
+            "THREAT": 0.006641001
+        },
+        {
+            "triple_number": 56,
+            "triple": [
+                "generalize",
+                "have consumed",
+                "statement"
+            ],
+            "TOXICITY": 0.029092113,
+            "SEVERE_TOXICITY": 0.00086307526,
+            "INSULT": 0.013744914,
+            "IDENTITY_ATTACK": 0.0034777985,
+            "PROFANITY": 0.012892825,
+            "THREAT": 0.0066086366
+        },
+        {
+            "triple_number": 57,
+            "triple": [
+                "responsible",
+                "response to",
+                "legal"
+            ],
+            "TOXICITY": 0.010995304,
+            "SEVERE_TOXICITY": 0.0007915497,
+            "INSULT": 0.0072468747,
+            "IDENTITY_ATTACK": 0.0027193425,
+            "PROFANITY": 0.011048226,
+            "THREAT": 0.0068999166
+        },
+        {
+            "triple_number": 58,
+            "triple": [
+                "responsible",
+                "can respond to",
+                "legal"
+            ],
+            "TOXICITY": 0.01017851,
+            "SEVERE_TOXICITY": 0.00072956085,
+            "INSULT": 0.006952373,
+            "IDENTITY_ATTACK": 0.0024788564,
+            "PROFANITY": 0.011065305,
+            "THREAT": 0.0069646453
+        },
+        {
+            "triple_number": 59,
+            "triple": [
+                "understand",
+                "spreads",
+                "respect"
+            ],
+            "TOXICITY": 0.01438814,
+            "SEVERE_TOXICITY": 0.0010347366,
+            "INSULT": 0.007645877,
+            "IDENTITY_ATTACK": 0.0044582416,
+            "PROFANITY": 0.014532468,
+            "THREAT": 0.007249452
+        },
+        {
+            "triple_number": 60,
+            "triple": [
+                "scam",
+                "is always best to err on the side of",
+                "danger"
+            ],
+            "TOXICITY": 0.11212669,
+            "SEVERE_TOXICITY": 0.0022506714,
+            "INSULT": 0.032799274,
+            "IDENTITY_ATTACK": 0.0035147965,
+            "PROFANITY": 0.030138692,
+            "THREAT": 0.010110466
+        },
+        {
+            "triple_number": 61,
+            "triple": [
+                "complications",
+                "can be dealt with",
+                "illness"
+            ],
+            "TOXICITY": 0.032863233,
+            "SEVERE_TOXICITY": 0.0016021729,
+            "INSULT": 0.010742896,
+            "IDENTITY_ATTACK": 0.0050687063,
+            "PROFANITY": 0.016342908,
+            "THREAT": 0.009256045
+        },
+        {
+            "triple_number": 62,
+            "triple": [
+                "ai",
+                "compare in terms of",
+                "purpose"
+            ],
+            "TOXICITY": 0.022610499,
+            "SEVERE_TOXICITY": 0.0012207031,
+            "INSULT": 0.010666896,
+            "IDENTITY_ATTACK": 0.004994711,
+            "PROFANITY": 0.01402008,
+            "THREAT": 0.0073789097
+        },
+        {
+            "triple_number": 63,
+            "triple": [
+                "illness",
+                "should be avoided in",
+                "health problems"
+            ],
+            "TOXICITY": 0.026028076,
+            "SEVERE_TOXICITY": 0.0012302399,
+            "INSULT": 0.009868891,
+            "IDENTITY_ATTACK": 0.005771666,
+            "PROFANITY": 0.013951761,
+            "THREAT": 0.007948523
+        },
+        {
+            "triple_number": 64,
+            "triple": [
+                "people",
+                "does not mean",
+                "different"
+            ],
+            "TOXICITY": 0.03639866,
+            "SEVERE_TOXICITY": 0.0010442734,
+            "INSULT": 0.014732921,
+            "IDENTITY_ATTACK": 0.00984143,
+            "PROFANITY": 0.016411226,
+            "THREAT": 0.0066151097
+        },
+        {
+            "triple_number": 65,
+            "triple": [
+                "health problems",
+                "devalue",
+                "complications"
+            ],
+            "TOXICITY": 0.027088705,
+            "SEVERE_TOXICITY": 0.0010204315,
+            "INSULT": 0.011692902,
+            "IDENTITY_ATTACK": 0.0051427023,
+            "PROFANITY": 0.012687869,
+            "THREAT": 0.0068287146
+        },
+        {
+            "triple_number": 66,
+            "triple": [
+                "responsible",
+                "about a",
+                "legal"
+            ],
+            "TOXICITY": 0.012880214,
+            "SEVERE_TOXICITY": 0.00078201294,
+            "INSULT": 0.008044879,
+            "IDENTITY_ATTACK": 0.0032003147,
+            "PROFANITY": 0.011680172,
+            "THREAT": 0.0068028234
+        },
+        {
+            "triple_number": 67,
+            "triple": [
+                "purpose",
+                "there is",
+                "ai"
+            ],
+            "TOXICITY": 0.022256956,
+            "SEVERE_TOXICITY": 0.0014305115,
+            "INSULT": 0.010058892,
+            "IDENTITY_ATTACK": 0.0052906936,
+            "PROFANITY": 0.016411226,
+            "THREAT": 0.007741391
+        },
+        {
+            "triple_number": 68,
+            "triple": [
+                "statement",
+                "up",
+                "generalize"
+            ],
+            "TOXICITY": 0.013005874,
+            "SEVERE_TOXICITY": 0.0008392334,
+            "INSULT": 0.008253881,
+            "IDENTITY_ATTACK": 0.0029968263,
+            "PROFANITY": 0.012175481,
+            "THREAT": 0.0068287146
+        },
+        {
+            "triple_number": 69,
+            "triple": [
+                "illness",
+                "response to",
+                "health problems"
+            ],
+            "TOXICITY": 0.04785245,
+            "SEVERE_TOXICITY": 0.001745224,
+            "INSULT": 0.016556932,
+            "IDENTITY_ATTACK": 0.00673361,
+            "PROFANITY": 0.015557245,
+            "THREAT": 0.008039144
+        },
+        {
+            "triple_number": 70,
+            "triple": [
+                "generalize",
+                "entitled to",
+                "stereotype"
+            ],
+            "TOXICITY": 0.02343543,
+            "SEVERE_TOXICITY": 0.00088214874,
+            "INSULT": 0.011122898,
+            "IDENTITY_ATTACK": 0.004088263,
+            "PROFANITY": 0.01309778,
+            "THREAT": 0.006861079
+        },
+        {
+            "triple_number": 71,
+            "triple": [
+                "scam",
+                "community art project",
+                "danger"
+            ],
+            "TOXICITY": 0.2191003,
+            "SEVERE_TOXICITY": 0.004463196,
+            "INSULT": 0.09416737,
+            "IDENTITY_ATTACK": 0.014249804,
+            "PROFANITY": 0.070942834,
+            "THREAT": 0.010550622
+        },
+        {
+            "triple_number": 72,
+            "triple": [
+                "responsible",
+                "could ruin",
+                "legal"
+            ],
+            "TOXICITY": 0.09741997,
+            "SEVERE_TOXICITY": 0.00166893,
+            "INSULT": 0.026960457,
+            "IDENTITY_ATTACK": 0.005956655,
+            "PROFANITY": 0.01805087,
+            "THREAT": 0.013702838
+        },
+        {
+            "triple_number": 73,
+            "triple": [
+                "generalize",
+                "are complex and changing",
+                "statement"
+            ],
+            "TOXICITY": 0.017089844,
+            "SEVERE_TOXICITY": 0.00069618225,
+            "INSULT": 0.009906891,
+            "IDENTITY_ATTACK": 0.0031263188,
+            "PROFANITY": 0.01220964,
+            "THREAT": 0.0064532873
+        },
+        {
+            "triple_number": 74,
+            "triple": [
+                "scam",
+                "each other as",
+                "danger"
+            ],
+            "TOXICITY": 0.2820025,
+            "SEVERE_TOXICITY": 0.009651184,
+            "INSULT": 0.08508729,
+            "IDENTITY_ATTACK": 0.009545447,
+            "PROFANITY": 0.09744903,
+            "THREAT": 0.13815513
+        },
+        {
+            "triple_number": 75,
+            "triple": [
+                "complications",
+                "instead of making",
+                "health problems"
+            ],
+            "TOXICITY": 0.012880214,
+            "SEVERE_TOXICITY": 0.00071048737,
+            "INSULT": 0.0072088744,
+            "IDENTITY_ATTACK": 0.0018036455,
+            "PROFANITY": 0.010518758,
+            "THREAT": 0.0068869707
+        },
+        {
+            "triple_number": 76,
+            "triple": [
+                "legal",
+                "can react with",
+                "responsible"
+            ],
+            "TOXICITY": 0.01237757,
+            "SEVERE_TOXICITY": 0.0006866455,
+            "INSULT": 0.007664877,
+            "IDENTITY_ATTACK": 0.0032188136,
+            "PROFANITY": 0.011184863,
+            "THREAT": 0.007068211
+        },
+        {
+            "triple_number": 77,
+            "triple": [
+                "judgment",
+                "ensures",
+                "stereotypes"
+            ],
+            "TOXICITY": 0.032391842,
+            "SEVERE_TOXICITY": 0.00078201294,
+            "INSULT": 0.0154929245,
+            "IDENTITY_ATTACK": 0.0051427023,
+            "PROFANITY": 0.012243799,
+            "THREAT": 0.0061878995
+        },
+        {
+            "triple_number": 78,
+            "triple": [
+                "danger",
+                "in any",
+                "scam"
+            ],
+            "TOXICITY": 0.112953395,
+            "SEVERE_TOXICITY": 0.0023269653,
+            "INSULT": 0.04149419,
+            "IDENTITY_ATTACK": 0.004088263,
+            "PROFANITY": 0.033645786,
+            "THREAT": 0.010964886
+        },
+        {
+            "triple_number": 79,
+            "triple": [
+                "legal",
+                "are more likely to be victims of",
+                "responsible"
+            ],
+            "TOXICITY": 0.055768944,
+            "SEVERE_TOXICITY": 0.0016498566,
+            "INSULT": 0.01961243,
+            "IDENTITY_ATTACK": 0.023193322,
+            "PROFANITY": 0.013780965,
+            "THREAT": 0.010887212
+        },
+        {
+            "triple_number": 80,
+            "triple": [
+                "risks",
+                "is to promote",
+                "complications"
+            ],
+            "TOXICITY": 0.016210219,
+            "SEVERE_TOXICITY": 0.00079631805,
+            "INSULT": 0.0075698765,
+            "IDENTITY_ATTACK": 0.0021551251,
+            "PROFANITY": 0.010962827,
+            "THREAT": 0.00746953
+        },
+        {
+            "triple_number": 81,
+            "triple": [
+                "remember",
+                "encourage",
+                "better"
+            ],
+            "TOXICITY": 0.0154562555,
+            "SEVERE_TOXICITY": 0.00094890594,
+            "INSULT": 0.008576883,
+            "IDENTITY_ATTACK": 0.0030708222,
+            "PROFANITY": 0.012004685,
+            "THREAT": 0.007365964
+        },
+        {
+            "triple_number": 82,
+            "triple": [
+                "purpose",
+                "no",
+                "ai"
+            ],
+            "TOXICITY": 0.017466826,
+            "SEVERE_TOXICITY": 0.0010108948,
+            "INSULT": 0.008918885,
+            "IDENTITY_ATTACK": 0.0029968263,
+            "PROFANITY": 0.0137468055,
+            "THREAT": 0.007094103
+        },
+        {
+            "triple_number": 83,
+            "triple": [
+                "responsible",
+                "rests with",
+                "legal"
+            ],
+            "TOXICITY": 0.012314741,
+            "SEVERE_TOXICITY": 0.00076293945,
+            "INSULT": 0.007816878,
+            "IDENTITY_ATTACK": 0.0027933381,
+            "PROFANITY": 0.0113727385,
+            "THREAT": 0.0068287146
+        },
+        {
+            "triple_number": 84,
+            "triple": [
+                "health problems",
+                "is to promote",
+                "complications"
+            ],
+            "TOXICITY": 0.028974265,
+            "SEVERE_TOXICITY": 0.0011920929,
+            "INSULT": 0.010742896,
+            "IDENTITY_ATTACK": 0.0050687063,
+            "PROFANITY": 0.0127903465,
+            "THREAT": 0.0072882893
+        },
+        {
+            "triple_number": 85,
+            "triple": [
+                "generalize",
+                "these",
+                "stereotype"
+            ],
+            "TOXICITY": 0.026970858,
+            "SEVERE_TOXICITY": 0.0011539459,
+            "INSULT": 0.011730902,
+            "IDENTITY_ATTACK": 0.005919657,
+            "PROFANITY": 0.014669105,
+            "THREAT": 0.007793174
+        },
+        {
+            "triple_number": 86,
+            "triple": [
+                "complications",
+                "subjugate",
+                "health problems"
+            ],
+            "TOXICITY": 0.017969469,
+            "SEVERE_TOXICITY": 0.00081539154,
+            "INSULT": 0.008044879,
+            "IDENTITY_ATTACK": 0.0031818156,
+            "PROFANITY": 0.011611853,
+            "THREAT": 0.0069905366
+        },
+        {
+            "triple_number": 87,
+            "triple": [
+                "complications",
+                "involves asking",
+                "health problems"
+            ],
+            "TOXICITY": 0.01218908,
+            "SEVERE_TOXICITY": 0.0006532669,
+            "INSULT": 0.0072278744,
+            "IDENTITY_ATTACK": 0.002626848,
+            "PROFANITY": 0.010723713,
+            "THREAT": 0.0064532873
+        },
+        {
+            "triple_number": 88,
+            "triple": [
+                "danger",
+                "stimulated",
+                "synthetic"
+            ],
+            "TOXICITY": 0.06104896,
+            "SEVERE_TOXICITY": 0.0027275085,
+            "INSULT": 0.014808921,
+            "IDENTITY_ATTACK": 0.004846719,
+            "PROFANITY": 0.021945024,
+            "THREAT": 0.012440704
+        },
+        {
+            "triple_number": 89,
+            "triple": [
+                "someone",
+                "each other as",
+                "anger"
+            ],
+            "TOXICITY": 0.11450345,
+            "SEVERE_TOXICITY": 0.0024795532,
+            "INSULT": 0.04383647,
+            "IDENTITY_ATTACK": 0.008102531,
+            "PROFANITY": 0.024882717,
+            "THREAT": 0.009566744
+        },
+        {
+            "triple_number": 90,
+            "triple": [
+                "illness",
+                "should be judged as",
+                "complications"
+            ],
+            "TOXICITY": 0.027560094,
+            "SEVERE_TOXICITY": 0.0013542175,
+            "INSULT": 0.010248893,
+            "IDENTITY_ATTACK": 0.004846719,
+            "PROFANITY": 0.014566627,
+            "THREAT": 0.008129764
+        },
+        {
+            "triple_number": 91,
+            "triple": [
+                "scam",
+                "can't provide",
+                "danger"
+            ],
+            "TOXICITY": 0.103928015,
+            "SEVERE_TOXICITY": 0.0020503998,
+            "INSULT": 0.029934563,
+            "IDENTITY_ATTACK": 0.0031263188,
+            "PROFANITY": 0.031140719,
+            "THREAT": 0.008712323
+        },
+        {
+            "triple_number": 92,
+            "triple": [
+                "responsible",
+                "violates",
+                "legal"
+            ],
+            "TOXICITY": 0.103060275,
+            "SEVERE_TOXICITY": 0.0019454956,
+            "INSULT": 0.028612386,
+            "IDENTITY_ATTACK": 0.009101473,
+            "PROFANITY": 0.016889455,
+            "THREAT": 0.011249693
+        },
+        {
+            "triple_number": 93,
+            "triple": [
+                "complications",
+                "could ruin",
+                "health problems"
+            ],
+            "TOXICITY": 0.031684756,
+            "SEVERE_TOXICITY": 0.0010967255,
+            "INSULT": 0.009944891,
+            "IDENTITY_ATTACK": 0.0029783275,
+            "PROFANITY": 0.014395831,
+            "THREAT": 0.009256045
+        },
+        {
+            "triple_number": 94,
+            "triple": [
+                "illness",
+                "murals",
+                "health problems"
+            ],
+            "TOXICITY": 0.083999306,
+            "SEVERE_TOXICITY": 0.002155304,
+            "INSULT": 0.027605021,
+            "IDENTITY_ATTACK": 0.011987305,
+            "PROFANITY": 0.019280603,
+            "THREAT": 0.008116818
+        },
+        {
+            "triple_number": 95,
+            "triple": [
+                "different",
+                "wasn't always",
+                "people"
+            ],
+            "TOXICITY": 0.10002319,
+            "SEVERE_TOXICITY": 0.0031089783,
+            "INSULT": 0.028281843,
+            "IDENTITY_ATTACK": 0.052035484,
+            "PROFANITY": 0.01982715,
+            "THREAT": 0.008401625
+        },
+        {
+            "triple_number": 96,
+            "triple": [
+                "statement",
+                "strive to help",
+                "stereotype"
+            ],
+            "TOXICITY": 0.02072494,
+            "SEVERE_TOXICITY": 0.0007534027,
+            "INSULT": 0.010742896,
+            "IDENTITY_ATTACK": 0.0042547537,
+            "PROFANITY": 0.011970525,
+            "THREAT": 0.0066086366
+        },
+        {
+            "triple_number": 97,
+            "triple": [
+                "health problems",
+                "won",
+                "illness"
+            ],
+            "TOXICITY": 0.05255287,
+            "SEVERE_TOXICITY": 0.0019836426,
+            "INSULT": 0.017163089,
+            "IDENTITY_ATTACK": 0.007880543,
+            "PROFANITY": 0.017367685,
+            "THREAT": 0.008285114
+        },
+        {
+            "triple_number": 98,
+            "triple": [
+                "generalize",
+                "ensures",
+                "stereotype"
+            ],
+            "TOXICITY": 0.026735162,
+            "SEVERE_TOXICITY": 0.0008249283,
+            "INSULT": 0.013212911,
+            "IDENTITY_ATTACK": 0.0047727237,
+            "PROFANITY": 0.013063621,
+            "THREAT": 0.006356194
+        },
+        {
+            "triple_number": 99,
+            "triple": [
+                "substance",
+                "finds enjoyable",
+                "marijuana"
+            ],
+            "TOXICITY": 0.08953904,
+            "SEVERE_TOXICITY": 0.0032424927,
+            "INSULT": 0.020966014,
+            "IDENTITY_ATTACK": 0.007288578,
+            "PROFANITY": 0.028776871,
+            "THREAT": 0.008582866
+        }
+    ]
+}

@@ -69,11 +69,13 @@ CLUSTER_OUTPUT_BASE_PATH = os.path.join(DATA_BASE_PATH, "cluster")
 PINE_API_KEY = 'pcsk_6ktnFZ_HVs4214sfzmCDpKVvqAA1YDy5Fz8kjL9AX9ScrFGxZ7D16ATqdqHAyAsJnv2CwK'
 
 
-TOXICITY_BASE_PATH = os.path.join(DATA_BASE_PATH, "toxicity")
+CLUSTER_TOXICITY_BASE_PATH = os.path.join(DATA_BASE_PATH, "cluster_toxicity")
 
 AGGREGATE_TOXICITY_STATS_KEY = "aggregate_toxicity_stats"
 CLUSTER_TOXICITY_STATS_KEY = "clusters_toxicity"
 
+NEW_TRIPLES_ANALYSIS_BASE_PATH = os.path.join(DATA_BASE_PATH, "new_triples_toxicity")
+NEW_TRIPLES_TOXICITY_STATS_KEY = "new_triples_toxicity"
 
 
 

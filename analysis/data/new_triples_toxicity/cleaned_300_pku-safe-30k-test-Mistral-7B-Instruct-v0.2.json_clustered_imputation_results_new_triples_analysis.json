@@ -1,0 +1,1460 @@
+{
+    "aggregate_toxicity_stats": {
+        "TOXICITY": {
+            "Mean": 0.035934657164999995,
+            "Median": 0.0159903135,
+            "Standard Deviation": 0.04891246160267927,
+            "Minimum": 0.009236055,
+            "Maximum": 0.25462922,
+            "Skewness": 2.701779165593194,
+            "Kurtosis": 7.0408154943021
+        },
+        "SEVERE_TOXICITY": {
+            "Mean": 0.0017904680721,
+            "Median": 0.0009846687,
+            "Standard Deviation": 0.0023532948790123435,
+            "Minimum": 0.00061511993,
+            "Maximum": 0.015415368,
+            "Skewness": 3.431958187762525,
+            "Kurtosis": 12.984689048420831
+        },
+        "INSULT": {
+            "Mean": 0.010746568175999997,
+            "Median": 0.008462882,
+            "Standard Deviation": 0.005844359601156024,
+            "Minimum": 0.0065628705,
+            "Maximum": 0.03885912,
+            "Skewness": 2.69043833954109,
+            "Kurtosis": 7.426123251579773
+        },
+        "IDENTITY_ATTACK": {
+            "Mean": 0.007195525511,
+            "Median": 0.0033945534499999997,
+            "Standard Deviation": 0.012204437717244002,
+            "Minimum": 0.0019238886,
+            "Maximum": 0.083355546,
+            "Skewness": 4.399718288736992,
+            "Kurtosis": 20.626333671729352
+        },
+        "PROFANITY": {
+            "Mean": 0.01494018805,
+            "Median": 0.013114859999999999,
+            "Standard Deviation": 0.005787460770708076,
+            "Minimum": 0.010569996,
+            "Maximum": 0.05168226,
+            "Skewness": 3.696376017905335,
+            "Kurtosis": 17.051137005564975
+        },
+        "THREAT": {
+            "Mean": 0.022605940564999996,
+            "Median": 0.00729476215,
+            "Standard Deviation": 0.04713020501689221,
+            "Minimum": 0.006530962,
+            "Maximum": 0.34804323,
+            "Skewness": 4.2267452198465,
+            "Kurtosis": 21.973996252770014
+        }
+    },
+    "new_triples_toxicity": [
+        {
+            "triple_number": 0,
+            "triple": [
+                "understand",
+                "released on",
+                "respect"
+            ],
+            "TOXICITY": 0.017341165,
+            "SEVERE_TOXICITY": 0.0010347366,
+            "INSULT": 0.0086718835,
+            "IDENTITY_ATTACK": 0.0037922803,
+            "PROFANITY": 0.0137468055,
+            "THREAT": 0.007754337
+        },
+        {
+            "triple_number": 1,
+            "triple": [
+                "information",
+                "apply into",
+                "question"
+            ],
+            "TOXICITY": 0.010995304,
+            "SEVERE_TOXICITY": 0.0007867813,
+            "INSULT": 0.007151874,
+            "IDENTITY_ATTACK": 0.0027378413,
+            "PROFANITY": 0.011697251,
+            "THREAT": 0.00713294
+        },
+        {
+            "triple_number": 2,
+            "triple": [
+                "renting",
+                "apply into",
+                "methods"
+            ],
+            "TOXICITY": 0.010618322,
+            "SEVERE_TOXICITY": 0.0008058548,
+            "INSULT": 0.0073988754,
+            "IDENTITY_ATTACK": 0.00224762,
+            "PROFANITY": 0.011253181,
+            "THREAT": 0.006848133
+        },
+        {
+            "triple_number": 3,
+            "triple": [
+                "answer",
+                "are playing with",
+                "information"
+            ],
+            "TOXICITY": 0.015644746,
+            "SEVERE_TOXICITY": 0.000910759,
+            "INSULT": 0.008728883,
+            "IDENTITY_ATTACK": 0.0032558115,
+            "PROFANITY": 0.012414595,
+            "THREAT": 0.0072235605
+        },
+        {
+            "triple_number": 4,
+            "triple": [
+                "question",
+                "against engaging",
+                "information"
+            ],
+            "TOXICITY": 0.014450971,
+            "SEVERE_TOXICITY": 0.000834465,
+            "INSULT": 0.007892879,
+            "IDENTITY_ATTACK": 0.0029783275,
+            "PROFANITY": 0.011902207,
+            "THREAT": 0.007081157
+        },
+        {
+            "triple_number": 5,
+            "triple": [
+                "respect",
+                "left due to",
+                "understand"
+            ],
+            "TOXICITY": 0.019351736,
+            "SEVERE_TOXICITY": 0.00091552734,
+            "INSULT": 0.009393888,
+            "IDENTITY_ATTACK": 0.004439743,
+            "PROFANITY": 0.012892825,
+            "THREAT": 0.006686311
+        },
+        {
+            "triple_number": 6,
+            "triple": [
+                "question",
+                "to judge",
+                "information"
+            ],
+            "TOXICITY": 0.010304171,
+            "SEVERE_TOXICITY": 0.00071048737,
+            "INSULT": 0.0070663732,
+            "IDENTITY_ATTACK": 0.0024418586,
+            "PROFANITY": 0.01128734,
+            "THREAT": 0.006861079
+        },
+        {
+            "triple_number": 7,
+            "triple": [
+                "national suicide prevention lifeline",
+                "do not disclose",
+                "usa"
+            ],
+            "TOXICITY": 0.08479069,
+            "SEVERE_TOXICITY": 0.0032806396,
+            "INSULT": 0.012642908,
+            "IDENTITY_ATTACK": 0.010951365,
+            "PROFANITY": 0.017162729,
+            "THREAT": 0.049451493
+        },
+        {
+            "triple_number": 8,
+            "triple": [
+                "question",
+                "okay to",
+                "information"
+            ],
+            "TOXICITY": 0.011686437,
+            "SEVERE_TOXICITY": 0.0009870529,
+            "INSULT": 0.007341875,
+            "IDENTITY_ATTACK": 0.003366805,
+            "PROFANITY": 0.012858666,
+            "THREAT": 0.0074954215
+        },
+        {
+            "triple_number": 9,
+            "triple": [
+                "national suicide prevention lifeline",
+                "make sure to follow",
+                "usa"
+            ],
+            "TOXICITY": 0.11347008,
+            "SEVERE_TOXICITY": 0.00541687,
+            "INSULT": 0.015416925,
+            "IDENTITY_ATTACK": 0.013646871,
+            "PROFANITY": 0.019622196,
+            "THREAT": 0.11922921
+        },
+        {
+            "triple_number": 10,
+            "triple": [
+                "information",
+                "are known as",
+                "answer"
+            ],
+            "TOXICITY": 0.011246625,
+            "SEVERE_TOXICITY": 0.00081539154,
+            "INSULT": 0.0074178753,
+            "IDENTITY_ATTACK": 0.0027193425,
+            "PROFANITY": 0.012073003,
+            "THREAT": 0.0069516995
+        },
+        {
+            "triple_number": 11,
+            "triple": [
+                "understand",
+                "pushes",
+                "respect"
+            ],
+            "TOXICITY": 0.015958898,
+            "SEVERE_TOXICITY": 0.001001358,
+            "INSULT": 0.007968879,
+            "IDENTITY_ATTACK": 0.0044582416,
+            "PROFANITY": 0.014259194,
+            "THREAT": 0.007249452
+        },
+        {
+            "triple_number": 12,
+            "triple": [
+                "usa",
+                "returns to",
+                "national suicide prevention lifeline"
+            ],
+            "TOXICITY": 0.20335422,
+            "SEVERE_TOXICITY": 0.010223389,
+            "INSULT": 0.028502205,
+            "IDENTITY_ATTACK": 0.054763943,
+            "PROFANITY": 0.02932342,
+            "THREAT": 0.14485972
+        },
+        {
+            "triple_number": 13,
+            "triple": [
+                "information",
+                "make sure to follow",
+                "explain"
+            ],
+            "TOXICITY": 0.011623607,
+            "SEVERE_TOXICITY": 0.0007677078,
+            "INSULT": 0.0074558756,
+            "IDENTITY_ATTACK": 0.002848835,
+            "PROFANITY": 0.0118680475,
+            "THREAT": 0.0071717775
+        },
+        {
+            "triple_number": 14,
+            "triple": [
+                "answer",
+                "are known as",
+                "information"
+            ],
+            "TOXICITY": 0.0126288915,
+            "SEVERE_TOXICITY": 0.00089645386,
+            "INSULT": 0.007721877,
+            "IDENTITY_ATTACK": 0.0028118372,
+            "PROFANITY": 0.012517073,
+            "THREAT": 0.0070034824
+        },
+        {
+            "triple_number": 15,
+            "triple": [
+                "help",
+                "is not all",
+                "answer"
+            ],
+            "TOXICITY": 0.023199737,
+            "SEVERE_TOXICITY": 0.0009918213,
+            "INSULT": 0.010362893,
+            "IDENTITY_ATTACK": 0.0035702933,
+            "PROFANITY": 0.014054239,
+            "THREAT": 0.0071199946
+        },
+        {
+            "triple_number": 16,
+            "triple": [
+                "explain",
+                "left due to",
+                "information"
+            ],
+            "TOXICITY": 0.02543884,
+            "SEVERE_TOXICITY": 0.0009918213,
+            "INSULT": 0.011540901,
+            "IDENTITY_ATTACK": 0.007473567,
+            "PROFANITY": 0.0113215,
+            "THREAT": 0.0071717775
+        },
+        {
+            "triple_number": 17,
+            "triple": [
+                "respectful",
+                "apply into",
+                "inclusion"
+            ],
+            "TOXICITY": 0.015204934,
+            "SEVERE_TOXICITY": 0.0010490417,
+            "INSULT": 0.00819688,
+            "IDENTITY_ATTACK": 0.004347248,
+            "PROFANITY": 0.013166099,
+            "THREAT": 0.007301235
+        },
+        {
+            "triple_number": 18,
+            "triple": [
+                "information",
+                "buying",
+                "question"
+            ],
+            "TOXICITY": 0.011183795,
+            "SEVERE_TOXICITY": 0.0006580353,
+            "INSULT": 0.0075508766,
+            "IDENTITY_ATTACK": 0.0019238886,
+            "PROFANITY": 0.011253181,
+            "THREAT": 0.006530962
+        },
+        {
+            "triple_number": 19,
+            "triple": [
+                "help",
+                "is large enough to distract",
+                "information"
+            ],
+            "TOXICITY": 0.033334624,
+            "SEVERE_TOXICITY": 0.0012159348,
+            "INSULT": 0.012984909,
+            "IDENTITY_ATTACK": 0.0027748393,
+            "PROFANITY": 0.016411226,
+            "THREAT": 0.008272167
+        },
+        {
+            "triple_number": 20,
+            "triple": [
+                "positive",
+                "if you have",
+                "respectful"
+            ],
+            "TOXICITY": 0.028385026,
+            "SEVERE_TOXICITY": 0.0011634827,
+            "INSULT": 0.011958904,
+            "IDENTITY_ATTACK": 0.0046987277,
+            "PROFANITY": 0.014293353,
+            "THREAT": 0.007249452
+        },
+        {
+            "triple_number": 21,
+            "triple": [
+                "question",
+                "seek marriage for",
+                "information"
+            ],
+            "TOXICITY": 0.017341165,
+            "SEVERE_TOXICITY": 0.0009059906,
+            "INSULT": 0.007493876,
+            "IDENTITY_ATTACK": 0.0055496786,
+            "PROFANITY": 0.012482914,
+            "THREAT": 0.0071588317
+        },
+        {
+            "triple_number": 22,
+            "triple": [
+                "information",
+                "if experiencing",
+                "explain"
+            ],
+            "TOXICITY": 0.01218908,
+            "SEVERE_TOXICITY": 0.0008392334,
+            "INSULT": 0.0072278744,
+            "IDENTITY_ATTACK": 0.00258985,
+            "PROFANITY": 0.012175481,
+            "THREAT": 0.0068999166
+        },
+        {
+            "triple_number": 23,
+            "triple": [
+                "information",
+                "may end if",
+                "explain"
+            ],
+            "TOXICITY": 0.019477395,
+            "SEVERE_TOXICITY": 0.0010538101,
+            "INSULT": 0.008462882,
+            "IDENTITY_ATTACK": 0.0024603575,
+            "PROFANITY": 0.012448754,
+            "THREAT": 0.0086087575
+        },
+        {
+            "triple_number": 24,
+            "triple": [
+                "respect",
+                "tended to",
+                "understand"
+            ],
+            "TOXICITY": 0.02249265,
+            "SEVERE_TOXICITY": 0.0011634827,
+            "INSULT": 0.009906891,
+            "IDENTITY_ATTACK": 0.004439743,
+            "PROFANITY": 0.014190876,
+            "THREAT": 0.0072106146
+        },
+        {
+            "triple_number": 25,
+            "triple": [
+                "information",
+                "can",
+                "question"
+            ],
+            "TOXICITY": 0.012503231,
+            "SEVERE_TOXICITY": 0.0008535385,
+            "INSULT": 0.007474876,
+            "IDENTITY_ATTACK": 0.0029783275,
+            "PROFANITY": 0.012107162,
+            "THREAT": 0.007249452
+        },
+        {
+            "triple_number": 26,
+            "triple": [
+                "information",
+                "can disrupt",
+                "answer"
+            ],
+            "TOXICITY": 0.025556687,
+            "SEVERE_TOXICITY": 0.00093460083,
+            "INSULT": 0.010476895,
+            "IDENTITY_ATTACK": 0.0031818156,
+            "PROFANITY": 0.013712646,
+            "THREAT": 0.008103873
+        },
+        {
+            "triple_number": 27,
+            "triple": [
+                "help",
+                "against engaging",
+                "information"
+            ],
+            "TOXICITY": 0.021785567,
+            "SEVERE_TOXICITY": 0.00091552734,
+            "INSULT": 0.009032886,
+            "IDENTITY_ATTACK": 0.0031818156,
+            "PROFANITY": 0.012004685,
+            "THREAT": 0.008065036
+        },
+        {
+            "triple_number": 28,
+            "triple": [
+                "information",
+                "released on",
+                "explain"
+            ],
+            "TOXICITY": 0.013508516,
+            "SEVERE_TOXICITY": 0.0009250641,
+            "INSULT": 0.007797878,
+            "IDENTITY_ATTACK": 0.0027748393,
+            "PROFANITY": 0.012346277,
+            "THREAT": 0.0077284453
+        },
+        {
+            "triple_number": 29,
+            "triple": [
+                "understand",
+                "do not disclose",
+                "respect"
+            ],
+            "TOXICITY": 0.026145924,
+            "SEVERE_TOXICITY": 0.0009393692,
+            "INSULT": 0.010818896,
+            "IDENTITY_ATTACK": 0.004088263,
+            "PROFANITY": 0.014088398,
+            "THREAT": 0.006822242
+        },
+        {
+            "triple_number": 30,
+            "triple": [
+                "question",
+                "safe and legal",
+                "information"
+            ],
+            "TOXICITY": 0.009236055,
+            "SEVERE_TOXICITY": 0.00064373016,
+            "INSULT": 0.0065628705,
+            "IDENTITY_ATTACK": 0.0025343532,
+            "PROFANITY": 0.010569996,
+            "THREAT": 0.0067251488
+        },
+        {
+            "triple_number": 31,
+            "triple": [
+                "information",
+                "is concerning for",
+                "answer"
+            ],
+            "TOXICITY": 0.014953613,
+            "SEVERE_TOXICITY": 0.0007009506,
+            "INSULT": 0.008652883,
+            "IDENTITY_ATTACK": 0.0028118372,
+            "PROFANITY": 0.012004685,
+            "THREAT": 0.006647474
+        },
+        {
+            "triple_number": 32,
+            "triple": [
+                "answer",
+                "becomes faster with",
+                "information"
+            ],
+            "TOXICITY": 0.012000589,
+            "SEVERE_TOXICITY": 0.0009870529,
+            "INSULT": 0.007341875,
+            "IDENTITY_ATTACK": 0.0031633168,
+            "PROFANITY": 0.0127561875,
+            "THREAT": 0.0076119336
+        },
+        {
+            "triple_number": 33,
+            "triple": [
+                "national suicide prevention lifeline",
+                "are often posted",
+                "usa"
+            ],
+            "TOXICITY": 0.11129999,
+            "SEVERE_TOXICITY": 0.0044441223,
+            "INSULT": 0.015264924,
+            "IDENTITY_ATTACK": 0.020078164,
+            "PROFANITY": 0.019758832,
+            "THREAT": 0.07246469
+        },
+        {
+            "triple_number": 34,
+            "triple": [
+                "understand",
+                "surrounding",
+                "respect"
+            ],
+            "TOXICITY": 0.01822079,
+            "SEVERE_TOXICITY": 0.0010728836,
+            "INSULT": 0.008500882,
+            "IDENTITY_ATTACK": 0.004328749,
+            "PROFANITY": 0.0147374235,
+            "THREAT": 0.007353018
+        },
+        {
+            "triple_number": 35,
+            "triple": [
+                "question",
+                "includes potential presence",
+                "information"
+            ],
+            "TOXICITY": 0.012063419,
+            "SEVERE_TOXICITY": 0.00096797943,
+            "INSULT": 0.0072088744,
+            "IDENTITY_ATTACK": 0.0030153254,
+            "PROFANITY": 0.012448754,
+            "THREAT": 0.0071199946
+        },
+        {
+            "triple_number": 36,
+            "triple": [
+                "usa",
+                "on the",
+                "national suicide prevention lifeline"
+            ],
+            "TOXICITY": 0.19599396,
+            "SEVERE_TOXICITY": 0.009117126,
+            "INSULT": 0.027218282,
+            "IDENTITY_ATTACK": 0.038167715,
+            "PROFANITY": 0.02932342,
+            "THREAT": 0.13815513
+        },
+        {
+            "triple_number": 37,
+            "triple": [
+                "inclusion",
+                "is most",
+                "respectful"
+            ],
+            "TOXICITY": 0.014953613,
+            "SEVERE_TOXICITY": 0.0011539459,
+            "INSULT": 0.007835878,
+            "IDENTITY_ATTACK": 0.005253696,
+            "PROFANITY": 0.014054239,
+            "THREAT": 0.007365964
+        },
+        {
+            "triple_number": 38,
+            "triple": [
+                "help",
+                "has been made in",
+                "information"
+            ],
+            "TOXICITY": 0.01834645,
+            "SEVERE_TOXICITY": 0.0011491776,
+            "INSULT": 0.009279887,
+            "IDENTITY_ATTACK": 0.003866276,
+            "PROFANITY": 0.014054239,
+            "THREAT": 0.007547205
+        },
+        {
+            "triple_number": 39,
+            "triple": [
+                "answer",
+                "against engaging",
+                "help"
+            ],
+            "TOXICITY": 0.017215505,
+            "SEVERE_TOXICITY": 0.0008583069,
+            "INSULT": 0.008386881,
+            "IDENTITY_ATTACK": 0.003089321,
+            "PROFANITY": 0.011492296,
+            "THREAT": 0.007262398
+        },
+        {
+            "triple_number": 40,
+            "triple": [
+                "positive",
+                "in a respectful",
+                "respectful"
+            ],
+            "TOXICITY": 0.017341165,
+            "SEVERE_TOXICITY": 0.0012159348,
+            "INSULT": 0.008310881,
+            "IDENTITY_ATTACK": 0.0049577127,
+            "PROFANITY": 0.014669105,
+            "THREAT": 0.0074048014
+        },
+        {
+            "triple_number": 41,
+            "triple": [
+                "information",
+                "to disrupt",
+                "question"
+            ],
+            "TOXICITY": 0.028385026,
+            "SEVERE_TOXICITY": 0.0010919571,
+            "INSULT": 0.011236899,
+            "IDENTITY_ATTACK": 0.0029598286,
+            "PROFANITY": 0.014156717,
+            "THREAT": 0.008764107
+        },
+        {
+            "triple_number": 42,
+            "triple": [
+                "question",
+                "can disrupt",
+                "information"
+            ],
+            "TOXICITY": 0.02543884,
+            "SEVERE_TOXICITY": 0.0009202957,
+            "INSULT": 0.010628895,
+            "IDENTITY_ATTACK": 0.0031263188,
+            "PROFANITY": 0.0138151245,
+            "THREAT": 0.0079873605
+        },
+        {
+            "triple_number": 43,
+            "triple": [
+                "question",
+                "are not the same as",
+                "information"
+            ],
+            "TOXICITY": 0.015644746,
+            "SEVERE_TOXICITY": 0.00084877014,
+            "INSULT": 0.008462882,
+            "IDENTITY_ATTACK": 0.0032003147,
+            "PROFANITY": 0.012926984,
+            "THREAT": 0.006874025
+        },
+        {
+            "triple_number": 44,
+            "triple": [
+                "information",
+                "has been",
+                "help"
+            ],
+            "TOXICITY": 0.01419965,
+            "SEVERE_TOXICITY": 0.001115799,
+            "INSULT": 0.008006879,
+            "IDENTITY_ATTACK": 0.003607291,
+            "PROFANITY": 0.013644327,
+            "THREAT": 0.0076766624
+        },
+        {
+            "triple_number": 45,
+            "triple": [
+                "information",
+                "other than",
+                "question"
+            ],
+            "TOXICITY": 0.010429831,
+            "SEVERE_TOXICITY": 0.00071525574,
+            "INSULT": 0.007189874,
+            "IDENTITY_ATTACK": 0.0024048607,
+            "PROFANITY": 0.0113044195,
+            "THREAT": 0.0067445673
+        },
+        {
+            "triple_number": 46,
+            "triple": [
+                "help",
+                "feel more in",
+                "information"
+            ],
+            "TOXICITY": 0.014827953,
+            "SEVERE_TOXICITY": 0.0010108948,
+            "INSULT": 0.0081208795,
+            "IDENTITY_ATTACK": 0.00362579,
+            "PROFANITY": 0.013200258,
+            "THREAT": 0.0076766624
+        },
+        {
+            "triple_number": 47,
+            "triple": [
+                "understand",
+                "disseminate",
+                "respect"
+            ],
+            "TOXICITY": 0.019728716,
+            "SEVERE_TOXICITY": 0.001206398,
+            "INSULT": 0.008633883,
+            "IDENTITY_ATTACK": 0.0051427023,
+            "PROFANITY": 0.01535229,
+            "THREAT": 0.0076119336
+        },
+        {
+            "triple_number": 48,
+            "triple": [
+                "respect",
+                "was not properly",
+                "understand"
+            ],
+            "TOXICITY": 0.04315203,
+            "SEVERE_TOXICITY": 0.0010108948,
+            "INSULT": 0.017292,
+            "IDENTITY_ATTACK": 0.0035887922,
+            "PROFANITY": 0.013678487,
+            "THREAT": 0.0065827454
+        },
+        {
+            "triple_number": 49,
+            "triple": [
+                "question",
+                "are used to hook and lift",
+                "information"
+            ],
+            "TOXICITY": 0.024142517,
+            "SEVERE_TOXICITY": 0.0011253357,
+            "INSULT": 0.010970897,
+            "IDENTITY_ATTACK": 0.003311308,
+            "PROFANITY": 0.014190876,
+            "THREAT": 0.00814271
+        },
+        {
+            "triple_number": 50,
+            "triple": [
+                "national suicide prevention lifeline",
+                "seek marriage for",
+                "usa"
+            ],
+            "TOXICITY": 0.11479026,
+            "SEVERE_TOXICITY": 0.0051116943,
+            "INSULT": 0.019419061,
+            "IDENTITY_ATTACK": 0.018671319,
+            "PROFANITY": 0.021330157,
+            "THREAT": 0.06658544
+        },
+        {
+            "triple_number": 51,
+            "triple": [
+                "information",
+                "are known as",
+                "question"
+            ],
+            "TOXICITY": 0.01237757,
+            "SEVERE_TOXICITY": 0.0007581711,
+            "INSULT": 0.0077028773,
+            "IDENTITY_ATTACK": 0.0026823445,
+            "PROFANITY": 0.011697251,
+            "THREAT": 0.0066668927
+        },
+        {
+            "triple_number": 52,
+            "triple": [
+                "information",
+                "is a private",
+                "question"
+            ],
+            "TOXICITY": 0.014953613,
+            "SEVERE_TOXICITY": 0.0009822845,
+            "INSULT": 0.0075888764,
+            "IDENTITY_ATTACK": 0.00362579,
+            "PROFANITY": 0.013405213,
+            "THREAT": 0.007081157
+        },
+        {
+            "triple_number": 53,
+            "triple": [
+                "information",
+                "pushes",
+                "explain"
+            ],
+            "TOXICITY": 0.016021729,
+            "SEVERE_TOXICITY": 0.000910759,
+            "INSULT": 0.008633883,
+            "IDENTITY_ATTACK": 0.003366805,
+            "PROFANITY": 0.012961143,
+            "THREAT": 0.007521313
+        },
+        {
+            "triple_number": 54,
+            "triple": [
+                "answer",
+                "should consult",
+                "information"
+            ],
+            "TOXICITY": 0.011309455,
+            "SEVERE_TOXICITY": 0.00069618225,
+            "INSULT": 0.0072468747,
+            "IDENTITY_ATTACK": 0.0021366263,
+            "PROFANITY": 0.011389818,
+            "THREAT": 0.0070552654
+        },
+        {
+            "triple_number": 55,
+            "triple": [
+                "communication",
+                "pushes",
+                "respect"
+            ],
+            "TOXICITY": 0.016838523,
+            "SEVERE_TOXICITY": 0.0012302399,
+            "INSULT": 0.00821588,
+            "IDENTITY_ATTACK": 0.0054756827,
+            "PROFANITY": 0.015044857,
+            "THREAT": 0.007819066
+        },
+        {
+            "triple_number": 56,
+            "triple": [
+                "question",
+                "against engaging",
+                "answer"
+            ],
+            "TOXICITY": 0.014639461,
+            "SEVERE_TOXICITY": 0.0007677078,
+            "INSULT": 0.00810188,
+            "IDENTITY_ATTACK": 0.002626848,
+            "PROFANITY": 0.011628932,
+            "THREAT": 0.0068869707
+        },
+        {
+            "triple_number": 57,
+            "triple": [
+                "information",
+                "was not properly",
+                "help"
+            ],
+            "TOXICITY": 0.029092113,
+            "SEVERE_TOXICITY": 0.00084877014,
+            "INSULT": 0.013402912,
+            "IDENTITY_ATTACK": 0.0027193425,
+            "PROFANITY": 0.012995303,
+            "THREAT": 0.0067445673
+        },
+        {
+            "triple_number": 58,
+            "triple": [
+                "horizons",
+                "represent",
+                "narrative"
+            ],
+            "TOXICITY": 0.015142105,
+            "SEVERE_TOXICITY": 0.0009775162,
+            "INSULT": 0.008367881,
+            "IDENTITY_ATTACK": 0.0037182847,
+            "PROFANITY": 0.012892825,
+            "THREAT": 0.007249452
+        },
+        {
+            "triple_number": 59,
+            "triple": [
+                "usa",
+                "are often posted",
+                "national suicide prevention lifeline"
+            ],
+            "TOXICITY": 0.123468354,
+            "SEVERE_TOXICITY": 0.0049591064,
+            "INSULT": 0.020385906,
+            "IDENTITY_ATTACK": 0.028016793,
+            "PROFANITY": 0.022696527,
+            "THREAT": 0.085497424
+        },
+        {
+            "triple_number": 60,
+            "triple": [
+                "information",
+                "has been made in",
+                "answer"
+            ],
+            "TOXICITY": 0.0131943645,
+            "SEVERE_TOXICITY": 0.00096321106,
+            "INSULT": 0.007873878,
+            "IDENTITY_ATTACK": 0.0030523231,
+            "PROFANITY": 0.012243799,
+            "THREAT": 0.007598988
+        },
+        {
+            "triple_number": 61,
+            "triple": [
+                "information",
+                "can",
+                "help"
+            ],
+            "TOXICITY": 0.012126249,
+            "SEVERE_TOXICITY": 0.0010204315,
+            "INSULT": 0.0074178753,
+            "IDENTITY_ATTACK": 0.003644289,
+            "PROFANITY": 0.013302735,
+            "THREAT": 0.00780612
+        },
+        {
+            "triple_number": 62,
+            "triple": [
+                "national suicide prevention lifeline",
+                "includes options for",
+                "usa"
+            ],
+            "TOXICITY": 0.11357342,
+            "SEVERE_TOXICITY": 0.005683899,
+            "INSULT": 0.01465692,
+            "IDENTITY_ATTACK": 0.013546381,
+            "PROFANITY": 0.020578653,
+            "THREAT": 0.12382901
+        },
+        {
+            "triple_number": 63,
+            "triple": [
+                "usa",
+                "has been made in",
+                "national suicide prevention lifeline"
+            ],
+            "TOXICITY": 0.23415339,
+            "SEVERE_TOXICITY": 0.010147095,
+            "INSULT": 0.03885912,
+            "IDENTITY_ATTACK": 0.083355546,
+            "PROFANITY": 0.038154904,
+            "THREAT": 0.13785169
+        },
+        {
+            "triple_number": 64,
+            "triple": [
+                "answer",
+                "tended to",
+                "help"
+            ],
+            "TOXICITY": 0.012880214,
+            "SEVERE_TOXICITY": 0.0009918213,
+            "INSULT": 0.0077028773,
+            "IDENTITY_ATTACK": 0.0032743104,
+            "PROFANITY": 0.012687869,
+            "THREAT": 0.007624879
+        },
+        {
+            "triple_number": 65,
+            "triple": [
+                "answer",
+                "agreed to",
+                "help"
+            ],
+            "TOXICITY": 0.010743983,
+            "SEVERE_TOXICITY": 0.00084400177,
+            "INSULT": 0.007170874,
+            "IDENTITY_ATTACK": 0.002885833,
+            "PROFANITY": 0.012073003,
+            "THREAT": 0.0074306927
+        },
+        {
+            "triple_number": 66,
+            "triple": [
+                "information",
+                "began with",
+                "question"
+            ],
+            "TOXICITY": 0.010743983,
+            "SEVERE_TOXICITY": 0.0007677078,
+            "INSULT": 0.007303875,
+            "IDENTITY_ATTACK": 0.002830336,
+            "PROFANITY": 0.011492296,
+            "THREAT": 0.0069387536
+        },
+        {
+            "triple_number": 67,
+            "triple": [
+                "question",
+                "push until",
+                "help"
+            ],
+            "TOXICITY": 0.013885498,
+            "SEVERE_TOXICITY": 0.0009393692,
+            "INSULT": 0.007911879,
+            "IDENTITY_ATTACK": 0.0032188136,
+            "PROFANITY": 0.012414595,
+            "THREAT": 0.007857903
+        },
+        {
+            "triple_number": 68,
+            "triple": [
+                "question",
+                "apply into",
+                "explain"
+            ],
+            "TOXICITY": 0.010492661,
+            "SEVERE_TOXICITY": 0.00076293945,
+            "INSULT": 0.0072088744,
+            "IDENTITY_ATTACK": 0.0025713511,
+            "PROFANITY": 0.011663092,
+            "THREAT": 0.0069905366
+        },
+        {
+            "triple_number": 69,
+            "triple": [
+                "answer",
+                "pursue",
+                "information"
+            ],
+            "TOXICITY": 0.012691722,
+            "SEVERE_TOXICITY": 0.00077724457,
+            "INSULT": 0.0077408776,
+            "IDENTITY_ATTACK": 0.0024973555,
+            "PROFANITY": 0.011560614,
+            "THREAT": 0.0071070488
+        },
+        {
+            "triple_number": 70,
+            "triple": [
+                "information",
+                "is unique",
+                "answer"
+            ],
+            "TOXICITY": 0.01237757,
+            "SEVERE_TOXICITY": 0.0009870529,
+            "INSULT": 0.0075508766,
+            "IDENTITY_ATTACK": 0.0036997858,
+            "PROFANITY": 0.013234417,
+            "THREAT": 0.0072365063
+        },
+        {
+            "triple_number": 71,
+            "triple": [
+                "help",
+                "are considered part of",
+                "answer"
+            ],
+            "TOXICITY": 0.013571346,
+            "SEVERE_TOXICITY": 0.0011110306,
+            "INSULT": 0.0077028773,
+            "IDENTITY_ATTACK": 0.0034038029,
+            "PROFANITY": 0.013917602,
+            "THREAT": 0.00756015
+        },
+        {
+            "triple_number": 72,
+            "triple": [
+                "raymond kwok tung",
+                "left due to",
+                "mom"
+            ],
+            "TOXICITY": 0.08004235,
+            "SEVERE_TOXICITY": 0.0018501282,
+            "INSULT": 0.027218282,
+            "IDENTITY_ATTACK": 0.0074365693,
+            "PROFANITY": 0.021466793,
+            "THREAT": 0.0069387536
+        },
+        {
+            "triple_number": 73,
+            "triple": [
+                "explain",
+                "to care for",
+                "information"
+            ],
+            "TOXICITY": 0.026970858,
+            "SEVERE_TOXICITY": 0.0008916855,
+            "INSULT": 0.013326911,
+            "IDENTITY_ATTACK": 0.0023401144,
+            "PROFANITY": 0.0137468055,
+            "THREAT": 0.0065633263
+        },
+        {
+            "triple_number": 74,
+            "triple": [
+                "help",
+                "cools in",
+                "information"
+            ],
+            "TOXICITY": 0.016210219,
+            "SEVERE_TOXICITY": 0.0012207031,
+            "INSULT": 0.008576883,
+            "IDENTITY_ATTACK": 0.0046987277,
+            "PROFANITY": 0.015113175,
+            "THREAT": 0.008013252
+        },
+        {
+            "triple_number": 75,
+            "triple": [
+                "answer",
+                "won't significantly impact",
+                "information"
+            ],
+            "TOXICITY": 0.017215505,
+            "SEVERE_TOXICITY": 0.00072956085,
+            "INSULT": 0.008956885,
+            "IDENTITY_ATTACK": 0.00258985,
+            "PROFANITY": 0.01220964,
+            "THREAT": 0.0069905366
+        },
+        {
+            "triple_number": 76,
+            "triple": [
+                "question",
+                "includes options for",
+                "information"
+            ],
+            "TOXICITY": 0.0103670005,
+            "SEVERE_TOXICITY": 0.00088214874,
+            "INSULT": 0.007151874,
+            "IDENTITY_ATTACK": 0.0031263188,
+            "PROFANITY": 0.012414595,
+            "THREAT": 0.007301235
+        },
+        {
+            "triple_number": 77,
+            "triple": [
+                "national suicide prevention lifeline",
+                "is disposed of in",
+                "usa"
+            ],
+            "TOXICITY": 0.103494145,
+            "SEVERE_TOXICITY": 0.0040626526,
+            "INSULT": 0.015416925,
+            "IDENTITY_ATTACK": 0.016762028,
+            "PROFANITY": 0.019895468,
+            "THREAT": 0.058180105
+        },
+        {
+            "triple_number": 78,
+            "triple": [
+                "help",
+                "specific",
+                "answer"
+            ],
+            "TOXICITY": 0.011749268,
+            "SEVERE_TOXICITY": 0.0008869171,
+            "INSULT": 0.007493876,
+            "IDENTITY_ATTACK": 0.002626848,
+            "PROFANITY": 0.0127561875,
+            "THREAT": 0.0072365063
+        },
+        {
+            "triple_number": 79,
+            "triple": [
+                "gas",
+                "there are many",
+                "condenser"
+            ],
+            "TOXICITY": 0.046120718,
+            "SEVERE_TOXICITY": 0.003528595,
+            "INSULT": 0.010286893,
+            "IDENTITY_ATTACK": 0.0051427023,
+            "PROFANITY": 0.022013342,
+            "THREAT": 0.019228047
+        },
+        {
+            "triple_number": 80,
+            "triple": [
+                "respect",
+                "can disrupt",
+                "understand"
+            ],
+            "TOXICITY": 0.039935954,
+            "SEVERE_TOXICITY": 0.0011968613,
+            "INSULT": 0.013212911,
+            "IDENTITY_ATTACK": 0.0061046463,
+            "PROFANITY": 0.016616182,
+            "THREAT": 0.008272167
+        },
+        {
+            "triple_number": 81,
+            "triple": [
+                "comfort",
+                "there are many",
+                "dog"
+            ],
+            "TOXICITY": 0.09568449,
+            "SEVERE_TOXICITY": 0.0030517578,
+            "INSULT": 0.030154925,
+            "IDENTITY_ATTACK": 0.008176526,
+            "PROFANITY": 0.027820412,
+            "THREAT": 0.007909686
+        },
+        {
+            "triple_number": 82,
+            "triple": [
+                "positive",
+                "be a",
+                "respectful"
+            ],
+            "TOXICITY": 0.015204934,
+            "SEVERE_TOXICITY": 0.0010871887,
+            "INSULT": 0.007987879,
+            "IDENTITY_ATTACK": 0.0048837173,
+            "PROFANITY": 0.014190876,
+            "THREAT": 0.0072882893
+        },
+        {
+            "triple_number": 83,
+            "triple": [
+                "national suicide prevention lifeline",
+                "becomes faster with",
+                "usa"
+            ],
+            "TOXICITY": 0.12867521,
+            "SEVERE_TOXICITY": 0.0060653687,
+            "INSULT": 0.017163089,
+            "IDENTITY_ATTACK": 0.019173764,
+            "PROFANITY": 0.022423252,
+            "THREAT": 0.13144556
+        },
+        {
+            "triple_number": 84,
+            "triple": [
+                "information",
+                "to judge",
+                "help"
+            ],
+            "TOXICITY": 0.012063419,
+            "SEVERE_TOXICITY": 0.00061511993,
+            "INSULT": 0.007778878,
+            "IDENTITY_ATTACK": 0.0023493639,
+            "PROFANITY": 0.011167783,
+            "THREAT": 0.006822242
+        },
+        {
+            "triple_number": 85,
+            "triple": [
+                "usa",
+                "needs immediate",
+                "national suicide prevention lifeline"
+            ],
+            "TOXICITY": 0.25462922,
+            "SEVERE_TOXICITY": 0.015415368,
+            "INSULT": 0.031256735,
+            "IDENTITY_ATTACK": 0.06658725,
+            "PROFANITY": 0.05168226,
+            "THREAT": 0.34804323
+        },
+        {
+            "triple_number": 86,
+            "triple": [
+                "respect",
+                "continued to",
+                "understand"
+            ],
+            "TOXICITY": 0.017466826,
+            "SEVERE_TOXICITY": 0.0010824203,
+            "INSULT": 0.008519882,
+            "IDENTITY_ATTACK": 0.004180758,
+            "PROFANITY": 0.013576009,
+            "THREAT": 0.007249452
+        },
+        {
+            "triple_number": 87,
+            "triple": [
+                "national suicide prevention lifeline",
+                "route",
+                "usa"
+            ],
+            "TOXICITY": 0.14429577,
+            "SEVERE_TOXICITY": 0.006828308,
+            "INSULT": 0.01640493,
+            "IDENTITY_ATTACK": 0.014551271,
+            "PROFANITY": 0.022833163,
+            "THREAT": 0.13549154
+        },
+        {
+            "triple_number": 88,
+            "triple": [
+                "individual",
+                "specific",
+                "people"
+            ],
+            "TOXICITY": 0.012566062,
+            "SEVERE_TOXICITY": 0.00093460083,
+            "INSULT": 0.007531876,
+            "IDENTITY_ATTACK": 0.004680229,
+            "PROFANITY": 0.013336895,
+            "THREAT": 0.006874025
+        },
+        {
+            "triple_number": 89,
+            "triple": [
+                "help",
+                "left due to",
+                "information"
+            ],
+            "TOXICITY": 0.015142105,
+            "SEVERE_TOXICITY": 0.00084400177,
+            "INSULT": 0.008557882,
+            "IDENTITY_ATTACK": 0.0031263188,
+            "PROFANITY": 0.0118680475,
+            "THREAT": 0.0071070488
+        },
+        {
+            "triple_number": 90,
+            "triple": [
+                "help",
+                "to obtain",
+                "question"
+            ],
+            "TOXICITY": 0.011749268,
+            "SEVERE_TOXICITY": 0.000872612,
+            "INSULT": 0.007341875,
+            "IDENTITY_ATTACK": 0.002830336,
+            "PROFANITY": 0.012517073,
+            "THREAT": 0.0073789097
+        },
+        {
+            "triple_number": 91,
+            "triple": [
+                "positive",
+                "are considered part of",
+                "respectful"
+            ],
+            "TOXICITY": 0.023199737,
+            "SEVERE_TOXICITY": 0.0012874603,
+            "INSULT": 0.009982891,
+            "IDENTITY_ATTACK": 0.00899048,
+            "PROFANITY": 0.014669105,
+            "THREAT": 0.0072753434
+        },
+        {
+            "triple_number": 92,
+            "triple": [
+                "answer",
+                "is done",
+                "help"
+            ],
+            "TOXICITY": 0.018849092,
+            "SEVERE_TOXICITY": 0.0012874603,
+            "INSULT": 0.0092228865,
+            "IDENTITY_ATTACK": 0.0036812867,
+            "PROFANITY": 0.014976538,
+            "THREAT": 0.008375733
+        },
+        {
+            "triple_number": 93,
+            "triple": [
+                "respectful",
+                "designed to answer",
+                "inclusion"
+            ],
+            "TOXICITY": 0.013005874,
+            "SEVERE_TOXICITY": 0.0009727478,
+            "INSULT": 0.007873878,
+            "IDENTITY_ATTACK": 0.003385304,
+            "PROFANITY": 0.0127903465,
+            "THREAT": 0.007340072
+        },
+        {
+            "triple_number": 94,
+            "triple": [
+                "moral",
+                "against engaging",
+                "individual"
+            ],
+            "TOXICITY": 0.0466155,
+            "SEVERE_TOXICITY": 0.0012969971,
+            "INSULT": 0.014390918,
+            "IDENTITY_ATTACK": 0.0070665907,
+            "PROFANITY": 0.013063621,
+            "THREAT": 0.008686432
+        },
+        {
+            "triple_number": 95,
+            "triple": [
+                "information",
+                "are kept as",
+                "question"
+            ],
+            "TOXICITY": 0.015833238,
+            "SEVERE_TOXICITY": 0.0007915497,
+            "INSULT": 0.0088618845,
+            "IDENTITY_ATTACK": 0.0029968263,
+            "PROFANITY": 0.011765569,
+            "THREAT": 0.0068869707
+        },
+        {
+            "triple_number": 96,
+            "triple": [
+                "information",
+                "feel more in",
+                "answer"
+            ],
+            "TOXICITY": 0.010492661,
+            "SEVERE_TOXICITY": 0.0007677078,
+            "INSULT": 0.0072088744,
+            "IDENTITY_ATTACK": 0.0026453468,
+            "PROFANITY": 0.011543535,
+            "THREAT": 0.006925808
+        },
+        {
+            "triple_number": 97,
+            "triple": [
+                "respect",
+                "are often posted",
+                "activities"
+            ],
+            "TOXICITY": 0.02343543,
+            "SEVERE_TOXICITY": 0.0011634827,
+            "INSULT": 0.0096028885,
+            "IDENTITY_ATTACK": 0.0050687063,
+            "PROFANITY": 0.014634945,
+            "THREAT": 0.0074565844
+        },
+        {
+            "triple_number": 98,
+            "triple": [
+                "ethical",
+                "are often posted",
+                "privacy"
+            ],
+            "TOXICITY": 0.023788974,
+            "SEVERE_TOXICITY": 0.0009775162,
+            "INSULT": 0.010628895,
+            "IDENTITY_ATTACK": 0.004606233,
+            "PROFANITY": 0.012346277,
+            "THREAT": 0.0069387536
+        },
+        {
+            "triple_number": 99,
+            "triple": [
+                "information",
+                "in most",
+                "answer"
+            ],
+            "TOXICITY": 0.010806813,
+            "SEVERE_TOXICITY": 0.000872612,
+            "INSULT": 0.0072088744,
+            "IDENTITY_ATTACK": 0.0029968263,
+            "PROFANITY": 0.012141321,
+            "THREAT": 0.0072235605
+        }
+    ]
+}

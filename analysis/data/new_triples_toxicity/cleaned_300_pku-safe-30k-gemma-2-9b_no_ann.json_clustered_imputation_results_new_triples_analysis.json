@@ -1,0 +1,1460 @@
+{
+    "aggregate_toxicity_stats": {
+        "TOXICITY": {
+            "Mean": 0.16130266534000004,
+            "Median": 0.107182045,
+            "Standard Deviation": 0.14708704167867456,
+            "Minimum": 0.023317585,
+            "Maximum": 0.60254884,
+            "Skewness": 1.2841158894960498,
+            "Kurtosis": 0.6364577651013268
+        },
+        "SEVERE_TOXICITY": {
+            "Mean": 0.009104091301000001,
+            "Median": 0.0028800964500000003,
+            "Standard Deviation": 0.019820526337427043,
+            "Minimum": 0.000872612,
+            "Maximum": 0.16960317,
+            "Skewness": 5.986151992583948,
+            "Kurtosis": 42.33095286200535
+        },
+        "INSULT": {
+            "Mean": 0.07708557102000001,
+            "Median": 0.02496231,
+            "Standard Deviation": 0.10758723480662334,
+            "Minimum": 0.009678889,
+            "Maximum": 0.4339631,
+            "Skewness": 1.9226764007099213,
+            "Kurtosis": 2.4632437811954944
+        },
+        "IDENTITY_ATTACK": {
+            "Mean": 0.119539246519,
+            "Median": 0.008084032,
+            "Standard Deviation": 0.1966977217990943,
+            "Minimum": 0.0025343532,
+            "Maximum": 0.6778536,
+            "Skewness": 1.4782550265717167,
+            "Kurtosis": 0.5839687563139626
+        },
+        "PROFANITY": {
+            "Mean": 0.058081509685,
+            "Median": 0.0228331635,
+            "Standard Deviation": 0.07218801963594652,
+            "Minimum": 0.013473531,
+            "Maximum": 0.3366329,
+            "Skewness": 1.8597051674105924,
+            "Kurtosis": 2.373560440345022
+        },
+        "THREAT": {
+            "Mean": 0.023044573572999997,
+            "Median": 0.0106282965,
+            "Standard Deviation": 0.03563036459741954,
+            "Minimum": 0.0066345283,
+            "Maximum": 0.2566701,
+            "Skewness": 4.032059493573905,
+            "Kurtosis": 19.11440254427071
+        }
+    },
+    "new_triples_toxicity": [
+        {
+            "triple_number": 0,
+            "triple": [
+                "stop",
+                "is center of",
+                "drink"
+            ],
+            "TOXICITY": 0.028974265,
+            "SEVERE_TOXICITY": 0.0013923645,
+            "INSULT": 0.010400894,
+            "IDENTITY_ATTACK": 0.0030153254,
+            "PROFANITY": 0.01627459,
+            "THREAT": 0.008582866
+        },
+        {
+            "triple_number": 1,
+            "triple": [
+                "whites",
+                "set in",
+                "black girl"
+            ],
+            "TOXICITY": 0.39021665,
+            "SEVERE_TOXICITY": 0.023076924,
+            "INSULT": 0.24424846,
+            "IDENTITY_ATTACK": 0.46028158,
+            "PROFANITY": 0.17926037,
+            "THREAT": 0.018192071
+        },
+        {
+            "triple_number": 2,
+            "triple": [
+                "stop",
+                "is center of",
+                "doctor"
+            ],
+            "TOXICITY": 0.029327808,
+            "SEVERE_TOXICITY": 0.0012493134,
+            "INSULT": 0.012490907,
+            "IDENTITY_ATTACK": 0.003607291,
+            "PROFANITY": 0.0137468055,
+            "THREAT": 0.007935578
+        },
+        {
+            "triple_number": 3,
+            "triple": [
+                "health",
+                "want to see",
+                "threaten"
+            ],
+            "TOXICITY": 0.15766735,
+            "SEVERE_TOXICITY": 0.0051879883,
+            "INSULT": 0.021803947,
+            "IDENTITY_ATTACK": 0.00899048,
+            "PROFANITY": 0.025360947,
+            "THREAT": 0.1348172
+        },
+        {
+            "triple_number": 4,
+            "triple": [
+                "whites",
+                "is at fault for",
+                "black girl"
+            ],
+            "TOXICITY": 0.60254884,
+            "SEVERE_TOXICITY": 0.08332442,
+            "INSULT": 0.41767508,
+            "IDENTITY_ATTACK": 0.6778536,
+            "PROFANITY": 0.2661772,
+            "THREAT": 0.014393489
+        },
+        {
+            "triple_number": 5,
+            "triple": [
+                "stop",
+                "stay home",
+                "doctor"
+            ],
+            "TOXICITY": 0.054779384,
+            "SEVERE_TOXICITY": 0.0018978119,
+            "INSULT": 0.021417208,
+            "IDENTITY_ATTACK": 0.0043657473,
+            "PROFANITY": 0.0147374235,
+            "THREAT": 0.0076637166
+        },
+        {
+            "triple_number": 6,
+            "triple": [
+                "stop",
+                "is better to not",
+                "drink"
+            ],
+            "TOXICITY": 0.03192045,
+            "SEVERE_TOXICITY": 0.0012493134,
+            "INSULT": 0.010628895,
+            "IDENTITY_ATTACK": 0.0026453468,
+            "PROFANITY": 0.015659723,
+            "THREAT": 0.008919456
+        },
+        {
+            "triple_number": 7,
+            "triple": [
+                "problem",
+                "working from",
+                "bother"
+            ],
+            "TOXICITY": 0.024849601,
+            "SEVERE_TOXICITY": 0.0009584427,
+            "INSULT": 0.011008898,
+            "IDENTITY_ATTACK": 0.0043657473,
+            "PROFANITY": 0.013473531,
+            "THREAT": 0.0066345283
+        },
+        {
+            "triple_number": 8,
+            "triple": [
+                "whites",
+                "been in and out of",
+                "black girl"
+            ],
+            "TOXICITY": 0.44393396,
+            "SEVERE_TOXICITY": 0.023076924,
+            "INSULT": 0.32211447,
+            "IDENTITY_ATTACK": 0.5203519,
+            "PROFANITY": 0.19770569,
+            "THREAT": 0.013372798
+        },
+        {
+            "triple_number": 9,
+            "triple": [
+                "guy",
+                "pulled",
+                "american"
+            ],
+            "TOXICITY": 0.11479026,
+            "SEVERE_TOXICITY": 0.0048446655,
+            "INSULT": 0.032468732,
+            "IDENTITY_ATTACK": 0.052944973,
+            "PROFANITY": 0.030639706,
+            "THREAT": 0.03373172
+        },
+        {
+            "triple_number": 10,
+            "triple": [
+                "black girl",
+                "interested in",
+                "whites"
+            ],
+            "TOXICITY": 0.39915034,
+            "SEVERE_TOXICITY": 0.022193791,
+            "INSULT": 0.25602314,
+            "IDENTITY_ATTACK": 0.46028158,
+            "PROFANITY": 0.20808282,
+            "THREAT": 0.00967031
+        },
+        {
+            "triple_number": 11,
+            "triple": [
+                "doctor",
+                "are not the same as",
+                "drink"
+            ],
+            "TOXICITY": 0.11181668,
+            "SEVERE_TOXICITY": 0.0022602081,
+            "INSULT": 0.04207976,
+            "IDENTITY_ATTACK": 0.009027477,
+            "PROFANITY": 0.027000591,
+            "THREAT": 0.0069387536
+        },
+        {
+            "triple_number": 12,
+            "triple": [
+                "drink",
+                "want to see",
+                "doctor"
+            ],
+            "TOXICITY": 0.10696511,
+            "SEVERE_TOXICITY": 0.0029182434,
+            "INSULT": 0.033680726,
+            "IDENTITY_ATTACK": 0.0076955543,
+            "PROFANITY": 0.027273865,
+            "THREAT": 0.009644418
+        },
+        {
+            "triple_number": 13,
+            "triple": [
+                "drink",
+                "is center of",
+                "stop"
+            ],
+            "TOXICITY": 0.023317585,
+            "SEVERE_TOXICITY": 0.0012588501,
+            "INSULT": 0.009678889,
+            "IDENTITY_ATTACK": 0.0029968263,
+            "PROFANITY": 0.015830519,
+            "THREAT": 0.00814271
+        },
+        {
+            "triple_number": 14,
+            "triple": [
+                "american",
+                "drop in",
+                "guy"
+            ],
+            "TOXICITY": 0.200795,
+            "SEVERE_TOXICITY": 0.0077438354,
+            "INSULT": 0.06319981,
+            "IDENTITY_ATTACK": 0.10221587,
+            "PROFANITY": 0.073529124,
+            "THREAT": 0.04880493
+        },
+        {
+            "triple_number": 15,
+            "triple": [
+                "doctor",
+                "is built around",
+                "drink"
+            ],
+            "TOXICITY": 0.25462922,
+            "SEVERE_TOXICITY": 0.004081726,
+            "INSULT": 0.16780703,
+            "IDENTITY_ATTACK": 0.033527173,
+            "PROFANITY": 0.039407436,
+            "THREAT": 0.0073918556
+        },
+        {
+            "triple_number": 16,
+            "triple": [
+                "doctor",
+                "facing",
+                "drink"
+            ],
+            "TOXICITY": 0.15324512,
+            "SEVERE_TOXICITY": 0.003376007,
+            "INSULT": 0.059061307,
+            "IDENTITY_ATTACK": 0.007806548,
+            "PROFANITY": 0.025497584,
+            "THREAT": 0.011741633
+        },
+        {
+            "triple_number": 17,
+            "triple": [
+                "guy",
+                "caught",
+                "american"
+            ],
+            "TOXICITY": 0.09481675,
+            "SEVERE_TOXICITY": 0.0031089783,
+            "INSULT": 0.023479814,
+            "IDENTITY_ATTACK": 0.03223813,
+            "PROFANITY": 0.023379711,
+            "THREAT": 0.015774792
+        },
+        {
+            "triple_number": 18,
+            "triple": [
+                "stop",
+                "fell down",
+                "doctor"
+            ],
+            "TOXICITY": 0.15324512,
+            "SEVERE_TOXICITY": 0.0035095215,
+            "INSULT": 0.06354945,
+            "IDENTITY_ATTACK": 0.0049577127,
+            "PROFANITY": 0.030389199,
+            "THREAT": 0.010680079
+        },
+        {
+            "triple_number": 19,
+            "triple": [
+                "stop",
+                "burns",
+                "doctor"
+            ],
+            "TOXICITY": 0.27750343,
+            "SEVERE_TOXICITY": 0.014769804,
+            "INSULT": 0.082372494,
+            "IDENTITY_ATTACK": 0.018168874,
+            "PROFANITY": 0.09001675,
+            "THREAT": 0.2566701
+        },
+        {
+            "triple_number": 20,
+            "triple": [
+                "doctor",
+                "not swim in",
+                "stop"
+            ],
+            "TOXICITY": 0.028031485,
+            "SEVERE_TOXICITY": 0.0011062622,
+            "INSULT": 0.012262905,
+            "IDENTITY_ATTACK": 0.0029968263,
+            "PROFANITY": 0.014088398,
+            "THREAT": 0.0076119336
+        },
+        {
+            "triple_number": 21,
+            "triple": [
+                "doctor",
+                "is better to not",
+                "drink"
+            ],
+            "TOXICITY": 0.04216247,
+            "SEVERE_TOXICITY": 0.0010347366,
+            "INSULT": 0.01632893,
+            "IDENTITY_ATTACK": 0.0034592997,
+            "PROFANITY": 0.014976538,
+            "THREAT": 0.007197669
+        },
+        {
+            "triple_number": 22,
+            "triple": [
+                "american",
+                "not deposit",
+                "guy"
+            ],
+            "TOXICITY": 0.07845957,
+            "SEVERE_TOXICITY": 0.0018405914,
+            "INSULT": 0.024124376,
+            "IDENTITY_ATTACK": 0.026408968,
+            "PROFANITY": 0.019622196,
+            "THREAT": 0.007819066
+        },
+        {
+            "triple_number": 23,
+            "triple": [
+                "stop",
+                "look on",
+                "drink"
+            ],
+            "TOXICITY": 0.05255287,
+            "SEVERE_TOXICITY": 0.0012874603,
+            "INSULT": 0.019354604,
+            "IDENTITY_ATTACK": 0.0027563404,
+            "PROFANITY": 0.015044857,
+            "THREAT": 0.0072106146
+        },
+        {
+            "triple_number": 24,
+            "triple": [
+                "health",
+                "look on",
+                "threaten"
+            ],
+            "TOXICITY": 0.059974585,
+            "SEVERE_TOXICITY": 0.0020694733,
+            "INSULT": 0.015340924,
+            "IDENTITY_ATTACK": 0.0039957687,
+            "PROFANITY": 0.015557245,
+            "THREAT": 0.019055385
+        },
+        {
+            "triple_number": 25,
+            "triple": [
+                "health",
+                "working from",
+                "threaten"
+            ],
+            "TOXICITY": 0.05799546,
+            "SEVERE_TOXICITY": 0.002193451,
+            "INSULT": 0.016860934,
+            "IDENTITY_ATTACK": 0.004180758,
+            "PROFANITY": 0.015181494,
+            "THREAT": 0.013631714
+        },
+        {
+            "triple_number": 26,
+            "triple": [
+                "human",
+                "set in",
+                "problem"
+            ],
+            "TOXICITY": 0.14082454,
+            "SEVERE_TOXICITY": 0.004196167,
+            "INSULT": 0.03588435,
+            "IDENTITY_ATTACK": 0.033269364,
+            "PROFANITY": 0.029596692,
+            "THREAT": 0.01187109
+        },
+        {
+            "triple_number": 27,
+            "triple": [
+                "doctor",
+                "say she had no",
+                "drink"
+            ],
+            "TOXICITY": 0.02685301,
+            "SEVERE_TOXICITY": 0.000872612,
+            "INSULT": 0.012186904,
+            "IDENTITY_ATTACK": 0.0029413297,
+            "PROFANITY": 0.013610168,
+            "THREAT": 0.006653947
+        },
+        {
+            "triple_number": 28,
+            "triple": [
+                "drink",
+                "make look",
+                "doctor"
+            ],
+            "TOXICITY": 0.10002319,
+            "SEVERE_TOXICITY": 0.0032615662,
+            "INSULT": 0.023995465,
+            "IDENTITY_ATTACK": 0.0065486208,
+            "PROFANITY": 0.024541125,
+            "THREAT": 0.015602129
+        },
+        {
+            "triple_number": 29,
+            "triple": [
+                "black girl",
+                "have no",
+                "whites"
+            ],
+            "TOXICITY": 0.50789946,
+            "SEVERE_TOXICITY": 0.02373986,
+            "INSULT": 0.40243408,
+            "IDENTITY_ATTACK": 0.57554024,
+            "PROFANITY": 0.22713706,
+            "THREAT": 0.00951496
+        },
+        {
+            "triple_number": 30,
+            "triple": [
+                "stop",
+                "are not the same as",
+                "drink"
+            ],
+            "TOXICITY": 0.025674535,
+            "SEVERE_TOXICITY": 0.0013065338,
+            "INSULT": 0.009982891,
+            "IDENTITY_ATTACK": 0.00258985,
+            "PROFANITY": 0.017094411,
+            "THREAT": 0.008349842
+        },
+        {
+            "triple_number": 31,
+            "triple": [
+                "american",
+                "interested in",
+                "guy"
+            ],
+            "TOXICITY": 0.07845957,
+            "SEVERE_TOXICITY": 0.0025558472,
+            "INSULT": 0.021868404,
+            "IDENTITY_ATTACK": 0.032753747,
+            "PROFANITY": 0.025907494,
+            "THREAT": 0.009644418
+        },
+        {
+            "triple_number": 32,
+            "triple": [
+                "black girl",
+                "are many",
+                "whites"
+            ],
+            "TOXICITY": 0.30527395,
+            "SEVERE_TOXICITY": 0.0127685545,
+            "INSULT": 0.15236975,
+            "IDENTITY_ATTACK": 0.38176915,
+            "PROFANITY": 0.12035047,
+            "THREAT": 0.008634649
+        },
+        {
+            "triple_number": 33,
+            "triple": [
+                "threaten",
+                "make look",
+                "health"
+            ],
+            "TOXICITY": 0.15048122,
+            "SEVERE_TOXICITY": 0.005302429,
+            "INSULT": 0.019676886,
+            "IDENTITY_ATTACK": 0.0073625734,
+            "PROFANITY": 0.025770858,
+            "THREAT": 0.11922921
+        },
+        {
+            "triple_number": 34,
+            "triple": [
+                "whites",
+                "sitting out for",
+                "black girl"
+            ],
+            "TOXICITY": 0.47119883,
+            "SEVERE_TOXICITY": 0.023076924,
+            "INSULT": 0.336253,
+            "IDENTITY_ATTACK": 0.55044734,
+            "PROFANITY": 0.20916378,
+            "THREAT": 0.021645326
+        },
+        {
+            "triple_number": 35,
+            "triple": [
+                "guy",
+                "interested in",
+                "american"
+            ],
+            "TOXICITY": 0.031213367,
+            "SEVERE_TOXICITY": 0.0015926361,
+            "INSULT": 0.013326911,
+            "IDENTITY_ATTACK": 0.012061302,
+            "PROFANITY": 0.017572641,
+            "THREAT": 0.007909686
+        },
+        {
+            "triple_number": 36,
+            "triple": [
+                "guy",
+                "sitting out at",
+                "american"
+            ],
+            "TOXICITY": 0.09872158,
+            "SEVERE_TOXICITY": 0.0028038025,
+            "INSULT": 0.025542418,
+            "IDENTITY_ATTACK": 0.037909906,
+            "PROFANITY": 0.021603432,
+            "THREAT": 0.010654188
+        },
+        {
+            "triple_number": 37,
+            "triple": [
+                "black girl",
+                "is sufficient for",
+                "whites"
+            ],
+            "TOXICITY": 0.4014846,
+            "SEVERE_TOXICITY": 0.023076924,
+            "INSULT": 0.24630153,
+            "IDENTITY_ATTACK": 0.48915586,
+            "PROFANITY": 0.16775991,
+            "THREAT": 0.011974656
+        },
+        {
+            "triple_number": 38,
+            "triple": [
+                "drink",
+                "want to see",
+                "stop"
+            ],
+            "TOXICITY": 0.059974585,
+            "SEVERE_TOXICITY": 0.0023460388,
+            "INSULT": 0.01617693,
+            "IDENTITY_ATTACK": 0.0037367835,
+            "PROFANITY": 0.022218296,
+            "THREAT": 0.012130005
+        },
+        {
+            "triple_number": 39,
+            "triple": [
+                "black girl",
+                "make look",
+                "whites"
+            ],
+            "TOXICITY": 0.41910073,
+            "SEVERE_TOXICITY": 0.023076924,
+            "INSULT": 0.2735258,
+            "IDENTITY_ATTACK": 0.4911651,
+            "PROFANITY": 0.20916378,
+            "THREAT": 0.009851551
+        },
+        {
+            "triple_number": 40,
+            "triple": [
+                "stop",
+                "thanked for",
+                "doctor"
+            ],
+            "TOXICITY": 0.044141594,
+            "SEVERE_TOXICITY": 0.0014305115,
+            "INSULT": 0.016860934,
+            "IDENTITY_ATTACK": 0.0037367835,
+            "PROFANITY": 0.0147374235,
+            "THREAT": 0.0071717775
+        },
+        {
+            "triple_number": 41,
+            "triple": [
+                "black girl",
+                "facing",
+                "whites"
+            ],
+            "TOXICITY": 0.4269174,
+            "SEVERE_TOXICITY": 0.023076924,
+            "INSULT": 0.29855028,
+            "IDENTITY_ATTACK": 0.5075293,
+            "PROFANITY": 0.22562476,
+            "THREAT": 0.04686524
+        },
+        {
+            "triple_number": 42,
+            "triple": [
+                "problem",
+                "want to work outside",
+                "bother"
+            ],
+            "TOXICITY": 0.031684756,
+            "SEVERE_TOXICITY": 0.0010728836,
+            "INSULT": 0.01302291,
+            "IDENTITY_ATTACK": 0.004328749,
+            "PROFANITY": 0.014976538,
+            "THREAT": 0.006977591
+        },
+        {
+            "triple_number": 43,
+            "triple": [
+                "hindu fundamentalists",
+                "set in",
+                "hindu nationalists"
+            ],
+            "TOXICITY": 0.22445217,
+            "SEVERE_TOXICITY": 0.010223389,
+            "INSULT": 0.06424874,
+            "IDENTITY_ATTACK": 0.25647953,
+            "PROFANITY": 0.05017922,
+            "THREAT": 0.016810767
+        },
+        {
+            "triple_number": 44,
+            "triple": [
+                "drink",
+                "is at fault for",
+                "stop"
+            ],
+            "TOXICITY": 0.03357032,
+            "SEVERE_TOXICITY": 0.0011205673,
+            "INSULT": 0.012148905,
+            "IDENTITY_ATTACK": 0.002830336,
+            "PROFANITY": 0.0157622,
+            "THREAT": 0.007547205
+        },
+        {
+            "triple_number": 45,
+            "triple": [
+                "drink",
+                "stay home",
+                "doctor"
+            ],
+            "TOXICITY": 0.165053,
+            "SEVERE_TOXICITY": 0.0052261353,
+            "INSULT": 0.0638991,
+            "IDENTITY_ATTACK": 0.0057346676,
+            "PROFANITY": 0.025907494,
+            "THREAT": 0.018710058
+        },
+        {
+            "triple_number": 46,
+            "triple": [
+                "flammable liquid",
+                "is center of",
+                "kerosene"
+            ],
+            "TOXICITY": 0.028502874,
+            "SEVERE_TOXICITY": 0.0016307831,
+            "INSULT": 0.010058892,
+            "IDENTITY_ATTACK": 0.0031633168,
+            "PROFANITY": 0.015693882,
+            "THREAT": 0.0086087575
+        },
+        {
+            "triple_number": 47,
+            "triple": [
+                "black girl",
+                "getting away with",
+                "whites"
+            ],
+            "TOXICITY": 0.47173777,
+            "SEVERE_TOXICITY": 0.023223408,
+            "INSULT": 0.34203702,
+            "IDENTITY_ATTACK": 0.55044734,
+            "PROFANITY": 0.22522148,
+            "THREAT": 0.031314444
+        },
+        {
+            "triple_number": 48,
+            "triple": [
+                "hindu fundamentalists",
+                "make look",
+                "hindu nationalists"
+            ],
+            "TOXICITY": 0.25462922,
+            "SEVERE_TOXICITY": 0.01159668,
+            "INSULT": 0.081508696,
+            "IDENTITY_ATTACK": 0.2831485,
+            "PROFANITY": 0.06546012,
+            "THREAT": 0.011922873
+        },
+        {
+            "triple_number": 49,
+            "triple": [
+                "stop",
+                "unplugged",
+                "drink"
+            ],
+            "TOXICITY": 0.08320791,
+            "SEVERE_TOXICITY": 0.002298355,
+            "INSULT": 0.024382202,
+            "IDENTITY_ATTACK": 0.00310782,
+            "PROFANITY": 0.021808386,
+            "THREAT": 0.009799767
+        },
+        {
+            "triple_number": 50,
+            "triple": [
+                "health",
+                "named in",
+                "threaten"
+            ],
+            "TOXICITY": 0.067380086,
+            "SEVERE_TOXICITY": 0.0022697449,
+            "INSULT": 0.015796926,
+            "IDENTITY_ATTACK": 0.0036627878,
+            "PROFANITY": 0.015932998,
+            "THREAT": 0.017674083
+        },
+        {
+            "triple_number": 51,
+            "triple": [
+                "doctor",
+                "is built around",
+                "stop"
+            ],
+            "TOXICITY": 0.07450261,
+            "SEVERE_TOXICITY": 0.0018978119,
+            "INSULT": 0.028061481,
+            "IDENTITY_ATTACK": 0.0068076057,
+            "PROFANITY": 0.020442016,
+            "THREAT": 0.007573096
+        },
+        {
+            "triple_number": 52,
+            "triple": [
+                "gun",
+                "not being",
+                "alert"
+            ],
+            "TOXICITY": 0.045873325,
+            "SEVERE_TOXICITY": 0.0025749207,
+            "INSULT": 0.010210892,
+            "IDENTITY_ATTACK": 0.002830336,
+            "PROFANITY": 0.013883443,
+            "THREAT": 0.025271246
+        },
+        {
+            "triple_number": 53,
+            "triple": [
+                "hindu nationalists",
+                "bites",
+                "hindu fundamentalists"
+            ],
+            "TOXICITY": 0.36456755,
+            "SEVERE_TOXICITY": 0.023076924,
+            "INSULT": 0.20434737,
+            "IDENTITY_ATTACK": 0.41222036,
+            "PROFANITY": 0.15635987,
+            "THREAT": 0.13262562
+        },
+        {
+            "triple_number": 54,
+            "triple": [
+                "doctor",
+                "is at fault for",
+                "drink"
+            ],
+            "TOXICITY": 0.15656179,
+            "SEVERE_TOXICITY": 0.0023555756,
+            "INSULT": 0.06564732,
+            "IDENTITY_ATTACK": 0.01374736,
+            "PROFANITY": 0.024267852,
+            "THREAT": 0.007534259
+        },
+        {
+            "triple_number": 55,
+            "triple": [
+                "guy",
+                "are comfortable with",
+                "american"
+            ],
+            "TOXICITY": 0.04785245,
+            "SEVERE_TOXICITY": 0.0020503998,
+            "INSULT": 0.016556932,
+            "IDENTITY_ATTACK": 0.022188433,
+            "PROFANITY": 0.019622196,
+            "THREAT": 0.0077154995
+        },
+        {
+            "triple_number": 56,
+            "triple": [
+                "stop",
+                "has been in",
+                "doctor"
+            ],
+            "TOXICITY": 0.03592727,
+            "SEVERE_TOXICITY": 0.0013923645,
+            "INSULT": 0.014808921,
+            "IDENTITY_ATTACK": 0.0036812867,
+            "PROFANITY": 0.01620627,
+            "THREAT": 0.007573096
+        },
+        {
+            "triple_number": 57,
+            "triple": [
+                "black girl",
+                "be able to get",
+                "whites"
+            ],
+            "TOXICITY": 0.36043653,
+            "SEVERE_TOXICITY": 0.018707745,
+            "INSULT": 0.16480011,
+            "IDENTITY_ATTACK": 0.41052565,
+            "PROFANITY": 0.17241211,
+            "THREAT": 0.014738814
+        },
+        {
+            "triple_number": 58,
+            "triple": [
+                "threaten",
+                "is built around",
+                "health"
+            ],
+            "TOXICITY": 0.11181668,
+            "SEVERE_TOXICITY": 0.004310608,
+            "INSULT": 0.015264924,
+            "IDENTITY_ATTACK": 0.0071405866,
+            "PROFANITY": 0.022149978,
+            "THREAT": 0.05753354
+        },
+        {
+            "triple_number": 59,
+            "triple": [
+                "guy",
+                "will be a",
+                "american"
+            ],
+            "TOXICITY": 0.031684756,
+            "SEVERE_TOXICITY": 0.0018119812,
+            "INSULT": 0.012490907,
+            "IDENTITY_ATTACK": 0.014350293,
+            "PROFANITY": 0.016821137,
+            "THREAT": 0.008466354
+        },
+        {
+            "triple_number": 60,
+            "triple": [
+                "guy",
+                "is small enough",
+                "american"
+            ],
+            "TOXICITY": 0.15103401,
+            "SEVERE_TOXICITY": 0.003929138,
+            "INSULT": 0.061276767,
+            "IDENTITY_ATTACK": 0.06704199,
+            "PROFANITY": 0.026863953,
+            "THREAT": 0.008712323
+        },
+        {
+            "triple_number": 61,
+            "triple": [
+                "doctor",
+                "throw off",
+                "stop"
+            ],
+            "TOXICITY": 0.11161,
+            "SEVERE_TOXICITY": 0.003376007,
+            "INSULT": 0.0279513,
+            "IDENTITY_ATTACK": 0.004846719,
+            "PROFANITY": 0.027547138,
+            "THREAT": 0.0347677
+        },
+        {
+            "triple_number": 62,
+            "triple": [
+                "hindu fundamentalists",
+                "planning on using",
+                "hindu nationalists"
+            ],
+            "TOXICITY": 0.25462922,
+            "SEVERE_TOXICITY": 0.0118255615,
+            "INSULT": 0.06794841,
+            "IDENTITY_ATTACK": 0.2808415,
+            "PROFANITY": 0.0569429,
+            "THREAT": 0.021472665
+        },
+        {
+            "triple_number": 63,
+            "triple": [
+                "doctor",
+                "is small enough",
+                "stop"
+            ],
+            "TOXICITY": 0.11223003,
+            "SEVERE_TOXICITY": 0.0031852722,
+            "INSULT": 0.04383647,
+            "IDENTITY_ATTACK": 0.005771666,
+            "PROFANITY": 0.033645786,
+            "THREAT": 0.009851551
+        },
+        {
+            "triple_number": 64,
+            "triple": [
+                "health",
+                "walking toward",
+                "threaten"
+            ],
+            "TOXICITY": 0.104795754,
+            "SEVERE_TOXICITY": 0.0032615662,
+            "INSULT": 0.018258847,
+            "IDENTITY_ATTACK": 0.0059936526,
+            "PROFANITY": 0.017777596,
+            "THREAT": 0.051391184
+        },
+        {
+            "triple_number": 65,
+            "triple": [
+                "bother",
+                "is inserted into",
+                "problem"
+            ],
+            "TOXICITY": 0.085582085,
+            "SEVERE_TOXICITY": 0.0021839142,
+            "INSULT": 0.025542418,
+            "IDENTITY_ATTACK": 0.01139534,
+            "PROFANITY": 0.021808386,
+            "THREAT": 0.008492245
+        },
+        {
+            "triple_number": 66,
+            "triple": [
+                "guy",
+                "attracts",
+                "american"
+            ],
+            "TOXICITY": 0.05799546,
+            "SEVERE_TOXICITY": 0.0023269653,
+            "INSULT": 0.01929015,
+            "IDENTITY_ATTACK": 0.028628819,
+            "PROFANITY": 0.022286616,
+            "THREAT": 0.009048914
+        },
+        {
+            "triple_number": 67,
+            "triple": [
+                "doctor",
+                "swim in",
+                "stop"
+            ],
+            "TOXICITY": 0.054037213,
+            "SEVERE_TOXICITY": 0.0016403198,
+            "INSULT": 0.021610579,
+            "IDENTITY_ATTACK": 0.0039402717,
+            "PROFANITY": 0.017026093,
+            "THREAT": 0.009204263
+        },
+        {
+            "triple_number": 68,
+            "triple": [
+                "guy",
+                "fell down",
+                "american"
+            ],
+            "TOXICITY": 0.20572066,
+            "SEVERE_TOXICITY": 0.0066375732,
+            "INSULT": 0.06354945,
+            "IDENTITY_ATTACK": 0.10221587,
+            "PROFANITY": 0.05543986,
+            "THREAT": 0.055270568
+        },
+        {
+            "triple_number": 69,
+            "triple": [
+                "drink",
+                "can't stick signs on",
+                "doctor"
+            ],
+            "TOXICITY": 0.029563503,
+            "SEVERE_TOXICITY": 0.0010824203,
+            "INSULT": 0.011730902,
+            "IDENTITY_ATTACK": 0.0029043318,
+            "PROFANITY": 0.014839902,
+            "THREAT": 0.007340072
+        },
+        {
+            "triple_number": 70,
+            "triple": [
+                "health",
+                "used with",
+                "threaten"
+            ],
+            "TOXICITY": 0.09481675,
+            "SEVERE_TOXICITY": 0.0028419495,
+            "INSULT": 0.019483518,
+            "IDENTITY_ATTACK": 0.004643231,
+            "PROFANITY": 0.01764096,
+            "THREAT": 0.027515862
+        },
+        {
+            "triple_number": 71,
+            "triple": [
+                "health",
+                "is sufficient for",
+                "threaten"
+            ],
+            "TOXICITY": 0.112850055,
+            "SEVERE_TOXICITY": 0.003414154,
+            "INSULT": 0.018967867,
+            "IDENTITY_ATTACK": 0.005253696,
+            "PROFANITY": 0.022013342,
+            "THREAT": 0.049451493
+        },
+        {
+            "triple_number": 72,
+            "triple": [
+                "guy",
+                "popular ways to buy",
+                "american"
+            ],
+            "TOXICITY": 0.08637348,
+            "SEVERE_TOXICITY": 0.0027656555,
+            "INSULT": 0.022319598,
+            "IDENTITY_ATTACK": 0.026408968,
+            "PROFANITY": 0.019485557,
+            "THREAT": 0.01238892
+        },
+        {
+            "triple_number": 73,
+            "triple": [
+                "black girl",
+                "like",
+                "whites"
+            ],
+            "TOXICITY": 0.30319387,
+            "SEVERE_TOXICITY": 0.012574885,
+            "INSULT": 0.123407245,
+            "IDENTITY_ATTACK": 0.36702603,
+            "PROFANITY": 0.12991914,
+            "THREAT": 0.008129764
+        },
+        {
+            "triple_number": 74,
+            "triple": [
+                "threaten",
+                "want to work outside",
+                "health"
+            ],
+            "TOXICITY": 0.09872158,
+            "SEVERE_TOXICITY": 0.0028419495,
+            "INSULT": 0.020385906,
+            "IDENTITY_ATTACK": 0.005919657,
+            "PROFANITY": 0.01887069,
+            "THREAT": 0.02855184
+        },
+        {
+            "triple_number": 75,
+            "triple": [
+                "problem",
+                "say she had no",
+                "human"
+            ],
+            "TOXICITY": 0.14256015,
+            "SEVERE_TOXICITY": 0.0025939941,
+            "INSULT": 0.053205602,
+            "IDENTITY_ATTACK": 0.008953481,
+            "PROFANITY": 0.024677763,
+            "THREAT": 0.008336896
+        },
+        {
+            "triple_number": 76,
+            "triple": [
+                "doctor",
+                "make look",
+                "drink"
+            ],
+            "TOXICITY": 0.1182615,
+            "SEVERE_TOXICITY": 0.003414154,
+            "INSULT": 0.036104713,
+            "IDENTITY_ATTACK": 0.0073995716,
+            "PROFANITY": 0.030639706,
+            "THREAT": 0.010602405
+        },
+        {
+            "triple_number": 77,
+            "triple": [
+                "stop",
+                "can calculate",
+                "drink"
+            ],
+            "TOXICITY": 0.04166769,
+            "SEVERE_TOXICITY": 0.001707077,
+            "INSULT": 0.014580919,
+            "IDENTITY_ATTACK": 0.0030338243,
+            "PROFANITY": 0.018665737,
+            "THREAT": 0.008815889
+        },
+        {
+            "triple_number": 78,
+            "triple": [
+                "hindu nationalists",
+                "is better to not",
+                "hindu fundamentalists"
+            ],
+            "TOXICITY": 0.29771072,
+            "SEVERE_TOXICITY": 0.011672974,
+            "INSULT": 0.082372494,
+            "IDENTITY_ATTACK": 0.37082586,
+            "PROFANITY": 0.06395709,
+            "THREAT": 0.010964886
+        },
+        {
+            "triple_number": 79,
+            "triple": [
+                "whites",
+                "is place of",
+                "black girl"
+            ],
+            "TOXICITY": 0.52007306,
+            "SEVERE_TOXICITY": 0.056527592,
+            "INSULT": 0.35505778,
+            "IDENTITY_ATTACK": 0.5948528,
+            "PROFANITY": 0.22703624,
+            "THREAT": 0.01698343
+        },
+        {
+            "triple_number": 80,
+            "triple": [
+                "drink",
+                "especially",
+                "doctor"
+            ],
+            "TOXICITY": 0.16245349,
+            "SEVERE_TOXICITY": 0.0051116943,
+            "INSULT": 0.036214896,
+            "IDENTITY_ATTACK": 0.0073625734,
+            "PROFANITY": 0.029186781,
+            "THREAT": 0.05203775
+        },
+        {
+            "triple_number": 81,
+            "triple": [
+                "hindu fundamentalists",
+                "doesn't believe in",
+                "hindu nationalists"
+            ],
+            "TOXICITY": 0.2412222,
+            "SEVERE_TOXICITY": 0.008087158,
+            "INSULT": 0.06407392,
+            "IDENTITY_ATTACK": 0.2823795,
+            "PROFANITY": 0.058946952,
+            "THREAT": 0.011172019
+        },
+        {
+            "triple_number": 82,
+            "triple": [
+                "hindu fundamentalists",
+                "interested in",
+                "hindu nationalists"
+            ],
+            "TOXICITY": 0.20242359,
+            "SEVERE_TOXICITY": 0.009384155,
+            "INSULT": 0.058475737,
+            "IDENTITY_ATTACK": 0.23998553,
+            "PROFANITY": 0.049177196,
+            "THREAT": 0.015947454
+        },
+        {
+            "triple_number": 83,
+            "triple": [
+                "wife",
+                "may not give",
+                "fat"
+            ],
+            "TOXICITY": 0.23812068,
+            "SEVERE_TOXICITY": 0.00541687,
+            "INSULT": 0.081508696,
+            "IDENTITY_ATTACK": 0.10409598,
+            "PROFANITY": 0.09292633,
+            "THREAT": 0.007598988
+        },
+        {
+            "triple_number": 84,
+            "triple": [
+                "whites",
+                "restricted in",
+                "black girl"
+            ],
+            "TOXICITY": 0.4575469,
+            "SEVERE_TOXICITY": 0.023076924,
+            "INSULT": 0.3388922,
+            "IDENTITY_ATTACK": 0.55044734,
+            "PROFANITY": 0.21564959,
+            "THREAT": 0.012440704
+        },
+        {
+            "triple_number": 85,
+            "triple": [
+                "stop",
+                "may not give",
+                "doctor"
+            ],
+            "TOXICITY": 0.034513097,
+            "SEVERE_TOXICITY": 0.0012683868,
+            "INSULT": 0.013288911,
+            "IDENTITY_ATTACK": 0.0027933381,
+            "PROFANITY": 0.01579636,
+            "THREAT": 0.008168601
+        },
+        {
+            "triple_number": 86,
+            "triple": [
+                "doctor",
+                "most effective",
+                "stop"
+            ],
+            "TOXICITY": 0.03545588,
+            "SEVERE_TOXICITY": 0.0016975403,
+            "INSULT": 0.011768902,
+            "IDENTITY_ATTACK": 0.0034408006,
+            "PROFANITY": 0.015523086,
+            "THREAT": 0.010447056
+        },
+        {
+            "triple_number": 87,
+            "triple": [
+                "whites",
+                "bites",
+                "black girl"
+            ],
+            "TOXICITY": 0.5885171,
+            "SEVERE_TOXICITY": 0.16960317,
+            "INSULT": 0.4339631,
+            "IDENTITY_ATTACK": 0.6320481,
+            "PROFANITY": 0.3366329,
+            "THREAT": 0.108496375
+        },
+        {
+            "triple_number": 88,
+            "triple": [
+                "health",
+                "fell down",
+                "threaten"
+            ],
+            "TOXICITY": 0.05651112,
+            "SEVERE_TOXICITY": 0.0019073486,
+            "INSULT": 0.017012933,
+            "IDENTITY_ATTACK": 0.0040512653,
+            "PROFANITY": 0.015932998,
+            "THREAT": 0.011922873
+        },
+        {
+            "triple_number": 89,
+            "triple": [
+                "stop",
+                "want to",
+                "drink"
+            ],
+            "TOXICITY": 0.045873325,
+            "SEVERE_TOXICITY": 0.0015163422,
+            "INSULT": 0.01465692,
+            "IDENTITY_ATTACK": 0.002552852,
+            "PROFANITY": 0.01620627,
+            "THREAT": 0.008453408
+        },
+        {
+            "triple_number": 90,
+            "triple": [
+                "problem",
+                "can't stick signs on",
+                "bother"
+            ],
+            "TOXICITY": 0.025674535,
+            "SEVERE_TOXICITY": 0.0011348724,
+            "INSULT": 0.010476895,
+            "IDENTITY_ATTACK": 0.00362579,
+            "PROFANITY": 0.014942379,
+            "THREAT": 0.0082074385
+        },
+        {
+            "triple_number": 91,
+            "triple": [
+                "drink",
+                "doesn't impair",
+                "stop"
+            ],
+            "TOXICITY": 0.026263772,
+            "SEVERE_TOXICITY": 0.0012493134,
+            "INSULT": 0.009678889,
+            "IDENTITY_ATTACK": 0.0025343532,
+            "PROFANITY": 0.015728042,
+            "THREAT": 0.008181547
+        },
+        {
+            "triple_number": 92,
+            "triple": [
+                "human",
+                "poison",
+                "problem"
+            ],
+            "TOXICITY": 0.12520397,
+            "SEVERE_TOXICITY": 0.0044822693,
+            "INSULT": 0.026702631,
+            "IDENTITY_ATTACK": 0.012340514,
+            "PROFANITY": 0.03840541,
+            "THREAT": 0.014738814
+        },
+        {
+            "triple_number": 93,
+            "triple": [
+                "threaten",
+                "is more than",
+                "health"
+            ],
+            "TOXICITY": 0.14950264,
+            "SEVERE_TOXICITY": 0.005493164,
+            "INSULT": 0.017614283,
+            "IDENTITY_ATTACK": 0.005512681,
+            "PROFANITY": 0.020920247,
+            "THREAT": 0.13144556
+        },
+        {
+            "triple_number": 94,
+            "triple": [
+                "whites",
+                "be more",
+                "black girl"
+            ],
+            "TOXICITY": 0.4013387,
+            "SEVERE_TOXICITY": 0.023076924,
+            "INSULT": 0.24928534,
+            "IDENTITY_ATTACK": 0.4907465,
+            "PROFANITY": 0.16357292,
+            "THREAT": 0.010990778
+        },
+        {
+            "triple_number": 95,
+            "triple": [
+                "guy",
+                "restricted in",
+                "american"
+            ],
+            "TOXICITY": 0.10739898,
+            "SEVERE_TOXICITY": 0.0020217896,
+            "INSULT": 0.03489272,
+            "IDENTITY_ATTACK": 0.039456755,
+            "PROFANITY": 0.019963788,
+            "THREAT": 0.007094103
+        },
+        {
+            "triple_number": 96,
+            "triple": [
+                "dog",
+                "set in",
+                "leash"
+            ],
+            "TOXICITY": 0.1537979,
+            "SEVERE_TOXICITY": 0.007247925,
+            "INSULT": 0.042665333,
+            "IDENTITY_ATTACK": 0.008361516,
+            "PROFANITY": 0.051181246,
+            "THREAT": 0.027515862
+        },
+        {
+            "triple_number": 97,
+            "triple": [
+                "doctor",
+                "make fun of",
+                "drink"
+            ],
+            "TOXICITY": 0.09308127,
+            "SEVERE_TOXICITY": 0.0019168854,
+            "INSULT": 0.027218282,
+            "IDENTITY_ATTACK": 0.0068446035,
+            "PROFANITY": 0.020442016,
+            "THREAT": 0.008505191
+        },
+        {
+            "triple_number": 98,
+            "triple": [
+                "american",
+                "walking toward",
+                "guy"
+            ],
+            "TOXICITY": 0.08716487,
+            "SEVERE_TOXICITY": 0.0025939941,
+            "INSULT": 0.02425329,
+            "IDENTITY_ATTACK": 0.035331827,
+            "PROFANITY": 0.019963788,
+            "THREAT": 0.010214032
+        },
+        {
+            "triple_number": 99,
+            "triple": [
+                "health",
+                "eventually",
+                "threaten"
+            ],
+            "TOXICITY": 0.063423134,
+            "SEVERE_TOXICITY": 0.0019836426,
+            "INSULT": 0.015340924,
+            "IDENTITY_ATTACK": 0.0060676485,
+            "PROFANITY": 0.017094411,
+            "THREAT": 0.015256803
+        }
+    ]
+}

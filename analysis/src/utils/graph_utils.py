@@ -106,3 +106,10 @@ def get_toxicity_results_save_path(saved_graph_info_dir, output_dir):
     graph_name = get_graph_name(saved_graph_info_dir)
     toxicity_results_save_path = os.path.join(output_dir, f"{graph_name}_toxicity_results.json")
     return toxicity_results_save_path
+
+
+def get_new_triples_analysis_save_path(saved_new_triples_path, output_dir):
+    graph_name_with_extension = os.path.basename(saved_new_triples_path)
+    graph_name = '.'.join(graph_name_with_extension.split('.')[:-1])
+    new_triples_analysis_save_path = os.path.join(output_dir, f"{graph_name}_new_triples_analysis.json")
+    return new_triples_analysis_save_path

@@ -22,9 +22,9 @@ API_KEY = "AIzaSyAGqzM57z8iyx4lp6-lsqY5tLMw6dPMzcE"
 API_QUOTA_LIMIT = 1
 API_QUOTA_MARGIN = 0.3
 API_CUSTOM_LIMIT = API_QUOTA_LIMIT + API_QUOTA_MARGIN
-PROMPT_MESSAGE_PREPENDED_TO_CLUSTERS = "I think the following entities have a close relationship and they are related: "
-CLUSTER_NUMBER = "cluster_number"
-CLUSTER_ENTITIES = "cluster_entities"
+PROMPT_MESSAGE_PREPENDED_TO_CLUSTERS = "I think: "
+TRIPLE_NUMBER = "triple_number"
+TRIPLE = "triple"
 TOXICITY = "TOXICITY"
 SEVERE_TOXICITY = "SEVERE_TOXICITY"
 INSULT = "INSULT"
@@ -48,15 +48,15 @@ client = discovery.build(
 )
 
 
-def save_results(results_to_be_saved, saved_graph_info_dir, output_dir):
+def save_results(results_to_be_saved, saved_new_triples_path, output_dir):
     os.makedirs(output_dir, exist_ok=True)
-    results_path = graph_utils.get_toxicity_results_save_path(saved_graph_info_dir, output_dir)
+    results_path = graph_utils.get_new_triples_analysis_save_path(saved_new_triples_path, output_dir)
     with open(results_path, 'w') as f:
         json.dump(results_to_be_saved, f, indent=4)
 
 # Request function
-def analyze_cluster(cluster):
-    text_to_analyze = f"The following entities are closely related entities: {', '.join(cluster)}."
+def analyze_triple(triple):
+    text_to_analyze = f"I think: {' '.join(triple)}."
     analyze_request = {
         "comment": {"text": text_to_analyze},
         "languages": ["en"],
@@ -75,16 +75,15 @@ def analyze_cluster(cluster):
     return response
 
 
-def get_graph_cluster_toxicity_metrics(cluster_to_entities):
+def get_triples_toxicity_metrics(new_triples):
     results = []
-    i = 1
-    for c, cluster in cluster_to_entities.items():
-        print(f"Analyzing Cluster {i}/{len(cluster_to_entities)}. Cluster index: {c}")
-        result = analyze_cluster(cluster)
+    for i, triple in enumerate(new_triples):
+        print(f"Analyzing Triple {i+1}/{len(new_triples)}. Triple: {triple}")
+        result = analyze_triple(triple)
         if result:
             scores = {
-                CLUSTER_NUMBER: i,
-                CLUSTER_ENTITIES: cluster,
+                TRIPLE_NUMBER: i,
+                TRIPLE: triple,
                 TOXICITY: result[ATTRIBUTE_SCORES][TOXICITY][SUMMARY_SCORE][VALUE],
                 SEVERE_TOXICITY: result[ATTRIBUTE_SCORES][SEVERE_TOXICITY][SUMMARY_SCORE][VALUE],
                 INSULT: result[ATTRIBUTE_SCORES][INSULT][SUMMARY_SCORE][VALUE],
@@ -93,7 +92,6 @@ def get_graph_cluster_toxicity_metrics(cluster_to_entities):
                 THREAT: result[ATTRIBUTE_SCORES][THREAT][SUMMARY_SCORE][VALUE]
             }
             results.append(scores)
-        i += 1
         time.sleep(API_CUSTOM_LIMIT)
 
     return results
@@ -125,49 +123,35 @@ def get_aggregate_toxicity_metrics(results):
     return toxicity_stats
 
 
-def get_graph_toxicity_metric(saved_graph_info_dir, output_dir, k):
-    print(f"Running toxicity analysis on {saved_graph_info_dir}...")
-    entity_embeddings, relation_embeddings, graph_data = graph_utils.load_saved_graph_data(saved_graph_info_dir)
+def new_triples_metrics_for_graph(saved_new_triples_path, output_dir):
+    print(f"Running new triples analysis on {saved_new_triples_path}...")
+    
+    
+    with open(saved_new_triples_path, 'r') as f:
+        imputation_data = json.load(f)
 
-    # Move embeddings to GPU if available
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    entity_embeddings = torch.tensor(entity_embeddings, device=device, dtype=torch.float32)
-    relation_embeddings = torch.tensor(relation_embeddings, device=device, dtype=torch.float32)
-
-    entities = graph_data[analysis_constants.ENTITIES_KEY]
-    # _ = graph_data[analysis_constants.RELATIONS_KEY]
-    # _ = set(
-    #     (head, relation, tail) for head, relation, tail in graph_data[analysis_constants.TRIPLES_KEY]
-    # )
-
-    clusters = graph_data[analysis_constants.ENTITY_CLUSTERS_KEY]
-    cluster_to_entities = {}
-    for entity, cluster_label in zip(entities, clusters):
-        cluster_to_entities.setdefault(cluster_label, []).append(entity)
-
-    # print("The clusters are: ", cluster_to_entities)
-
+    new_triples = imputation_data[analysis_constants.PREDICTED_TRIPLES_KEY]
+    
     # Use a min-heap to track the top k triples
-    clusters_toxicity = get_graph_cluster_toxicity_metrics(cluster_to_entities)
+    triples_toxicity = get_triples_toxicity_metrics(new_triples)
 
-    aggregate_toxicity_statistics = get_aggregate_toxicity_metrics(clusters_toxicity)
-
+    aggregate_toxicity_statistics = get_aggregate_toxicity_metrics(triples_toxicity)
     # here we want to compute aggregate statistics for the graph's toxicity
     
     results_to_be_saved = {
         analysis_constants.AGGREGATE_TOXICITY_STATS_KEY: aggregate_toxicity_statistics,
-        analysis_constants.CLUSTER_TOXICITY_STATS_KEY: clusters_toxicity
+        analysis_constants.NEW_TRIPLES_TOXICITY_STATS_KEY: triples_toxicity
     }
 
-    save_results(results_to_be_saved, saved_graph_info_dir, output_dir)
+    save_results(results_to_be_saved, saved_new_triples_path, output_dir)
 
-def get_toxicity_metrics(selected, directory, output):
+def get_new_triples_metrics_for_graphs(selected, directory, output):
     if selected is None:
-        selected = [d for d in os.listdir(directory) if os.path.isdir(os.path.join(directory, d))]
+        selected = [d for d in os.listdir(directory)]
 
     for graph_name in selected:
-        saved_graph_info_dir = os.path.join(directory, graph_name)
-        get_graph_toxicity_metric(saved_graph_info_dir, output, analysis_constants.K_NEW_TRIPLES)
+        saved_new_triples_path = os.path.join(directory, graph_name)
+        new_triples_metrics_for_graph(saved_new_triples_path, output)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Visualize embeddings for knowledge graphs.")
@@ -176,16 +160,16 @@ if __name__ == "__main__":
         "-d",
         "--directory",
         type=str,
-        default=analysis_constants.EMBEDDINGS_BASE_PATH,  # Default placeholder value
+        default=analysis_constants.IMPUTATION_BASE_PATH,  # Default placeholder value
         help="Path to the directory containing saved data for graphs. Default is './data'."
     )
     parser.add_argument(
         "-o",
         "--output",
         type=str,
-        default=analysis_constants.TOXICITY_BASE_PATH,  # Default placeholder value
+        default=analysis_constants.NEW_TRIPLES_ANALYSIS_BASE_PATH,  # Default placeholder value
         help="Path to save the visualizations."
     )
 
     args = parser.parse_args()
-    get_toxicity_metrics(selected=None, directory=args.directory, output=args.output)
+    get_new_triples_metrics_for_graphs(selected=None, directory=args.directory, output=args.output)
