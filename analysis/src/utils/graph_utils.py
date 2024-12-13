@@ -113,3 +113,9 @@ def get_new_triples_analysis_save_path(saved_new_triples_path, output_dir):
     graph_name = '.'.join(graph_name_with_extension.split('.')[:-1])
     new_triples_analysis_save_path = os.path.join(output_dir, f"{graph_name}_new_triples_analysis.json")
     return new_triples_analysis_save_path
+
+def get_cluster_states_results_save_path(saved_new_triples_path, output_dir):    
+    graph_name_with_extension = os.path.basename(saved_new_triples_path)
+    graph_name = '.'.join(graph_name_with_extension.split('.')[:-1])
+    cluster_states_results_save_path = os.path.join(output_dir, f"{graph_name}_cluster_states_results.json")
+    return cluster_states_results_save_path

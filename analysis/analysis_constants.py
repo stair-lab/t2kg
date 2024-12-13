@@ -77,6 +77,13 @@ CLUSTER_TOXICITY_STATS_KEY = "clusters_toxicity"
 NEW_TRIPLES_ANALYSIS_BASE_PATH = os.path.join(DATA_BASE_PATH, "new_triples_toxicity")
 NEW_TRIPLES_TOXICITY_STATS_KEY = "new_triples_toxicity"
 
+CLUSTER_METRICS_BASE_PATH = os.path.join(DATA_BASE_PATH, "cluster_metrics")
+
+CLUSTER_STATS_KEY_MEAN_SIZE = "mean_size"
+CLUSTER_STATS_KEY_STD_SIZE = "std_size"
+CLUSTER_STATS_KEY_MAX_SIZE = "max_size"
+CLUSTER_STATS_KEY_MIN_SIZE = "min_size"
+
 
 
 
