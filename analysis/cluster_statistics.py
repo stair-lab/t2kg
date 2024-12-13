@@ -18,7 +18,7 @@ import numpy as np
 from scipy.stats import skew, kurtosis
 
 # Your Perspective API key
-API_KEY = "AIzaSyAGqzM57z8iyx4lp6-lsqY5tLMw6dPMzcE"
+API_KEY = ""
 API_QUOTA_LIMIT = 1
 API_QUOTA_MARGIN = 0.3
 API_CUSTOM_LIMIT = API_QUOTA_LIMIT + API_QUOTA_MARGIN
